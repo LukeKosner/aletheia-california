@@ -1,0 +1,47 @@
+---
+date: 2026-11-19
+author: Claude
+reviewer: Luke Kosner
+task: Hackathon polish. Ask becomes a general agent with web sources, longer interviews with free research, customizable studies, a clearer home page, and fixes from a critical UX review
+---
+
+## Shipped
+
+- **Home page in three parts:** the Ask box on top with one subtitle and six example questions; "Hear from Californians" for interviews and studies; "What we're hearing" with stat tiles from public interviews and the most recently researched questions.
+- **Header and banner:** a larger brand, and the test-mode banner in neutral gray ("Test mode. Money is fake.").
+- **Ask as a general agent:** a new HarnessRouter harness, "Aletheia ask" (`HR_ASK_HARNESS_ID`, `agents/instructions/ask.md`), checks Aletheia's records first and then the web. Each sentence carries either a filing citation or a web source link. Answers label the two kinds apart. The scope check now accepts general California civic questions. Until the harness is synced, Ask falls back to the records-only general harness.
+- **Interviews:** the voice model says "Alethéia". Interviews run about ten minutes and go deeper. The mid-interview research question is gone; one light mention comes at the end.
+- **Research:** research on a voter's questions is free. Up to four lookups start in parallel as soon as the interview is saved, and results fill in on the results page as they finish. The $4.99 research and $2.99 reports-pass paywalls are gone.
+- **Studies:** sponsors choose the profile fields people fill in (county, age, party, voting plan, city) plus up to three custom multiple-choice fields. Sizes are 20, 50, 100 or 250 interviews, starting at $149. Study interviews are left out of public insights.
+- **From the critical UX review:**
+  - Someone who isn't the interviewee sees a third-person view of an interview.
+  - Reports no longer show raw filing ids.
+  - Setup errors show calm copy.
+  - New: a 404 page, back links, Method sections on web sources and interviews, and the build log in the footer.
+  - Garbled apostrophes in measure titles are fixed.
+- **Ask does more:** a read-only `interview_insights` MCP tool gives the agent aggregate counts from public voter interviews. The agent can also return a study draft; the person reviews it and launches it from the prefilled study builder. The agent never writes to the database.
+- **Ask is bounded:** at most 6 record lookups, 5 citations and 3 web calls. Ask tasks get 30 steps and 180 s. If an incomplete response still holds a valid answer, it is accepted.
+- **Owner scripts:**
+  - `scripts/demo_setup.sh` runs the migration, reset, sample seed, harness sync and one real question.
+  - `scripts/reset_interview_data.py` clears interviews.
+  - `scripts/seed_sample_interviews.py` adds 12 sample interviews and one sample study, each labeled "Sample:".
+
+## Metric
+
+- First real Ask question on the new harness (`chrn_18fe636f951143f8a12157e38a12c87b`) ran about 290 s and ended `incomplete`. That led to the budget above. After the re-sync, the same question ("Who is funding Prop 40, and what does it do?") completed through the app's own `POST /api/investigations` in 80 s. Its summary cites Form 496 independent expenditure reports filed 2026-09-30 to 2026-10-18 (investigation `b8c2cff1-e25b-4e43-83a4-53ebf32dc109`).
+- `bun test`: 294 pass, 1 fail (`schema > defines every expected table`, which already failed before this change).
+- Typecheck passes. Lint has 0 errors. `check:colors` passes.
+- GET returns 200 for `/`, `/ask`, `/interview`, `/interview/insights`, `/interview/studies/new`, `/method`, `/measures/2026/40`, `/corrections`, `/log` and the recorded example. Unknown paths return 404.
+
+## Broke or learned
+
+- Migration `0007_keen_forgotten_one` adds `session.profile`, `session.details`, `study.fields`, `study.interview_target` and `study.price_cents`. It was applied to the dev database with `provision_interview_db.py --migrate-only`, which leaves the role and password unchanged.
+- Interviews started before the owner cookie existed can no longer be connected or finished.
+- Not tested end to end: a live voice interview, background research runs, Stripe study checkout and the web-enabled Ask harness. All of them need writes or paid calls.
+- The dsh base may expose `web_fetch` but no `web_search`. Without search, Ask can only open pages it already has links for.
+- Each finished interview now starts up to four research runs at no charge to anyone.
+
+## Evidence
+
+- Example questions come from existing records: Prop 40 committees and independent expenditures (CAL-ACCESS) and AB 1018 lobbying reports. The recorded example is CAL-ACCESS filing 3214397.
+- Pricing tiers are product choices, not data.

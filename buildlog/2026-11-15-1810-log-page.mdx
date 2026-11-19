@@ -1,0 +1,42 @@
+---
+date: 2026-11-15
+author: agent:log
+reviewer: Luke Kosner
+task: Build /log listing reviewed buildlog entries with four running charts, a share button on human-written entries, and a CI check that fails any PR without a new entry
+---
+
+## Shipped
+
+- **`/log`** (`apps/web/src/app/log/`): lists `buildlog/*.mdx` newest first, showing only entries whose frontmatter `reviewer` is filled in. Unreviewed entries are counted, never quoted. Entry bodies render through a small markdown subset parser (headings, nested bullets, fenced code, inline code/bold/italic/links) rather than an MDX toolchain, so no new dependency.
+- **Four running charts**, server-rendered SVG with no charting dependency and no client JavaScript:
+  - Cost per verified investigation — a day's total `investigation.cost_usd` over the investigations verified that day.
+  - Verifier catch count — `claim` rows with verdict `overstated` or `unsupported`, per day.
+  - Entity-match precision — read from build log frontmatter (`metrics.entity_match_precision`), not the database, since entity resolution reports it per run.
+  - Shares and card views — `event` rows named `share` and `card_view`, per day.
+- Every chart ships a legend when it has two series, a selectively placed end label, per-mark hover titles and a `<details>` table view, so no value is reachable by hover or colour alone. All colours come from theme tokens (`primary`, `chart-2`, `border`, `muted-foreground`); the two-series chart separates its lines by lightness as well as hue so it survives dark mode and colour vision deficiency.
+- **Share button** on human-written entries only (author not `agent:…`). It opens `x.com/intent/post` with the entry's task, its headline metric and `#UHP #TokenRouter #BigHackGame #BeatCal` prefilled, plus a copy-to-clipboard button. It never posts: a person clicks through.
+- **`bun run check:buildlog`** and a `Build log entry` CI job that fails any pull request adding no `buildlog/YYYY-MM-DD-HHMM-slug.mdx`, and also checks the new entry's file name, required frontmatter keys, that `date` matches the file name, and the four required sections.
+- `apps/web` now depends on `@aletheia/db` and `drizzle-orm`. Both already exist in the lockfile as `packages/db` dependencies, so nothing new entered the repo.
+
+## Metric
+
+- 109 bun tests pass (83 before), covering the frontmatter parser, the markdown subset, entry selection and ordering, share text budgeting, chart geometry and the CI check.
+- `/log` builds as a partial prerender: static shell, 1 hour revalidate, three charts streamed at request time. The page renders in 4 states — no database, no reviewed entries, reviewed entries, and data present — all four checked.
+
+## Broke or learned
+
+- **Rule 4 is not satisfiable yet.** Pages are supposed to read data through `packages/tools`, which does not exist (checked `origin/main` after PRs #2, #3 and #10 merged — all Python ingest). The reads live in one module, `apps/web/src/app/log/metrics.ts`, SELECT only, with a `TODO(packages/tools)` to move them wholesale. Nothing else in `apps/web` touches the database. It also reads `DATABASE_URL_READONLY` before `DATABASE_URL` so the page can be pointed at a read-only role.
+- **The queries are unverified against a real database.** Agents do not query the project database and this machine has no local Postgres or Docker, so the SQL was only compiled through drizzle's dialect to confirm it is SELECT-only with correct parameter binding. First run against data may need a fix.
+- `investigation.status` is free text and nothing writes it yet, so "verified" is pinned as `VERIFIED_STATUS` in `metrics.ts` alongside the `share` / `card_view` event names. Whatever writes those rows has to match, or the charts stay empty.
+- `#BeatCal` written as a literal fails `bun run check:colors`: `#Bea` reads as a three-digit hex colour. The hashtags are assembled from their names instead. A narrower fix would be to require a non-word character after a hex match in `scripts/check-colors.ts`, but that is another agent's check.
+- A `markdown.ts` parser next to a `markdown.tsx` renderer silently resolves `./markdown` to the `.tsx`, so the parser's exports vanished at test time. The renderer is now `markdown-view.tsx`.
+- Walking up the tree to find `buildlog/` makes Turbopack trace the whole repository into the server bundle ("Dynamic filesystem access causes tracing of the whole project"). The path is now built from literal segments off `process.cwd()`.
+- Reading the dev server's HTML with `curl` returns a partial stream, which looked like missing bars and a missing second series. The production build's HTML was complete; the charts were always fine.
+
+## Evidence
+
+- `bun run lint` (0 errors), `bun run typecheck`, `bun test` (109 pass, 0 fail) and `bun run check:colors` all pass locally.
+- `bun run build` emits `/log` as `◐ (Partial Prerender)`, revalidate 1h, with no Turbopack warnings.
+- `check:buildlog` was confirmed to fail on this branch before this entry existed, with exit code 1 and the rule-8 message.
+- The four charts were rendered from the production HTML and inspected as an image: gridlines, 2px lines, rounded bar caps with surface gaps, thinned x labels, and both series distinguishable in the shares chart.
+- The share link resolves to `https://x.com/intent/post?text=…%23UHP%20%23TokenRouter%20%23BigHackGame%20%23BeatCal`.

@@ -1,0 +1,42 @@
+---
+date: 2026-11-15
+author: agent:p9-sol
+reviewer: Luke Kosner
+task: P9 private investigation instructions and gated HarnessRouter server integration
+---
+
+## Shipped
+
+- Premerge withdrawal repair: report GET and stream completion now check the unpublished status plus P15 withdrawal/correction tombstones before runtime recovery and content release. Lifecycle updates use an atomic availability predicate, preventing completion/error recovery from resetting withdrawal. Withdrawn GET returns a safe HTTP 410 notice; metadata query failures release no answer. The human setup guide now specifies only `SELECT (name, props)` on `event` in addition to existing lifecycle grants.
+
+- Four bounded standing instruction files for measure funding, bills with every-member vote base rates, institutional footprints and FORM700-gated official interests. All data reads use only the Aletheia MCP tools; `cite` is the existing narrow evidence-recording side effect.
+- PaleBlueDot TokenRouter model configuration: cheap scope classification and a strong writer intended to run through HarnessRouter. The adapter uses the sponsor's documented `api.tokenrouter.com` host, not a similarly named service.
+- Private `POST /api/investigations` with team-session and same-origin checks, validated public target, sanitized SSE progress and recorded citation validation. `GET /api/investigations/[id]` recovers a saved HarnessRouter response and revalidates it. Optional filing title/URL metadata is hydrated through `packages/tools`.
+- Static, server-only investigation lifecycle persistence using a separate configured server connection. No agent or page receives that connection, and no model SQL reaches it. No schema change, new dependency, database operation, harness provisioning, remote task, deployment or public flag change was performed.
+- Runtime stays unavailable until explicitly configured. `verification_status` stays pending; summary/card content cannot bypass sentence-level recorded citation checks. Setup commands, a local-only payload generator, known data-view limits and outstanding acceptance evidence are in `agents/README.md` and `agents/acceptance.md`.
+
+## Metric
+
+- Five additional offline withdrawal tests cover status and tombstone denial before runtime calls, withdrawal during GET recovery/source hydration, withdrawal after a completion write, and metadata query failures. Operational states are mocked; evidence text remains the cited public-record fixture.
+
+- Seventeen offline tests cover withdrawal, missing/foreign/altered citations, uncited summary/card/heading rejection, private-scope rejection, split UTF-8/CRLF SSE, sanitized progress, incomplete-stream recovery, reported token aggregation without double counting and private/same-origin authorization.
+- Full Bun suite: 151 pass, 39 database-dependent skips, zero failures. These are offline tests; no live investigation is claimed.
+- Typecheck and color checks pass. Lint has zero errors and the five existing component warnings.
+
+## Broke or learned
+
+- The existing investigation table stores task metadata but no answer JSON or session ID. Retrieval therefore depends on HarnessRouter response retention; adding durable answer storage requires a separately owned generated database migration.
+- The reviewed HarnessRouter contract does not specify an external TokenRouter provider override. Hard-disabled built-in tools depend on the selected runtime base. Both provider routing and runtime-enforced MCP-only access must be established before enabling `INVESTIGATIONS_RUNTIME_READY`.
+- Cost is stored as null rather than an invented billed amount: the reviewed task response exposes tokens, but no documented total covering both scope extraction and the harness task. Failed/incomplete accounting and billed-cost reconciliation remain outstanding.
+- Twelve requested live acceptance investigations were not run: deployed private MCP, reviewed runtime configuration and imported official-interest data are unavailable to this task. No real claim IDs or completed answer recording was fabricated.
+- Current views lack normalized committee position, donor-state, bill-authorship/committee linkage and jurisdiction fields. Instructions omit unsupported findings instead of inferring them.
+- With cache components enabled, explicit route runtime declarations are incompatible and were removed. The default builder then hit an environment worker-port restriction; the supported alternate builder was used for verification.
+
+## Evidence
+
+- `bun test apps/web/src/app/api/investigations`: 17 pass, zero failures (included in the full suite).
+- `bun test`: 151 pass, 39 skip, zero failures.
+- `bun run typecheck`, `bun run lint` and `bun run check:colors` pass (existing lint warnings noted above).
+- Production verification uses `bun run build --webpack` from `apps/web`; the default Turbopack attempt was blocked by a worker-port restriction in this environment.
+- Offline public-record fixture: committed `packages/tools/test/fixtures/calaccess_slice.json`, filing 3128904, amendment 0, F497P1 line 1, reported date 2026-03-13 and amount $1,175,000.00. Source: https://cal-access.sos.ca.gov/PDFGen/pdfgen.prg?filingid=3128904&amendid=0 and CAL-ACCESS bulk export hash in the fixture/MANIFEST. Test claim/investigation IDs and mocked usage counters are explicitly test infrastructure, not live records.
+- Sponsor endpoint: https://www.tokenrouter.com/docs/zcode-setup/ and https://tokenrouter-backend-api.tokenrouter.com/docs/faq. Models: https://tokenrouter.palebluedot.top/models/. HarnessRouter reference: https://raw.githubusercontent.com/HarnessRouter/plugins/main/plugins/harnessrouter/skills/harnessrouter/references/api-reference.md.

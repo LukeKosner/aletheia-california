@@ -1,0 +1,36 @@
+---
+date: 2026-11-15
+author: agent:setup
+reviewer: Luke Kosner
+task: Set up the monorepo so many agents can work in parallel on separate branches
+---
+
+## Shipped
+
+- Bun monorepo (`apps/*`, `packages/*`) with a Next.js 16 App Router app in `apps/web` (TypeScript strict, Tailwind 4, `src/`), dev server on `PORT` (default 3001).
+- shadcn/ui (preset `b3eNjV3WdM`, Base UI) and AI Elements: conversation, message, prompt-input, suggestion, plan, task, queue, chain-of-thought, inline-citation, sources, shimmer, canvas, node, edge.
+- `packages/db`: Drizzle + postgres schema for all 15 tables, initial migration `drizzle/0000_init.sql`.
+- `py/ingest` and `py/resolve` uv projects on Python 3.12.
+- `apps/web/src/lib/flags.ts` with all flags off by default except `SHOW_INDIVIDUAL_DONORS`.
+- CI: lint, typecheck, `bun test`, `uv run pytest` in both Python projects, raw color check.
+- `AGENTS.md`, `CLAUDE.md`, PR template, `.env.example` files.
+- Free Neon Postgres `aletheia-dev` via the Vercel Marketplace, connected to a new Vercel project `aletheia-investigations` with no Git connection. `drizzle-kit push` created all 15 tables.
+
+## Metric
+
+- 15 of 15 tables created on the Neon dev database; 22 bun tests and 2 pytest smoke tests pass locally.
+
+## Broke or learned
+
+- AI Elements targets Radix-style shadcn components; the preset uses Base UI. Patched type errors in `prompt-input`, `inline-citation` and `plan`: hover-card delays move from Root to Trigger (`delay`, `closeDelay`), dropdown items use `onClick` instead of `onSelect`, and `PlanTrigger` passes props to `CollapsibleTrigger` with `render={<Button />}`.
+- `shimmer` used `#0000` in a gradient; replaced with `transparent` so the color check passes.
+- React Compiler lint rules (`set-state-in-effect`, `static-components`) are warnings, not errors, for vendored `components/ui` and `components/ai-elements`, so upstream updates apply cleanly.
+- `drizzle-kit push` with `strict: true` needs a TTY; in a non-interactive shell it errors. Checked the plan had no drops, then used `--force` on the empty database.
+- `next typegen` runs before `tsc` so `LayoutProps` exists in CI.
+
+## Evidence
+
+- `bun run lint`, `bun run typecheck`, `bun test`, `bun run check:colors`, `uv run pytest` (both projects) all pass locally.
+- CI on PR #1: 3 of 3 checks pass.
+- `information_schema.tables` on Neon lists all 15 tables in `public`.
+- `bun run dev` serves the starter page at http://localhost:3001.

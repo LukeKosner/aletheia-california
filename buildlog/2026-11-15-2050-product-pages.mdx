@@ -1,0 +1,39 @@
+---
+date: 2026-11-15
+author: agent:p10
+reviewer: Luke Kosner
+task: P10 product pages and cited investigation views
+---
+
+## Shipped
+
+- `/` and `/ask` use the installed AI Elements Prompt Input and four question-type Suggestion chips. The funding footprint example uses the real CA Homes Committee record. Other question types ask for a record rather than asserting an unfiled relationship. Name search resolves the selected record through the read-only tools package; users do not enter database identifiers.
+- `/i/[id]` consumes P9 named SSE progress/result/error events and uses Plan, Task, and Queue. Every answer sentence has an Inline Citation with a filing link or an explicit missing-evidence label. Completed answers recover through P9 GET. No verified stamp is shown: the present P9 contract reports verification pending.
+- Preserve the server-provided UUID in the browser URL before consuming a new investigation stream. Interrupted connections can reload the existing job instead of starting another POST; withdrawn reports show an explicit review notice.
+- A recorded example uses CAL-ACCESS filing 3214397, F497P1 line 1, from the committed tools fixture. Its sentence has a null claim identifier and `not_run` verification. It is never represented as an actual completed agent run.
+- `/i/[id]/map` uses the installed Canvas, Node, and Edge components, places donors left and recipients right, and opens filing details from an edge or a keyboard-accessible filing list. Above 200 nodes, smaller donors become a count-only group; amounts are never combined across schedules. Maps with more than 199 recipients ask for a narrower investigation.
+- `/api/records` and `/api/evidence` read only via `@aletheia/tools` (`runQuery` and `getFiling`). They inherit the private team-session gate. Filing hydration uses actual claim evidence identifiers and includes only the cited money edges. Missing or capped evidence is labeled partial.
+- Method, Privacy, and Terms are clearly drafts. Corrections prepares a local report with an explicit notice that submission is not connected.
+- Wrapped shell navigation in Suspense so `usePathname()` works on the new dynamic routes with this Next.js version. Mapped React Flow controls to theme tokens for dark-mode contrast.
+
+## Metric
+
+- Production build passes, including the dynamic investigation and map routes and two read-only evidence routes.
+- `bun test`: 139 passed, 39 skipped (database integration tests require their isolated database), zero failures. Five added checks cover recorded source/amount integrity, SSE chunk boundaries/malformed data, and saved recovery identifiers before body consumption.
+- Lint: zero errors; five existing warnings in installed AI Elements and Carousel files. Workspace typecheck, raw-color check, and diff whitespace check pass.
+- Browser checks: 375px and 1440px, light and dark; recorded answer and map; Sources disclosure with Enter; edge selection and keyboard-accessible filing selection reveal the original filing link. These checks used an ephemeral local team password with PUBLIC_SITE unset/off.
+
+## Broke or learned
+
+- P9 is an independent unmerged PR. No live hosted-agent investigation was run here. Live generation and completed-answer recovery need its route and configured runtime; read-only search/hydration need the existing tools credentials. Missing services leave explicit unavailable states and a link to the recorded example.
+- The source-backed named suggestion currently covers the funding footprint type. Measure, bill/lobbying, and interests chips are neutral question templates requiring the user to choose a public record; this PR does not invent unsupported recent examples for those types.
+- No verifier approval, correction submission service, or public launch is claimed. PUBLIC_SITE and other feature flags were not changed; no database write, migration, dependency, merge, or deployment occurred.
+- The first worktree build failed because dependencies were symlinked outside Turbopack's root, then because font fetches and a CSS-loader subprocess were restricted. Restoring the existing locked dependencies locally and rerunning the build resolved those environment failures. The final build passes.
+- A runtime browser check found shell navigation using `usePathname` outside Suspense on dynamic routes. Added the boundary and verified the error disappeared.
+- The >200 node collapse is implemented but was not exercised with invented public records; the committed real recorded example contains one cited connection.
+
+## Evidence
+
+- Committed source: `packages/tools/test/fixtures/calaccess_slice.json`, CAL-ACCESS bulk export SHA-256 `6b14bf50067fddd45ea5b1bf43ce6fbc62297d8ce4df1b1eaca6c82cfacc9476`, downloaded 2026-11-15.
+- Filing: https://cal-access.sos.ca.gov/PDFGen/pdfgen.prg?filingid=3214397&amendid=0, F497P1 line 1, contribution dated 2026-10-20, amount $3,910,600.00; edge `e24a8221-3de7-3547-b3cc-42f0da6c5953`.
+- Commands: `bun run lint`, `bun run typecheck`, `bun run check:colors`, `bun test`, `bun run build`, `git diff --check`.

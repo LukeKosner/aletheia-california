@@ -1,0 +1,10 @@
+# The web deployment needs apps/, packages/, agents/ and buildlog/ only.
+.claude
+.github
+data
+py
+**/.venv
+**/__pycache__
+**/.env
+**/.env.*
+!**/.env.example

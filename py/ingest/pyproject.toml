@@ -1,0 +1,28 @@
+[project]
+name = "aletheia-ingest"
+version = "0.1.0"
+description = "Download and load California public filings (Cal-Access, legislature, Form 700) into Postgres."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "duckdb>=2.0.0",
+    "httpx>=0.28.1",
+    "polars>=2.1.0",
+    "psycopg[binary]>=3.3.9",
+]
+
+[build-system]
+requires = ["uv_build>=0.9.18,<0.10.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.2.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests", "local/tests"]
+pythonpath = ["."]
+
+[tool.uv.build-backend]
+module-name = ["aletheia_ingest", "ingest"]

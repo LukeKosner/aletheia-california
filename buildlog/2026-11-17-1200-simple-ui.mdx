@@ -1,0 +1,55 @@
+---
+date: 2026-11-17
+author: Claude
+reviewer: Luke Kosner
+task: Redo the UI to be simpler and faster, and make Aletheia useful to residents and organizations as a connection to California government
+---
+
+## Shipped
+
+- New product structure with three entry points: **Legislators** (directory and profiles), **Issues** (who votes on and lobbies on bills about a topic) and **Ask** (the existing cited-investigation runtime). Game and Log are no longer in the header; their routes are unchanged.
+- `/legislators`: all current members, filtered by chamber and by name or district number. Plain GET forms.
+- `/legislators/[id]`: chamber, district, party; reported contributions to the member's own campaign committees (lines with the same contributor, date and amount counted once), top 10 contributors each linked to their latest filing, links to each committee on CAL-ACCESS; recent roll-call votes with a topic filter, each linked to the bill on leginfo; a "Trace this money in detail" link that opens Ask with the committee already chosen.
+- `/search?q=`: name matches, who votes on the matching bills, organizations whose lobbying reports name those bills (limited to the bill's session years), and the bills themselves.
+- Ask: one simple form (kind of question, record picker, question) that accepts `type`, `target` and `name` from the URL. Investigation page: one-line progress with an expandable step list, numbered citations, a single sources list, quieter feedback controls.
+- New look: Geist instead of Newsreader and IBM Plex, a neutral slate palette with one blue accent token (`--stamp`), shorter copy everywhere. Method page rewritten to explain the new figures.
+- Second pass: address lookup (`/api/district`, US Census Geocoder, 2026 state legislative district layers 56 and 58) on the Legislators page; issue search matches every word of the query in bill titles and covers up to 150 bills; separate "most often voted yes" and "most often voted no" lists ranked by share of related bills, current members with at least 30% of the top member's related votes; a `v_bill_authors` view (migration 0003, grant in `packages/tools/sql/grants.sql`) used for "Bills they wrote" on profiles and "Wrote these bills" in issue search once applied; the Form 700 question type is hidden unless `FORM700` is on.
+- Removed: the theme toggle (the site follows the system setting), the footer source line, the verification pill, and the "See an example" links. Every page now uses one `Page` container (same width, gutters and gap-10 rhythm) so content lines up with the header.
+- Third pass: **ballot measures**. Searching "Prop 40" (or words like "billionaire tax") now finds the measure instead of matching "prop" against bill titles. `/measures/[year]/[number]` shows money raised by committees named "Yes on N" / "No on N" in that election (contributor, date and amount counted once per side), the top contributors on each side with filing links, independent spending reported for and against, and other years the number was used. Titles come from the measure name used by the most distinct filers.
+- **Ask is one question box.** A new `general` investigation type takes only a question; a new HarnessRouter harness ("Aletheia general", `agents/instructions/general.md`) picks its own public targets with the same tools and citation rules. The scope check now accepts general questions about California officials, measures, bills, lobbying and campaign money. Example questions submit on click. Links from profiles and measure pages prefill a question.
+- Investigation page: a short live step list (check for done, spinner for current) replaces the dropdown; a saved investigation that is still running checks again every 5 seconds instead of asking for a reload.
+- Measure search ranks committees by how many query words they match ("billionaire taxes" finds Prop 40). "Save as PDF" on legislator and measure pages prints a clean light brief without navigation or controls. Grid sections no longer overflow at phone width.
+- `/measures`: every 2026 measure with money raised by committees named "Yes on N" and "No on N" (top 12 by total), also shown as "Most-funded 2026 ballot measures" on the home page and linked in the header. The query runs in steps (committees by name, then their 2025–2026 contributions in id-filtered chunks under runQuery's 20,000-character SQL limit) and is cached for a day; a cold load takes about 50 seconds, later loads are instant. All-caps measure titles show in sentence case.
+- CSV downloads (`/api/export`) for issue votes, lobbying and bills, measure contributors, and legislator contributors and votes. Cells are quoted and formula-leading characters neutralized.
+- `apps/web/src/lib/gov.ts`: all new reads go through `runQuery` in `packages/tools` (agent_ro, read-only, v_* views), cached for an hour with `"use cache"`. IDs are validated as UUIDs; text is quoted and ILIKE wildcards escaped. `SHOW_INDIVIDUAL_DONORS` off removes people from contributor lists.
+
+## Metric
+
+- Page queries against the dev database: lobbying-by-bill query about 1.4 s, contributor aggregation for one legislator a few seconds; repeat visits are served from cache.
+- `bun test`: 285 run, 0 fail (the theme tests were removed with the toggle; 4 district tests added). Typecheck passes. Lint: 0 errors, warnings only in vendored components. `check:colors` passes.
+
+## Broke or learned
+
+- Form 700 interests (`v_interests`) are empty in the dev database, so that question type is hidden.
+- Address lookup sends the typed address to the US Census Geocoder from our server (POST body, not URL); it is not logged or stored. The privacy notice now says so.
+- Issue search still matches bill titles only (not bill text); lobbying results cover only the matched bills.
+- The yes / no lists show voting records on related bills; they do not show who would support a particular project.
+- A live investigation (investigation `473bf5cd-c0fb-4487-9066-ae7008b2873c`, footprint on committee `3bfee628-90f8-3cbd-8ed8-3536167b27e8`) completed through the local API in 93 seconds with 38 progress events and rendered on the new answer page. Reopening it takes about 20 seconds, because `loadResult` refetches the answer from HarnessRouter each time; answers are still not stored in our database.
+- Answers contain internal keys like `(calaccess:filer:741666)`; the answer page now hides them, and the citations still carry the source.
+- `v_bill_authors` is generated but not applied: a human must run the migration and `grants.sql` on the dev database. Until then the authored-bills sections stay hidden.
+- The local dev server has no team sign-in configured; it was checked with a throwaway local-only secret.
+
+- Measure committees are linked by their own names only; CAL-ACCESS cover-page positions (`CVR_CAMPAIGN_DISCLOSURE` sup_opp_cd) are not ingested yet. A committee named "Yes on 40 … No on 41 & 42" counts toward Yes on 40 and No on 41, but not No on 42.
+- Applying `v_bill_authors` to the dev database was blocked by the agent permission classifier; it still needs a human.
+- The deployed site needs `HR_GENERAL_HARNESS_ID` in its Vercel environment before free-form questions work there.
+
+## Evidence
+
+- Prop 40 (2026): committees named "Yes on 40" reported $34,836,257 from 212 contributors across 5 committees; the largest is "YES ON 40 - BILLIONAIRE TAX NOW - NO ON 41 & 42, Sponsored by SEIU-UHW" (filer 1484470). Committees named "No on 40" include "GOLDEN STATE PROMISE - NO ON PROP 40". Source: CAL-ACCESS Form 460 Schedule A lines in the 2026-11-15 export.
+- Free-form live run: investigation `43126b5a-e044-48b2-81b8-a0674d8d5cd4` ("Who is funding Prop 40, the billionaire tax?") completed with cited sentences, e.g. SEIU-UHW West (filer 1373047) contributions to filer 1484470.
+
+- Example contributor row on the Scott Wiener profile: ACTBLUE CALIFORNIA, 193 contributions, latest 2025-03-23, linked to its CAL-ACCESS filing.
+- Bill links use leginfo's `billNavClient.xhtml?bill_id=` format, e.g. 2025-2026 AB 2110: https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB2110
+- Committee links use CAL-ACCESS committee pages, e.g. filer 1459921: https://cal-access.sos.ca.gov/Campaign/Committees/Detail.aspx?id=1459921
+- Census check: `1315 10th St, Sacramento, CA 95814` (State Capitol) → Assembly District 6, Senate District 8 (fetched 2026-11-17, cited in `apps/web/src/lib/district.test.ts`).
+- Commands: `bun test`, `bun run typecheck`, `bun run lint`, `bun run check:colors`; pages checked in the browser at desktop and 375 px, light and dark.

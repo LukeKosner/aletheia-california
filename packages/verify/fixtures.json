@@ -1,0 +1,1879 @@
+{
+  "_notice": "All originals are statements derived from the cited public records copied below. negative_example strings intentionally make FALSE or disallowed claims for rejection tests; they are not factual records. Edge/entity/filing UUIDs in financial rows are copied from the repository CAL-ACCESS slice. Leginfo DB UUIDs are not available and are never asserted as real: tests assign ephemeral in-memory adapter IDs only.",
+  "_sources": [
+    "Source: CAL-ACCESS bulk export https://campaignfinance.cdn.sos.ca.gov/dbwebexport.zip",
+    "(sha256 6b14bf50067fddd45ea5b1bf43ce6fbc62297d8ce4df1b1eaca6c82cfacc9476, Last-Modified Sun, 15 Nov 2026 09:54:02 GMT,",
+    "see data/raw/MANIFEST.csv), transformed by py/ingest (`--no-db`) into data/work/calaccess.duckdb. Ids are the",
+    "Legislative counts/names: py/ingest/tests/leginfo/fixtures/leginfo_web_votes.json; URL alongside each roll call. No relationship between financial parties and legislators is asserted."
+  ],
+  "fixtures": [
+    {
+      "kind": "amount",
+      "original": {
+        "sentence": "HOMEOWNERSHIP FOR FAMILIES AND TAX SAVINGS FOR SENIORS, SPONSORED BY THE CALIFORNIA ASSOCIATION OF REALTORS, MAJOR FUNDING BY THE CALIFORNIA ASSOCIATION OF REALTORS ISSUES MOBILIZATION PAC reported $9,093.24 on this itemized filing line.",
+        "edge": {
+          "id": "07e4042e-adce-3823-b5eb-9ebf52bb31dd",
+          "from_key": "calaccess:filer:1400190",
+          "to_key": "calaccess:raw:b8004bdfbbbeef449f6670cc12852266",
+          "amount": "9093.24",
+          "date": "2026-01-09",
+          "kind": "expenditure",
+          "filing_id": "3147001",
+          "amend_id": 0,
+          "schedule": "E",
+          "line_item": "6"
+        },
+        "filing": {
+          "id": "273578bd-0113-3083-ac76-13053da291ad",
+          "source": "calaccess",
+          "filing_id": "3147001",
+          "amendment_no": 0,
+          "form": "F460",
+          "filed_at": "2026-04-30 15:58:14",
+          "period_start": "2026-01-01",
+          "period_end": "2026-03-31",
+          "url": "https://cal-access.sos.ca.gov/PDFGen/pdfgen.prg?filingid=3147001&amendid=0"
+        },
+        "from_entity": {
+          "id": "3495fdfc-a25f-3d46-ac24-277ac679445c",
+          "kind": "committee",
+          "name": "HOMEOWNERSHIP FOR FAMILIES AND TAX SAVINGS FOR SENIORS, SPONSORED BY THE CALIFORNIA ASSOCIATION OF REALTORS, MAJOR FUNDING BY THE CALIFORNIA ASSOCIATION OF REALTORS ISSUES MOBILIZATION PAC",
+          "canonical_key": "calaccess:filer:1400190",
+          "attrs": {
+            "source": "calaccess",
+            "filer_id": "1400190",
+            "filer_type": "RECIPIENT COMMITTEE",
+            "status": "ACTIVE"
+          }
+        },
+        "to_entity": {
+          "id": "1e18dfa4-bf49-3570-b4ea-3c84835f77fc",
+          "kind": "org",
+          "name": "REED & DAVIDSON, LLP",
+          "canonical_key": "calaccess:raw:b8004bdfbbbeef449f6670cc12852266",
+          "attrs": {
+            "entity_cd": "OTH",
+            "city": "LOS ANGELES",
+            "state": "CA",
+            "zip": "90071",
+            "source": "calaccess",
+            "temporary": true
+          }
+        },
+        "source": {
+          "filing_id": "3147001",
+          "url": "https://cal-access.sos.ca.gov/PDFGen/pdfgen.prg?filingid=3147001&amendid=0",
+          "schedule": "E",
+          "line_item": "6"
+        }
+      },
+      "negative_example": "HOMEOWNERSHIP FOR FAMILIES AND TAX SAVINGS FOR SENIORS, SPONSORED BY THE CALIFORNIA ASSOCIATION OF REALTORS, MAJOR FUNDING BY THE CALIFORNIA ASSOCIATION OF REALTORS ISSUES MOBILIZATION PAC reported $9,093.25 on this itemized filing line.",
+      "expected_check": "numbers",
+      "expected_code": "number_mismatch"
+    },
+    {
+      "kind": "amount",
+      "original": {
+        "sentence": "HOMEOWNERSHIP FOR FAMILIES AND TAX SAVINGS FOR SENIORS, SPONSORED BY THE CALIFORNIA ASSOCIATION OF REALTORS, MAJOR FUNDING BY THE CALIFORNIA ASSOCIATION OF REALTORS ISSUES MOBILIZATION PAC reported $1,175,000.00 on this itemized filing line.",
+        "edge": {
+          "id": "0cb7484c-19bc-3547-b9c6-815bad481110",
+          "from_key": "calaccess:filer:1400190",
+          "to_key": "calaccess:filer:1481256",
+          "amount": "1175000.00",
+          "date": "2026-03-13",
+          "kind": "contribution",
+          "filing_id": "3128904",
+          "amend_id": 0,
+          "schedule": "F497P1",
+          "line_item": "1"
+        },
+        "filing": {
+          "id": "c7330513-bdaf-362c-a3a9-8be4a9ef7235",
+          "source": "calaccess",
+          "filing_id": "3128904",
+          "amendment_no": 0,
+          "form": "F497",
+          "filed_at": "2026-03-25 16:08:44",
+          "period_start": "2026-03-25",
+          "period_end": "2026-03-25",
+          "url": "https://cal-access.sos.ca.gov/PDFGen/pdfgen.prg?filingid=3128904&amendid=0"
+        },
+        "from_entity": {
+          "id": "3495fdfc-a25f-3d46-ac24-277ac679445c",
+          "kind": "committee",
+          "name": "HOMEOWNERSHIP FOR FAMILIES AND TAX SAVINGS FOR SENIORS, SPONSORED BY THE CALIFORNIA ASSOCIATION OF REALTORS, MAJOR FUNDING BY THE CALIFORNIA ASSOCIATION OF REALTORS ISSUES MOBILIZATION PAC",
+          "canonical_key": "calaccess:filer:1400190",
+          "attrs": {
+            "source": "calaccess",
+            "filer_id": "1400190",
+            "filer_type": "RECIPIENT COMMITTEE",
+            "status": "ACTIVE"
+          }
+        },
+        "to_entity": {
+          "id": "c40cda96-ef13-38b1-935e-c9afca609820",
+          "kind": "committee",
+          "name": "CA HOMES COMMITTEE",
+          "canonical_key": "calaccess:filer:1481256",
+          "attrs": {
+            "source": "calaccess",
+            "filer_id": "1481256",
+            "filer_type": "RECIPIENT COMMITTEE",
+            "status": "ACTIVE"
+          }
+        },
+        "source": {
+          "filing_id": "3128904",
+          "url": "https://cal-access.sos.ca.gov/PDFGen/pdfgen.prg?filingid=3128904&amendid=0",
+          "schedule": "F497P1",
+          "line_item": "1"
+        }
+      },
+      "negative_example": "HOMEOWNERSHIP FOR FAMILIES AND TAX SAVINGS FOR SENIORS, SPONSORED BY THE CALIFORNIA ASSOCIATION OF REALTORS, MAJOR FUNDING BY THE CALIFORNIA ASSOCIATION OF REALTORS ISSUES MOBILIZATION PAC reported $1,175,000.01 on this itemized filing line.",
+      "expected_check": "numbers",
+      "expected_code": "number_mismatch"
+    },
+    {
+      "kind": "amount",
+      "original": {
+        "sentence": "HOMEOWNERSHIP FOR FAMILIES AND TAX SAVINGS FOR SENIORS, SPONSORED BY THE CALIFORNIA ASSOCIATION OF REALTORS, MAJOR FUNDING BY THE CALIFORNIA ASSOCIATION OF REALTORS ISSUES MOBILIZATION PAC reported $950,000.00 on this itemized filing line.",
+        "edge": {
+          "id": "0f0ccf2d-ec6c-395f-9f5d-8ba04464a391",
+          "from_key": "calaccess:filer:1400190",
+          "to_key": "calaccess:filer:1481256",
+          "amount": "950000.00",
+          "date": "2026-01-08",
+          "kind": "contribution",
+          "filing_id": "3145958",
+          "amend_id": 0,
+          "schedule": "A",
+          "line_item": "2"
+        },
+        "filing": {
+          "id": "270ac439-7a40-36c4-9e02-feba48132fac",
+          "source": "calaccess",
+          "filing_id": "3145958",
+          "amendment_no": 0,
+          "form": "F460",
+          "filed_at": "2026-04-30 12:47:52",
+          "period_start": "2026-01-01",
+          "period_end": "2026-03-31",
+          "url": "https://cal-access.sos.ca.gov/PDFGen/pdfgen.prg?filingid=3145958&amendid=0"
+        },
+        "from_entity": {
+          "id": "3495fdfc-a25f-3d46-ac24-277ac679445c",
+          "kind": "committee",
+          "name": "HOMEOWNERSHIP FOR FAMILIES AND TAX SAVINGS FOR SENIORS, SPONSORED BY THE CALIFORNIA ASSOCIATION OF REALTORS, MAJOR FUNDING BY THE CALIFORNIA ASSOCIATION OF REALTORS ISSUES MOBILIZATION PAC",
+          "canonical_key": "calaccess:filer:1400190",
+          "attrs": {
+            "source": "calaccess",
+            "filer_id": "1400190",
+            "filer_type": "RECIPIENT COMMITTEE",
+            "status": "ACTIVE"
+          }
+        },
+        "to_entity": {
+          "id": "c40cda96-ef13-38b1-935e-c9afca609820",
+          "kind": "committee",
+          "name": "CA HOMES COMMITTEE",
+          "canonical_key": "calaccess:filer:1481256",
+          "attrs": {
+            "source": "calaccess",
+            "filer_id": "1481256",
+            "filer_type": "RECIPIENT COMMITTEE",
+            "status": "ACTIVE"
+          }
+        },
+        "source": {
+          "filing_id": "3145958",
+          "url": "https://cal-access.sos.ca.gov/PDFGen/pdfgen.prg?filingid=3145958&amendid=0",
+          "schedule": "A",
+          "line_item": "2"
+        }
+      },
+      "negative_example": "HOMEOWNERSHIP FOR FAMILIES AND TAX SAVINGS FOR SENIORS, SPONSORED BY THE CALIFORNIA ASSOCIATION OF REALTORS, MAJOR FUNDING BY THE CALIFORNIA ASSOCIATION OF REALTORS ISSUES MOBILIZATION PAC reported $950,000.01 on this itemized filing line.",
+      "expected_check": "numbers",
+      "expected_code": "number_mismatch"
+    },
+    {
+      "kind": "amount",
+      "original": {
+        "sentence": "CALIFORNIA ASSOCIATION OF REALTORS ISSUES MOBILIZATION PAC reported $3,000,000.00 on this itemized filing line.",
+        "edge": {
+          "id": "0f1e38ea-6946-39b8-9c91-9eecf34c578d",
+          "from_key": "calaccess:filer:782560",
+          "to_key": "calaccess:filer:1400190",
+          "amount": "3000000.00",
+          "date": "2026-05-18",
+          "kind": "expenditure",
+          "filing_id": "3171269",
+          "amend_id": 0,
+          "schedule": "E",
+          "line_item": "30"
+        },
+        "filing": {
+          "id": "864d1b9e-23c1-3fa0-b9b6-a4cab150e54c",
+          "source": "calaccess",
+          "filing_id": "3171269",
+          "amendment_no": 0,
+          "form": "F460",
+          "filed_at": "2026-07-24 10:50:08",
+          "period_start": "2026-05-17",
+          "period_end": "2026-06-30",
+          "url": "https://cal-access.sos.ca.gov/PDFGen/pdfgen.prg?filingid=3171269&amendid=0"
+        },
+        "from_entity": {
+          "id": "a28e8319-67b9-391a-a707-218c2dd05e0c",
+          "kind": "committee",
+          "name": "CALIFORNIA ASSOCIATION OF REALTORS ISSUES MOBILIZATION PAC",
+          "canonical_key": "calaccess:filer:782560",
+          "attrs": {
+            "source": "calaccess",
+            "filer_id": "782560",
+            "filer_type": null,
+            "status": null
+          }
+        },
+        "to_entity": {
+          "id": "3495fdfc-a25f-3d46-ac24-277ac679445c",
+          "kind": "committee",
+          "name": "HOMEOWNERSHIP FOR FAMILIES AND TAX SAVINGS FOR SENIORS, SPONSORED BY THE CALIFORNIA ASSOCIATION OF REALTORS, MAJOR FUNDING BY THE CALIFORNIA ASSOCIATION OF REALTORS ISSUES MOBILIZATION PAC",
+          "canonical_key": "calaccess:filer:1400190",
+          "attrs": {
+            "source": "calaccess",
+            "filer_id": "1400190",
+            "filer_type": "RECIPIENT COMMITTEE",
+            "status": "ACTIVE"
+          }
+        },
+        "source": {
+          "filing_id": "3171269",
+          "url": "https://cal-access.sos.ca.gov/PDFGen/pdfgen.prg?filingid=3171269&amendid=0",
+          "schedule": "E",
+          "line_item": "30"
+        }
+      },
+      "negative_example": "CALIFORNIA ASSOCIATION OF REALTORS ISSUES MOBILIZATION PAC reported $3,000,000.01 on this itemized filing line.",
+      "expected_check": "numbers",
+      "expected_code": "number_mismatch"
+    },
+    {
+      "kind": "amount",
+      "original": {
+        "sentence": "CALIFORNIA ASSOCIATION OF REALTORS ISSUES MOBILIZATION PAC reported $1,000,000.00 on this itemized filing line.",
+        "edge": {
+          "id": "111134e9-5d1a-35c8-864a-da0919e2cdc4",
+          "from_key": "calaccess:filer:782560",
+          "to_key": "calaccess:filer:1400190",
+          "amount": "1000000.00",
+          "date": "2026-01-23",
+          "kind": "contribution",
+          "filing_id": "3136552",
+          "amend_id": 1,
+          "schedule": "E",
+          "line_item": "35"
+        },
+        "filing": {
+          "id": "add9f45b-4523-33f3-a091-eaa3a3726ce2",
+          "source": "calaccess",
+          "filing_id": "3136552",
+          "amendment_no": 1,
+          "form": "F460",
+          "filed_at": "2026-07-24 10:49:43",
+          "period_start": "2026-01-01",
+          "period_end": "2026-04-18",
+          "url": "https://cal-access.sos.ca.gov/PDFGen/pdfgen.prg?filingid=3136552&amendid=1"
+        },
+        "from_entity": {
+          "id": "a28e8319-67b9-391a-a707-218c2dd05e0c",
+          "kind": "committee",
+          "name": "CALIFORNIA ASSOCIATION OF REALTORS ISSUES MOBILIZATION PAC",
+          "canonical_key": "calaccess:filer:782560",
+          "attrs": {
+            "source": "calaccess",
+            "filer_id": "782560",
+            "filer_type": null,
+            "status": null
+          }
+        },
+        "to_entity": {
+          "id": "3495fdfc-a25f-3d46-ac24-277ac679445c",
+          "kind": "committee",
+          "name": "HOMEOWNERSHIP FOR FAMILIES AND TAX SAVINGS FOR SENIORS, SPONSORED BY THE CALIFORNIA ASSOCIATION OF REALTORS, MAJOR FUNDING BY THE CALIFORNIA ASSOCIATION OF REALTORS ISSUES MOBILIZATION PAC",
+          "canonical_key": "calaccess:filer:1400190",
+          "attrs": {
+            "source": "calaccess",
+            "filer_id": "1400190",
+            "filer_type": "RECIPIENT COMMITTEE",
+            "status": "ACTIVE"
+          }
+        },
+        "source": {
+          "filing_id": "3136552",
+          "url": "https://cal-access.sos.ca.gov/PDFGen/pdfgen.prg?filingid=3136552&amendid=1",
+          "schedule": "E",
+          "line_item": "35"
+        }
+      },
+      "negative_example": "CALIFORNIA ASSOCIATION OF REALTORS ISSUES MOBILIZATION PAC reported $1,000,000.01 on this itemized filing line.",
+      "expected_check": "numbers",
+      "expected_code": "number_mismatch"
+    },
+    {
+      "kind": "amount",
+      "original": {
+        "sentence": "HOMEOWNERSHIP FOR FAMILIES AND TAX SAVINGS FOR SENIORS, SPONSORED BY THE CALIFORNIA ASSOCIATION OF REALTORS, MAJOR FUNDING BY THE CALIFORNIA ASSOCIATION OF REALTORS ISSUES MOBILIZATION PAC reported $1,000,000.00 on this itemized filing line.",
+        "edge": {
+          "id": "12deca16-9697-3669-90fd-253df927218c",
+          "from_key": "calaccess:filer:1400190",
+          "to_key": "calaccess:filer:1481256",
+          "amount": "1000000.00",
+          "date": "2025-11-07",
+          "kind": "contribution",
+          "filing_id": "3107043",
+          "amend_id": 0,
+          "schedule": "E",
+          "line_item": "3"
+        },
+        "filing": {
+          "id": "1b1811d9-c16e-3e69-89da-e2ff59afa33b",
+          "source": "calaccess",
+          "filing_id": "3107043",
+          "amendment_no": 0,
+          "form": "F460",
+          "filed_at": "2026-01-28 11:42:27",
+          "period_start": "2025-07-01",
+          "period_end": "2025-12-31",
+          "url": "https://cal-access.sos.ca.gov/PDFGen/pdfgen.prg?filingid=3107043&amendid=0"
+        },
+        "from_entity": {
+          "id": "3495fdfc-a25f-3d46-ac24-277ac679445c",
+          "kind": "committee",
+          "name": "HOMEOWNERSHIP FOR FAMILIES AND TAX SAVINGS FOR SENIORS, SPONSORED BY THE CALIFORNIA ASSOCIATION OF REALTORS, MAJOR FUNDING BY THE CALIFORNIA ASSOCIATION OF REALTORS ISSUES MOBILIZATION PAC",
+          "canonical_key": "calaccess:filer:1400190",
+          "attrs": {
+            "source": "calaccess",
+            "filer_id": "1400190",
+            "filer_type": "RECIPIENT COMMITTEE",
+            "status": "ACTIVE"
+          }
+        },
+        "to_entity": {
+          "id": "c40cda96-ef13-38b1-935e-c9afca609820",
+          "kind": "committee",
+          "name": "CA HOMES COMMITTEE",
+          "canonical_key": "calaccess:filer:1481256",
+          "attrs": {
+            "source": "calaccess",
+            "filer_id": "1481256",
+            "filer_type": "RECIPIENT COMMITTEE",
+            "status": "ACTIVE"
+          }
+        },
+        "source": {
+          "filing_id": "3107043",
+          "url": "https://cal-access.sos.ca.gov/PDFGen/pdfgen.prg?filingid=3107043&amendid=0",
+          "schedule": "E",
+          "line_item": "3"
+        }
+      },
+      "negative_example": "HOMEOWNERSHIP FOR FAMILIES AND TAX SAVINGS FOR SENIORS, SPONSORED BY THE CALIFORNIA ASSOCIATION OF REALTORS, MAJOR FUNDING BY THE CALIFORNIA ASSOCIATION OF REALTORS ISSUES MOBILIZATION PAC reported $1,000,000.01 on this itemized filing line.",
+      "expected_check": "numbers",
+      "expected_code": "number_mismatch"
+    },
+    {
+      "kind": "amount",
+      "original": {
+        "sentence": "CALIFORNIA ASSOCIATION OF REALTORS ISSUES MOBILIZATION PAC reported $1,000,000.00 on this itemized filing line.",
+        "edge": {
+          "id": "1303d8af-b3aa-3bcd-a9f0-e34083765695",
+          "from_key": "calaccess:filer:782560",
+          "to_key": "calaccess:filer:1400190",
+          "amount": "1000000.00",
+          "date": "2026-01-23",
+          "kind": "contribution",
+          "filing_id": "3118614",
+          "amend_id": 0,
+          "schedule": "F497P2",
+          "line_item": "1"
+        },
+        "filing": {
+          "id": "84045891-d20d-3131-af43-bed197fb6838",
+          "source": "calaccess",
+          "filing_id": "3118614",
+          "amendment_no": 0,
+          "form": "F497",
+          "filed_at": "2026-02-06 11:55:05",
+          "period_start": "2026-02-06",
+          "period_end": "2026-02-06",
+          "url": "https://cal-access.sos.ca.gov/PDFGen/pdfgen.prg?filingid=3118614&amendid=0"
+        },
+        "from_entity": {
+          "id": "a28e8319-67b9-391a-a707-218c2dd05e0c",
+          "kind": "committee",
+          "name": "CALIFORNIA ASSOCIATION OF REALTORS ISSUES MOBILIZATION PAC",
+          "canonical_key": "calaccess:filer:782560",
+          "attrs": {
+            "source": "calaccess",
+            "filer_id": "782560",
+            "filer_type": null,
+            "status": null
+          }
+        },
+        "to_entity": {
+          "id": "3495fdfc-a25f-3d46-ac24-277ac679445c",
+          "kind": "committee",
+          "name": "HOMEOWNERSHIP FOR FAMILIES AND TAX SAVINGS FOR SENIORS, SPONSORED BY THE CALIFORNIA ASSOCIATION OF REALTORS, MAJOR FUNDING BY THE CALIFORNIA ASSOCIATION OF REALTORS ISSUES MOBILIZATION PAC",
+          "canonical_key": "calaccess:filer:1400190",
+          "attrs": {
+            "source": "calaccess",
+            "filer_id": "1400190",
+            "filer_type": "RECIPIENT COMMITTEE",
+            "status": "ACTIVE"
+          }
+        },
+        "source": {
+          "filing_id": "3118614",
+          "url": "https://cal-access.sos.ca.gov/PDFGen/pdfgen.prg?filingid=3118614&amendid=0",
+          "schedule": "F497P2",
+          "line_item": "1"
+        }
+      },
+      "negative_example": "CALIFORNIA ASSOCIATION OF REALTORS ISSUES MOBILIZATION PAC reported $1,000,000.01 on this itemized filing line.",
+      "expected_check": "numbers",
+      "expected_code": "number_mismatch"
+    },
+    {
+      "kind": "amount",
+      "original": {
+        "sentence": "HOMEOWNERSHIP FOR FAMILIES AND TAX SAVINGS FOR SENIORS, SPONSORED BY THE CALIFORNIA ASSOCIATION OF REALTORS, MAJOR FUNDING BY THE CALIFORNIA ASSOCIATION OF REALTORS ISSUES MOBILIZATION PAC reported $1,000,000.00 on this itemized filing line.",
+        "edge": {
+          "id": "1350b4d3-4138-326b-b278-7f2617e379c7",
+          "from_key": "calaccess:filer:1400190",
+          "to_key": "calaccess:filer:1481256",
+          "amount": "1000000.00",
+          "date": "2025-11-07",
+          "kind": "contribution",
+          "filing_id": "3094206",
+          "amend_id": 0,
+          "schedule": "F497P2",
+          "line_item": "1"
+        },
+        "filing": {
+          "id": "f0e2da08-2ed9-3f11-90a4-ebf86474ec34",
+          "source": "calaccess",
+          "filing_id": "3094206",
+          "amendment_no": 0,
+          "form": "F497",
+          "filed_at": "2025-11-17 15:41:30",
+          "period_start": "2025-11-17",
+          "period_end": "2025-11-17",
+          "url": "https://cal-access.sos.ca.gov/PDFGen/pdfgen.prg?filingid=3094206&amendid=0"
+        },
+        "from_entity": {
+          "id": "3495fdfc-a25f-3d46-ac24-277ac679445c",
+          "kind": "committee",
+          "name": "HOMEOWNERSHIP FOR FAMILIES AND TAX SAVINGS FOR SENIORS, SPONSORED BY THE CALIFORNIA ASSOCIATION OF REALTORS, MAJOR FUNDING BY THE CALIFORNIA ASSOCIATION OF REALTORS ISSUES MOBILIZATION PAC",
+          "canonical_key": "calaccess:filer:1400190",
+          "attrs": {
+            "source": "calaccess",
+            "filer_id": "1400190",
+            "filer_type": "RECIPIENT COMMITTEE",
+            "status": "ACTIVE"
+          }
+        },
+        "to_entity": {
+          "id": "c40cda96-ef13-38b1-935e-c9afca609820",
+          "kind": "committee",
+          "name": "CA HOMES COMMITTEE",
+          "canonical_key": "calaccess:filer:1481256",
+          "attrs": {
+            "source": "calaccess",
+            "filer_id": "1481256",
+            "filer_type": "RECIPIENT COMMITTEE",
+            "status": "ACTIVE"
+          }
+        },
+        "source": {
+          "filing_id": "3094206",
+          "url": "https://cal-access.sos.ca.gov/PDFGen/pdfgen.prg?filingid=3094206&amendid=0",
+          "schedule": "F497P2",
+          "line_item": "1"
+        }
+      },
+      "negative_example": "HOMEOWNERSHIP FOR FAMILIES AND TAX SAVINGS FOR SENIORS, SPONSORED BY THE CALIFORNIA ASSOCIATION OF REALTORS, MAJOR FUNDING BY THE CALIFORNIA ASSOCIATION OF REALTORS ISSUES MOBILIZATION PAC reported $1,000,000.01 on this itemized filing line.",
+      "expected_check": "numbers",
+      "expected_code": "number_mismatch"
+    },
+    {
+      "kind": "amount",
+      "original": {
+        "sentence": "HOMEOWNERSHIP FOR FAMILIES AND TAX SAVINGS FOR SENIORS, SPONSORED BY THE CALIFORNIA ASSOCIATION OF REALTORS, MAJOR FUNDING BY THE CALIFORNIA ASSOCIATION OF REALTORS ISSUES MOBILIZATION PAC reported $3,832.48 on this itemized filing line.",
+        "edge": {
+          "id": "15c5bd26-6b8e-3086-aad0-36f909ea5b88",
+          "from_key": "calaccess:filer:1400190",
+          "to_key": "calaccess:raw:719773a36cde7d3ae84020794fa2525d",
+          "amount": "3832.48",
+          "date": "2026-05-12",
+          "kind": "expenditure",
+          "filing_id": "3172602",
+          "amend_id": 0,
+          "schedule": "E",
+          "line_item": "4"
+        },
+        "filing": {
+          "id": "e032620d-3154-3100-a437-d3637f66ed08",
+          "source": "calaccess",
+          "filing_id": "3172602",
+          "amendment_no": 0,
+          "form": "F460",
+          "filed_at": "2026-07-27 14:48:06",
+          "period_start": "2026-04-01",
+          "period_end": "2026-06-30",
+          "url": "https://cal-access.sos.ca.gov/PDFGen/pdfgen.prg?filingid=3172602&amendid=0"
+        },
+        "from_entity": {
+          "id": "3495fdfc-a25f-3d46-ac24-277ac679445c",
+          "kind": "committee",
+          "name": "HOMEOWNERSHIP FOR FAMILIES AND TAX SAVINGS FOR SENIORS, SPONSORED BY THE CALIFORNIA ASSOCIATION OF REALTORS, MAJOR FUNDING BY THE CALIFORNIA ASSOCIATION OF REALTORS ISSUES MOBILIZATION PAC",
+          "canonical_key": "calaccess:filer:1400190",
+          "attrs": {
+            "source": "calaccess",
+            "filer_id": "1400190",
+            "filer_type": "RECIPIENT COMMITTEE",
+            "status": "ACTIVE"
+          }
+        },
+        "to_entity": {
+          "id": "b96a07f0-6637-3fda-9608-7090845daa7a",
+          "kind": "org",
+          "name": "CALIFORNIA ASSOCIATION OF REALTORS",
+          "canonical_key": "calaccess:raw:719773a36cde7d3ae84020794fa2525d",
+          "attrs": {
+            "entity_cd": "OTH",
+            "city": "LOS ANGELES",
+            "state": "CA",
+            "zip": "90020",
+            "source": "calaccess",
+            "temporary": true
+          }
+        },
+        "source": {
+          "filing_id": "3172602",
+          "url": "https://cal-access.sos.ca.gov/PDFGen/pdfgen.prg?filingid=3172602&amendid=0",
+          "schedule": "E",
+          "line_item": "4"
+        }
+      },
+      "negative_example": "HOMEOWNERSHIP FOR FAMILIES AND TAX SAVINGS FOR SENIORS, SPONSORED BY THE CALIFORNIA ASSOCIATION OF REALTORS, MAJOR FUNDING BY THE CALIFORNIA ASSOCIATION OF REALTORS ISSUES MOBILIZATION PAC reported $3,832.49 on this itemized filing line.",
+      "expected_check": "numbers",
+      "expected_code": "number_mismatch"
+    },
+    {
+      "kind": "amount",
+      "original": {
+        "sentence": "HOMEOWNERSHIP FOR FAMILIES AND TAX SAVINGS FOR SENIORS, SPONSORED BY THE CALIFORNIA ASSOCIATION OF REALTORS, MAJOR FUNDING BY THE CALIFORNIA ASSOCIATION OF REALTORS ISSUES MOBILIZATION PAC reported $1,175,000.00 on this itemized filing line.",
+        "edge": {
+          "id": "1823a078-89fc-3ddd-9617-6c489c3736e4",
+          "from_key": "calaccess:filer:1400190",
+          "to_key": "calaccess:raw:c7ac799f1492a719bfccd6ae06669c7e",
+          "amount": "1175000.00",
+          "date": "2026-03-13",
+          "kind": "contribution",
+          "filing_id": "3147001",
+          "amend_id": 0,
+          "schedule": "D",
+          "line_item": "2"
+        },
+        "filing": {
+          "id": "273578bd-0113-3083-ac76-13053da291ad",
+          "source": "calaccess",
+          "filing_id": "3147001",
+          "amendment_no": 0,
+          "form": "F460",
+          "filed_at": "2026-04-30 15:58:14",
+          "period_start": "2026-01-01",
+          "period_end": "2026-03-31",
+          "url": "https://cal-access.sos.ca.gov/PDFGen/pdfgen.prg?filingid=3147001&amendid=0"
+        },
+        "from_entity": {
+          "id": "3495fdfc-a25f-3d46-ac24-277ac679445c",
+          "kind": "committee",
+          "name": "HOMEOWNERSHIP FOR FAMILIES AND TAX SAVINGS FOR SENIORS, SPONSORED BY THE CALIFORNIA ASSOCIATION OF REALTORS, MAJOR FUNDING BY THE CALIFORNIA ASSOCIATION OF REALTORS ISSUES MOBILIZATION PAC",
+          "canonical_key": "calaccess:filer:1400190",
+          "attrs": {
+            "source": "calaccess",
+            "filer_id": "1400190",
+            "filer_type": "RECIPIENT COMMITTEE",
+            "status": "ACTIVE"
+          }
+        },
+        "to_entity": {
+          "id": "a5dbc815-4ac2-32ad-9583-c3591a547175",
+          "kind": "committee",
+          "name": "CA Homes Committee",
+          "canonical_key": "calaccess:raw:c7ac799f1492a719bfccd6ae06669c7e",
+          "attrs": {
+            "entity_cd": "COM",
+            "city": "Sacramento",
+            "state": "CA",
+            "zip": "95815",
+            "source": "calaccess",
+            "temporary": true
+          }
+        },
+        "source": {
+          "filing_id": "3147001",
+          "url": "https://cal-access.sos.ca.gov/PDFGen/pdfgen.prg?filingid=3147001&amendid=0",
+          "schedule": "D",
+          "line_item": "2"
+        }
+      },
+      "negative_example": "HOMEOWNERSHIP FOR FAMILIES AND TAX SAVINGS FOR SENIORS, SPONSORED BY THE CALIFORNIA ASSOCIATION OF REALTORS, MAJOR FUNDING BY THE CALIFORNIA ASSOCIATION OF REALTORS ISSUES MOBILIZATION PAC reported $1,175,000.01 on this itemized filing line.",
+      "expected_check": "numbers",
+      "expected_code": "number_mismatch"
+    },
+    {
+      "kind": "name",
+      "original": {
+        "sentence": "CALIFORNIA ASSOCIATION OF REALTORS ISSUES MOBILIZATION PAC reported $3,000,000.00 on this itemized filing line.",
+        "edge": {
+          "id": "1d69f490-65ab-3cab-a993-16335b54343c",
+          "from_key": "calaccess:filer:782560",
+          "to_key": "calaccess:filer:1400190",
+          "amount": "3000000.00",
+          "date": "2026-05-18",
+          "kind": "contribution",
+          "filing_id": "3162408",
+          "amend_id": 0,
+          "schedule": "F497P1",
+          "line_item": "1"
+        },
+        "filing": {
+          "id": "881be788-02ea-39cf-842b-5cb4aa39a0e8",
+          "source": "calaccess",
+          "filing_id": "3162408",
+          "amendment_no": 0,
+          "form": "F497",
+          "filed_at": "2026-06-02 17:33:57",
+          "period_start": "2026-06-02",
+          "period_end": "2026-06-02",
+          "url": "https://cal-access.sos.ca.gov/PDFGen/pdfgen.prg?filingid=3162408&amendid=0"
+        },
+        "from_entity": {
+          "id": "a28e8319-67b9-391a-a707-218c2dd05e0c",
+          "kind": "committee",
+          "name": "CALIFORNIA ASSOCIATION OF REALTORS ISSUES MOBILIZATION PAC",
+          "canonical_key": "calaccess:filer:782560",
+          "attrs": {
+            "source": "calaccess",
+            "filer_id": "782560",
+            "filer_type": null,
+            "status": null
+          }
+        },
+        "to_entity": {
+          "id": "3495fdfc-a25f-3d46-ac24-277ac679445c",
+          "kind": "committee",
+          "name": "HOMEOWNERSHIP FOR FAMILIES AND TAX SAVINGS FOR SENIORS, SPONSORED BY THE CALIFORNIA ASSOCIATION OF REALTORS, MAJOR FUNDING BY THE CALIFORNIA ASSOCIATION OF REALTORS ISSUES MOBILIZATION PAC",
+          "canonical_key": "calaccess:filer:1400190",
+          "attrs": {
+            "source": "calaccess",
+            "filer_id": "1400190",
+            "filer_type": "RECIPIENT COMMITTEE",
+            "status": "ACTIVE"
+          }
+        },
+        "source": {
+          "filing_id": "3162408",
+          "url": "https://cal-access.sos.ca.gov/PDFGen/pdfgen.prg?filingid=3162408&amendid=0",
+          "schedule": "F497P1",
+          "line_item": "1"
+        }
+      },
+      "negative_example": "HOMEOWNERSHIP FOR FAMILIES AND TAX SAVINGS FOR SENIORS, SPONSORED BY THE CALIFORNIA ASSOCIATION OF REALTORS, MAJOR FUNDING BY THE CALIFORNIA ASSOCIATION OF REALTORS ISSUES MOBILIZATION PAC reported $3,000,000.00 on this itemized filing line.",
+      "replacement_name": "HOMEOWNERSHIP FOR FAMILIES AND TAX SAVINGS FOR SENIORS, SPONSORED BY THE CALIFORNIA ASSOCIATION OF REALTORS, MAJOR FUNDING BY THE CALIFORNIA ASSOCIATION OF REALTORS ISSUES MOBILIZATION PAC",
+      "expected_check": "identity",
+      "expected_code": "name_mismatch"
+    },
+    {
+      "kind": "name",
+      "original": {
+        "sentence": "HOMEOWNERSHIP FOR FAMILIES AND TAX SAVINGS FOR SENIORS, SPONSORED BY THE CALIFORNIA ASSOCIATION OF REALTORS, MAJOR FUNDING BY THE CALIFORNIA ASSOCIATION OF REALTORS ISSUES MOBILIZATION PAC reported $6,932.26 on this itemized filing line.",
+        "edge": {
+          "id": "1edf54c7-ee95-3089-a1ad-bf105405ea1f",
+          "from_key": "calaccess:filer:1400190",
+          "to_key": "calaccess:raw:b8004bdfbbbeef449f6670cc12852266",
+          "amount": "6932.26",
+          "date": "2025-09-11",
+          "kind": "expenditure",
+          "filing_id": "3107043",
+          "amend_id": 0,
+          "schedule": "E",
+          "line_item": "5"
+        },
+        "filing": {
+          "id": "1b1811d9-c16e-3e69-89da-e2ff59afa33b",
+          "source": "calaccess",
+          "filing_id": "3107043",
+          "amendment_no": 0,
+          "form": "F460",
+          "filed_at": "2026-01-28 11:42:27",
+          "period_start": "2025-07-01",
+          "period_end": "2025-12-31",
+          "url": "https://cal-access.sos.ca.gov/PDFGen/pdfgen.prg?filingid=3107043&amendid=0"
+        },
+        "from_entity": {
+          "id": "3495fdfc-a25f-3d46-ac24-277ac679445c",
+          "kind": "committee",
+          "name": "HOMEOWNERSHIP FOR FAMILIES AND TAX SAVINGS FOR SENIORS, SPONSORED BY THE CALIFORNIA ASSOCIATION OF REALTORS, MAJOR FUNDING BY THE CALIFORNIA ASSOCIATION OF REALTORS ISSUES MOBILIZATION PAC",
+          "canonical_key": "calaccess:filer:1400190",
+          "attrs": {
+            "source": "calaccess",
+            "filer_id": "1400190",
+            "filer_type": "RECIPIENT COMMITTEE",
+            "status": "ACTIVE"
+          }
+        },
+        "to_entity": {
+          "id": "1e18dfa4-bf49-3570-b4ea-3c84835f77fc",
+          "kind": "org",
+          "name": "REED & DAVIDSON, LLP",
+          "canonical_key": "calaccess:raw:b8004bdfbbbeef449f6670cc12852266",
+          "attrs": {
+            "entity_cd": "OTH",
+            "city": "LOS ANGELES",
+            "state": "CA",
+            "zip": "90071",
+            "source": "calaccess",
+            "temporary": true
+          }
+        },
+        "source": {
+          "filing_id": "3107043",
+          "url": "https://cal-access.sos.ca.gov/PDFGen/pdfgen.prg?filingid=3107043&amendid=0",
+          "schedule": "E",
+          "line_item": "5"
+        }
+      },
+      "negative_example": "CA HOMES COMMITTEE reported $6,932.26 on this itemized filing line.",
+      "replacement_name": "CA HOMES COMMITTEE",
+      "expected_check": "identity",
+      "expected_code": "name_mismatch"
+    },
+    {
+      "kind": "name",
+      "original": {
+        "sentence": "HOMEOWNERSHIP FOR FAMILIES AND TAX SAVINGS FOR SENIORS, SPONSORED BY THE CALIFORNIA ASSOCIATION OF REALTORS, MAJOR FUNDING BY THE CALIFORNIA ASSOCIATION OF REALTORS ISSUES MOBILIZATION PAC reported $2,130.56 on this itemized filing line.",
+        "edge": {
+          "id": "26abb231-3820-3141-856a-ee7863d4c33e",
+          "from_key": "calaccess:filer:1400190",
+          "to_key": "calaccess:raw:719773a36cde7d3ae84020794fa2525d",
+          "amount": "2130.56",
+          "date": "2026-05-12",
+          "kind": "expenditure",
+          "filing_id": "3172602",
+          "amend_id": 0,
+          "schedule": "E",
+          "line_item": "6"
+        },
+        "filing": {
+          "id": "e032620d-3154-3100-a437-d3637f66ed08",
+          "source": "calaccess",
+          "filing_id": "3172602",
+          "amendment_no": 0,
+          "form": "F460",
+          "filed_at": "2026-07-27 14:48:06",
+          "period_start": "2026-04-01",
+          "period_end": "2026-06-30",
+          "url": "https://cal-access.sos.ca.gov/PDFGen/pdfgen.prg?filingid=3172602&amendid=0"
+        },
+        "from_entity": {
+          "id": "3495fdfc-a25f-3d46-ac24-277ac679445c",
+          "kind": "committee",
+          "name": "HOMEOWNERSHIP FOR FAMILIES AND TAX SAVINGS FOR SENIORS, SPONSORED BY THE CALIFORNIA ASSOCIATION OF REALTORS, MAJOR FUNDING BY THE CALIFORNIA ASSOCIATION OF REALTORS ISSUES MOBILIZATION PAC",
+          "canonical_key": "calaccess:filer:1400190",
+          "attrs": {
+            "source": "calaccess",
+            "filer_id": "1400190",
+            "filer_type": "RECIPIENT COMMITTEE",
+            "status": "ACTIVE"
+          }
+        },
+        "to_entity": {
+          "id": "b96a07f0-6637-3fda-9608-7090845daa7a",
+          "kind": "org",
+          "name": "CALIFORNIA ASSOCIATION OF REALTORS",
+          "canonical_key": "calaccess:raw:719773a36cde7d3ae84020794fa2525d",
+          "attrs": {
+            "entity_cd": "OTH",
+            "city": "LOS ANGELES",
+            "state": "CA",
+            "zip": "90020",
+            "source": "calaccess",
+            "temporary": true
+          }
+        },
+        "source": {
+          "filing_id": "3172602",
+          "url": "https://cal-access.sos.ca.gov/PDFGen/pdfgen.prg?filingid=3172602&amendid=0",
+          "schedule": "E",
+          "line_item": "6"
+        }
+      },
+      "negative_example": "CA HOMES COMMITTEE reported $2,130.56 on this itemized filing line.",
+      "replacement_name": "CA HOMES COMMITTEE",
+      "expected_check": "identity",
+      "expected_code": "name_mismatch"
+    },
+    {
+      "kind": "name",
+      "original": {
+        "sentence": "HOMEOWNERSHIP FOR FAMILIES AND TAX SAVINGS FOR SENIORS, SPONSORED BY THE CALIFORNIA ASSOCIATION OF REALTORS, MAJOR FUNDING BY THE CALIFORNIA ASSOCIATION OF REALTORS ISSUES MOBILIZATION PAC reported $8,928.57 on this itemized filing line.",
+        "edge": {
+          "id": "2e89fcbb-c3ba-3ab5-bba4-653ae5f13bbb",
+          "from_key": "calaccess:filer:1400190",
+          "to_key": "calaccess:raw:d70ab71086bef664bdb53f2fd9ce8b0c",
+          "amount": "8928.57",
+          "date": "2025-03-04",
+          "kind": "expenditure",
+          "filing_id": "3069092",
+          "amend_id": 0,
+          "schedule": "E",
+          "line_item": "11"
+        },
+        "filing": {
+          "id": "0db46d93-6247-3378-8989-b08389d904de",
+          "source": "calaccess",
+          "filing_id": "3069092",
+          "amendment_no": 0,
+          "form": "F460",
+          "filed_at": "2025-07-31 10:56:46",
+          "period_start": "2025-01-01",
+          "period_end": "2025-06-30",
+          "url": "https://cal-access.sos.ca.gov/PDFGen/pdfgen.prg?filingid=3069092&amendid=0"
+        },
+        "from_entity": {
+          "id": "3495fdfc-a25f-3d46-ac24-277ac679445c",
+          "kind": "committee",
+          "name": "HOMEOWNERSHIP FOR FAMILIES AND TAX SAVINGS FOR SENIORS, SPONSORED BY THE CALIFORNIA ASSOCIATION OF REALTORS, MAJOR FUNDING BY THE CALIFORNIA ASSOCIATION OF REALTORS ISSUES MOBILIZATION PAC",
+          "canonical_key": "calaccess:filer:1400190",
+          "attrs": {
+            "source": "calaccess",
+            "filer_id": "1400190",
+            "filer_type": "RECIPIENT COMMITTEE",
+            "status": "ACTIVE"
+          }
+        },
+        "to_entity": {
+          "id": "c3340d32-f965-32ad-bc38-5de7619be2bf",
+          "kind": "org",
+          "name": "JPM&M, INC.",
+          "canonical_key": "calaccess:raw:d70ab71086bef664bdb53f2fd9ce8b0c",
+          "attrs": {
+            "entity_cd": "OTH",
+            "city": "SACRAMENTO",
+            "state": "CA",
+            "zip": "95814",
+            "source": "calaccess",
+            "temporary": true
+          }
+        },
+        "source": {
+          "filing_id": "3069092",
+          "url": "https://cal-access.sos.ca.gov/PDFGen/pdfgen.prg?filingid=3069092&amendid=0",
+          "schedule": "E",
+          "line_item": "11"
+        }
+      },
+      "negative_example": "CA HOMES COMMITTEE reported $8,928.57 on this itemized filing line.",
+      "replacement_name": "CA HOMES COMMITTEE",
+      "expected_check": "identity",
+      "expected_code": "name_mismatch"
+    },
+    {
+      "kind": "name",
+      "original": {
+        "sentence": "HOMEOWNERSHIP FOR FAMILIES AND TAX SAVINGS FOR SENIORS, SPONSORED BY THE CALIFORNIA ASSOCIATION OF REALTORS, MAJOR FUNDING BY THE CALIFORNIA ASSOCIATION OF REALTORS ISSUES MOBILIZATION PAC reported $1,260.00 on this itemized filing line.",
+        "edge": {
+          "id": "3eddd418-bc0c-384d-b9be-b12e8f6da24b",
+          "from_key": "calaccess:filer:1400190",
+          "to_key": "calaccess:raw:1876f27a5c25f4a772e9b85e837e7dd4",
+          "amount": "1260.00",
+          "date": "2026-08-17",
+          "kind": "expenditure",
+          "filing_id": "3199011",
+          "amend_id": 0,
+          "schedule": "G",
+          "line_item": "6"
+        },
+        "filing": {
+          "id": "75c39e85-e772-3ddf-a208-f7887ce16f9b",
+          "source": "calaccess",
+          "filing_id": "3199011",
+          "amendment_no": 0,
+          "form": "F460",
+          "filed_at": "2026-09-24 12:07:03",
+          "period_start": "2026-07-01",
+          "period_end": "2026-09-19",
+          "url": "https://cal-access.sos.ca.gov/PDFGen/pdfgen.prg?filingid=3199011&amendid=0"
+        },
+        "from_entity": {
+          "id": "3495fdfc-a25f-3d46-ac24-277ac679445c",
+          "kind": "committee",
+          "name": "HOMEOWNERSHIP FOR FAMILIES AND TAX SAVINGS FOR SENIORS, SPONSORED BY THE CALIFORNIA ASSOCIATION OF REALTORS, MAJOR FUNDING BY THE CALIFORNIA ASSOCIATION OF REALTORS ISSUES MOBILIZATION PAC",
+          "canonical_key": "calaccess:filer:1400190",
+          "attrs": {
+            "source": "calaccess",
+            "filer_id": "1400190",
+            "filer_type": "RECIPIENT COMMITTEE",
+            "status": "ACTIVE"
+          }
+        },
+        "to_entity": {
+          "id": "e0d28fe2-cd86-3d9b-afa8-800e6beda2ff",
+          "kind": "org",
+          "name": "ACTUM-E, LLC",
+          "canonical_key": "calaccess:raw:1876f27a5c25f4a772e9b85e837e7dd4",
+          "attrs": {
+            "entity_cd": "OTH",
+            "city": "LOS ANGELES",
+            "state": "CA",
+            "zip": "90067",
+            "source": "calaccess",
+            "temporary": true
+          }
+        },
+        "source": {
+          "filing_id": "3199011",
+          "url": "https://cal-access.sos.ca.gov/PDFGen/pdfgen.prg?filingid=3199011&amendid=0",
+          "schedule": "G",
+          "line_item": "6"
+        }
+      },
+      "negative_example": "CA HOMES COMMITTEE reported $1,260.00 on this itemized filing line.",
+      "replacement_name": "CA HOMES COMMITTEE",
+      "expected_check": "identity",
+      "expected_code": "name_mismatch"
+    },
+    {
+      "kind": "name",
+      "original": {
+        "sentence": "CALIFORNIA ASSOCIATION OF REALTORS ISSUES MOBILIZATION PAC reported $500,000.00 on this itemized filing line.",
+        "edge": {
+          "id": "40378a08-3d34-3ae2-9e9d-57ffdc435983",
+          "from_key": "calaccess:filer:782560",
+          "to_key": "calaccess:filer:1400190",
+          "amount": "500000.00",
+          "date": "2026-03-02",
+          "kind": "contribution",
+          "filing_id": "3147001",
+          "amend_id": 0,
+          "schedule": "A",
+          "line_item": "3"
+        },
+        "filing": {
+          "id": "273578bd-0113-3083-ac76-13053da291ad",
+          "source": "calaccess",
+          "filing_id": "3147001",
+          "amendment_no": 0,
+          "form": "F460",
+          "filed_at": "2026-04-30 15:58:14",
+          "period_start": "2026-01-01",
+          "period_end": "2026-03-31",
+          "url": "https://cal-access.sos.ca.gov/PDFGen/pdfgen.prg?filingid=3147001&amendid=0"
+        },
+        "from_entity": {
+          "id": "a28e8319-67b9-391a-a707-218c2dd05e0c",
+          "kind": "committee",
+          "name": "CALIFORNIA ASSOCIATION OF REALTORS ISSUES MOBILIZATION PAC",
+          "canonical_key": "calaccess:filer:782560",
+          "attrs": {
+            "source": "calaccess",
+            "filer_id": "782560",
+            "filer_type": null,
+            "status": null
+          }
+        },
+        "to_entity": {
+          "id": "3495fdfc-a25f-3d46-ac24-277ac679445c",
+          "kind": "committee",
+          "name": "HOMEOWNERSHIP FOR FAMILIES AND TAX SAVINGS FOR SENIORS, SPONSORED BY THE CALIFORNIA ASSOCIATION OF REALTORS, MAJOR FUNDING BY THE CALIFORNIA ASSOCIATION OF REALTORS ISSUES MOBILIZATION PAC",
+          "canonical_key": "calaccess:filer:1400190",
+          "attrs": {
+            "source": "calaccess",
+            "filer_id": "1400190",
+            "filer_type": "RECIPIENT COMMITTEE",
+            "status": "ACTIVE"
+          }
+        },
+        "source": {
+          "filing_id": "3147001",
+          "url": "https://cal-access.sos.ca.gov/PDFGen/pdfgen.prg?filingid=3147001&amendid=0",
+          "schedule": "A",
+          "line_item": "3"
+        }
+      },
+      "negative_example": "HOMEOWNERSHIP FOR FAMILIES AND TAX SAVINGS FOR SENIORS, SPONSORED BY THE CALIFORNIA ASSOCIATION OF REALTORS, MAJOR FUNDING BY THE CALIFORNIA ASSOCIATION OF REALTORS ISSUES MOBILIZATION PAC reported $500,000.00 on this itemized filing line.",
+      "replacement_name": "HOMEOWNERSHIP FOR FAMILIES AND TAX SAVINGS FOR SENIORS, SPONSORED BY THE CALIFORNIA ASSOCIATION OF REALTORS, MAJOR FUNDING BY THE CALIFORNIA ASSOCIATION OF REALTORS ISSUES MOBILIZATION PAC",
+      "expected_check": "identity",
+      "expected_code": "name_mismatch"
+    },
+    {
+      "kind": "base_rate",
+      "original": {
+        "sentence": "The recorded roll call had 40 ayes out of all 40 members.",
+        "source_bill_id": "202520260SB329",
+        "source": {
+          "url": "https://leginfo.legislature.ca.gov/faces/billVotesClient.xhtml?bill_id=202520260SB329"
+        },
+        "roll_call": {
+          "date": "08/28/26",
+          "result": "(PASS)",
+          "location": "Senate Floor",
+          "ayes": 40,
+          "noes": 0,
+          "nvr": 0,
+          "motion": "Special Consent SB329 Blakespear et al.",
+          "aye_names": [
+            "Allen",
+            "Alvarado-Gil",
+            "Archuleta",
+            "Arreguín",
+            "Ashby",
+            "Becker",
+            "Blakespear",
+            "Cabaldon",
+            "Caballero",
+            "Cervantes",
+            "Choi",
+            "Cortese",
+            "Dahle",
+            "Durazo",
+            "Gonzalez",
+            "Grayson",
+            "Grove",
+            "Hurtado",
+            "Jones",
+            "Laird",
+            "Limón",
+            "McGuire",
+            "McNerney",
+            "Menjivar",
+            "Niello",
+            "Ochoa Bogh",
+            "Padilla",
+            "Pérez",
+            "Reyes",
+            "Richardson",
+            "Rubio",
+            "Seyarto",
+            "Smallwood-Cuevas",
+            "Stern",
+            "Strickland",
+            "Umberg",
+            "Valladares",
+            "Wahab",
+            "Weber Pierson",
+            "Wiener"
+          ],
+          "no_names": [],
+          "nvr_names": []
+        }
+      },
+      "negative_example": "The recorded roll call had 40 ayes out of all 41 members.",
+      "expected_check": "numbers",
+      "expected_code": "number_mismatch"
+    },
+    {
+      "kind": "base_rate",
+      "original": {
+        "sentence": "The recorded roll call had 76 ayes out of all 79 members.",
+        "source_bill_id": "202520260SB329",
+        "source": {
+          "url": "https://leginfo.legislature.ca.gov/faces/billVotesClient.xhtml?bill_id=202520260SB329"
+        },
+        "roll_call": {
+          "date": "08/25/26",
+          "result": "(PASS)",
+          "location": "Assembly Floor",
+          "ayes": 76,
+          "noes": 0,
+          "nvr": 3,
+          "motion": "SB 329 Blakespear Senate Third Reading By Dixon",
+          "aye_names": [
+            "Addis",
+            "Aguiar-Curry",
+            "Ahrens",
+            "Alanis",
+            "Alvarez",
+            "Arambula",
+            "Ávila Farías",
+            "Bains",
+            "Bauer-Kahan",
+            "Bennett",
+            "Berman",
+            "Boerner",
+            "Bonta",
+            "Bryan",
+            "Calderon",
+            "Caloza",
+            "Carrillo",
+            "Castillo",
+            "Chen",
+            "Connolly",
+            "Davies",
+            "DeMaio",
+            "Elhawary",
+            "Ellis",
+            "Flora",
+            "Fong",
+            "Gabriel",
+            "Garcia",
+            "Gipson",
+            "Jeff Gonzalez",
+            "Mark González",
+            "Hadwick",
+            "Haney",
+            "Harabedian",
+            "Hart",
+            "Hoover",
+            "Irwin",
+            "Jackson",
+            "Johnson",
+            "Krell",
+            "Lackey",
+            "Lee",
+            "Lowenthal",
+            "Macedo",
+            "Muratsuchi",
+            "Nguyen",
+            "Ortega",
+            "Pacheco",
+            "Papan",
+            "Patel",
+            "Patterson",
+            "Pellerin",
+            "Petrie-Norris",
+            "Quirk-Silva",
+            "Ramos",
+            "Ransom",
+            "Celeste Rodriguez",
+            "Michelle Rodriguez",
+            "Rogers",
+            "Blanca Rubio",
+            "Sanchez",
+            "Schiavo",
+            "Schultz",
+            "Sharp-Collins",
+            "Solache",
+            "Soria",
+            "Stefani",
+            "Ta",
+            "Tangipa",
+            "Valencia",
+            "Wallis",
+            "Ward",
+            "Wicks",
+            "Wilson",
+            "Zbur",
+            "Rivas"
+          ],
+          "no_names": [],
+          "nvr_names": [
+            "Dixon",
+            "Kalra",
+            "McKinnor"
+          ]
+        }
+      },
+      "negative_example": "The recorded roll call had 76 ayes out of all 80 members.",
+      "expected_check": "numbers",
+      "expected_code": "number_mismatch"
+    },
+    {
+      "kind": "base_rate",
+      "original": {
+        "sentence": "The recorded roll call had 11 ayes out of all 15 members.",
+        "source_bill_id": "202520260SB329",
+        "source": {
+          "url": "https://leginfo.legislature.ca.gov/faces/billVotesClient.xhtml?bill_id=202520260SB329"
+        },
+        "roll_call": {
+          "date": "08/13/26",
+          "result": "(PASS)",
+          "location": "Asm Appropriations",
+          "ayes": 11,
+          "noes": 0,
+          "nvr": 4,
+          "motion": "Do pass as amended.",
+          "aye_names": [
+            "Arambula",
+            "Calderon",
+            "Caloza",
+            "Fong",
+            "Mark González",
+            "Krell",
+            "Pacheco",
+            "Pellerin",
+            "Sharp-Collins",
+            "Solache",
+            "Wicks"
+          ],
+          "no_names": [],
+          "nvr_names": [
+            "Dixon",
+            "Hoover",
+            "Ta",
+            "Tangipa"
+          ]
+        }
+      },
+      "negative_example": "The recorded roll call had 11 ayes out of all 16 members.",
+      "expected_check": "numbers",
+      "expected_code": "number_mismatch"
+    },
+    {
+      "kind": "base_rate",
+      "original": {
+        "sentence": "The recorded roll call had 15 ayes out of all 16 members.",
+        "source_bill_id": "202520260SB329",
+        "source": {
+          "url": "https://leginfo.legislature.ca.gov/faces/billVotesClient.xhtml?bill_id=202520260SB329"
+        },
+        "roll_call": {
+          "date": "06/24/25",
+          "result": "(PASS)",
+          "location": "Asm Health",
+          "ayes": 15,
+          "noes": 0,
+          "nvr": 1,
+          "motion": "Do pass and be re-referred to the Committee on [Appropriations] with recommendation: To Consent Calendar",
+          "aye_names": [
+            "Aguiar-Curry",
+            "Bonta",
+            "Caloza",
+            "Carrillo",
+            "Chen",
+            "Elhawary",
+            "Flora",
+            "Mark González",
+            "Krell",
+            "Patel",
+            "Patterson",
+            "Celeste Rodriguez",
+            "Sanchez",
+            "Schiavo",
+            "Sharp-Collins"
+          ],
+          "no_names": [],
+          "nvr_names": [
+            "Addis"
+          ]
+        }
+      },
+      "negative_example": "The recorded roll call had 15 ayes out of all 17 members.",
+      "expected_check": "numbers",
+      "expected_code": "number_mismatch"
+    },
+    {
+      "kind": "base_rate",
+      "original": {
+        "sentence": "The recorded roll call had 38 ayes out of all 40 members.",
+        "source_bill_id": "202520260SB329",
+        "source": {
+          "url": "https://leginfo.legislature.ca.gov/faces/billVotesClient.xhtml?bill_id=202520260SB329"
+        },
+        "roll_call": {
+          "date": "05/29/25",
+          "result": "(PASS)",
+          "location": "Senate Floor",
+          "ayes": 38,
+          "noes": 0,
+          "nvr": 2,
+          "motion": "Special Consent SB329 Blakespear et al.",
+          "aye_names": [
+            "Allen",
+            "Alvarado-Gil",
+            "Archuleta",
+            "Arreguín",
+            "Ashby",
+            "Becker",
+            "Blakespear",
+            "Cabaldon",
+            "Caballero",
+            "Cervantes",
+            "Choi",
+            "Cortese",
+            "Dahle",
+            "Durazo",
+            "Gonzalez",
+            "Grayson",
+            "Grove",
+            "Hurtado",
+            "Jones",
+            "Laird",
+            "McGuire",
+            "McNerney",
+            "Menjivar",
+            "Niello",
+            "Ochoa Bogh",
+            "Padilla",
+            "Pérez",
+            "Richardson",
+            "Rubio",
+            "Seyarto",
+            "Smallwood-Cuevas",
+            "Stern",
+            "Strickland",
+            "Umberg",
+            "Valladares",
+            "Wahab",
+            "Weber Pierson",
+            "Wiener"
+          ],
+          "no_names": [],
+          "nvr_names": [
+            "Limón",
+            "Reyes"
+          ]
+        }
+      },
+      "negative_example": "The recorded roll call had 38 ayes out of all 41 members.",
+      "expected_check": "numbers",
+      "expected_code": "number_mismatch"
+    },
+    {
+      "kind": "base_rate",
+      "original": {
+        "sentence": "The recorded roll call had 6 ayes out of all 7 members.",
+        "source_bill_id": "202520260SB329",
+        "source": {
+          "url": "https://leginfo.legislature.ca.gov/faces/billVotesClient.xhtml?bill_id=202520260SB329"
+        },
+        "roll_call": {
+          "date": "05/23/25",
+          "result": "(PASS)",
+          "location": "Sen Appropriations",
+          "ayes": 6,
+          "noes": 0,
+          "nvr": 1,
+          "motion": "Do pass",
+          "aye_names": [
+            "Cabaldon",
+            "Caballero",
+            "Grayson",
+            "Richardson",
+            "Seyarto",
+            "Wahab"
+          ],
+          "no_names": [],
+          "nvr_names": [
+            "Dahle"
+          ]
+        }
+      },
+      "negative_example": "The recorded roll call had 6 ayes out of all 8 members.",
+      "expected_check": "numbers",
+      "expected_code": "number_mismatch"
+    },
+    {
+      "kind": "language",
+      "original": {
+        "sentence": "HOMEOWNERSHIP FOR FAMILIES AND TAX SAVINGS FOR SENIORS, SPONSORED BY THE CALIFORNIA ASSOCIATION OF REALTORS, MAJOR FUNDING BY THE CALIFORNIA ASSOCIATION OF REALTORS ISSUES MOBILIZATION PAC reported $9,093.24 on this itemized filing line.",
+        "edge": {
+          "id": "07e4042e-adce-3823-b5eb-9ebf52bb31dd",
+          "from_key": "calaccess:filer:1400190",
+          "to_key": "calaccess:raw:b8004bdfbbbeef449f6670cc12852266",
+          "amount": "9093.24",
+          "date": "2026-01-09",
+          "kind": "expenditure",
+          "filing_id": "3147001",
+          "amend_id": 0,
+          "schedule": "E",
+          "line_item": "6"
+        },
+        "filing": {
+          "id": "273578bd-0113-3083-ac76-13053da291ad",
+          "source": "calaccess",
+          "filing_id": "3147001",
+          "amendment_no": 0,
+          "form": "F460",
+          "filed_at": "2026-04-30 15:58:14",
+          "period_start": "2026-01-01",
+          "period_end": "2026-03-31",
+          "url": "https://cal-access.sos.ca.gov/PDFGen/pdfgen.prg?filingid=3147001&amendid=0"
+        },
+        "from_entity": {
+          "id": "3495fdfc-a25f-3d46-ac24-277ac679445c",
+          "kind": "committee",
+          "name": "HOMEOWNERSHIP FOR FAMILIES AND TAX SAVINGS FOR SENIORS, SPONSORED BY THE CALIFORNIA ASSOCIATION OF REALTORS, MAJOR FUNDING BY THE CALIFORNIA ASSOCIATION OF REALTORS ISSUES MOBILIZATION PAC",
+          "canonical_key": "calaccess:filer:1400190",
+          "attrs": {
+            "source": "calaccess",
+            "filer_id": "1400190",
+            "filer_type": "RECIPIENT COMMITTEE",
+            "status": "ACTIVE"
+          }
+        },
+        "to_entity": {
+          "id": "1e18dfa4-bf49-3570-b4ea-3c84835f77fc",
+          "kind": "org",
+          "name": "REED & DAVIDSON, LLP",
+          "canonical_key": "calaccess:raw:b8004bdfbbbeef449f6670cc12852266",
+          "attrs": {
+            "entity_cd": "OTH",
+            "city": "LOS ANGELES",
+            "state": "CA",
+            "zip": "90071",
+            "source": "calaccess",
+            "temporary": true
+          }
+        },
+        "source": {
+          "filing_id": "3147001",
+          "url": "https://cal-access.sos.ca.gov/PDFGen/pdfgen.prg?filingid=3147001&amendid=0",
+          "schedule": "E",
+          "line_item": "6"
+        }
+      },
+      "negative_example": "HOMEOWNERSHIP FOR FAMILIES AND TAX SAVINGS FOR SENIORS, SPONSORED BY THE CALIFORNIA ASSOCIATION OF REALTORS, MAJOR FUNDING BY THE CALIFORNIA ASSOCIATION OF REALTORS ISSUES MOBILIZATION PAC reported $9,093.24 on this itemized filing line. bought.",
+      "expected_check": "language",
+      "expected_code": "banned_phrase"
+    },
+    {
+      "kind": "language",
+      "original": {
+        "sentence": "HOMEOWNERSHIP FOR FAMILIES AND TAX SAVINGS FOR SENIORS, SPONSORED BY THE CALIFORNIA ASSOCIATION OF REALTORS, MAJOR FUNDING BY THE CALIFORNIA ASSOCIATION OF REALTORS ISSUES MOBILIZATION PAC reported $1,175,000.00 on this itemized filing line.",
+        "edge": {
+          "id": "0cb7484c-19bc-3547-b9c6-815bad481110",
+          "from_key": "calaccess:filer:1400190",
+          "to_key": "calaccess:filer:1481256",
+          "amount": "1175000.00",
+          "date": "2026-03-13",
+          "kind": "contribution",
+          "filing_id": "3128904",
+          "amend_id": 0,
+          "schedule": "F497P1",
+          "line_item": "1"
+        },
+        "filing": {
+          "id": "c7330513-bdaf-362c-a3a9-8be4a9ef7235",
+          "source": "calaccess",
+          "filing_id": "3128904",
+          "amendment_no": 0,
+          "form": "F497",
+          "filed_at": "2026-03-25 16:08:44",
+          "period_start": "2026-03-25",
+          "period_end": "2026-03-25",
+          "url": "https://cal-access.sos.ca.gov/PDFGen/pdfgen.prg?filingid=3128904&amendid=0"
+        },
+        "from_entity": {
+          "id": "3495fdfc-a25f-3d46-ac24-277ac679445c",
+          "kind": "committee",
+          "name": "HOMEOWNERSHIP FOR FAMILIES AND TAX SAVINGS FOR SENIORS, SPONSORED BY THE CALIFORNIA ASSOCIATION OF REALTORS, MAJOR FUNDING BY THE CALIFORNIA ASSOCIATION OF REALTORS ISSUES MOBILIZATION PAC",
+          "canonical_key": "calaccess:filer:1400190",
+          "attrs": {
+            "source": "calaccess",
+            "filer_id": "1400190",
+            "filer_type": "RECIPIENT COMMITTEE",
+            "status": "ACTIVE"
+          }
+        },
+        "to_entity": {
+          "id": "c40cda96-ef13-38b1-935e-c9afca609820",
+          "kind": "committee",
+          "name": "CA HOMES COMMITTEE",
+          "canonical_key": "calaccess:filer:1481256",
+          "attrs": {
+            "source": "calaccess",
+            "filer_id": "1481256",
+            "filer_type": "RECIPIENT COMMITTEE",
+            "status": "ACTIVE"
+          }
+        },
+        "source": {
+          "filing_id": "3128904",
+          "url": "https://cal-access.sos.ca.gov/PDFGen/pdfgen.prg?filingid=3128904&amendid=0",
+          "schedule": "F497P1",
+          "line_item": "1"
+        }
+      },
+      "negative_example": "HOMEOWNERSHIP FOR FAMILIES AND TAX SAVINGS FOR SENIORS, SPONSORED BY THE CALIFORNIA ASSOCIATION OF REALTORS, MAJOR FUNDING BY THE CALIFORNIA ASSOCIATION OF REALTORS ISSUES MOBILIZATION PAC reported $1,175,000.00 on this itemized filing line. paid off.",
+      "expected_check": "language",
+      "expected_code": "banned_phrase"
+    },
+    {
+      "kind": "language",
+      "original": {
+        "sentence": "HOMEOWNERSHIP FOR FAMILIES AND TAX SAVINGS FOR SENIORS, SPONSORED BY THE CALIFORNIA ASSOCIATION OF REALTORS, MAJOR FUNDING BY THE CALIFORNIA ASSOCIATION OF REALTORS ISSUES MOBILIZATION PAC reported $950,000.00 on this itemized filing line.",
+        "edge": {
+          "id": "0f0ccf2d-ec6c-395f-9f5d-8ba04464a391",
+          "from_key": "calaccess:filer:1400190",
+          "to_key": "calaccess:filer:1481256",
+          "amount": "950000.00",
+          "date": "2026-01-08",
+          "kind": "contribution",
+          "filing_id": "3145958",
+          "amend_id": 0,
+          "schedule": "A",
+          "line_item": "2"
+        },
+        "filing": {
+          "id": "270ac439-7a40-36c4-9e02-feba48132fac",
+          "source": "calaccess",
+          "filing_id": "3145958",
+          "amendment_no": 0,
+          "form": "F460",
+          "filed_at": "2026-04-30 12:47:52",
+          "period_start": "2026-01-01",
+          "period_end": "2026-03-31",
+          "url": "https://cal-access.sos.ca.gov/PDFGen/pdfgen.prg?filingid=3145958&amendid=0"
+        },
+        "from_entity": {
+          "id": "3495fdfc-a25f-3d46-ac24-277ac679445c",
+          "kind": "committee",
+          "name": "HOMEOWNERSHIP FOR FAMILIES AND TAX SAVINGS FOR SENIORS, SPONSORED BY THE CALIFORNIA ASSOCIATION OF REALTORS, MAJOR FUNDING BY THE CALIFORNIA ASSOCIATION OF REALTORS ISSUES MOBILIZATION PAC",
+          "canonical_key": "calaccess:filer:1400190",
+          "attrs": {
+            "source": "calaccess",
+            "filer_id": "1400190",
+            "filer_type": "RECIPIENT COMMITTEE",
+            "status": "ACTIVE"
+          }
+        },
+        "to_entity": {
+          "id": "c40cda96-ef13-38b1-935e-c9afca609820",
+          "kind": "committee",
+          "name": "CA HOMES COMMITTEE",
+          "canonical_key": "calaccess:filer:1481256",
+          "attrs": {
+            "source": "calaccess",
+            "filer_id": "1481256",
+            "filer_type": "RECIPIENT COMMITTEE",
+            "status": "ACTIVE"
+          }
+        },
+        "source": {
+          "filing_id": "3145958",
+          "url": "https://cal-access.sos.ca.gov/PDFGen/pdfgen.prg?filingid=3145958&amendid=0",
+          "schedule": "A",
+          "line_item": "2"
+        }
+      },
+      "negative_example": "HOMEOWNERSHIP FOR FAMILIES AND TAX SAVINGS FOR SENIORS, SPONSORED BY THE CALIFORNIA ASSOCIATION OF REALTORS, MAJOR FUNDING BY THE CALIFORNIA ASSOCIATION OF REALTORS ISSUES MOBILIZATION PAC reported $950,000.00 on this itemized filing line. corrupt.",
+      "expected_check": "language",
+      "expected_code": "banned_phrase"
+    },
+    {
+      "kind": "language",
+      "original": {
+        "sentence": "CALIFORNIA ASSOCIATION OF REALTORS ISSUES MOBILIZATION PAC reported $3,000,000.00 on this itemized filing line.",
+        "edge": {
+          "id": "0f1e38ea-6946-39b8-9c91-9eecf34c578d",
+          "from_key": "calaccess:filer:782560",
+          "to_key": "calaccess:filer:1400190",
+          "amount": "3000000.00",
+          "date": "2026-05-18",
+          "kind": "expenditure",
+          "filing_id": "3171269",
+          "amend_id": 0,
+          "schedule": "E",
+          "line_item": "30"
+        },
+        "filing": {
+          "id": "864d1b9e-23c1-3fa0-b9b6-a4cab150e54c",
+          "source": "calaccess",
+          "filing_id": "3171269",
+          "amendment_no": 0,
+          "form": "F460",
+          "filed_at": "2026-07-24 10:50:08",
+          "period_start": "2026-05-17",
+          "period_end": "2026-06-30",
+          "url": "https://cal-access.sos.ca.gov/PDFGen/pdfgen.prg?filingid=3171269&amendid=0"
+        },
+        "from_entity": {
+          "id": "a28e8319-67b9-391a-a707-218c2dd05e0c",
+          "kind": "committee",
+          "name": "CALIFORNIA ASSOCIATION OF REALTORS ISSUES MOBILIZATION PAC",
+          "canonical_key": "calaccess:filer:782560",
+          "attrs": {
+            "source": "calaccess",
+            "filer_id": "782560",
+            "filer_type": null,
+            "status": null
+          }
+        },
+        "to_entity": {
+          "id": "3495fdfc-a25f-3d46-ac24-277ac679445c",
+          "kind": "committee",
+          "name": "HOMEOWNERSHIP FOR FAMILIES AND TAX SAVINGS FOR SENIORS, SPONSORED BY THE CALIFORNIA ASSOCIATION OF REALTORS, MAJOR FUNDING BY THE CALIFORNIA ASSOCIATION OF REALTORS ISSUES MOBILIZATION PAC",
+          "canonical_key": "calaccess:filer:1400190",
+          "attrs": {
+            "source": "calaccess",
+            "filer_id": "1400190",
+            "filer_type": "RECIPIENT COMMITTEE",
+            "status": "ACTIVE"
+          }
+        },
+        "source": {
+          "filing_id": "3171269",
+          "url": "https://cal-access.sos.ca.gov/PDFGen/pdfgen.prg?filingid=3171269&amendid=0",
+          "schedule": "E",
+          "line_item": "30"
+        }
+      },
+      "negative_example": "CALIFORNIA ASSOCIATION OF REALTORS ISSUES MOBILIZATION PAC reported $3,000,000.00 on this itemized filing line. in the pocket of.",
+      "expected_check": "language",
+      "expected_code": "banned_phrase"
+    },
+    {
+      "kind": "language",
+      "original": {
+        "sentence": "CALIFORNIA ASSOCIATION OF REALTORS ISSUES MOBILIZATION PAC reported $1,000,000.00 on this itemized filing line.",
+        "edge": {
+          "id": "111134e9-5d1a-35c8-864a-da0919e2cdc4",
+          "from_key": "calaccess:filer:782560",
+          "to_key": "calaccess:filer:1400190",
+          "amount": "1000000.00",
+          "date": "2026-01-23",
+          "kind": "contribution",
+          "filing_id": "3136552",
+          "amend_id": 1,
+          "schedule": "E",
+          "line_item": "35"
+        },
+        "filing": {
+          "id": "add9f45b-4523-33f3-a091-eaa3a3726ce2",
+          "source": "calaccess",
+          "filing_id": "3136552",
+          "amendment_no": 1,
+          "form": "F460",
+          "filed_at": "2026-07-24 10:49:43",
+          "period_start": "2026-01-01",
+          "period_end": "2026-04-18",
+          "url": "https://cal-access.sos.ca.gov/PDFGen/pdfgen.prg?filingid=3136552&amendid=1"
+        },
+        "from_entity": {
+          "id": "a28e8319-67b9-391a-a707-218c2dd05e0c",
+          "kind": "committee",
+          "name": "CALIFORNIA ASSOCIATION OF REALTORS ISSUES MOBILIZATION PAC",
+          "canonical_key": "calaccess:filer:782560",
+          "attrs": {
+            "source": "calaccess",
+            "filer_id": "782560",
+            "filer_type": null,
+            "status": null
+          }
+        },
+        "to_entity": {
+          "id": "3495fdfc-a25f-3d46-ac24-277ac679445c",
+          "kind": "committee",
+          "name": "HOMEOWNERSHIP FOR FAMILIES AND TAX SAVINGS FOR SENIORS, SPONSORED BY THE CALIFORNIA ASSOCIATION OF REALTORS, MAJOR FUNDING BY THE CALIFORNIA ASSOCIATION OF REALTORS ISSUES MOBILIZATION PAC",
+          "canonical_key": "calaccess:filer:1400190",
+          "attrs": {
+            "source": "calaccess",
+            "filer_id": "1400190",
+            "filer_type": "RECIPIENT COMMITTEE",
+            "status": "ACTIVE"
+          }
+        },
+        "source": {
+          "filing_id": "3136552",
+          "url": "https://cal-access.sos.ca.gov/PDFGen/pdfgen.prg?filingid=3136552&amendid=1",
+          "schedule": "E",
+          "line_item": "35"
+        }
+      },
+      "negative_example": "CALIFORNIA ASSOCIATION OF REALTORS ISSUES MOBILIZATION PAC reported $1,000,000.00 on this itemized filing line. bribe.",
+      "expected_check": "language",
+      "expected_code": "banned_phrase"
+    },
+    {
+      "kind": "language",
+      "original": {
+        "sentence": "HOMEOWNERSHIP FOR FAMILIES AND TAX SAVINGS FOR SENIORS, SPONSORED BY THE CALIFORNIA ASSOCIATION OF REALTORS, MAJOR FUNDING BY THE CALIFORNIA ASSOCIATION OF REALTORS ISSUES MOBILIZATION PAC reported $1,000,000.00 on this itemized filing line.",
+        "edge": {
+          "id": "12deca16-9697-3669-90fd-253df927218c",
+          "from_key": "calaccess:filer:1400190",
+          "to_key": "calaccess:filer:1481256",
+          "amount": "1000000.00",
+          "date": "2025-11-07",
+          "kind": "contribution",
+          "filing_id": "3107043",
+          "amend_id": 0,
+          "schedule": "E",
+          "line_item": "3"
+        },
+        "filing": {
+          "id": "1b1811d9-c16e-3e69-89da-e2ff59afa33b",
+          "source": "calaccess",
+          "filing_id": "3107043",
+          "amendment_no": 0,
+          "form": "F460",
+          "filed_at": "2026-01-28 11:42:27",
+          "period_start": "2025-07-01",
+          "period_end": "2025-12-31",
+          "url": "https://cal-access.sos.ca.gov/PDFGen/pdfgen.prg?filingid=3107043&amendid=0"
+        },
+        "from_entity": {
+          "id": "3495fdfc-a25f-3d46-ac24-277ac679445c",
+          "kind": "committee",
+          "name": "HOMEOWNERSHIP FOR FAMILIES AND TAX SAVINGS FOR SENIORS, SPONSORED BY THE CALIFORNIA ASSOCIATION OF REALTORS, MAJOR FUNDING BY THE CALIFORNIA ASSOCIATION OF REALTORS ISSUES MOBILIZATION PAC",
+          "canonical_key": "calaccess:filer:1400190",
+          "attrs": {
+            "source": "calaccess",
+            "filer_id": "1400190",
+            "filer_type": "RECIPIENT COMMITTEE",
+            "status": "ACTIVE"
+          }
+        },
+        "to_entity": {
+          "id": "c40cda96-ef13-38b1-935e-c9afca609820",
+          "kind": "committee",
+          "name": "CA HOMES COMMITTEE",
+          "canonical_key": "calaccess:filer:1481256",
+          "attrs": {
+            "source": "calaccess",
+            "filer_id": "1481256",
+            "filer_type": "RECIPIENT COMMITTEE",
+            "status": "ACTIVE"
+          }
+        },
+        "source": {
+          "filing_id": "3107043",
+          "url": "https://cal-access.sos.ca.gov/PDFGen/pdfgen.prg?filingid=3107043&amendid=0",
+          "schedule": "E",
+          "line_item": "3"
+        }
+      },
+      "negative_example": "HOMEOWNERSHIP FOR FAMILIES AND TAX SAVINGS FOR SENIORS, SPONSORED BY THE CALIFORNIA ASSOCIATION OF REALTORS, MAJOR FUNDING BY THE CALIFORNIA ASSOCIATION OF REALTORS ISSUES MOBILIZATION PAC reported $1,000,000.00 on this itemized filing line. kickback.",
+      "expected_check": "language",
+      "expected_code": "banned_phrase"
+    },
+    {
+      "kind": "language",
+      "original": {
+        "sentence": "CALIFORNIA ASSOCIATION OF REALTORS ISSUES MOBILIZATION PAC reported $1,000,000.00 on this itemized filing line.",
+        "edge": {
+          "id": "1303d8af-b3aa-3bcd-a9f0-e34083765695",
+          "from_key": "calaccess:filer:782560",
+          "to_key": "calaccess:filer:1400190",
+          "amount": "1000000.00",
+          "date": "2026-01-23",
+          "kind": "contribution",
+          "filing_id": "3118614",
+          "amend_id": 0,
+          "schedule": "F497P2",
+          "line_item": "1"
+        },
+        "filing": {
+          "id": "84045891-d20d-3131-af43-bed197fb6838",
+          "source": "calaccess",
+          "filing_id": "3118614",
+          "amendment_no": 0,
+          "form": "F497",
+          "filed_at": "2026-02-06 11:55:05",
+          "period_start": "2026-02-06",
+          "period_end": "2026-02-06",
+          "url": "https://cal-access.sos.ca.gov/PDFGen/pdfgen.prg?filingid=3118614&amendid=0"
+        },
+        "from_entity": {
+          "id": "a28e8319-67b9-391a-a707-218c2dd05e0c",
+          "kind": "committee",
+          "name": "CALIFORNIA ASSOCIATION OF REALTORS ISSUES MOBILIZATION PAC",
+          "canonical_key": "calaccess:filer:782560",
+          "attrs": {
+            "source": "calaccess",
+            "filer_id": "782560",
+            "filer_type": null,
+            "status": null
+          }
+        },
+        "to_entity": {
+          "id": "3495fdfc-a25f-3d46-ac24-277ac679445c",
+          "kind": "committee",
+          "name": "HOMEOWNERSHIP FOR FAMILIES AND TAX SAVINGS FOR SENIORS, SPONSORED BY THE CALIFORNIA ASSOCIATION OF REALTORS, MAJOR FUNDING BY THE CALIFORNIA ASSOCIATION OF REALTORS ISSUES MOBILIZATION PAC",
+          "canonical_key": "calaccess:filer:1400190",
+          "attrs": {
+            "source": "calaccess",
+            "filer_id": "1400190",
+            "filer_type": "RECIPIENT COMMITTEE",
+            "status": "ACTIVE"
+          }
+        },
+        "source": {
+          "filing_id": "3118614",
+          "url": "https://cal-access.sos.ca.gov/PDFGen/pdfgen.prg?filingid=3118614&amendid=0",
+          "schedule": "F497P2",
+          "line_item": "1"
+        }
+      },
+      "negative_example": "CALIFORNIA ASSOCIATION OF REALTORS ISSUES MOBILIZATION PAC reported $1,000,000.00 on this itemized filing line. rigged.",
+      "expected_check": "language",
+      "expected_code": "banned_phrase"
+    },
+    {
+      "kind": "language",
+      "original": {
+        "sentence": "HOMEOWNERSHIP FOR FAMILIES AND TAX SAVINGS FOR SENIORS, SPONSORED BY THE CALIFORNIA ASSOCIATION OF REALTORS, MAJOR FUNDING BY THE CALIFORNIA ASSOCIATION OF REALTORS ISSUES MOBILIZATION PAC reported $1,000,000.00 on this itemized filing line.",
+        "edge": {
+          "id": "1350b4d3-4138-326b-b278-7f2617e379c7",
+          "from_key": "calaccess:filer:1400190",
+          "to_key": "calaccess:filer:1481256",
+          "amount": "1000000.00",
+          "date": "2025-11-07",
+          "kind": "contribution",
+          "filing_id": "3094206",
+          "amend_id": 0,
+          "schedule": "F497P2",
+          "line_item": "1"
+        },
+        "filing": {
+          "id": "f0e2da08-2ed9-3f11-90a4-ebf86474ec34",
+          "source": "calaccess",
+          "filing_id": "3094206",
+          "amendment_no": 0,
+          "form": "F497",
+          "filed_at": "2025-11-17 15:41:30",
+          "period_start": "2025-11-17",
+          "period_end": "2025-11-17",
+          "url": "https://cal-access.sos.ca.gov/PDFGen/pdfgen.prg?filingid=3094206&amendid=0"
+        },
+        "from_entity": {
+          "id": "3495fdfc-a25f-3d46-ac24-277ac679445c",
+          "kind": "committee",
+          "name": "HOMEOWNERSHIP FOR FAMILIES AND TAX SAVINGS FOR SENIORS, SPONSORED BY THE CALIFORNIA ASSOCIATION OF REALTORS, MAJOR FUNDING BY THE CALIFORNIA ASSOCIATION OF REALTORS ISSUES MOBILIZATION PAC",
+          "canonical_key": "calaccess:filer:1400190",
+          "attrs": {
+            "source": "calaccess",
+            "filer_id": "1400190",
+            "filer_type": "RECIPIENT COMMITTEE",
+            "status": "ACTIVE"
+          }
+        },
+        "to_entity": {
+          "id": "c40cda96-ef13-38b1-935e-c9afca609820",
+          "kind": "committee",
+          "name": "CA HOMES COMMITTEE",
+          "canonical_key": "calaccess:filer:1481256",
+          "attrs": {
+            "source": "calaccess",
+            "filer_id": "1481256",
+            "filer_type": "RECIPIENT COMMITTEE",
+            "status": "ACTIVE"
+          }
+        },
+        "source": {
+          "filing_id": "3094206",
+          "url": "https://cal-access.sos.ca.gov/PDFGen/pdfgen.prg?filingid=3094206&amendid=0",
+          "schedule": "F497P2",
+          "line_item": "1"
+        }
+      },
+      "negative_example": "HOMEOWNERSHIP FOR FAMILIES AND TAX SAVINGS FOR SENIORS, SPONSORED BY THE CALIFORNIA ASSOCIATION OF REALTORS, MAJOR FUNDING BY THE CALIFORNIA ASSOCIATION OF REALTORS ISSUES MOBILIZATION PAC reported $1,000,000.00 on this itemized filing line. puppet.",
+      "expected_check": "language",
+      "expected_code": "banned_phrase"
+    }
+  ]
+}

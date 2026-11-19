@@ -1,0 +1,32 @@
+---
+date: 2026-11-19
+author: Claude
+reviewer:
+task: Production bug fixes. Steady α logo on phones, a clear message for empty answers, a one-line test banner, no separate Ask page, one error report per answer, cleaner study form
+---
+
+## Shipped
+
+- **Logo:** the header wordmark is a two-state toggle (`components/shell/brand-mark.tsx`). "Alethei" folds away once the page scrolls past 56px, then unfolds below 16px. The α grows through font-size, not a transform, so the header centers it, and it is about 30px tall. CSS transitions replace the scroll-linked animation.
+- **Header:** on desktop, Interview, Business and Government (the study builder for each sponsor kind) sit next to Insights. Interview is highlighted only on `/interview` itself. On phones the header is just the centered wordmark.
+- **Empty answers:** when the agent returns its empty answer (no sentence it can cite), the answer page says "No sourced answer this time." with a suggestion, instead of a lone "Findings" heading.
+- **Banner:** "Demonetized private test site. See terms." on one line at every width.
+- **Ask page removed:** the home page is where you ask. `/ask` redirects to `/` (`next.config.ts`). The legislator and measure "Trace the money" links go straight to `/i/new` with `prefetch={false}`.
+- **Report an error:** there is one link under the answer, beside "Was this useful?", not one under every sentence. Readers can pick a recorded statement, which is stored as statement feedback as before, or the whole answer, which is stored as answer feedback with the category in the text. The `/api/feedback` contract is unchanged.
+- **Interviewer and the name:** the voice model no longer says the project's name. It says "this project" or "we". "Alethéia" spoken as "ah-leh-TAY-uh" stressed the wrong syllable, and a sound-out spelling ("Al-eh-THAY-uh") showed up as-is in the live transcript.
+- **Interview room:** the conversation and controls sit in one bordered panel that fits the screen, using the full page width. The conversation scrolls inside the panel, and the text box, Mute and Finish share one row on desktop.
+- **Home copy:** the question box asks "What do you want to know about …?" instead of repeating "Ask". The second home heading is "From the interviews so far", so "hear" is used only once.
+- **Study form:** example placeholders start with "e.g.". Textareas size to their text, so the padding above and below a placeholder is equal. Custom fields are "Multiple-choice questions (optional)", labeled "Question" and "Choices, one per line". One shows at first, and "Add another question" adds more, up to 3.
+
+## Metric
+
+- Typecheck passes. Lint has 0 errors (5 warnings, all in files this change does not touch). `check:colors` passes. `bun test`: 300 pass, 1 fail (`schema > defines every expected table`, failing before this change).
+
+## Broke or learned
+
+- Root cause of the oversized α: with `animation-timeline: scroll(root)`, a page too short to scroll (for example an answer page while it loads) rendered the logo fully folded at the top: α at 1.35× and "Alethei" hidden. Reproduced at 375×812 on production.
+- "How does California's budget process work?" completed on production (about 64k tokens) and returned the empty answer, even though web sources are allowed for that question. The UI now explains this, but why the agent found nothing to cite needs the HarnessRouter run trace, which this session cannot see.
+
+## Evidence
+
+- Local checks at 375×812: one-line banner, header folds on scroll and stays unfolded on a short 404 page, footer α, `/ask?q=test` lands on `/`, the study form shows "e.g." placeholders and one custom question with "Add another question", and the recorded answer has a single "Report an error".

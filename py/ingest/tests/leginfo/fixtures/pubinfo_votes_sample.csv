@@ -1,0 +1,826 @@
+source_bill_id,vote_date,motion,location,result,location_code,vote_date_time,vote_date_seq,motion_id,raw_name,vote_code
+202520260AB1,2025-04-02,Do pass and be re-referred to the Committee on [Appropriations],Asm Insurance,aye,CX28,2025-04-02 00:00:00,1,147510,Addis,AYE
+202520260AB1,2025-04-02,Do pass and be re-referred to the Committee on [Appropriations],Asm Insurance,aye,CX28,2025-04-02 00:00:00,1,147510,Alvarez,AYE
+202520260AB1,2025-04-02,Do pass and be re-referred to the Committee on [Appropriations],Asm Insurance,aye,CX28,2025-04-02 00:00:00,1,147510,Berman,AYE
+202520260AB1,2025-04-02,Do pass and be re-referred to the Committee on [Appropriations],Asm Insurance,aye,CX28,2025-04-02 00:00:00,1,147510,Calderon,AYE
+202520260AB1,2025-04-02,Do pass and be re-referred to the Committee on [Appropriations],Asm Insurance,aye,CX28,2025-04-02 00:00:00,1,147510,Chen,AYE
+202520260AB1,2025-04-02,Do pass and be re-referred to the Committee on [Appropriations],Asm Insurance,aye,CX28,2025-04-02 00:00:00,1,147510,Ellis,AYE
+202520260AB1,2025-04-02,Do pass and be re-referred to the Committee on [Appropriations],Asm Insurance,aye,CX28,2025-04-02 00:00:00,1,147510,Gipson,AYE
+202520260AB1,2025-04-02,Do pass and be re-referred to the Committee on [Appropriations],Asm Insurance,aye,CX28,2025-04-02 00:00:00,1,147510,Hadwick,AYE
+202520260AB1,2025-04-02,Do pass and be re-referred to the Committee on [Appropriations],Asm Insurance,aye,CX28,2025-04-02 00:00:00,1,147510,Harabedian,AYE
+202520260AB1,2025-04-02,Do pass and be re-referred to the Committee on [Appropriations],Asm Insurance,aye,CX28,2025-04-02 00:00:00,1,147510,Krell,AYE
+202520260AB1,2025-04-02,Do pass and be re-referred to the Committee on [Appropriations],Asm Insurance,aye,CX28,2025-04-02 00:00:00,1,147510,Michelle Rodriguez,AYE
+202520260AB1,2025-04-02,Do pass and be re-referred to the Committee on [Appropriations],Asm Insurance,aye,CX28,2025-04-02 00:00:00,1,147510,Nguyen,AYE
+202520260AB1,2025-04-02,Do pass and be re-referred to the Committee on [Appropriations],Asm Insurance,aye,CX28,2025-04-02 00:00:00,1,147510,Ortega,AYE
+202520260AB1,2025-04-02,Do pass and be re-referred to the Committee on [Appropriations],Asm Insurance,aye,CX28,2025-04-02 00:00:00,1,147510,Petrie-Norris,AYE
+202520260AB1,2025-04-02,Do pass and be re-referred to the Committee on [Appropriations],Asm Insurance,aye,CX28,2025-04-02 00:00:00,1,147510,Valencia,AYE
+202520260AB1,2025-04-02,Do pass and be re-referred to the Committee on [Appropriations],Asm Insurance,aye,CX28,2025-04-02 00:00:00,1,147510,Wallis,AYE
+202520260AB1,2025-04-02,Do pass and be re-referred to the Committee on [Appropriations],Asm Insurance,aye,CX28,2025-04-02 00:00:00,1,147510,Ávila Farías,AYE
+202520260AB1,2025-05-23,Do pass.,Asm Appropriations,aye,CX25,2025-05-23 00:00:00,1,3310,Arambula,AYE
+202520260AB1,2025-05-23,Do pass.,Asm Appropriations,aye,CX25,2025-05-23 00:00:00,1,3310,Calderon,AYE
+202520260AB1,2025-05-23,Do pass.,Asm Appropriations,aye,CX25,2025-05-23 00:00:00,1,3310,Caloza,AYE
+202520260AB1,2025-05-23,Do pass.,Asm Appropriations,aye,CX25,2025-05-23 00:00:00,1,3310,Dixon,AYE
+202520260AB1,2025-05-23,Do pass.,Asm Appropriations,aye,CX25,2025-05-23 00:00:00,1,3310,Elhawary,AYE
+202520260AB1,2025-05-23,Do pass.,Asm Appropriations,aye,CX25,2025-05-23 00:00:00,1,3310,Fong,AYE
+202520260AB1,2025-05-23,Do pass.,Asm Appropriations,aye,CX25,2025-05-23 00:00:00,1,3310,Hart,AYE
+202520260AB1,2025-05-23,Do pass.,Asm Appropriations,aye,CX25,2025-05-23 00:00:00,1,3310,Mark González,AYE
+202520260AB1,2025-05-23,Do pass.,Asm Appropriations,aye,CX25,2025-05-23 00:00:00,1,3310,Pacheco,AYE
+202520260AB1,2025-05-23,Do pass.,Asm Appropriations,aye,CX25,2025-05-23 00:00:00,1,3310,Pellerin,AYE
+202520260AB1,2025-05-23,Do pass.,Asm Appropriations,nvr,CX25,2025-05-23 00:00:00,1,3310,Sanchez,ABS
+202520260AB1,2025-05-23,Do pass.,Asm Appropriations,aye,CX25,2025-05-23 00:00:00,1,3310,Solache,AYE
+202520260AB1,2025-05-23,Do pass.,Asm Appropriations,aye,CX25,2025-05-23 00:00:00,1,3310,Ta,AYE
+202520260AB1,2025-05-23,Do pass.,Asm Appropriations,aye,CX25,2025-05-23 00:00:00,1,3310,Tangipa,AYE
+202520260AB1,2025-05-23,Do pass.,Asm Appropriations,aye,CX25,2025-05-23 00:00:00,1,3310,Wicks,AYE
+202520260AB1,2025-06-02,AB 1 Connolly Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-02 13:44:03,1007,184855,Addis,AYE
+202520260AB1,2025-06-02,AB 1 Connolly Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-02 13:44:03,1007,184855,Aguiar-Curry,AYE
+202520260AB1,2025-06-02,AB 1 Connolly Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-02 13:44:03,1007,184855,Ahrens,AYE
+202520260AB1,2025-06-02,AB 1 Connolly Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-02 13:44:03,1007,184855,Alanis,AYE
+202520260AB1,2025-06-02,AB 1 Connolly Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-02 13:44:03,1007,184855,Alvarez,AYE
+202520260AB1,2025-06-02,AB 1 Connolly Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-02 13:44:03,1007,184855,Arambula,AYE
+202520260AB1,2025-06-02,AB 1 Connolly Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-02 13:44:03,1007,184855,Bains,AYE
+202520260AB1,2025-06-02,AB 1 Connolly Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-02 13:44:03,1007,184855,Bauer-Kahan,AYE
+202520260AB1,2025-06-02,AB 1 Connolly Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-02 13:44:03,1007,184855,Bennett,AYE
+202520260AB1,2025-06-02,AB 1 Connolly Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-02 13:44:03,1007,184855,Berman,AYE
+202520260AB1,2025-06-02,AB 1 Connolly Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-02 13:44:03,1007,184855,Blanca Rubio,AYE
+202520260AB1,2025-06-02,AB 1 Connolly Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-02 13:44:03,1007,184855,Boerner,AYE
+202520260AB1,2025-06-02,AB 1 Connolly Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-02 13:44:03,1007,184855,Bonta,AYE
+202520260AB1,2025-06-02,AB 1 Connolly Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-02 13:44:03,1007,184855,Bryan,AYE
+202520260AB1,2025-06-02,AB 1 Connolly Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-02 13:44:03,1007,184855,Calderon,AYE
+202520260AB1,2025-06-02,AB 1 Connolly Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-02 13:44:03,1007,184855,Caloza,AYE
+202520260AB1,2025-06-02,AB 1 Connolly Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-02 13:44:03,1007,184855,Carrillo,AYE
+202520260AB1,2025-06-02,AB 1 Connolly Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-02 13:44:03,1007,184855,Castillo,AYE
+202520260AB1,2025-06-02,AB 1 Connolly Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-02 13:44:03,1007,184855,Celeste Rodriguez,AYE
+202520260AB1,2025-06-02,AB 1 Connolly Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-02 13:44:03,1007,184855,Chen,AYE
+202520260AB1,2025-06-02,AB 1 Connolly Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-02 13:44:03,1007,184855,Connolly,AYE
+202520260AB1,2025-06-02,AB 1 Connolly Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-02 13:44:03,1007,184855,Davies,AYE
+202520260AB1,2025-06-02,AB 1 Connolly Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-02 13:44:03,1007,184855,DeMaio,AYE
+202520260AB1,2025-06-02,AB 1 Connolly Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-02 13:44:03,1007,184855,Dixon,AYE
+202520260AB1,2025-06-02,AB 1 Connolly Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-02 13:44:03,1007,184855,Elhawary,AYE
+202520260AB1,2025-06-02,AB 1 Connolly Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-02 13:44:03,1007,184855,Ellis,AYE
+202520260AB1,2025-06-02,AB 1 Connolly Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-02 13:44:03,1007,184855,Flora,AYE
+202520260AB1,2025-06-02,AB 1 Connolly Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-02 13:44:03,1007,184855,Fong,AYE
+202520260AB1,2025-06-02,AB 1 Connolly Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-02 13:44:03,1007,184855,Gabriel,AYE
+202520260AB1,2025-06-02,AB 1 Connolly Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-02 13:44:03,1007,184855,Gallagher,AYE
+202520260AB1,2025-06-02,AB 1 Connolly Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-02 13:44:03,1007,184855,Garcia,AYE
+202520260AB1,2025-06-02,AB 1 Connolly Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-02 13:44:03,1007,184855,Gipson,AYE
+202520260AB1,2025-06-02,AB 1 Connolly Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-02 13:44:03,1007,184855,Hadwick,AYE
+202520260AB1,2025-06-02,AB 1 Connolly Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-02 13:44:03,1007,184855,Haney,AYE
+202520260AB1,2025-06-02,AB 1 Connolly Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-02 13:44:03,1007,184855,Harabedian,AYE
+202520260AB1,2025-06-02,AB 1 Connolly Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-02 13:44:03,1007,184855,Hart,AYE
+202520260AB1,2025-06-02,AB 1 Connolly Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-02 13:44:03,1007,184855,Hoover,AYE
+202520260AB1,2025-06-02,AB 1 Connolly Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-02 13:44:03,1007,184855,Irwin,AYE
+202520260AB1,2025-06-02,AB 1 Connolly Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-02 13:44:03,1007,184855,Jackson,AYE
+202520260AB1,2025-06-02,AB 1 Connolly Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-02 13:44:03,1007,184855,Jeff Gonzalez,AYE
+202520260AB1,2025-06-02,AB 1 Connolly Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-02 13:44:03,1007,184855,Kalra,AYE
+202520260AB1,2025-06-02,AB 1 Connolly Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-02 13:44:03,1007,184855,Krell,AYE
+202520260AB1,2025-06-02,AB 1 Connolly Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-02 13:44:03,1007,184855,Lackey,AYE
+202520260AB1,2025-06-02,AB 1 Connolly Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-02 13:44:03,1007,184855,Lee,AYE
+202520260AB1,2025-06-02,AB 1 Connolly Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-02 13:44:03,1007,184855,Lowenthal,AYE
+202520260AB1,2025-06-02,AB 1 Connolly Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-02 13:44:03,1007,184855,Macedo,AYE
+202520260AB1,2025-06-02,AB 1 Connolly Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-02 13:44:03,1007,184855,Mark González,AYE
+202520260AB1,2025-06-02,AB 1 Connolly Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-02 13:44:03,1007,184855,McKinnor,AYE
+202520260AB1,2025-06-02,AB 1 Connolly Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-02 13:44:03,1007,184855,Michelle Rodriguez,AYE
+202520260AB1,2025-06-02,AB 1 Connolly Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-02 13:44:03,1007,184855,Muratsuchi,AYE
+202520260AB1,2025-06-02,AB 1 Connolly Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-02 13:44:03,1007,184855,Nguyen,AYE
+202520260AB1,2025-06-02,AB 1 Connolly Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-02 13:44:03,1007,184855,Ortega,AYE
+202520260AB1,2025-06-02,AB 1 Connolly Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-02 13:44:03,1007,184855,Pacheco,AYE
+202520260AB1,2025-06-02,AB 1 Connolly Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-02 13:44:03,1007,184855,Papan,AYE
+202520260AB1,2025-06-02,AB 1 Connolly Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-02 13:44:03,1007,184855,Patel,AYE
+202520260AB1,2025-06-02,AB 1 Connolly Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-02 13:44:03,1007,184855,Patterson,AYE
+202520260AB1,2025-06-02,AB 1 Connolly Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-02 13:44:03,1007,184855,Pellerin,AYE
+202520260AB1,2025-06-02,AB 1 Connolly Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-02 13:44:03,1007,184855,Petrie-Norris,AYE
+202520260AB1,2025-06-02,AB 1 Connolly Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-02 13:44:03,1007,184855,Quirk-Silva,AYE
+202520260AB1,2025-06-02,AB 1 Connolly Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-02 13:44:03,1007,184855,Ramos,AYE
+202520260AB1,2025-06-02,AB 1 Connolly Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-02 13:44:03,1007,184855,Ransom,AYE
+202520260AB1,2025-06-02,AB 1 Connolly Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-02 13:44:03,1007,184855,Rivas,AYE
+202520260AB1,2025-06-02,AB 1 Connolly Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-02 13:44:03,1007,184855,Rogers,AYE
+202520260AB1,2025-06-02,AB 1 Connolly Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-02 13:44:03,1007,184855,Sanchez,AYE
+202520260AB1,2025-06-02,AB 1 Connolly Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-02 13:44:03,1007,184855,Schiavo,AYE
+202520260AB1,2025-06-02,AB 1 Connolly Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-02 13:44:03,1007,184855,Schultz,AYE
+202520260AB1,2025-06-02,AB 1 Connolly Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-02 13:44:03,1007,184855,Sharp-Collins,AYE
+202520260AB1,2025-06-02,AB 1 Connolly Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-02 13:44:03,1007,184855,Solache,AYE
+202520260AB1,2025-06-02,AB 1 Connolly Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-02 13:44:03,1007,184855,Soria,AYE
+202520260AB1,2025-06-02,AB 1 Connolly Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-02 13:44:03,1007,184855,Stefani,AYE
+202520260AB1,2025-06-02,AB 1 Connolly Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-02 13:44:03,1007,184855,Ta,AYE
+202520260AB1,2025-06-02,AB 1 Connolly Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-02 13:44:03,1007,184855,Tangipa,AYE
+202520260AB1,2025-06-02,AB 1 Connolly Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-02 13:44:03,1007,184855,Valencia,AYE
+202520260AB1,2025-06-02,AB 1 Connolly Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-02 13:44:03,1007,184855,Wallis,AYE
+202520260AB1,2025-06-02,AB 1 Connolly Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-02 13:44:03,1007,184855,Ward,AYE
+202520260AB1,2025-06-02,AB 1 Connolly Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-02 13:44:03,1007,184855,Wicks,AYE
+202520260AB1,2025-06-02,AB 1 Connolly Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-02 13:44:03,1007,184855,Wilson,AYE
+202520260AB1,2025-06-02,AB 1 Connolly Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-02 13:44:03,1007,184855,Zbur,AYE
+202520260AB1,2025-06-02,AB 1 Connolly Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-02 13:44:03,1007,184855,Ávila Farías,AYE
+202520260AB1,2025-06-25,"Do pass, but first be re-referred to the Committee on [Appropriations] with the recommendation: To Consent Calendar",Sen Insurance,aye,CS70,2025-06-25 00:00:00,1,147622,Becker,AYE
+202520260AB1,2025-06-25,"Do pass, but first be re-referred to the Committee on [Appropriations] with the recommendation: To Consent Calendar",Sen Insurance,aye,CS70,2025-06-25 00:00:00,1,147622,Caballero,AYE
+202520260AB1,2025-06-25,"Do pass, but first be re-referred to the Committee on [Appropriations] with the recommendation: To Consent Calendar",Sen Insurance,aye,CS70,2025-06-25 00:00:00,1,147622,Jones,AYE
+202520260AB1,2025-06-25,"Do pass, but first be re-referred to the Committee on [Appropriations] with the recommendation: To Consent Calendar",Sen Insurance,aye,CS70,2025-06-25 00:00:00,1,147622,Niello,AYE
+202520260AB1,2025-06-25,"Do pass, but first be re-referred to the Committee on [Appropriations] with the recommendation: To Consent Calendar",Sen Insurance,aye,CS70,2025-06-25 00:00:00,1,147622,Padilla,AYE
+202520260AB1,2025-06-25,"Do pass, but first be re-referred to the Committee on [Appropriations] with the recommendation: To Consent Calendar",Sen Insurance,aye,CS70,2025-06-25 00:00:00,1,147622,Rubio,AYE
+202520260AB1,2025-06-25,"Do pass, but first be re-referred to the Committee on [Appropriations] with the recommendation: To Consent Calendar",Sen Insurance,aye,CS70,2025-06-25 00:00:00,1,147622,Wahab,AYE
+202520260AB1,2025-08-18,Placed on suspense file,Sen Appropriations,aye,CS61,2025-08-18 00:00:00,1,147718,Cabaldon,AYE
+202520260AB1,2025-08-18,Placed on suspense file,Sen Appropriations,aye,CS61,2025-08-18 00:00:00,1,147718,Caballero,AYE
+202520260AB1,2025-08-18,Placed on suspense file,Sen Appropriations,aye,CS61,2025-08-18 00:00:00,1,147718,Dahle,AYE
+202520260AB1,2025-08-18,Placed on suspense file,Sen Appropriations,aye,CS61,2025-08-18 00:00:00,1,147718,Grayson,AYE
+202520260AB1,2025-08-18,Placed on suspense file,Sen Appropriations,aye,CS61,2025-08-18 00:00:00,1,147718,Richardson,AYE
+202520260AB1,2025-08-18,Placed on suspense file,Sen Appropriations,aye,CS61,2025-08-18 00:00:00,1,147718,Seyarto,AYE
+202520260AB1,2025-08-18,Placed on suspense file,Sen Appropriations,aye,CS61,2025-08-18 00:00:00,1,147718,Wahab,AYE
+202520260AB1,2025-08-29,Do pass,Sen Appropriations,aye,CS61,2025-08-29 00:00:00,1,147633,Cabaldon,AYE
+202520260AB1,2025-08-29,Do pass,Sen Appropriations,aye,CS61,2025-08-29 00:00:00,1,147633,Caballero,AYE
+202520260AB1,2025-08-29,Do pass,Sen Appropriations,aye,CS61,2025-08-29 00:00:00,1,147633,Dahle,AYE
+202520260AB1,2025-08-29,Do pass,Sen Appropriations,aye,CS61,2025-08-29 00:00:00,1,147633,Grayson,AYE
+202520260AB1,2025-08-29,Do pass,Sen Appropriations,aye,CS61,2025-08-29 00:00:00,1,147633,Richardson,AYE
+202520260AB1,2025-08-29,Do pass,Sen Appropriations,aye,CS61,2025-08-29 00:00:00,1,147633,Seyarto,AYE
+202520260AB1,2025-08-29,Do pass,Sen Appropriations,aye,CS61,2025-08-29 00:00:00,1,147633,Wahab,AYE
+202520260AB1,2025-09-11,Assembly 3rd Reading AB1 Connolly et al. By Allen,Senate Floor,aye,SFLOOR,2025-09-11 00:00:00,1069,186909,Allen,AYE
+202520260AB1,2025-09-11,Assembly 3rd Reading AB1 Connolly et al. By Allen,Senate Floor,aye,SFLOOR,2025-09-11 00:00:00,1069,186909,Alvarado-Gil,AYE
+202520260AB1,2025-09-11,Assembly 3rd Reading AB1 Connolly et al. By Allen,Senate Floor,aye,SFLOOR,2025-09-11 00:00:00,1069,186909,Archuleta,AYE
+202520260AB1,2025-09-11,Assembly 3rd Reading AB1 Connolly et al. By Allen,Senate Floor,aye,SFLOOR,2025-09-11 00:00:00,1069,186909,Arreguín,AYE
+202520260AB1,2025-09-11,Assembly 3rd Reading AB1 Connolly et al. By Allen,Senate Floor,aye,SFLOOR,2025-09-11 00:00:00,1069,186909,Ashby,AYE
+202520260AB1,2025-09-11,Assembly 3rd Reading AB1 Connolly et al. By Allen,Senate Floor,aye,SFLOOR,2025-09-11 00:00:00,1069,186909,Becker,AYE
+202520260AB1,2025-09-11,Assembly 3rd Reading AB1 Connolly et al. By Allen,Senate Floor,aye,SFLOOR,2025-09-11 00:00:00,1069,186909,Blakespear,AYE
+202520260AB1,2025-09-11,Assembly 3rd Reading AB1 Connolly et al. By Allen,Senate Floor,aye,SFLOOR,2025-09-11 00:00:00,1069,186909,Cabaldon,AYE
+202520260AB1,2025-09-11,Assembly 3rd Reading AB1 Connolly et al. By Allen,Senate Floor,aye,SFLOOR,2025-09-11 00:00:00,1069,186909,Caballero,AYE
+202520260AB1,2025-09-11,Assembly 3rd Reading AB1 Connolly et al. By Allen,Senate Floor,aye,SFLOOR,2025-09-11 00:00:00,1069,186909,Cervantes,AYE
+202520260AB1,2025-09-11,Assembly 3rd Reading AB1 Connolly et al. By Allen,Senate Floor,aye,SFLOOR,2025-09-11 00:00:00,1069,186909,Choi,AYE
+202520260AB1,2025-09-11,Assembly 3rd Reading AB1 Connolly et al. By Allen,Senate Floor,aye,SFLOOR,2025-09-11 00:00:00,1069,186909,Cortese,AYE
+202520260AB1,2025-09-11,Assembly 3rd Reading AB1 Connolly et al. By Allen,Senate Floor,aye,SFLOOR,2025-09-11 00:00:00,1069,186909,Dahle,AYE
+202520260AB1,2025-09-11,Assembly 3rd Reading AB1 Connolly et al. By Allen,Senate Floor,aye,SFLOOR,2025-09-11 00:00:00,1069,186909,Durazo,AYE
+202520260AB1,2025-09-11,Assembly 3rd Reading AB1 Connolly et al. By Allen,Senate Floor,aye,SFLOOR,2025-09-11 00:00:00,1069,186909,Gonzalez,AYE
+202520260AB1,2025-09-11,Assembly 3rd Reading AB1 Connolly et al. By Allen,Senate Floor,aye,SFLOOR,2025-09-11 00:00:00,1069,186909,Grayson,AYE
+202520260AB1,2025-09-11,Assembly 3rd Reading AB1 Connolly et al. By Allen,Senate Floor,aye,SFLOOR,2025-09-11 00:00:00,1069,186909,Grove,AYE
+202520260AB1,2025-09-11,Assembly 3rd Reading AB1 Connolly et al. By Allen,Senate Floor,aye,SFLOOR,2025-09-11 00:00:00,1069,186909,Hurtado,AYE
+202520260AB1,2025-09-11,Assembly 3rd Reading AB1 Connolly et al. By Allen,Senate Floor,aye,SFLOOR,2025-09-11 00:00:00,1069,186909,Jones,AYE
+202520260AB1,2025-09-11,Assembly 3rd Reading AB1 Connolly et al. By Allen,Senate Floor,aye,SFLOOR,2025-09-11 00:00:00,1069,186909,Laird,AYE
+202520260AB1,2025-09-11,Assembly 3rd Reading AB1 Connolly et al. By Allen,Senate Floor,aye,SFLOOR,2025-09-11 00:00:00,1069,186909,Limón,AYE
+202520260AB1,2025-09-11,Assembly 3rd Reading AB1 Connolly et al. By Allen,Senate Floor,aye,SFLOOR,2025-09-11 00:00:00,1069,186909,McGuire,AYE
+202520260AB1,2025-09-11,Assembly 3rd Reading AB1 Connolly et al. By Allen,Senate Floor,aye,SFLOOR,2025-09-11 00:00:00,1069,186909,McNerney,AYE
+202520260AB1,2025-09-11,Assembly 3rd Reading AB1 Connolly et al. By Allen,Senate Floor,aye,SFLOOR,2025-09-11 00:00:00,1069,186909,Menjivar,AYE
+202520260AB1,2025-09-11,Assembly 3rd Reading AB1 Connolly et al. By Allen,Senate Floor,aye,SFLOOR,2025-09-11 00:00:00,1069,186909,Niello,AYE
+202520260AB1,2025-09-11,Assembly 3rd Reading AB1 Connolly et al. By Allen,Senate Floor,aye,SFLOOR,2025-09-11 00:00:00,1069,186909,Ochoa Bogh,AYE
+202520260AB1,2025-09-11,Assembly 3rd Reading AB1 Connolly et al. By Allen,Senate Floor,aye,SFLOOR,2025-09-11 00:00:00,1069,186909,Padilla,AYE
+202520260AB1,2025-09-11,Assembly 3rd Reading AB1 Connolly et al. By Allen,Senate Floor,aye,SFLOOR,2025-09-11 00:00:00,1069,186909,Pérez,AYE
+202520260AB1,2025-09-11,Assembly 3rd Reading AB1 Connolly et al. By Allen,Senate Floor,aye,SFLOOR,2025-09-11 00:00:00,1069,186909,Reyes,AYE
+202520260AB1,2025-09-11,Assembly 3rd Reading AB1 Connolly et al. By Allen,Senate Floor,aye,SFLOOR,2025-09-11 00:00:00,1069,186909,Richardson,AYE
+202520260AB1,2025-09-11,Assembly 3rd Reading AB1 Connolly et al. By Allen,Senate Floor,aye,SFLOOR,2025-09-11 00:00:00,1069,186909,Rubio,AYE
+202520260AB1,2025-09-11,Assembly 3rd Reading AB1 Connolly et al. By Allen,Senate Floor,aye,SFLOOR,2025-09-11 00:00:00,1069,186909,Seyarto,AYE
+202520260AB1,2025-09-11,Assembly 3rd Reading AB1 Connolly et al. By Allen,Senate Floor,aye,SFLOOR,2025-09-11 00:00:00,1069,186909,Smallwood-Cuevas,AYE
+202520260AB1,2025-09-11,Assembly 3rd Reading AB1 Connolly et al. By Allen,Senate Floor,aye,SFLOOR,2025-09-11 00:00:00,1069,186909,Stern,AYE
+202520260AB1,2025-09-11,Assembly 3rd Reading AB1 Connolly et al. By Allen,Senate Floor,aye,SFLOOR,2025-09-11 00:00:00,1069,186909,Strickland,AYE
+202520260AB1,2025-09-11,Assembly 3rd Reading AB1 Connolly et al. By Allen,Senate Floor,aye,SFLOOR,2025-09-11 00:00:00,1069,186909,Umberg,AYE
+202520260AB1,2025-09-11,Assembly 3rd Reading AB1 Connolly et al. By Allen,Senate Floor,aye,SFLOOR,2025-09-11 00:00:00,1069,186909,Valladares,AYE
+202520260AB1,2025-09-11,Assembly 3rd Reading AB1 Connolly et al. By Allen,Senate Floor,aye,SFLOOR,2025-09-11 00:00:00,1069,186909,Wahab,AYE
+202520260AB1,2025-09-11,Assembly 3rd Reading AB1 Connolly et al. By Allen,Senate Floor,aye,SFLOOR,2025-09-11 00:00:00,1069,186909,Weber Pierson,AYE
+202520260AB1,2025-09-11,Assembly 3rd Reading AB1 Connolly et al. By Allen,Senate Floor,aye,SFLOOR,2025-09-11 00:00:00,1069,186909,Wiener,AYE
+202520260AB13,2025-03-26,Do pass and be re-referred to the Committee on [Appropriations],Asm Utilities and Energy,aye,CX23,2025-03-26 00:00:00,1,147510,Boerner,AYE
+202520260AB13,2025-03-26,Do pass and be re-referred to the Committee on [Appropriations],Asm Utilities and Energy,aye,CX23,2025-03-26 00:00:00,1,147510,Calderon,AYE
+202520260AB13,2025-03-26,Do pass and be re-referred to the Committee on [Appropriations],Asm Utilities and Energy,aye,CX23,2025-03-26 00:00:00,1,147510,Chen,AYE
+202520260AB13,2025-03-26,Do pass and be re-referred to the Committee on [Appropriations],Asm Utilities and Energy,aye,CX23,2025-03-26 00:00:00,1,147510,Davies,AYE
+202520260AB13,2025-03-26,Do pass and be re-referred to the Committee on [Appropriations],Asm Utilities and Energy,aye,CX23,2025-03-26 00:00:00,1,147510,Harabedian,AYE
+202520260AB13,2025-03-26,Do pass and be re-referred to the Committee on [Appropriations],Asm Utilities and Energy,aye,CX23,2025-03-26 00:00:00,1,147510,Hart,AYE
+202520260AB13,2025-03-26,Do pass and be re-referred to the Committee on [Appropriations],Asm Utilities and Energy,aye,CX23,2025-03-26 00:00:00,1,147510,Irwin,AYE
+202520260AB13,2025-03-26,Do pass and be re-referred to the Committee on [Appropriations],Asm Utilities and Energy,aye,CX23,2025-03-26 00:00:00,1,147510,Kalra,AYE
+202520260AB13,2025-03-26,Do pass and be re-referred to the Committee on [Appropriations],Asm Utilities and Energy,aye,CX23,2025-03-26 00:00:00,1,147510,Mark González,AYE
+202520260AB13,2025-03-26,Do pass and be re-referred to the Committee on [Appropriations],Asm Utilities and Energy,aye,CX23,2025-03-26 00:00:00,1,147510,Papan,AYE
+202520260AB13,2025-03-26,Do pass and be re-referred to the Committee on [Appropriations],Asm Utilities and Energy,aye,CX23,2025-03-26 00:00:00,1,147510,Patterson,AYE
+202520260AB13,2025-03-26,Do pass and be re-referred to the Committee on [Appropriations],Asm Utilities and Energy,aye,CX23,2025-03-26 00:00:00,1,147510,Petrie-Norris,AYE
+202520260AB13,2025-03-26,Do pass and be re-referred to the Committee on [Appropriations],Asm Utilities and Energy,aye,CX23,2025-03-26 00:00:00,1,147510,Rogers,AYE
+202520260AB13,2025-03-26,Do pass and be re-referred to the Committee on [Appropriations],Asm Utilities and Energy,aye,CX23,2025-03-26 00:00:00,1,147510,Schiavo,AYE
+202520260AB13,2025-03-26,Do pass and be re-referred to the Committee on [Appropriations],Asm Utilities and Energy,aye,CX23,2025-03-26 00:00:00,1,147510,Schultz,AYE
+202520260AB13,2025-03-26,Do pass and be re-referred to the Committee on [Appropriations],Asm Utilities and Energy,aye,CX23,2025-03-26 00:00:00,1,147510,Ta,AYE
+202520260AB13,2025-03-26,Do pass and be re-referred to the Committee on [Appropriations],Asm Utilities and Energy,aye,CX23,2025-03-26 00:00:00,1,147510,Wallis,AYE
+202520260AB13,2025-03-26,Do pass and be re-referred to the Committee on [Appropriations],Asm Utilities and Energy,aye,CX23,2025-03-26 00:00:00,1,147510,Zbur,AYE
+202520260AB13,2025-05-23,Do pass as amended.,Asm Appropriations,aye,CX25,2025-05-23 00:00:00,1,104835,Arambula,AYE
+202520260AB13,2025-05-23,Do pass as amended.,Asm Appropriations,aye,CX25,2025-05-23 00:00:00,1,104835,Calderon,AYE
+202520260AB13,2025-05-23,Do pass as amended.,Asm Appropriations,aye,CX25,2025-05-23 00:00:00,1,104835,Caloza,AYE
+202520260AB13,2025-05-23,Do pass as amended.,Asm Appropriations,nvr,CX25,2025-05-23 00:00:00,1,104835,Dixon,ABS
+202520260AB13,2025-05-23,Do pass as amended.,Asm Appropriations,aye,CX25,2025-05-23 00:00:00,1,104835,Elhawary,AYE
+202520260AB13,2025-05-23,Do pass as amended.,Asm Appropriations,aye,CX25,2025-05-23 00:00:00,1,104835,Fong,AYE
+202520260AB13,2025-05-23,Do pass as amended.,Asm Appropriations,aye,CX25,2025-05-23 00:00:00,1,104835,Hart,AYE
+202520260AB13,2025-05-23,Do pass as amended.,Asm Appropriations,aye,CX25,2025-05-23 00:00:00,1,104835,Mark González,AYE
+202520260AB13,2025-05-23,Do pass as amended.,Asm Appropriations,aye,CX25,2025-05-23 00:00:00,1,104835,Pacheco,AYE
+202520260AB13,2025-05-23,Do pass as amended.,Asm Appropriations,aye,CX25,2025-05-23 00:00:00,1,104835,Pellerin,AYE
+202520260AB13,2025-05-23,Do pass as amended.,Asm Appropriations,nvr,CX25,2025-05-23 00:00:00,1,104835,Sanchez,ABS
+202520260AB13,2025-05-23,Do pass as amended.,Asm Appropriations,aye,CX25,2025-05-23 00:00:00,1,104835,Solache,AYE
+202520260AB13,2025-05-23,Do pass as amended.,Asm Appropriations,nvr,CX25,2025-05-23 00:00:00,1,104835,Ta,ABS
+202520260AB13,2025-05-23,Do pass as amended.,Asm Appropriations,nvr,CX25,2025-05-23 00:00:00,1,104835,Tangipa,ABS
+202520260AB13,2025-05-23,Do pass as amended.,Asm Appropriations,aye,CX25,2025-05-23 00:00:00,1,104835,Wicks,AYE
+202520260AB13,2025-06-03,AB 13 Ransom Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-03 15:36:29,1074,185218,Addis,AYE
+202520260AB13,2025-06-03,AB 13 Ransom Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-03 15:36:29,1074,185218,Aguiar-Curry,AYE
+202520260AB13,2025-06-03,AB 13 Ransom Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-03 15:36:29,1074,185218,Ahrens,AYE
+202520260AB13,2025-06-03,AB 13 Ransom Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-03 15:36:29,1074,185218,Alanis,AYE
+202520260AB13,2025-06-03,AB 13 Ransom Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-03 15:36:29,1074,185218,Alvarez,AYE
+202520260AB13,2025-06-03,AB 13 Ransom Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-03 15:36:29,1074,185218,Arambula,AYE
+202520260AB13,2025-06-03,AB 13 Ransom Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-03 15:36:29,1074,185218,Bains,AYE
+202520260AB13,2025-06-03,AB 13 Ransom Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-03 15:36:29,1074,185218,Bauer-Kahan,AYE
+202520260AB13,2025-06-03,AB 13 Ransom Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-03 15:36:29,1074,185218,Bennett,AYE
+202520260AB13,2025-06-03,AB 13 Ransom Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-03 15:36:29,1074,185218,Berman,AYE
+202520260AB13,2025-06-03,AB 13 Ransom Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-03 15:36:29,1074,185218,Blanca Rubio,AYE
+202520260AB13,2025-06-03,AB 13 Ransom Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-03 15:36:29,1074,185218,Boerner,AYE
+202520260AB13,2025-06-03,AB 13 Ransom Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-03 15:36:29,1074,185218,Bonta,AYE
+202520260AB13,2025-06-03,AB 13 Ransom Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-03 15:36:29,1074,185218,Bryan,AYE
+202520260AB13,2025-06-03,AB 13 Ransom Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-03 15:36:29,1074,185218,Calderon,AYE
+202520260AB13,2025-06-03,AB 13 Ransom Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-03 15:36:29,1074,185218,Caloza,AYE
+202520260AB13,2025-06-03,AB 13 Ransom Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-03 15:36:29,1074,185218,Carrillo,AYE
+202520260AB13,2025-06-03,AB 13 Ransom Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-03 15:36:29,1074,185218,Castillo,AYE
+202520260AB13,2025-06-03,AB 13 Ransom Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-03 15:36:29,1074,185218,Celeste Rodriguez,AYE
+202520260AB13,2025-06-03,AB 13 Ransom Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-03 15:36:29,1074,185218,Chen,AYE
+202520260AB13,2025-06-03,AB 13 Ransom Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-03 15:36:29,1074,185218,Connolly,AYE
+202520260AB13,2025-06-03,AB 13 Ransom Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-03 15:36:29,1074,185218,Davies,AYE
+202520260AB13,2025-06-03,AB 13 Ransom Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-03 15:36:29,1074,185218,DeMaio,AYE
+202520260AB13,2025-06-03,AB 13 Ransom Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-03 15:36:29,1074,185218,Dixon,AYE
+202520260AB13,2025-06-03,AB 13 Ransom Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-03 15:36:29,1074,185218,Elhawary,AYE
+202520260AB13,2025-06-03,AB 13 Ransom Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-03 15:36:29,1074,185218,Ellis,AYE
+202520260AB13,2025-06-03,AB 13 Ransom Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-03 15:36:29,1074,185218,Flora,AYE
+202520260AB13,2025-06-03,AB 13 Ransom Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-03 15:36:29,1074,185218,Fong,AYE
+202520260AB13,2025-06-03,AB 13 Ransom Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-03 15:36:29,1074,185218,Gabriel,AYE
+202520260AB13,2025-06-03,AB 13 Ransom Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-03 15:36:29,1074,185218,Gallagher,AYE
+202520260AB13,2025-06-03,AB 13 Ransom Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-03 15:36:29,1074,185218,Garcia,AYE
+202520260AB13,2025-06-03,AB 13 Ransom Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-03 15:36:29,1074,185218,Gipson,AYE
+202520260AB13,2025-06-03,AB 13 Ransom Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-03 15:36:29,1074,185218,Hadwick,AYE
+202520260AB13,2025-06-03,AB 13 Ransom Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-03 15:36:29,1074,185218,Haney,AYE
+202520260AB13,2025-06-03,AB 13 Ransom Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-03 15:36:29,1074,185218,Harabedian,AYE
+202520260AB13,2025-06-03,AB 13 Ransom Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-03 15:36:29,1074,185218,Hart,AYE
+202520260AB13,2025-06-03,AB 13 Ransom Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-03 15:36:29,1074,185218,Hoover,AYE
+202520260AB13,2025-06-03,AB 13 Ransom Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-03 15:36:29,1074,185218,Irwin,AYE
+202520260AB13,2025-06-03,AB 13 Ransom Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-03 15:36:29,1074,185218,Jackson,AYE
+202520260AB13,2025-06-03,AB 13 Ransom Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-03 15:36:29,1074,185218,Jeff Gonzalez,AYE
+202520260AB13,2025-06-03,AB 13 Ransom Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-03 15:36:29,1074,185218,Kalra,AYE
+202520260AB13,2025-06-03,AB 13 Ransom Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-03 15:36:29,1074,185218,Krell,AYE
+202520260AB13,2025-06-03,AB 13 Ransom Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-03 15:36:29,1074,185218,Lackey,AYE
+202520260AB13,2025-06-03,AB 13 Ransom Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-03 15:36:29,1074,185218,Lee,AYE
+202520260AB13,2025-06-03,AB 13 Ransom Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-03 15:36:29,1074,185218,Lowenthal,AYE
+202520260AB13,2025-06-03,AB 13 Ransom Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-03 15:36:29,1074,185218,Macedo,AYE
+202520260AB13,2025-06-03,AB 13 Ransom Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-03 15:36:29,1074,185218,Mark González,AYE
+202520260AB13,2025-06-03,AB 13 Ransom Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-03 15:36:29,1074,185218,McKinnor,AYE
+202520260AB13,2025-06-03,AB 13 Ransom Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-03 15:36:29,1074,185218,Michelle Rodriguez,AYE
+202520260AB13,2025-06-03,AB 13 Ransom Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-03 15:36:29,1074,185218,Muratsuchi,AYE
+202520260AB13,2025-06-03,AB 13 Ransom Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-03 15:36:29,1074,185218,Nguyen,AYE
+202520260AB13,2025-06-03,AB 13 Ransom Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-03 15:36:29,1074,185218,Ortega,AYE
+202520260AB13,2025-06-03,AB 13 Ransom Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-03 15:36:29,1074,185218,Pacheco,AYE
+202520260AB13,2025-06-03,AB 13 Ransom Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-03 15:36:29,1074,185218,Papan,AYE
+202520260AB13,2025-06-03,AB 13 Ransom Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-03 15:36:29,1074,185218,Patel,AYE
+202520260AB13,2025-06-03,AB 13 Ransom Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-03 15:36:29,1074,185218,Patterson,AYE
+202520260AB13,2025-06-03,AB 13 Ransom Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-03 15:36:29,1074,185218,Pellerin,AYE
+202520260AB13,2025-06-03,AB 13 Ransom Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-03 15:36:29,1074,185218,Petrie-Norris,AYE
+202520260AB13,2025-06-03,AB 13 Ransom Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-03 15:36:29,1074,185218,Quirk-Silva,AYE
+202520260AB13,2025-06-03,AB 13 Ransom Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-03 15:36:29,1074,185218,Ramos,AYE
+202520260AB13,2025-06-03,AB 13 Ransom Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-03 15:36:29,1074,185218,Ransom,AYE
+202520260AB13,2025-06-03,AB 13 Ransom Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-03 15:36:29,1074,185218,Rivas,AYE
+202520260AB13,2025-06-03,AB 13 Ransom Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-03 15:36:29,1074,185218,Rogers,AYE
+202520260AB13,2025-06-03,AB 13 Ransom Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-03 15:36:29,1074,185218,Sanchez,AYE
+202520260AB13,2025-06-03,AB 13 Ransom Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-03 15:36:29,1074,185218,Schiavo,AYE
+202520260AB13,2025-06-03,AB 13 Ransom Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-03 15:36:29,1074,185218,Schultz,AYE
+202520260AB13,2025-06-03,AB 13 Ransom Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-03 15:36:29,1074,185218,Sharp-Collins,AYE
+202520260AB13,2025-06-03,AB 13 Ransom Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-03 15:36:29,1074,185218,Solache,AYE
+202520260AB13,2025-06-03,AB 13 Ransom Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-03 15:36:29,1074,185218,Soria,AYE
+202520260AB13,2025-06-03,AB 13 Ransom Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-03 15:36:29,1074,185218,Stefani,AYE
+202520260AB13,2025-06-03,AB 13 Ransom Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-03 15:36:29,1074,185218,Ta,AYE
+202520260AB13,2025-06-03,AB 13 Ransom Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-03 15:36:29,1074,185218,Tangipa,AYE
+202520260AB13,2025-06-03,AB 13 Ransom Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-03 15:36:29,1074,185218,Valencia,AYE
+202520260AB13,2025-06-03,AB 13 Ransom Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-03 15:36:29,1074,185218,Wallis,AYE
+202520260AB13,2025-06-03,AB 13 Ransom Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-03 15:36:29,1074,185218,Ward,AYE
+202520260AB13,2025-06-03,AB 13 Ransom Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-03 15:36:29,1074,185218,Wicks,AYE
+202520260AB13,2025-06-03,AB 13 Ransom Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-03 15:36:29,1074,185218,Wilson,AYE
+202520260AB13,2025-06-03,AB 13 Ransom Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-03 15:36:29,1074,185218,Zbur,AYE
+202520260AB13,2025-06-03,AB 13 Ransom Assembly Third Reading,Assembly Floor,aye,AFLOOR,2025-06-03 15:36:29,1074,185218,Ávila Farías,AYE
+202520260AB13,2025-07-15,"Do pass as amended, but first amend, and re-refer to the Committee on [Appropriations]","Sen Energy, Utilities and Communications",aye,CS71,2025-07-15 00:00:00,1,147504,Allen,AYE
+202520260AB13,2025-07-15,"Do pass as amended, but first amend, and re-refer to the Committee on [Appropriations]","Sen Energy, Utilities and Communications",aye,CS71,2025-07-15 00:00:00,1,147504,Archuleta,AYE
+202520260AB13,2025-07-15,"Do pass as amended, but first amend, and re-refer to the Committee on [Appropriations]","Sen Energy, Utilities and Communications",aye,CS71,2025-07-15 00:00:00,1,147504,Arreguín,AYE
+202520260AB13,2025-07-15,"Do pass as amended, but first amend, and re-refer to the Committee on [Appropriations]","Sen Energy, Utilities and Communications",nvr,CS71,2025-07-15 00:00:00,1,147504,Ashby,ABS
+202520260AB13,2025-07-15,"Do pass as amended, but first amend, and re-refer to the Committee on [Appropriations]","Sen Energy, Utilities and Communications",aye,CS71,2025-07-15 00:00:00,1,147504,Becker,AYE
+202520260AB13,2025-07-15,"Do pass as amended, but first amend, and re-refer to the Committee on [Appropriations]","Sen Energy, Utilities and Communications",aye,CS71,2025-07-15 00:00:00,1,147504,Caballero,AYE
+202520260AB13,2025-07-15,"Do pass as amended, but first amend, and re-refer to the Committee on [Appropriations]","Sen Energy, Utilities and Communications",aye,CS71,2025-07-15 00:00:00,1,147504,Dahle,AYE
+202520260AB13,2025-07-15,"Do pass as amended, but first amend, and re-refer to the Committee on [Appropriations]","Sen Energy, Utilities and Communications",aye,CS71,2025-07-15 00:00:00,1,147504,Gonzalez,AYE
+202520260AB13,2025-07-15,"Do pass as amended, but first amend, and re-refer to the Committee on [Appropriations]","Sen Energy, Utilities and Communications",aye,CS71,2025-07-15 00:00:00,1,147504,Grove,AYE
+202520260AB13,2025-07-15,"Do pass as amended, but first amend, and re-refer to the Committee on [Appropriations]","Sen Energy, Utilities and Communications",aye,CS71,2025-07-15 00:00:00,1,147504,Hurtado,AYE
+202520260AB13,2025-07-15,"Do pass as amended, but first amend, and re-refer to the Committee on [Appropriations]","Sen Energy, Utilities and Communications",aye,CS71,2025-07-15 00:00:00,1,147504,Limón,AYE
+202520260AB13,2025-07-15,"Do pass as amended, but first amend, and re-refer to the Committee on [Appropriations]","Sen Energy, Utilities and Communications",aye,CS71,2025-07-15 00:00:00,1,147504,McNerney,AYE
+202520260AB13,2025-07-15,"Do pass as amended, but first amend, and re-refer to the Committee on [Appropriations]","Sen Energy, Utilities and Communications",aye,CS71,2025-07-15 00:00:00,1,147504,Ochoa Bogh,AYE
+202520260AB13,2025-07-15,"Do pass as amended, but first amend, and re-refer to the Committee on [Appropriations]","Sen Energy, Utilities and Communications",aye,CS71,2025-07-15 00:00:00,1,147504,Rubio,AYE
+202520260AB13,2025-07-15,"Do pass as amended, but first amend, and re-refer to the Committee on [Appropriations]","Sen Energy, Utilities and Communications",aye,CS71,2025-07-15 00:00:00,1,147504,Stern,AYE
+202520260AB13,2025-07-15,"Do pass as amended, but first amend, and re-refer to the Committee on [Appropriations]","Sen Energy, Utilities and Communications",aye,CS71,2025-07-15 00:00:00,1,147504,Strickland,AYE
+202520260AB13,2025-07-15,"Do pass as amended, but first amend, and re-refer to the Committee on [Appropriations]","Sen Energy, Utilities and Communications",aye,CS71,2025-07-15 00:00:00,1,147504,Wahab,AYE
+202520260AB13,2025-08-18,Placed on suspense file,Sen Appropriations,aye,CS61,2025-08-18 00:00:00,1,147718,Cabaldon,AYE
+202520260AB13,2025-08-18,Placed on suspense file,Sen Appropriations,aye,CS61,2025-08-18 00:00:00,1,147718,Caballero,AYE
+202520260AB13,2025-08-18,Placed on suspense file,Sen Appropriations,aye,CS61,2025-08-18 00:00:00,1,147718,Dahle,AYE
+202520260AB13,2025-08-18,Placed on suspense file,Sen Appropriations,aye,CS61,2025-08-18 00:00:00,1,147718,Grayson,AYE
+202520260AB13,2025-08-18,Placed on suspense file,Sen Appropriations,aye,CS61,2025-08-18 00:00:00,1,147718,Richardson,AYE
+202520260AB13,2025-08-18,Placed on suspense file,Sen Appropriations,aye,CS61,2025-08-18 00:00:00,1,147718,Seyarto,AYE
+202520260AB13,2025-08-18,Placed on suspense file,Sen Appropriations,aye,CS61,2025-08-18 00:00:00,1,147718,Wahab,AYE
+202520260SB2,2025-03-19,"Do pass, but first be re-referred to the Committee on [Appropriations]",Sen Environmental Quality,nvr,CS64,2025-03-19 00:00:00,1,147517,Blakespear,ABS
+202520260SB2,2025-03-19,"Do pass, but first be re-referred to the Committee on [Appropriations]",Sen Environmental Quality,aye,CS64,2025-03-19 00:00:00,1,147517,Dahle,AYE
+202520260SB2,2025-03-19,"Do pass, but first be re-referred to the Committee on [Appropriations]",Sen Environmental Quality,no,CS64,2025-03-19 00:00:00,1,147517,Gonzalez,NOE
+202520260SB2,2025-03-19,"Do pass, but first be re-referred to the Committee on [Appropriations]",Sen Environmental Quality,aye,CS64,2025-03-19 00:00:00,1,147517,Hurtado,AYE
+202520260SB2,2025-03-19,"Do pass, but first be re-referred to the Committee on [Appropriations]",Sen Environmental Quality,nvr,CS64,2025-03-19 00:00:00,1,147517,Menjivar,ABS
+202520260SB2,2025-03-19,"Do pass, but first be re-referred to the Committee on [Appropriations]",Sen Environmental Quality,no,CS64,2025-03-19 00:00:00,1,147517,Padilla,NOE
+202520260SB2,2025-03-19,"Do pass, but first be re-referred to the Committee on [Appropriations]",Sen Environmental Quality,nvr,CS64,2025-03-19 00:00:00,1,147517,Pérez,ABS
+202520260SB2,2025-03-19,"Do pass, but first be re-referred to the Committee on [Appropriations]",Sen Environmental Quality,aye,CS64,2025-03-19 00:00:00,1,147517,Valladares,AYE
+202520260SB2,2025-03-19,[First] hearing set for [03-19-2025]: Failed passage in Committee. Reconsideration granted,Sen Environmental Quality,aye,CS64,2025-03-19 00:00:00,2,183788,Blakespear,AYE
+202520260SB2,2025-03-19,[First] hearing set for [03-19-2025]: Failed passage in Committee. Reconsideration granted,Sen Environmental Quality,aye,CS64,2025-03-19 00:00:00,2,183788,Dahle,AYE
+202520260SB2,2025-03-19,[First] hearing set for [03-19-2025]: Failed passage in Committee. Reconsideration granted,Sen Environmental Quality,aye,CS64,2025-03-19 00:00:00,2,183788,Gonzalez,AYE
+202520260SB2,2025-03-19,[First] hearing set for [03-19-2025]: Failed passage in Committee. Reconsideration granted,Sen Environmental Quality,aye,CS64,2025-03-19 00:00:00,2,183788,Hurtado,AYE
+202520260SB2,2025-03-19,[First] hearing set for [03-19-2025]: Failed passage in Committee. Reconsideration granted,Sen Environmental Quality,aye,CS64,2025-03-19 00:00:00,2,183788,Menjivar,AYE
+202520260SB2,2025-03-19,[First] hearing set for [03-19-2025]: Failed passage in Committee. Reconsideration granted,Sen Environmental Quality,aye,CS64,2025-03-19 00:00:00,2,183788,Padilla,AYE
+202520260SB2,2025-03-19,[First] hearing set for [03-19-2025]: Failed passage in Committee. Reconsideration granted,Sen Environmental Quality,aye,CS64,2025-03-19 00:00:00,2,183788,Pérez,AYE
+202520260SB2,2025-03-19,[First] hearing set for [03-19-2025]: Failed passage in Committee. Reconsideration granted,Sen Environmental Quality,aye,CS64,2025-03-19 00:00:00,2,183788,Valladares,AYE
+202520260SB329,2025-03-26,"Do pass as amended, but first amend, and re-refer to the Committee on [Appropriations]",Sen Health,aye,CS60,2025-03-26 00:00:00,1,147504,Durazo,AYE
+202520260SB329,2025-03-26,"Do pass as amended, but first amend, and re-refer to the Committee on [Appropriations]",Sen Health,aye,CS60,2025-03-26 00:00:00,1,147504,Gonzalez,AYE
+202520260SB329,2025-03-26,"Do pass as amended, but first amend, and re-refer to the Committee on [Appropriations]",Sen Health,nvr,CS60,2025-03-26 00:00:00,1,147504,Grove,ABS
+202520260SB329,2025-03-26,"Do pass as amended, but first amend, and re-refer to the Committee on [Appropriations]",Sen Health,aye,CS60,2025-03-26 00:00:00,1,147504,Limón,AYE
+202520260SB329,2025-03-26,"Do pass as amended, but first amend, and re-refer to the Committee on [Appropriations]",Sen Health,aye,CS60,2025-03-26 00:00:00,1,147504,Menjivar,AYE
+202520260SB329,2025-03-26,"Do pass as amended, but first amend, and re-refer to the Committee on [Appropriations]",Sen Health,aye,CS60,2025-03-26 00:00:00,1,147504,Padilla,AYE
+202520260SB329,2025-03-26,"Do pass as amended, but first amend, and re-refer to the Committee on [Appropriations]",Sen Health,aye,CS60,2025-03-26 00:00:00,1,147504,Richardson,AYE
+202520260SB329,2025-03-26,"Do pass as amended, but first amend, and re-refer to the Committee on [Appropriations]",Sen Health,aye,CS60,2025-03-26 00:00:00,1,147504,Rubio,AYE
+202520260SB329,2025-03-26,"Do pass as amended, but first amend, and re-refer to the Committee on [Appropriations]",Sen Health,aye,CS60,2025-03-26 00:00:00,1,147504,Valladares,AYE
+202520260SB329,2025-03-26,"Do pass as amended, but first amend, and re-refer to the Committee on [Appropriations]",Sen Health,aye,CS60,2025-03-26 00:00:00,1,147504,Weber Pierson,AYE
+202520260SB329,2025-03-26,"Do pass as amended, but first amend, and re-refer to the Committee on [Appropriations]",Sen Health,aye,CS60,2025-03-26 00:00:00,1,147504,Wiener,AYE
+202520260SB329,2025-04-21,Placed on suspense file,Sen Appropriations,aye,CS61,2025-04-21 00:00:00,1,147718,Cabaldon,AYE
+202520260SB329,2025-04-21,Placed on suspense file,Sen Appropriations,aye,CS61,2025-04-21 00:00:00,1,147718,Caballero,AYE
+202520260SB329,2025-04-21,Placed on suspense file,Sen Appropriations,nvr,CS61,2025-04-21 00:00:00,1,147718,Dahle,ABS
+202520260SB329,2025-04-21,Placed on suspense file,Sen Appropriations,aye,CS61,2025-04-21 00:00:00,1,147718,Grayson,AYE
+202520260SB329,2025-04-21,Placed on suspense file,Sen Appropriations,aye,CS61,2025-04-21 00:00:00,1,147718,Richardson,AYE
+202520260SB329,2025-04-21,Placed on suspense file,Sen Appropriations,aye,CS61,2025-04-21 00:00:00,1,147718,Seyarto,AYE
+202520260SB329,2025-04-21,Placed on suspense file,Sen Appropriations,aye,CS61,2025-04-21 00:00:00,1,147718,Wahab,AYE
+202520260SB329,2025-05-23,Do pass,Sen Appropriations,aye,CS61,2025-05-23 00:00:00,1,147633,Cabaldon,AYE
+202520260SB329,2025-05-23,Do pass,Sen Appropriations,aye,CS61,2025-05-23 00:00:00,1,147633,Caballero,AYE
+202520260SB329,2025-05-23,Do pass,Sen Appropriations,nvr,CS61,2025-05-23 00:00:00,1,147633,Dahle,ABS
+202520260SB329,2025-05-23,Do pass,Sen Appropriations,aye,CS61,2025-05-23 00:00:00,1,147633,Grayson,AYE
+202520260SB329,2025-05-23,Do pass,Sen Appropriations,aye,CS61,2025-05-23 00:00:00,1,147633,Richardson,AYE
+202520260SB329,2025-05-23,Do pass,Sen Appropriations,aye,CS61,2025-05-23 00:00:00,1,147633,Seyarto,AYE
+202520260SB329,2025-05-23,Do pass,Sen Appropriations,aye,CS61,2025-05-23 00:00:00,1,147633,Wahab,AYE
+202520260SB329,2025-05-29,Special Consent SB329 Blakespear et al.,Senate Floor,aye,SFLOOR,2025-05-29 00:00:00,1757,184778,Allen,AYE
+202520260SB329,2025-05-29,Special Consent SB329 Blakespear et al.,Senate Floor,aye,SFLOOR,2025-05-29 00:00:00,1757,184778,Alvarado-Gil,AYE
+202520260SB329,2025-05-29,Special Consent SB329 Blakespear et al.,Senate Floor,aye,SFLOOR,2025-05-29 00:00:00,1757,184778,Archuleta,AYE
+202520260SB329,2025-05-29,Special Consent SB329 Blakespear et al.,Senate Floor,aye,SFLOOR,2025-05-29 00:00:00,1757,184778,Arreguín,AYE
+202520260SB329,2025-05-29,Special Consent SB329 Blakespear et al.,Senate Floor,aye,SFLOOR,2025-05-29 00:00:00,1757,184778,Ashby,AYE
+202520260SB329,2025-05-29,Special Consent SB329 Blakespear et al.,Senate Floor,aye,SFLOOR,2025-05-29 00:00:00,1757,184778,Becker,AYE
+202520260SB329,2025-05-29,Special Consent SB329 Blakespear et al.,Senate Floor,aye,SFLOOR,2025-05-29 00:00:00,1757,184778,Blakespear,AYE
+202520260SB329,2025-05-29,Special Consent SB329 Blakespear et al.,Senate Floor,aye,SFLOOR,2025-05-29 00:00:00,1757,184778,Cabaldon,AYE
+202520260SB329,2025-05-29,Special Consent SB329 Blakespear et al.,Senate Floor,aye,SFLOOR,2025-05-29 00:00:00,1757,184778,Caballero,AYE
+202520260SB329,2025-05-29,Special Consent SB329 Blakespear et al.,Senate Floor,aye,SFLOOR,2025-05-29 00:00:00,1757,184778,Cervantes,AYE
+202520260SB329,2025-05-29,Special Consent SB329 Blakespear et al.,Senate Floor,aye,SFLOOR,2025-05-29 00:00:00,1757,184778,Choi,AYE
+202520260SB329,2025-05-29,Special Consent SB329 Blakespear et al.,Senate Floor,aye,SFLOOR,2025-05-29 00:00:00,1757,184778,Cortese,AYE
+202520260SB329,2025-05-29,Special Consent SB329 Blakespear et al.,Senate Floor,aye,SFLOOR,2025-05-29 00:00:00,1757,184778,Dahle,AYE
+202520260SB329,2025-05-29,Special Consent SB329 Blakespear et al.,Senate Floor,aye,SFLOOR,2025-05-29 00:00:00,1757,184778,Durazo,AYE
+202520260SB329,2025-05-29,Special Consent SB329 Blakespear et al.,Senate Floor,aye,SFLOOR,2025-05-29 00:00:00,1757,184778,Gonzalez,AYE
+202520260SB329,2025-05-29,Special Consent SB329 Blakespear et al.,Senate Floor,aye,SFLOOR,2025-05-29 00:00:00,1757,184778,Grayson,AYE
+202520260SB329,2025-05-29,Special Consent SB329 Blakespear et al.,Senate Floor,aye,SFLOOR,2025-05-29 00:00:00,1757,184778,Grove,AYE
+202520260SB329,2025-05-29,Special Consent SB329 Blakespear et al.,Senate Floor,aye,SFLOOR,2025-05-29 00:00:00,1757,184778,Hurtado,AYE
+202520260SB329,2025-05-29,Special Consent SB329 Blakespear et al.,Senate Floor,aye,SFLOOR,2025-05-29 00:00:00,1757,184778,Jones,AYE
+202520260SB329,2025-05-29,Special Consent SB329 Blakespear et al.,Senate Floor,aye,SFLOOR,2025-05-29 00:00:00,1757,184778,Laird,AYE
+202520260SB329,2025-05-29,Special Consent SB329 Blakespear et al.,Senate Floor,nvr,SFLOOR,2025-05-29 00:00:00,1757,184778,Limón,ABS
+202520260SB329,2025-05-29,Special Consent SB329 Blakespear et al.,Senate Floor,aye,SFLOOR,2025-05-29 00:00:00,1757,184778,McGuire,AYE
+202520260SB329,2025-05-29,Special Consent SB329 Blakespear et al.,Senate Floor,aye,SFLOOR,2025-05-29 00:00:00,1757,184778,McNerney,AYE
+202520260SB329,2025-05-29,Special Consent SB329 Blakespear et al.,Senate Floor,aye,SFLOOR,2025-05-29 00:00:00,1757,184778,Menjivar,AYE
+202520260SB329,2025-05-29,Special Consent SB329 Blakespear et al.,Senate Floor,aye,SFLOOR,2025-05-29 00:00:00,1757,184778,Niello,AYE
+202520260SB329,2025-05-29,Special Consent SB329 Blakespear et al.,Senate Floor,aye,SFLOOR,2025-05-29 00:00:00,1757,184778,Ochoa Bogh,AYE
+202520260SB329,2025-05-29,Special Consent SB329 Blakespear et al.,Senate Floor,aye,SFLOOR,2025-05-29 00:00:00,1757,184778,Padilla,AYE
+202520260SB329,2025-05-29,Special Consent SB329 Blakespear et al.,Senate Floor,aye,SFLOOR,2025-05-29 00:00:00,1757,184778,Pérez,AYE
+202520260SB329,2025-05-29,Special Consent SB329 Blakespear et al.,Senate Floor,nvr,SFLOOR,2025-05-29 00:00:00,1757,184778,Reyes,ABS
+202520260SB329,2025-05-29,Special Consent SB329 Blakespear et al.,Senate Floor,aye,SFLOOR,2025-05-29 00:00:00,1757,184778,Richardson,AYE
+202520260SB329,2025-05-29,Special Consent SB329 Blakespear et al.,Senate Floor,aye,SFLOOR,2025-05-29 00:00:00,1757,184778,Rubio,AYE
+202520260SB329,2025-05-29,Special Consent SB329 Blakespear et al.,Senate Floor,aye,SFLOOR,2025-05-29 00:00:00,1757,184778,Seyarto,AYE
+202520260SB329,2025-05-29,Special Consent SB329 Blakespear et al.,Senate Floor,aye,SFLOOR,2025-05-29 00:00:00,1757,184778,Smallwood-Cuevas,AYE
+202520260SB329,2025-05-29,Special Consent SB329 Blakespear et al.,Senate Floor,aye,SFLOOR,2025-05-29 00:00:00,1757,184778,Stern,AYE
+202520260SB329,2025-05-29,Special Consent SB329 Blakespear et al.,Senate Floor,aye,SFLOOR,2025-05-29 00:00:00,1757,184778,Strickland,AYE
+202520260SB329,2025-05-29,Special Consent SB329 Blakespear et al.,Senate Floor,aye,SFLOOR,2025-05-29 00:00:00,1757,184778,Umberg,AYE
+202520260SB329,2025-05-29,Special Consent SB329 Blakespear et al.,Senate Floor,aye,SFLOOR,2025-05-29 00:00:00,1757,184778,Valladares,AYE
+202520260SB329,2025-05-29,Special Consent SB329 Blakespear et al.,Senate Floor,aye,SFLOOR,2025-05-29 00:00:00,1757,184778,Wahab,AYE
+202520260SB329,2025-05-29,Special Consent SB329 Blakespear et al.,Senate Floor,aye,SFLOOR,2025-05-29 00:00:00,1757,184778,Weber Pierson,AYE
+202520260SB329,2025-05-29,Special Consent SB329 Blakespear et al.,Senate Floor,aye,SFLOOR,2025-05-29 00:00:00,1757,184778,Wiener,AYE
+202520260SB329,2025-06-24,Do pass and be re-referred to the Committee on [Appropriations] with recommendation: To Consent Calendar,Asm Health,nvr,CX08,2025-06-24 00:00:00,1,147529,Addis,ABS
+202520260SB329,2025-06-24,Do pass and be re-referred to the Committee on [Appropriations] with recommendation: To Consent Calendar,Asm Health,aye,CX08,2025-06-24 00:00:00,1,147529,Aguiar-Curry,AYE
+202520260SB329,2025-06-24,Do pass and be re-referred to the Committee on [Appropriations] with recommendation: To Consent Calendar,Asm Health,aye,CX08,2025-06-24 00:00:00,1,147529,Bonta,AYE
+202520260SB329,2025-06-24,Do pass and be re-referred to the Committee on [Appropriations] with recommendation: To Consent Calendar,Asm Health,aye,CX08,2025-06-24 00:00:00,1,147529,Caloza,AYE
+202520260SB329,2025-06-24,Do pass and be re-referred to the Committee on [Appropriations] with recommendation: To Consent Calendar,Asm Health,aye,CX08,2025-06-24 00:00:00,1,147529,Carrillo,AYE
+202520260SB329,2025-06-24,Do pass and be re-referred to the Committee on [Appropriations] with recommendation: To Consent Calendar,Asm Health,aye,CX08,2025-06-24 00:00:00,1,147529,Celeste Rodriguez,AYE
+202520260SB329,2025-06-24,Do pass and be re-referred to the Committee on [Appropriations] with recommendation: To Consent Calendar,Asm Health,aye,CX08,2025-06-24 00:00:00,1,147529,Chen,AYE
+202520260SB329,2025-06-24,Do pass and be re-referred to the Committee on [Appropriations] with recommendation: To Consent Calendar,Asm Health,aye,CX08,2025-06-24 00:00:00,1,147529,Elhawary,AYE
+202520260SB329,2025-06-24,Do pass and be re-referred to the Committee on [Appropriations] with recommendation: To Consent Calendar,Asm Health,aye,CX08,2025-06-24 00:00:00,1,147529,Flora,AYE
+202520260SB329,2025-06-24,Do pass and be re-referred to the Committee on [Appropriations] with recommendation: To Consent Calendar,Asm Health,aye,CX08,2025-06-24 00:00:00,1,147529,Krell,AYE
+202520260SB329,2025-06-24,Do pass and be re-referred to the Committee on [Appropriations] with recommendation: To Consent Calendar,Asm Health,aye,CX08,2025-06-24 00:00:00,1,147529,Mark González,AYE
+202520260SB329,2025-06-24,Do pass and be re-referred to the Committee on [Appropriations] with recommendation: To Consent Calendar,Asm Health,aye,CX08,2025-06-24 00:00:00,1,147529,Patel,AYE
+202520260SB329,2025-06-24,Do pass and be re-referred to the Committee on [Appropriations] with recommendation: To Consent Calendar,Asm Health,aye,CX08,2025-06-24 00:00:00,1,147529,Patterson,AYE
+202520260SB329,2025-06-24,Do pass and be re-referred to the Committee on [Appropriations] with recommendation: To Consent Calendar,Asm Health,aye,CX08,2025-06-24 00:00:00,1,147529,Sanchez,AYE
+202520260SB329,2025-06-24,Do pass and be re-referred to the Committee on [Appropriations] with recommendation: To Consent Calendar,Asm Health,aye,CX08,2025-06-24 00:00:00,1,147529,Schiavo,AYE
+202520260SB329,2025-06-24,Do pass and be re-referred to the Committee on [Appropriations] with recommendation: To Consent Calendar,Asm Health,aye,CX08,2025-06-24 00:00:00,1,147529,Sharp-Collins,AYE
+202520260SB329,2026-08-13,Do pass as amended.,Asm Appropriations,aye,CX25,2026-08-13 00:00:00,1,104835,Arambula,AYE
+202520260SB329,2026-08-13,Do pass as amended.,Asm Appropriations,aye,CX25,2026-08-13 00:00:00,1,104835,Calderon,AYE
+202520260SB329,2026-08-13,Do pass as amended.,Asm Appropriations,aye,CX25,2026-08-13 00:00:00,1,104835,Caloza,AYE
+202520260SB329,2026-08-13,Do pass as amended.,Asm Appropriations,nvr,CX25,2026-08-13 00:00:00,1,104835,Dixon,ABS
+202520260SB329,2026-08-13,Do pass as amended.,Asm Appropriations,aye,CX25,2026-08-13 00:00:00,1,104835,Fong,AYE
+202520260SB329,2026-08-13,Do pass as amended.,Asm Appropriations,nvr,CX25,2026-08-13 00:00:00,1,104835,Hoover,ABS
+202520260SB329,2026-08-13,Do pass as amended.,Asm Appropriations,aye,CX25,2026-08-13 00:00:00,1,104835,Krell,AYE
+202520260SB329,2026-08-13,Do pass as amended.,Asm Appropriations,aye,CX25,2026-08-13 00:00:00,1,104835,Mark González,AYE
+202520260SB329,2026-08-13,Do pass as amended.,Asm Appropriations,aye,CX25,2026-08-13 00:00:00,1,104835,Pacheco,AYE
+202520260SB329,2026-08-13,Do pass as amended.,Asm Appropriations,aye,CX25,2026-08-13 00:00:00,1,104835,Pellerin,AYE
+202520260SB329,2026-08-13,Do pass as amended.,Asm Appropriations,aye,CX25,2026-08-13 00:00:00,1,104835,Sharp-Collins,AYE
+202520260SB329,2026-08-13,Do pass as amended.,Asm Appropriations,aye,CX25,2026-08-13 00:00:00,1,104835,Solache,AYE
+202520260SB329,2026-08-13,Do pass as amended.,Asm Appropriations,nvr,CX25,2026-08-13 00:00:00,1,104835,Ta,ABS
+202520260SB329,2026-08-13,Do pass as amended.,Asm Appropriations,nvr,CX25,2026-08-13 00:00:00,1,104835,Tangipa,ABS
+202520260SB329,2026-08-13,Do pass as amended.,Asm Appropriations,aye,CX25,2026-08-13 00:00:00,1,104835,Wicks,AYE
+202520260SB329,2026-08-25,SB 329 Blakespear Senate Third Reading By Dixon,Assembly Floor,aye,AFLOOR,2026-08-25 11:57:42,1050,189986,Addis,AYE
+202520260SB329,2026-08-25,SB 329 Blakespear Senate Third Reading By Dixon,Assembly Floor,aye,AFLOOR,2026-08-25 11:57:42,1050,189986,Aguiar-Curry,AYE
+202520260SB329,2026-08-25,SB 329 Blakespear Senate Third Reading By Dixon,Assembly Floor,aye,AFLOOR,2026-08-25 11:57:42,1050,189986,Ahrens,AYE
+202520260SB329,2026-08-25,SB 329 Blakespear Senate Third Reading By Dixon,Assembly Floor,aye,AFLOOR,2026-08-25 11:57:42,1050,189986,Alanis,AYE
+202520260SB329,2026-08-25,SB 329 Blakespear Senate Third Reading By Dixon,Assembly Floor,aye,AFLOOR,2026-08-25 11:57:42,1050,189986,Alvarez,AYE
+202520260SB329,2026-08-25,SB 329 Blakespear Senate Third Reading By Dixon,Assembly Floor,aye,AFLOOR,2026-08-25 11:57:42,1050,189986,Arambula,AYE
+202520260SB329,2026-08-25,SB 329 Blakespear Senate Third Reading By Dixon,Assembly Floor,aye,AFLOOR,2026-08-25 11:57:42,1050,189986,Bains,AYE
+202520260SB329,2026-08-25,SB 329 Blakespear Senate Third Reading By Dixon,Assembly Floor,aye,AFLOOR,2026-08-25 11:57:42,1050,189986,Bauer-Kahan,AYE
+202520260SB329,2026-08-25,SB 329 Blakespear Senate Third Reading By Dixon,Assembly Floor,aye,AFLOOR,2026-08-25 11:57:42,1050,189986,Bennett,AYE
+202520260SB329,2026-08-25,SB 329 Blakespear Senate Third Reading By Dixon,Assembly Floor,aye,AFLOOR,2026-08-25 11:57:42,1050,189986,Berman,AYE
+202520260SB329,2026-08-25,SB 329 Blakespear Senate Third Reading By Dixon,Assembly Floor,aye,AFLOOR,2026-08-25 11:57:42,1050,189986,Blanca Rubio,AYE
+202520260SB329,2026-08-25,SB 329 Blakespear Senate Third Reading By Dixon,Assembly Floor,aye,AFLOOR,2026-08-25 11:57:42,1050,189986,Boerner,AYE
+202520260SB329,2026-08-25,SB 329 Blakespear Senate Third Reading By Dixon,Assembly Floor,aye,AFLOOR,2026-08-25 11:57:42,1050,189986,Bonta,AYE
+202520260SB329,2026-08-25,SB 329 Blakespear Senate Third Reading By Dixon,Assembly Floor,aye,AFLOOR,2026-08-25 11:57:42,1050,189986,Bryan,AYE
+202520260SB329,2026-08-25,SB 329 Blakespear Senate Third Reading By Dixon,Assembly Floor,aye,AFLOOR,2026-08-25 11:57:42,1050,189986,Calderon,AYE
+202520260SB329,2026-08-25,SB 329 Blakespear Senate Third Reading By Dixon,Assembly Floor,aye,AFLOOR,2026-08-25 11:57:42,1050,189986,Caloza,AYE
+202520260SB329,2026-08-25,SB 329 Blakespear Senate Third Reading By Dixon,Assembly Floor,aye,AFLOOR,2026-08-25 11:57:42,1050,189986,Carrillo,AYE
+202520260SB329,2026-08-25,SB 329 Blakespear Senate Third Reading By Dixon,Assembly Floor,aye,AFLOOR,2026-08-25 11:57:42,1050,189986,Castillo,AYE
+202520260SB329,2026-08-25,SB 329 Blakespear Senate Third Reading By Dixon,Assembly Floor,aye,AFLOOR,2026-08-25 11:57:42,1050,189986,Celeste Rodriguez,AYE
+202520260SB329,2026-08-25,SB 329 Blakespear Senate Third Reading By Dixon,Assembly Floor,aye,AFLOOR,2026-08-25 11:57:42,1050,189986,Chen,AYE
+202520260SB329,2026-08-25,SB 329 Blakespear Senate Third Reading By Dixon,Assembly Floor,aye,AFLOOR,2026-08-25 11:57:42,1050,189986,Connolly,AYE
+202520260SB329,2026-08-25,SB 329 Blakespear Senate Third Reading By Dixon,Assembly Floor,aye,AFLOOR,2026-08-25 11:57:42,1050,189986,Davies,AYE
+202520260SB329,2026-08-25,SB 329 Blakespear Senate Third Reading By Dixon,Assembly Floor,aye,AFLOOR,2026-08-25 11:57:42,1050,189986,DeMaio,AYE
+202520260SB329,2026-08-25,SB 329 Blakespear Senate Third Reading By Dixon,Assembly Floor,nvr,AFLOOR,2026-08-25 11:57:42,1050,189986,Dixon,ABS
+202520260SB329,2026-08-25,SB 329 Blakespear Senate Third Reading By Dixon,Assembly Floor,aye,AFLOOR,2026-08-25 11:57:42,1050,189986,Elhawary,AYE
+202520260SB329,2026-08-25,SB 329 Blakespear Senate Third Reading By Dixon,Assembly Floor,aye,AFLOOR,2026-08-25 11:57:42,1050,189986,Ellis,AYE
+202520260SB329,2026-08-25,SB 329 Blakespear Senate Third Reading By Dixon,Assembly Floor,aye,AFLOOR,2026-08-25 11:57:42,1050,189986,Flora,AYE
+202520260SB329,2026-08-25,SB 329 Blakespear Senate Third Reading By Dixon,Assembly Floor,aye,AFLOOR,2026-08-25 11:57:42,1050,189986,Fong,AYE
+202520260SB329,2026-08-25,SB 329 Blakespear Senate Third Reading By Dixon,Assembly Floor,aye,AFLOOR,2026-08-25 11:57:42,1050,189986,Gabriel,AYE
+202520260SB329,2026-08-25,SB 329 Blakespear Senate Third Reading By Dixon,Assembly Floor,aye,AFLOOR,2026-08-25 11:57:42,1050,189986,Garcia,AYE
+202520260SB329,2026-08-25,SB 329 Blakespear Senate Third Reading By Dixon,Assembly Floor,aye,AFLOOR,2026-08-25 11:57:42,1050,189986,Gipson,AYE
+202520260SB329,2026-08-25,SB 329 Blakespear Senate Third Reading By Dixon,Assembly Floor,aye,AFLOOR,2026-08-25 11:57:42,1050,189986,Hadwick,AYE
+202520260SB329,2026-08-25,SB 329 Blakespear Senate Third Reading By Dixon,Assembly Floor,aye,AFLOOR,2026-08-25 11:57:42,1050,189986,Haney,AYE
+202520260SB329,2026-08-25,SB 329 Blakespear Senate Third Reading By Dixon,Assembly Floor,aye,AFLOOR,2026-08-25 11:57:42,1050,189986,Harabedian,AYE
+202520260SB329,2026-08-25,SB 329 Blakespear Senate Third Reading By Dixon,Assembly Floor,aye,AFLOOR,2026-08-25 11:57:42,1050,189986,Hart,AYE
+202520260SB329,2026-08-25,SB 329 Blakespear Senate Third Reading By Dixon,Assembly Floor,aye,AFLOOR,2026-08-25 11:57:42,1050,189986,Hoover,AYE
+202520260SB329,2026-08-25,SB 329 Blakespear Senate Third Reading By Dixon,Assembly Floor,aye,AFLOOR,2026-08-25 11:57:42,1050,189986,Irwin,AYE
+202520260SB329,2026-08-25,SB 329 Blakespear Senate Third Reading By Dixon,Assembly Floor,aye,AFLOOR,2026-08-25 11:57:42,1050,189986,Jackson,AYE
+202520260SB329,2026-08-25,SB 329 Blakespear Senate Third Reading By Dixon,Assembly Floor,aye,AFLOOR,2026-08-25 11:57:42,1050,189986,Jeff Gonzalez,AYE
+202520260SB329,2026-08-25,SB 329 Blakespear Senate Third Reading By Dixon,Assembly Floor,aye,AFLOOR,2026-08-25 11:57:42,1050,189986,Johnson,AYE
+202520260SB329,2026-08-25,SB 329 Blakespear Senate Third Reading By Dixon,Assembly Floor,nvr,AFLOOR,2026-08-25 11:57:42,1050,189986,Kalra,ABS
+202520260SB329,2026-08-25,SB 329 Blakespear Senate Third Reading By Dixon,Assembly Floor,aye,AFLOOR,2026-08-25 11:57:42,1050,189986,Krell,AYE
+202520260SB329,2026-08-25,SB 329 Blakespear Senate Third Reading By Dixon,Assembly Floor,aye,AFLOOR,2026-08-25 11:57:42,1050,189986,Lackey,AYE
+202520260SB329,2026-08-25,SB 329 Blakespear Senate Third Reading By Dixon,Assembly Floor,aye,AFLOOR,2026-08-25 11:57:42,1050,189986,Lee,AYE
+202520260SB329,2026-08-25,SB 329 Blakespear Senate Third Reading By Dixon,Assembly Floor,aye,AFLOOR,2026-08-25 11:57:42,1050,189986,Lowenthal,AYE
+202520260SB329,2026-08-25,SB 329 Blakespear Senate Third Reading By Dixon,Assembly Floor,aye,AFLOOR,2026-08-25 11:57:42,1050,189986,Macedo,AYE
+202520260SB329,2026-08-25,SB 329 Blakespear Senate Third Reading By Dixon,Assembly Floor,aye,AFLOOR,2026-08-25 11:57:42,1050,189986,Mark González,AYE
+202520260SB329,2026-08-25,SB 329 Blakespear Senate Third Reading By Dixon,Assembly Floor,nvr,AFLOOR,2026-08-25 11:57:42,1050,189986,McKinnor,ABS
+202520260SB329,2026-08-25,SB 329 Blakespear Senate Third Reading By Dixon,Assembly Floor,aye,AFLOOR,2026-08-25 11:57:42,1050,189986,Michelle Rodriguez,AYE
+202520260SB329,2026-08-25,SB 329 Blakespear Senate Third Reading By Dixon,Assembly Floor,aye,AFLOOR,2026-08-25 11:57:42,1050,189986,Muratsuchi,AYE
+202520260SB329,2026-08-25,SB 329 Blakespear Senate Third Reading By Dixon,Assembly Floor,aye,AFLOOR,2026-08-25 11:57:42,1050,189986,Nguyen,AYE
+202520260SB329,2026-08-25,SB 329 Blakespear Senate Third Reading By Dixon,Assembly Floor,aye,AFLOOR,2026-08-25 11:57:42,1050,189986,Ortega,AYE
+202520260SB329,2026-08-25,SB 329 Blakespear Senate Third Reading By Dixon,Assembly Floor,aye,AFLOOR,2026-08-25 11:57:42,1050,189986,Pacheco,AYE
+202520260SB329,2026-08-25,SB 329 Blakespear Senate Third Reading By Dixon,Assembly Floor,aye,AFLOOR,2026-08-25 11:57:42,1050,189986,Papan,AYE
+202520260SB329,2026-08-25,SB 329 Blakespear Senate Third Reading By Dixon,Assembly Floor,aye,AFLOOR,2026-08-25 11:57:42,1050,189986,Patel,AYE
+202520260SB329,2026-08-25,SB 329 Blakespear Senate Third Reading By Dixon,Assembly Floor,aye,AFLOOR,2026-08-25 11:57:42,1050,189986,Patterson,AYE
+202520260SB329,2026-08-25,SB 329 Blakespear Senate Third Reading By Dixon,Assembly Floor,aye,AFLOOR,2026-08-25 11:57:42,1050,189986,Pellerin,AYE
+202520260SB329,2026-08-25,SB 329 Blakespear Senate Third Reading By Dixon,Assembly Floor,aye,AFLOOR,2026-08-25 11:57:42,1050,189986,Petrie-Norris,AYE
+202520260SB329,2026-08-25,SB 329 Blakespear Senate Third Reading By Dixon,Assembly Floor,aye,AFLOOR,2026-08-25 11:57:42,1050,189986,Quirk-Silva,AYE
+202520260SB329,2026-08-25,SB 329 Blakespear Senate Third Reading By Dixon,Assembly Floor,aye,AFLOOR,2026-08-25 11:57:42,1050,189986,Ramos,AYE
+202520260SB329,2026-08-25,SB 329 Blakespear Senate Third Reading By Dixon,Assembly Floor,aye,AFLOOR,2026-08-25 11:57:42,1050,189986,Ransom,AYE
+202520260SB329,2026-08-25,SB 329 Blakespear Senate Third Reading By Dixon,Assembly Floor,aye,AFLOOR,2026-08-25 11:57:42,1050,189986,Rivas,AYE
+202520260SB329,2026-08-25,SB 329 Blakespear Senate Third Reading By Dixon,Assembly Floor,aye,AFLOOR,2026-08-25 11:57:42,1050,189986,Rogers,AYE
+202520260SB329,2026-08-25,SB 329 Blakespear Senate Third Reading By Dixon,Assembly Floor,aye,AFLOOR,2026-08-25 11:57:42,1050,189986,Sanchez,AYE
+202520260SB329,2026-08-25,SB 329 Blakespear Senate Third Reading By Dixon,Assembly Floor,aye,AFLOOR,2026-08-25 11:57:42,1050,189986,Schiavo,AYE
+202520260SB329,2026-08-25,SB 329 Blakespear Senate Third Reading By Dixon,Assembly Floor,aye,AFLOOR,2026-08-25 11:57:42,1050,189986,Schultz,AYE
+202520260SB329,2026-08-25,SB 329 Blakespear Senate Third Reading By Dixon,Assembly Floor,aye,AFLOOR,2026-08-25 11:57:42,1050,189986,Sharp-Collins,AYE
+202520260SB329,2026-08-25,SB 329 Blakespear Senate Third Reading By Dixon,Assembly Floor,aye,AFLOOR,2026-08-25 11:57:42,1050,189986,Solache,AYE
+202520260SB329,2026-08-25,SB 329 Blakespear Senate Third Reading By Dixon,Assembly Floor,aye,AFLOOR,2026-08-25 11:57:42,1050,189986,Soria,AYE
+202520260SB329,2026-08-25,SB 329 Blakespear Senate Third Reading By Dixon,Assembly Floor,aye,AFLOOR,2026-08-25 11:57:42,1050,189986,Stefani,AYE
+202520260SB329,2026-08-25,SB 329 Blakespear Senate Third Reading By Dixon,Assembly Floor,aye,AFLOOR,2026-08-25 11:57:42,1050,189986,Ta,AYE
+202520260SB329,2026-08-25,SB 329 Blakespear Senate Third Reading By Dixon,Assembly Floor,aye,AFLOOR,2026-08-25 11:57:42,1050,189986,Tangipa,AYE
+202520260SB329,2026-08-25,SB 329 Blakespear Senate Third Reading By Dixon,Assembly Floor,aye,AFLOOR,2026-08-25 11:57:42,1050,189986,Valencia,AYE
+202520260SB329,2026-08-25,SB 329 Blakespear Senate Third Reading By Dixon,Assembly Floor,aye,AFLOOR,2026-08-25 11:57:42,1050,189986,Wallis,AYE
+202520260SB329,2026-08-25,SB 329 Blakespear Senate Third Reading By Dixon,Assembly Floor,aye,AFLOOR,2026-08-25 11:57:42,1050,189986,Ward,AYE
+202520260SB329,2026-08-25,SB 329 Blakespear Senate Third Reading By Dixon,Assembly Floor,aye,AFLOOR,2026-08-25 11:57:42,1050,189986,Wicks,AYE
+202520260SB329,2026-08-25,SB 329 Blakespear Senate Third Reading By Dixon,Assembly Floor,aye,AFLOOR,2026-08-25 11:57:42,1050,189986,Wilson,AYE
+202520260SB329,2026-08-25,SB 329 Blakespear Senate Third Reading By Dixon,Assembly Floor,aye,AFLOOR,2026-08-25 11:57:42,1050,189986,Zbur,AYE
+202520260SB329,2026-08-25,SB 329 Blakespear Senate Third Reading By Dixon,Assembly Floor,aye,AFLOOR,2026-08-25 11:57:42,1050,189986,Ávila Farías,AYE
+202520260SB329,2026-08-28,Special Consent SB329 Blakespear et al.,Senate Floor,aye,SFLOOR,2026-08-28 00:00:00,1083,184778,Allen,AYE
+202520260SB329,2026-08-28,Special Consent SB329 Blakespear et al.,Senate Floor,aye,SFLOOR,2026-08-28 00:00:00,1083,184778,Alvarado-Gil,AYE
+202520260SB329,2026-08-28,Special Consent SB329 Blakespear et al.,Senate Floor,aye,SFLOOR,2026-08-28 00:00:00,1083,184778,Archuleta,AYE
+202520260SB329,2026-08-28,Special Consent SB329 Blakespear et al.,Senate Floor,aye,SFLOOR,2026-08-28 00:00:00,1083,184778,Arreguín,AYE
+202520260SB329,2026-08-28,Special Consent SB329 Blakespear et al.,Senate Floor,aye,SFLOOR,2026-08-28 00:00:00,1083,184778,Ashby,AYE
+202520260SB329,2026-08-28,Special Consent SB329 Blakespear et al.,Senate Floor,aye,SFLOOR,2026-08-28 00:00:00,1083,184778,Becker,AYE
+202520260SB329,2026-08-28,Special Consent SB329 Blakespear et al.,Senate Floor,aye,SFLOOR,2026-08-28 00:00:00,1083,184778,Blakespear,AYE
+202520260SB329,2026-08-28,Special Consent SB329 Blakespear et al.,Senate Floor,aye,SFLOOR,2026-08-28 00:00:00,1083,184778,Cabaldon,AYE
+202520260SB329,2026-08-28,Special Consent SB329 Blakespear et al.,Senate Floor,aye,SFLOOR,2026-08-28 00:00:00,1083,184778,Caballero,AYE
+202520260SB329,2026-08-28,Special Consent SB329 Blakespear et al.,Senate Floor,aye,SFLOOR,2026-08-28 00:00:00,1083,184778,Cervantes,AYE
+202520260SB329,2026-08-28,Special Consent SB329 Blakespear et al.,Senate Floor,aye,SFLOOR,2026-08-28 00:00:00,1083,184778,Choi,AYE
+202520260SB329,2026-08-28,Special Consent SB329 Blakespear et al.,Senate Floor,aye,SFLOOR,2026-08-28 00:00:00,1083,184778,Cortese,AYE
+202520260SB329,2026-08-28,Special Consent SB329 Blakespear et al.,Senate Floor,aye,SFLOOR,2026-08-28 00:00:00,1083,184778,Dahle,AYE
+202520260SB329,2026-08-28,Special Consent SB329 Blakespear et al.,Senate Floor,aye,SFLOOR,2026-08-28 00:00:00,1083,184778,Durazo,AYE
+202520260SB329,2026-08-28,Special Consent SB329 Blakespear et al.,Senate Floor,aye,SFLOOR,2026-08-28 00:00:00,1083,184778,Gonzalez,AYE
+202520260SB329,2026-08-28,Special Consent SB329 Blakespear et al.,Senate Floor,aye,SFLOOR,2026-08-28 00:00:00,1083,184778,Grayson,AYE
+202520260SB329,2026-08-28,Special Consent SB329 Blakespear et al.,Senate Floor,aye,SFLOOR,2026-08-28 00:00:00,1083,184778,Grove,AYE
+202520260SB329,2026-08-28,Special Consent SB329 Blakespear et al.,Senate Floor,aye,SFLOOR,2026-08-28 00:00:00,1083,184778,Hurtado,AYE
+202520260SB329,2026-08-28,Special Consent SB329 Blakespear et al.,Senate Floor,aye,SFLOOR,2026-08-28 00:00:00,1083,184778,Jones,AYE
+202520260SB329,2026-08-28,Special Consent SB329 Blakespear et al.,Senate Floor,aye,SFLOOR,2026-08-28 00:00:00,1083,184778,Laird,AYE
+202520260SB329,2026-08-28,Special Consent SB329 Blakespear et al.,Senate Floor,aye,SFLOOR,2026-08-28 00:00:00,1083,184778,Limón,AYE
+202520260SB329,2026-08-28,Special Consent SB329 Blakespear et al.,Senate Floor,aye,SFLOOR,2026-08-28 00:00:00,1083,184778,McGuire,AYE
+202520260SB329,2026-08-28,Special Consent SB329 Blakespear et al.,Senate Floor,aye,SFLOOR,2026-08-28 00:00:00,1083,184778,McNerney,AYE
+202520260SB329,2026-08-28,Special Consent SB329 Blakespear et al.,Senate Floor,aye,SFLOOR,2026-08-28 00:00:00,1083,184778,Menjivar,AYE
+202520260SB329,2026-08-28,Special Consent SB329 Blakespear et al.,Senate Floor,aye,SFLOOR,2026-08-28 00:00:00,1083,184778,Niello,AYE
+202520260SB329,2026-08-28,Special Consent SB329 Blakespear et al.,Senate Floor,aye,SFLOOR,2026-08-28 00:00:00,1083,184778,Ochoa Bogh,AYE
+202520260SB329,2026-08-28,Special Consent SB329 Blakespear et al.,Senate Floor,aye,SFLOOR,2026-08-28 00:00:00,1083,184778,Padilla,AYE
+202520260SB329,2026-08-28,Special Consent SB329 Blakespear et al.,Senate Floor,aye,SFLOOR,2026-08-28 00:00:00,1083,184778,Pérez,AYE
+202520260SB329,2026-08-28,Special Consent SB329 Blakespear et al.,Senate Floor,aye,SFLOOR,2026-08-28 00:00:00,1083,184778,Reyes,AYE
+202520260SB329,2026-08-28,Special Consent SB329 Blakespear et al.,Senate Floor,aye,SFLOOR,2026-08-28 00:00:00,1083,184778,Richardson,AYE
+202520260SB329,2026-08-28,Special Consent SB329 Blakespear et al.,Senate Floor,aye,SFLOOR,2026-08-28 00:00:00,1083,184778,Rubio,AYE
+202520260SB329,2026-08-28,Special Consent SB329 Blakespear et al.,Senate Floor,aye,SFLOOR,2026-08-28 00:00:00,1083,184778,Seyarto,AYE
+202520260SB329,2026-08-28,Special Consent SB329 Blakespear et al.,Senate Floor,aye,SFLOOR,2026-08-28 00:00:00,1083,184778,Smallwood-Cuevas,AYE
+202520260SB329,2026-08-28,Special Consent SB329 Blakespear et al.,Senate Floor,aye,SFLOOR,2026-08-28 00:00:00,1083,184778,Stern,AYE
+202520260SB329,2026-08-28,Special Consent SB329 Blakespear et al.,Senate Floor,aye,SFLOOR,2026-08-28 00:00:00,1083,184778,Strickland,AYE
+202520260SB329,2026-08-28,Special Consent SB329 Blakespear et al.,Senate Floor,aye,SFLOOR,2026-08-28 00:00:00,1083,184778,Umberg,AYE
+202520260SB329,2026-08-28,Special Consent SB329 Blakespear et al.,Senate Floor,aye,SFLOOR,2026-08-28 00:00:00,1083,184778,Valladares,AYE
+202520260SB329,2026-08-28,Special Consent SB329 Blakespear et al.,Senate Floor,aye,SFLOOR,2026-08-28 00:00:00,1083,184778,Wahab,AYE
+202520260SB329,2026-08-28,Special Consent SB329 Blakespear et al.,Senate Floor,aye,SFLOOR,2026-08-28 00:00:00,1083,184778,Weber Pierson,AYE
+202520260SB329,2026-08-28,Special Consent SB329 Blakespear et al.,Senate Floor,aye,SFLOOR,2026-08-28 00:00:00,1083,184778,Wiener,AYE
+202520261SB1,2025-01-22,Do pass,Sen Budget and Fiscal Review,aye,CS62,2025-01-22 00:00:00,1,147633,Allen,AYE
+202520261SB1,2025-01-22,Do pass,Sen Budget and Fiscal Review,aye,CS62,2025-01-22 00:00:00,1,147633,Cabaldon,AYE
+202520261SB1,2025-01-22,Do pass,Sen Budget and Fiscal Review,aye,CS62,2025-01-22 00:00:00,1,147633,Gonzalez,AYE
+202520261SB1,2025-01-22,Do pass,Sen Budget and Fiscal Review,aye,CS62,2025-01-22 00:00:00,1,147633,Laird,AYE
+202520261SB1,2025-01-22,Do pass,Sen Budget and Fiscal Review,no,CS62,2025-01-22 00:00:00,1,147633,Niello,NOE
+202520261SB1,2025-01-22,Do pass,Sen Budget and Fiscal Review,no,CS62,2025-01-22 00:00:00,1,147633,Ochoa Bogh,NOE
+202520261SB1,2025-01-22,Do pass,Sen Budget and Fiscal Review,aye,CS62,2025-01-22 00:00:00,1,147633,Richardson,AYE
+202520261SB1,2025-01-22,Do pass,Sen Budget and Fiscal Review,aye,CS62,2025-01-22 00:00:00,1,147633,Wahab,AYE
+202520261SB1,2025-01-22,Do pass,Sen Budget and Fiscal Review,aye,CS62,2025-01-22 00:00:00,1,147633,Weber Pierson,AYE
+202520261SB1,2025-01-22,Do pass,Sen Budget and Fiscal Review,aye,CS62,2025-01-22 00:00:00,1,147633,Wiener,AYE
+202520261SB1,2025-01-23,Senate 3rd Reading SB1 Wiener et al.,Senate Floor,aye,SFLOOR,2025-01-23 00:00:00,1009,183713,Allen,AYE
+202520261SB1,2025-01-23,Senate 3rd Reading SB1 Wiener et al.,Senate Floor,no,SFLOOR,2025-01-23 00:00:00,1009,183713,Alvarado-Gil,NOE
+202520261SB1,2025-01-23,Senate 3rd Reading SB1 Wiener et al.,Senate Floor,nvr,SFLOOR,2025-01-23 00:00:00,1009,183713,Archuleta,ABS
+202520261SB1,2025-01-23,Senate 3rd Reading SB1 Wiener et al.,Senate Floor,aye,SFLOOR,2025-01-23 00:00:00,1009,183713,Arreguín,AYE
+202520261SB1,2025-01-23,Senate 3rd Reading SB1 Wiener et al.,Senate Floor,aye,SFLOOR,2025-01-23 00:00:00,1009,183713,Ashby,AYE
+202520261SB1,2025-01-23,Senate 3rd Reading SB1 Wiener et al.,Senate Floor,aye,SFLOOR,2025-01-23 00:00:00,1009,183713,Becker,AYE
+202520261SB1,2025-01-23,Senate 3rd Reading SB1 Wiener et al.,Senate Floor,aye,SFLOOR,2025-01-23 00:00:00,1009,183713,Blakespear,AYE
+202520261SB1,2025-01-23,Senate 3rd Reading SB1 Wiener et al.,Senate Floor,aye,SFLOOR,2025-01-23 00:00:00,1009,183713,Cabaldon,AYE
+202520261SB1,2025-01-23,Senate 3rd Reading SB1 Wiener et al.,Senate Floor,aye,SFLOOR,2025-01-23 00:00:00,1009,183713,Caballero,AYE
+202520261SB1,2025-01-23,Senate 3rd Reading SB1 Wiener et al.,Senate Floor,aye,SFLOOR,2025-01-23 00:00:00,1009,183713,Cervantes,AYE
+202520261SB1,2025-01-23,Senate 3rd Reading SB1 Wiener et al.,Senate Floor,no,SFLOOR,2025-01-23 00:00:00,1009,183713,Choi,NOE
+202520261SB1,2025-01-23,Senate 3rd Reading SB1 Wiener et al.,Senate Floor,aye,SFLOOR,2025-01-23 00:00:00,1009,183713,Cortese,AYE
+202520261SB1,2025-01-23,Senate 3rd Reading SB1 Wiener et al.,Senate Floor,no,SFLOOR,2025-01-23 00:00:00,1009,183713,Dahle,NOE
+202520261SB1,2025-01-23,Senate 3rd Reading SB1 Wiener et al.,Senate Floor,aye,SFLOOR,2025-01-23 00:00:00,1009,183713,Durazo,AYE
+202520261SB1,2025-01-23,Senate 3rd Reading SB1 Wiener et al.,Senate Floor,aye,SFLOOR,2025-01-23 00:00:00,1009,183713,Gonzalez,AYE
+202520261SB1,2025-01-23,Senate 3rd Reading SB1 Wiener et al.,Senate Floor,aye,SFLOOR,2025-01-23 00:00:00,1009,183713,Grayson,AYE
+202520261SB1,2025-01-23,Senate 3rd Reading SB1 Wiener et al.,Senate Floor,no,SFLOOR,2025-01-23 00:00:00,1009,183713,Grove,NOE
+202520261SB1,2025-01-23,Senate 3rd Reading SB1 Wiener et al.,Senate Floor,no,SFLOOR,2025-01-23 00:00:00,1009,183713,Hurtado,NOE
+202520261SB1,2025-01-23,Senate 3rd Reading SB1 Wiener et al.,Senate Floor,nvr,SFLOOR,2025-01-23 00:00:00,1009,183713,Jones,ABS
+202520261SB1,2025-01-23,Senate 3rd Reading SB1 Wiener et al.,Senate Floor,aye,SFLOOR,2025-01-23 00:00:00,1009,183713,Laird,AYE
+202520261SB1,2025-01-23,Senate 3rd Reading SB1 Wiener et al.,Senate Floor,aye,SFLOOR,2025-01-23 00:00:00,1009,183713,Limón,AYE
+202520261SB1,2025-01-23,Senate 3rd Reading SB1 Wiener et al.,Senate Floor,aye,SFLOOR,2025-01-23 00:00:00,1009,183713,McGuire,AYE
+202520261SB1,2025-01-23,Senate 3rd Reading SB1 Wiener et al.,Senate Floor,aye,SFLOOR,2025-01-23 00:00:00,1009,183713,McNerney,AYE
+202520261SB1,2025-01-23,Senate 3rd Reading SB1 Wiener et al.,Senate Floor,aye,SFLOOR,2025-01-23 00:00:00,1009,183713,Menjivar,AYE
+202520261SB1,2025-01-23,Senate 3rd Reading SB1 Wiener et al.,Senate Floor,no,SFLOOR,2025-01-23 00:00:00,1009,183713,Niello,NOE
+202520261SB1,2025-01-23,Senate 3rd Reading SB1 Wiener et al.,Senate Floor,no,SFLOOR,2025-01-23 00:00:00,1009,183713,Ochoa Bogh,NOE
+202520261SB1,2025-01-23,Senate 3rd Reading SB1 Wiener et al.,Senate Floor,aye,SFLOOR,2025-01-23 00:00:00,1009,183713,Padilla,AYE
+202520261SB1,2025-01-23,Senate 3rd Reading SB1 Wiener et al.,Senate Floor,aye,SFLOOR,2025-01-23 00:00:00,1009,183713,Pérez,AYE
+202520261SB1,2025-01-23,Senate 3rd Reading SB1 Wiener et al.,Senate Floor,nvr,SFLOOR,2025-01-23 00:00:00,1009,183713,Reyes,ABS
+202520261SB1,2025-01-23,Senate 3rd Reading SB1 Wiener et al.,Senate Floor,aye,SFLOOR,2025-01-23 00:00:00,1009,183713,Richardson,AYE
+202520261SB1,2025-01-23,Senate 3rd Reading SB1 Wiener et al.,Senate Floor,aye,SFLOOR,2025-01-23 00:00:00,1009,183713,Rubio,AYE
+202520261SB1,2025-01-23,Senate 3rd Reading SB1 Wiener et al.,Senate Floor,no,SFLOOR,2025-01-23 00:00:00,1009,183713,Seyarto,NOE
+202520261SB1,2025-01-23,Senate 3rd Reading SB1 Wiener et al.,Senate Floor,aye,SFLOOR,2025-01-23 00:00:00,1009,183713,Smallwood-Cuevas,AYE
+202520261SB1,2025-01-23,Senate 3rd Reading SB1 Wiener et al.,Senate Floor,aye,SFLOOR,2025-01-23 00:00:00,1009,183713,Stern,AYE
+202520261SB1,2025-01-23,Senate 3rd Reading SB1 Wiener et al.,Senate Floor,aye,SFLOOR,2025-01-23 00:00:00,1009,183713,Umberg,AYE
+202520261SB1,2025-01-23,Senate 3rd Reading SB1 Wiener et al.,Senate Floor,no,SFLOOR,2025-01-23 00:00:00,1009,183713,Valladares,NOE
+202520261SB1,2025-01-23,Senate 3rd Reading SB1 Wiener et al.,Senate Floor,aye,SFLOOR,2025-01-23 00:00:00,1009,183713,Wahab,AYE
+202520261SB1,2025-01-23,Senate 3rd Reading SB1 Wiener et al.,Senate Floor,aye,SFLOOR,2025-01-23 00:00:00,1009,183713,Weber Pierson,AYE
+202520261SB1,2025-01-23,Senate 3rd Reading SB1 Wiener et al.,Senate Floor,aye,SFLOOR,2025-01-23 00:00:00,1009,183713,Wiener,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Amend By DEMAIO Set #1 Motion to Lay on the Table By AGUIAR-CURRY First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:01:05,1003,183730,Addis,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Amend By DEMAIO Set #1 Motion to Lay on the Table By AGUIAR-CURRY First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:01:05,1003,183730,Aguiar-Curry,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Amend By DEMAIO Set #1 Motion to Lay on the Table By AGUIAR-CURRY First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:01:05,1003,183730,Ahrens,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Amend By DEMAIO Set #1 Motion to Lay on the Table By AGUIAR-CURRY First Extraordinary Session,Assembly Floor,no,AFLOOR,2025-02-03 14:01:05,1003,183730,Alanis,NOE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Amend By DEMAIO Set #1 Motion to Lay on the Table By AGUIAR-CURRY First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:01:05,1003,183730,Alvarez,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Amend By DEMAIO Set #1 Motion to Lay on the Table By AGUIAR-CURRY First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:01:05,1003,183730,Arambula,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Amend By DEMAIO Set #1 Motion to Lay on the Table By AGUIAR-CURRY First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:01:05,1003,183730,Bains,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Amend By DEMAIO Set #1 Motion to Lay on the Table By AGUIAR-CURRY First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:01:05,1003,183730,Bauer-Kahan,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Amend By DEMAIO Set #1 Motion to Lay on the Table By AGUIAR-CURRY First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:01:05,1003,183730,Bennett,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Amend By DEMAIO Set #1 Motion to Lay on the Table By AGUIAR-CURRY First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:01:05,1003,183730,Berman,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Amend By DEMAIO Set #1 Motion to Lay on the Table By AGUIAR-CURRY First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:01:05,1003,183730,Blanca Rubio,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Amend By DEMAIO Set #1 Motion to Lay on the Table By AGUIAR-CURRY First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:01:05,1003,183730,Boerner,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Amend By DEMAIO Set #1 Motion to Lay on the Table By AGUIAR-CURRY First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:01:05,1003,183730,Bonta,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Amend By DEMAIO Set #1 Motion to Lay on the Table By AGUIAR-CURRY First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:01:05,1003,183730,Bryan,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Amend By DEMAIO Set #1 Motion to Lay on the Table By AGUIAR-CURRY First Extraordinary Session,Assembly Floor,nvr,AFLOOR,2025-02-03 14:01:05,1003,183730,Calderon,ABS
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Amend By DEMAIO Set #1 Motion to Lay on the Table By AGUIAR-CURRY First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:01:05,1003,183730,Caloza,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Amend By DEMAIO Set #1 Motion to Lay on the Table By AGUIAR-CURRY First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:01:05,1003,183730,Carrillo,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Amend By DEMAIO Set #1 Motion to Lay on the Table By AGUIAR-CURRY First Extraordinary Session,Assembly Floor,no,AFLOOR,2025-02-03 14:01:05,1003,183730,Castillo,NOE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Amend By DEMAIO Set #1 Motion to Lay on the Table By AGUIAR-CURRY First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:01:05,1003,183730,Celeste Rodriguez,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Amend By DEMAIO Set #1 Motion to Lay on the Table By AGUIAR-CURRY First Extraordinary Session,Assembly Floor,no,AFLOOR,2025-02-03 14:01:05,1003,183730,Chen,NOE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Amend By DEMAIO Set #1 Motion to Lay on the Table By AGUIAR-CURRY First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:01:05,1003,183730,Connolly,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Amend By DEMAIO Set #1 Motion to Lay on the Table By AGUIAR-CURRY First Extraordinary Session,Assembly Floor,no,AFLOOR,2025-02-03 14:01:05,1003,183730,Davies,NOE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Amend By DEMAIO Set #1 Motion to Lay on the Table By AGUIAR-CURRY First Extraordinary Session,Assembly Floor,no,AFLOOR,2025-02-03 14:01:05,1003,183730,DeMaio,NOE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Amend By DEMAIO Set #1 Motion to Lay on the Table By AGUIAR-CURRY First Extraordinary Session,Assembly Floor,no,AFLOOR,2025-02-03 14:01:05,1003,183730,Dixon,NOE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Amend By DEMAIO Set #1 Motion to Lay on the Table By AGUIAR-CURRY First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:01:05,1003,183730,Elhawary,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Amend By DEMAIO Set #1 Motion to Lay on the Table By AGUIAR-CURRY First Extraordinary Session,Assembly Floor,no,AFLOOR,2025-02-03 14:01:05,1003,183730,Essayli,NOE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Amend By DEMAIO Set #1 Motion to Lay on the Table By AGUIAR-CURRY First Extraordinary Session,Assembly Floor,no,AFLOOR,2025-02-03 14:01:05,1003,183730,Flora,NOE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Amend By DEMAIO Set #1 Motion to Lay on the Table By AGUIAR-CURRY First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:01:05,1003,183730,Fong,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Amend By DEMAIO Set #1 Motion to Lay on the Table By AGUIAR-CURRY First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:01:05,1003,183730,Gabriel,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Amend By DEMAIO Set #1 Motion to Lay on the Table By AGUIAR-CURRY First Extraordinary Session,Assembly Floor,no,AFLOOR,2025-02-03 14:01:05,1003,183730,Gallagher,NOE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Amend By DEMAIO Set #1 Motion to Lay on the Table By AGUIAR-CURRY First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:01:05,1003,183730,Garcia,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Amend By DEMAIO Set #1 Motion to Lay on the Table By AGUIAR-CURRY First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:01:05,1003,183730,Gipson,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Amend By DEMAIO Set #1 Motion to Lay on the Table By AGUIAR-CURRY First Extraordinary Session,Assembly Floor,no,AFLOOR,2025-02-03 14:01:05,1003,183730,Hadwick,NOE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Amend By DEMAIO Set #1 Motion to Lay on the Table By AGUIAR-CURRY First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:01:05,1003,183730,Haney,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Amend By DEMAIO Set #1 Motion to Lay on the Table By AGUIAR-CURRY First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:01:05,1003,183730,Harabedian,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Amend By DEMAIO Set #1 Motion to Lay on the Table By AGUIAR-CURRY First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:01:05,1003,183730,Hart,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Amend By DEMAIO Set #1 Motion to Lay on the Table By AGUIAR-CURRY First Extraordinary Session,Assembly Floor,no,AFLOOR,2025-02-03 14:01:05,1003,183730,Hoover,NOE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Amend By DEMAIO Set #1 Motion to Lay on the Table By AGUIAR-CURRY First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:01:05,1003,183730,Irwin,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Amend By DEMAIO Set #1 Motion to Lay on the Table By AGUIAR-CURRY First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:01:05,1003,183730,Jackson,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Amend By DEMAIO Set #1 Motion to Lay on the Table By AGUIAR-CURRY First Extraordinary Session,Assembly Floor,nvr,AFLOOR,2025-02-03 14:01:05,1003,183730,Jeff Gonzalez,ABS
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Amend By DEMAIO Set #1 Motion to Lay on the Table By AGUIAR-CURRY First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:01:05,1003,183730,Kalra,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Amend By DEMAIO Set #1 Motion to Lay on the Table By AGUIAR-CURRY First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:01:05,1003,183730,Krell,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Amend By DEMAIO Set #1 Motion to Lay on the Table By AGUIAR-CURRY First Extraordinary Session,Assembly Floor,no,AFLOOR,2025-02-03 14:01:05,1003,183730,Lackey,NOE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Amend By DEMAIO Set #1 Motion to Lay on the Table By AGUIAR-CURRY First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:01:05,1003,183730,Lee,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Amend By DEMAIO Set #1 Motion to Lay on the Table By AGUIAR-CURRY First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:01:05,1003,183730,Lowenthal,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Amend By DEMAIO Set #1 Motion to Lay on the Table By AGUIAR-CURRY First Extraordinary Session,Assembly Floor,no,AFLOOR,2025-02-03 14:01:05,1003,183730,Macedo,NOE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Amend By DEMAIO Set #1 Motion to Lay on the Table By AGUIAR-CURRY First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:01:05,1003,183730,Mark González,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Amend By DEMAIO Set #1 Motion to Lay on the Table By AGUIAR-CURRY First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:01:05,1003,183730,McKinnor,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Amend By DEMAIO Set #1 Motion to Lay on the Table By AGUIAR-CURRY First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:01:05,1003,183730,Michelle Rodriguez,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Amend By DEMAIO Set #1 Motion to Lay on the Table By AGUIAR-CURRY First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:01:05,1003,183730,Muratsuchi,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Amend By DEMAIO Set #1 Motion to Lay on the Table By AGUIAR-CURRY First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:01:05,1003,183730,Nguyen,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Amend By DEMAIO Set #1 Motion to Lay on the Table By AGUIAR-CURRY First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:01:05,1003,183730,Ortega,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Amend By DEMAIO Set #1 Motion to Lay on the Table By AGUIAR-CURRY First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:01:05,1003,183730,Pacheco,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Amend By DEMAIO Set #1 Motion to Lay on the Table By AGUIAR-CURRY First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:01:05,1003,183730,Papan,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Amend By DEMAIO Set #1 Motion to Lay on the Table By AGUIAR-CURRY First Extraordinary Session,Assembly Floor,nvr,AFLOOR,2025-02-03 14:01:05,1003,183730,Patel,ABS
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Amend By DEMAIO Set #1 Motion to Lay on the Table By AGUIAR-CURRY First Extraordinary Session,Assembly Floor,no,AFLOOR,2025-02-03 14:01:05,1003,183730,Patterson,NOE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Amend By DEMAIO Set #1 Motion to Lay on the Table By AGUIAR-CURRY First Extraordinary Session,Assembly Floor,nvr,AFLOOR,2025-02-03 14:01:05,1003,183730,Pellerin,ABS
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Amend By DEMAIO Set #1 Motion to Lay on the Table By AGUIAR-CURRY First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:01:05,1003,183730,Petrie-Norris,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Amend By DEMAIO Set #1 Motion to Lay on the Table By AGUIAR-CURRY First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:01:05,1003,183730,Quirk-Silva,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Amend By DEMAIO Set #1 Motion to Lay on the Table By AGUIAR-CURRY First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:01:05,1003,183730,Ramos,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Amend By DEMAIO Set #1 Motion to Lay on the Table By AGUIAR-CURRY First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:01:05,1003,183730,Ransom,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Amend By DEMAIO Set #1 Motion to Lay on the Table By AGUIAR-CURRY First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:01:05,1003,183730,Rivas,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Amend By DEMAIO Set #1 Motion to Lay on the Table By AGUIAR-CURRY First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:01:05,1003,183730,Rogers,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Amend By DEMAIO Set #1 Motion to Lay on the Table By AGUIAR-CURRY First Extraordinary Session,Assembly Floor,nvr,AFLOOR,2025-02-03 14:01:05,1003,183730,Sanchez,ABS
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Amend By DEMAIO Set #1 Motion to Lay on the Table By AGUIAR-CURRY First Extraordinary Session,Assembly Floor,nvr,AFLOOR,2025-02-03 14:01:05,1003,183730,Schiavo,ABS
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Amend By DEMAIO Set #1 Motion to Lay on the Table By AGUIAR-CURRY First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:01:05,1003,183730,Schultz,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Amend By DEMAIO Set #1 Motion to Lay on the Table By AGUIAR-CURRY First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:01:05,1003,183730,Sharp-Collins,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Amend By DEMAIO Set #1 Motion to Lay on the Table By AGUIAR-CURRY First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:01:05,1003,183730,Solache,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Amend By DEMAIO Set #1 Motion to Lay on the Table By AGUIAR-CURRY First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:01:05,1003,183730,Soria,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Amend By DEMAIO Set #1 Motion to Lay on the Table By AGUIAR-CURRY First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:01:05,1003,183730,Stefani,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Amend By DEMAIO Set #1 Motion to Lay on the Table By AGUIAR-CURRY First Extraordinary Session,Assembly Floor,no,AFLOOR,2025-02-03 14:01:05,1003,183730,Ta,NOE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Amend By DEMAIO Set #1 Motion to Lay on the Table By AGUIAR-CURRY First Extraordinary Session,Assembly Floor,no,AFLOOR,2025-02-03 14:01:05,1003,183730,Tangipa,NOE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Amend By DEMAIO Set #1 Motion to Lay on the Table By AGUIAR-CURRY First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:01:05,1003,183730,Valencia,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Amend By DEMAIO Set #1 Motion to Lay on the Table By AGUIAR-CURRY First Extraordinary Session,Assembly Floor,no,AFLOOR,2025-02-03 14:01:05,1003,183730,Wallis,NOE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Amend By DEMAIO Set #1 Motion to Lay on the Table By AGUIAR-CURRY First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:01:05,1003,183730,Ward,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Amend By DEMAIO Set #1 Motion to Lay on the Table By AGUIAR-CURRY First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:01:05,1003,183730,Wicks,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Amend By DEMAIO Set #1 Motion to Lay on the Table By AGUIAR-CURRY First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:01:05,1003,183730,Wilson,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Amend By DEMAIO Set #1 Motion to Lay on the Table By AGUIAR-CURRY First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:01:05,1003,183730,Zbur,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Amend By DEMAIO Set #1 Motion to Lay on the Table By AGUIAR-CURRY First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:01:05,1003,183730,Ávila Farías,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Motion First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:39:10,1004,183731,Addis,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Motion First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:39:10,1004,183731,Aguiar-Curry,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Motion First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:39:10,1004,183731,Ahrens,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Motion First Extraordinary Session,Assembly Floor,nvr,AFLOOR,2025-02-03 14:39:10,1004,183731,Alanis,ABS
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Motion First Extraordinary Session,Assembly Floor,nvr,AFLOOR,2025-02-03 14:39:10,1004,183731,Alvarez,ABS
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Motion First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:39:10,1004,183731,Arambula,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Motion First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:39:10,1004,183731,Bains,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Motion First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:39:10,1004,183731,Bauer-Kahan,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Motion First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:39:10,1004,183731,Bennett,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Motion First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:39:10,1004,183731,Berman,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Motion First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:39:10,1004,183731,Blanca Rubio,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Motion First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:39:10,1004,183731,Boerner,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Motion First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:39:10,1004,183731,Bonta,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Motion First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:39:10,1004,183731,Bryan,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Motion First Extraordinary Session,Assembly Floor,nvr,AFLOOR,2025-02-03 14:39:10,1004,183731,Calderon,ABS
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Motion First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:39:10,1004,183731,Caloza,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Motion First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:39:10,1004,183731,Carrillo,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Motion First Extraordinary Session,Assembly Floor,nvr,AFLOOR,2025-02-03 14:39:10,1004,183731,Castillo,ABS
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Motion First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:39:10,1004,183731,Celeste Rodriguez,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Motion First Extraordinary Session,Assembly Floor,nvr,AFLOOR,2025-02-03 14:39:10,1004,183731,Chen,ABS
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Motion First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:39:10,1004,183731,Connolly,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Motion First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:39:10,1004,183731,Davies,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Motion First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:39:10,1004,183731,DeMaio,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Motion First Extraordinary Session,Assembly Floor,no,AFLOOR,2025-02-03 14:39:10,1004,183731,Dixon,NOE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Motion First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:39:10,1004,183731,Elhawary,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Motion First Extraordinary Session,Assembly Floor,no,AFLOOR,2025-02-03 14:39:10,1004,183731,Essayli,NOE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Motion First Extraordinary Session,Assembly Floor,nvr,AFLOOR,2025-02-03 14:39:10,1004,183731,Flora,ABS
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Motion First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:39:10,1004,183731,Fong,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Motion First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:39:10,1004,183731,Gabriel,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Motion First Extraordinary Session,Assembly Floor,nvr,AFLOOR,2025-02-03 14:39:10,1004,183731,Gallagher,ABS
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Motion First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:39:10,1004,183731,Garcia,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Motion First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:39:10,1004,183731,Gipson,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Motion First Extraordinary Session,Assembly Floor,nvr,AFLOOR,2025-02-03 14:39:10,1004,183731,Hadwick,ABS
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Motion First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:39:10,1004,183731,Haney,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Motion First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:39:10,1004,183731,Harabedian,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Motion First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:39:10,1004,183731,Hart,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Motion First Extraordinary Session,Assembly Floor,nvr,AFLOOR,2025-02-03 14:39:10,1004,183731,Hoover,ABS
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Motion First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:39:10,1004,183731,Irwin,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Motion First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:39:10,1004,183731,Jackson,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Motion First Extraordinary Session,Assembly Floor,nvr,AFLOOR,2025-02-03 14:39:10,1004,183731,Jeff Gonzalez,ABS
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Motion First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:39:10,1004,183731,Kalra,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Motion First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:39:10,1004,183731,Krell,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Motion First Extraordinary Session,Assembly Floor,nvr,AFLOOR,2025-02-03 14:39:10,1004,183731,Lackey,ABS
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Motion First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:39:10,1004,183731,Lee,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Motion First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:39:10,1004,183731,Lowenthal,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Motion First Extraordinary Session,Assembly Floor,no,AFLOOR,2025-02-03 14:39:10,1004,183731,Macedo,NOE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Motion First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:39:10,1004,183731,Mark González,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Motion First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:39:10,1004,183731,McKinnor,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Motion First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:39:10,1004,183731,Michelle Rodriguez,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Motion First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:39:10,1004,183731,Muratsuchi,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Motion First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:39:10,1004,183731,Nguyen,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Motion First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:39:10,1004,183731,Ortega,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Motion First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:39:10,1004,183731,Pacheco,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Motion First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:39:10,1004,183731,Papan,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Motion First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:39:10,1004,183731,Patel,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Motion First Extraordinary Session,Assembly Floor,nvr,AFLOOR,2025-02-03 14:39:10,1004,183731,Patterson,ABS
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Motion First Extraordinary Session,Assembly Floor,nvr,AFLOOR,2025-02-03 14:39:10,1004,183731,Pellerin,ABS
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Motion First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:39:10,1004,183731,Petrie-Norris,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Motion First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:39:10,1004,183731,Quirk-Silva,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Motion First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:39:10,1004,183731,Ramos,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Motion First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:39:10,1004,183731,Ransom,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Motion First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:39:10,1004,183731,Rivas,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Motion First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:39:10,1004,183731,Rogers,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Motion First Extraordinary Session,Assembly Floor,nvr,AFLOOR,2025-02-03 14:39:10,1004,183731,Sanchez,ABS
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Motion First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:39:10,1004,183731,Schiavo,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Motion First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:39:10,1004,183731,Schultz,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Motion First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:39:10,1004,183731,Sharp-Collins,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Motion First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:39:10,1004,183731,Solache,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Motion First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:39:10,1004,183731,Soria,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Motion First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:39:10,1004,183731,Stefani,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Motion First Extraordinary Session,Assembly Floor,nvr,AFLOOR,2025-02-03 14:39:10,1004,183731,Ta,ABS
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Motion First Extraordinary Session,Assembly Floor,nvr,AFLOOR,2025-02-03 14:39:10,1004,183731,Tangipa,ABS
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Motion First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:39:10,1004,183731,Valencia,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Motion First Extraordinary Session,Assembly Floor,nvr,AFLOOR,2025-02-03 14:39:10,1004,183731,Wallis,ABS
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Motion First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:39:10,1004,183731,Ward,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Motion First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:39:10,1004,183731,Wicks,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Motion First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:39:10,1004,183731,Wilson,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Motion First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:39:10,1004,183731,Zbur,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL Motion First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:39:10,1004,183731,Ávila Farías,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:56:50,1005,183732,Addis,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:56:50,1005,183732,Aguiar-Curry,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:56:50,1005,183732,Ahrens,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL First Extraordinary Session,Assembly Floor,no,AFLOOR,2025-02-03 14:56:50,1005,183732,Alanis,NOE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:56:50,1005,183732,Alvarez,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:56:50,1005,183732,Arambula,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:56:50,1005,183732,Bains,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:56:50,1005,183732,Bauer-Kahan,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:56:50,1005,183732,Bennett,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:56:50,1005,183732,Berman,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:56:50,1005,183732,Blanca Rubio,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:56:50,1005,183732,Boerner,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:56:50,1005,183732,Bonta,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:56:50,1005,183732,Bryan,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL First Extraordinary Session,Assembly Floor,nvr,AFLOOR,2025-02-03 14:56:50,1005,183732,Calderon,ABS
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:56:50,1005,183732,Caloza,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:56:50,1005,183732,Carrillo,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL First Extraordinary Session,Assembly Floor,no,AFLOOR,2025-02-03 14:56:50,1005,183732,Castillo,NOE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:56:50,1005,183732,Celeste Rodriguez,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL First Extraordinary Session,Assembly Floor,no,AFLOOR,2025-02-03 14:56:50,1005,183732,Chen,NOE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:56:50,1005,183732,Connolly,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL First Extraordinary Session,Assembly Floor,no,AFLOOR,2025-02-03 14:56:50,1005,183732,Davies,NOE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL First Extraordinary Session,Assembly Floor,no,AFLOOR,2025-02-03 14:56:50,1005,183732,DeMaio,NOE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL First Extraordinary Session,Assembly Floor,no,AFLOOR,2025-02-03 14:56:50,1005,183732,Dixon,NOE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:56:50,1005,183732,Elhawary,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL First Extraordinary Session,Assembly Floor,no,AFLOOR,2025-02-03 14:56:50,1005,183732,Essayli,NOE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL First Extraordinary Session,Assembly Floor,no,AFLOOR,2025-02-03 14:56:50,1005,183732,Flora,NOE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:56:50,1005,183732,Fong,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:56:50,1005,183732,Gabriel,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL First Extraordinary Session,Assembly Floor,no,AFLOOR,2025-02-03 14:56:50,1005,183732,Gallagher,NOE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:56:50,1005,183732,Garcia,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:56:50,1005,183732,Gipson,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL First Extraordinary Session,Assembly Floor,no,AFLOOR,2025-02-03 14:56:50,1005,183732,Hadwick,NOE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:56:50,1005,183732,Haney,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:56:50,1005,183732,Harabedian,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:56:50,1005,183732,Hart,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL First Extraordinary Session,Assembly Floor,no,AFLOOR,2025-02-03 14:56:50,1005,183732,Hoover,NOE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:56:50,1005,183732,Irwin,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:56:50,1005,183732,Jackson,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL First Extraordinary Session,Assembly Floor,nvr,AFLOOR,2025-02-03 14:56:50,1005,183732,Jeff Gonzalez,ABS
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:56:50,1005,183732,Kalra,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:56:50,1005,183732,Krell,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL First Extraordinary Session,Assembly Floor,no,AFLOOR,2025-02-03 14:56:50,1005,183732,Lackey,NOE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:56:50,1005,183732,Lee,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:56:50,1005,183732,Lowenthal,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL First Extraordinary Session,Assembly Floor,no,AFLOOR,2025-02-03 14:56:50,1005,183732,Macedo,NOE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:56:50,1005,183732,Mark González,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:56:50,1005,183732,McKinnor,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:56:50,1005,183732,Michelle Rodriguez,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:56:50,1005,183732,Muratsuchi,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:56:50,1005,183732,Nguyen,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:56:50,1005,183732,Ortega,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:56:50,1005,183732,Pacheco,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:56:50,1005,183732,Papan,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:56:50,1005,183732,Patel,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL First Extraordinary Session,Assembly Floor,no,AFLOOR,2025-02-03 14:56:50,1005,183732,Patterson,NOE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL First Extraordinary Session,Assembly Floor,nvr,AFLOOR,2025-02-03 14:56:50,1005,183732,Pellerin,ABS
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:56:50,1005,183732,Petrie-Norris,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:56:50,1005,183732,Quirk-Silva,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:56:50,1005,183732,Ramos,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:56:50,1005,183732,Ransom,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:56:50,1005,183732,Rivas,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:56:50,1005,183732,Rogers,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL First Extraordinary Session,Assembly Floor,nvr,AFLOOR,2025-02-03 14:56:50,1005,183732,Sanchez,ABS
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:56:50,1005,183732,Schiavo,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:56:50,1005,183732,Schultz,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:56:50,1005,183732,Sharp-Collins,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:56:50,1005,183732,Solache,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:56:50,1005,183732,Soria,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:56:50,1005,183732,Stefani,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL First Extraordinary Session,Assembly Floor,no,AFLOOR,2025-02-03 14:56:50,1005,183732,Ta,NOE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL First Extraordinary Session,Assembly Floor,no,AFLOOR,2025-02-03 14:56:50,1005,183732,Tangipa,NOE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:56:50,1005,183732,Valencia,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL First Extraordinary Session,Assembly Floor,no,AFLOOR,2025-02-03 14:56:50,1005,183732,Wallis,NOE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:56:50,1005,183732,Ward,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:56:50,1005,183732,Wicks,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:56:50,1005,183732,Wilson,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:56:50,1005,183732,Zbur,AYE
+202520261SB1,2025-02-03,SB 1 Wiener Senate Third Reading By GABRIEL First Extraordinary Session,Assembly Floor,aye,AFLOOR,2025-02-03 14:56:50,1005,183732,Ávila Farías,AYE

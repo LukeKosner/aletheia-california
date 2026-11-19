@@ -1,0 +1,85 @@
+{
+  "jurisdiction": "Los Angeles (city)",
+  "source": "lacity:lac",
+  "portal": "https://data.lacity.org/browse?q=campaign",
+  "check": "LA publishes no filed summary totals, so this check compares our loaded itemized Schedule A and Schedule E sums per committee and statement period against the same sums computed server-side by data.lacity.org (SoQL sum/group by on m6g2-gc6c and 5mrt-4zhe). It proves the load is complete and amounts parse exactly; it does not cross-check the filer's own summary page.",
+  "passed": true,
+  "ran_at": "2026-11-16T00:26:20+00:00",
+  "rows": {
+    "cal_rows": 742870,
+    "filing": 19762,
+    "entity": 239441,
+    "entity_alias": 255278,
+    "money_edge": 576062,
+    "skipped": {
+      "memo_row": 8766,
+      "no_counterparty_name": 74,
+      "no_filer": 44,
+      "schedule_not_loaded": 124205,
+      "zero_amount": 33719
+    },
+    "edges_by_kind": {
+      "contribution": 400867,
+      "expenditure": 174257,
+      "loan": 938
+    }
+  },
+  "totals": {
+    "by_schedule": [
+      {
+        "schedule": "A",
+        "filings": 4408,
+        "filings_nonzero": 4381,
+        "matched": 4408,
+        "matched_nonzero": 4381,
+        "ours_total": 454847329.44,
+        "portal_total": 454847329.44,
+        "match_rate_nonzero": 1.0,
+        "aggregate_diff_pct": 0.0
+      },
+      {
+        "schedule": "E",
+        "filings": 12599,
+        "filings_nonzero": 10741,
+        "matched": 12599,
+        "matched_nonzero": 10741,
+        "ours_total": 847641525.32,
+        "portal_total": 847641525.32,
+        "match_rate_nonzero": 1.0,
+        "aggregate_diff_pct": 0.0
+      }
+    ]
+  },
+  "raw": {
+    "contributions": {
+      "url": "https://data.lacity.org/resource/m6g2-gc6c.csv",
+      "rows": 429883,
+      "sha256": "d74f7953a6df9aa50c568252a8bc3559b5a8a9426f6d52c8848d6ff005844f69",
+      "fetched_at": "2026-11-16T00:22:21+00:00"
+    },
+    "expenditures": {
+      "url": "https://data.lacity.org/resource/5mrt-4zhe.csv",
+      "rows": 312987,
+      "sha256": "cf9f1858bdacab1d0e85d3c08390ecae99f4059cd77391de95da7ed8f196d5a4",
+      "fetched_at": "2026-11-16T00:23:17+00:00"
+    },
+    "statements": {
+      "url": "https://data.lacity.org/resource/br3a-db9a.csv",
+      "rows": 12659,
+      "sha256": "aedf07394c378c1fb15e476cc9271c49e2b06891fa562dd742daad169c714710",
+      "fetched_at": "2026-11-16T00:23:19+00:00"
+    },
+    "portal_sum_a": {
+      "url": "https://data.lacity.org/resource/m6g2-gc6c.csv?$select=cmt_id,per_beg_date,per_end_date,sum(con_amount)&$where=schedule='A' AND con_type like '%(Itemized)%'&$group=cmt_id,per_beg_date,per_end_date",
+      "rows": 4408,
+      "sha256": "ece05ee5c27a1e3efcc5471cb072c0e799d33b320de9a895989280f030f0162b",
+      "fetched_at": "2026-11-16T00:23:34+00:00"
+    },
+    "portal_sum_e": {
+      "url": "https://data.lacity.org/resource/5mrt-4zhe.csv?$select=cmt_id,per_beg_date,per_end_date,sum(exp_amount)&$where=exp_type='Payment Made [Form 460, Schedule E]'&$group=cmt_id,per_beg_date,per_end_date",
+      "rows": 12599,
+      "sha256": "54ad5330c3bfaed066c9928ca8ec922de80c0ffd1c609a60653b9e3dc8b0e370",
+      "fetched_at": "2026-11-16T00:23:38+00:00"
+    }
+  }
+}

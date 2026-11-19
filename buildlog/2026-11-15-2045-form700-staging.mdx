@@ -1,0 +1,35 @@
+---
+date: 2026-11-15
+author: agent:p11
+reviewer: Luke Kosner
+task: P11 — Stage Form 700 public evidence and prepare ten filings for human review
+---
+
+## Shipped
+
+- `py/ingest/form700`: opt-in `plan`, `acquire`, `extract`, and `review` commands. `FORM700` defaults off and gates input reads, output writes, PDF subprocesses and network calls. No database access or loader, no dependency changes, and no public-site flag changes.
+- Explicit official-roster/index intake, coverage gaps, ambiguous latest-date rejection, latest-by-filed-date selection and retention of same-statement originals/amendments as separate evidence. Public direct-PDF download or normal portal-download file import; no search-ticket emulation, credential retrieval or access-control bypass.
+- PDF hashes/source URLs, original PDFs, page text, exact model request, raw model response and their hashes. TokenRouter uses the sponsor's documented `https://api.tokenrouter.com/v1/chat/completions` endpoint; no unrelated `.io` namesake endpoint. Model ID is explicit, key stays in the environment.
+- Unverified `interest`-shaped JSON staging for A-1/A-2 investments and A-2/C business positions/income sources, with null entity/filing UUIDs and per-row page quotes. Validation rejects unsupported fields, absent evidence, invalid page citations and incomplete completions. Original/amendment records are not merged automatically.
+- A deterministic ten-official checklist after successful extraction, bound to the staged output hash. All checks await a human. The manual `REVIEW_TEN.md` lists ten actual observed Assembly filing entries for intake; it is not a completed PDF review.
+
+## Metric
+
+- 14 focused tests, including actual PDF extraction, source-hash preservation, feature-off behavior, explicit coverage gaps, access-challenge rejection, page-citation validation, mocked model staging and insufficient-review handling.
+- One preserved public PDF fixture, 8 PDF pages, 925,793 bytes; SHA-256 is recorded in `py/ingest/form700/tests/fixtures/perez-source.json`. This is a city pre-confirmation filing, not current-legislator coverage.
+- Official portal browser search observed 498 State Assembly Annual/current-position entries. Ten displayed 2025 annual amendments are recorded with actual names and filed dates. **0 legislator PDFs acquired, 0 live model extractions, 0 human reviews and 0 database writes.**
+
+## Broke or learned
+
+- The FPPC portal's public search/download flow uses browser search tickets. Normal browser search succeeded; the PDF button produced no captured download. Bulk automated intake remains incomplete. The implementation accepts normal downloaded files instead of recreating the portal's access-control mechanism.
+- No TokenRouter key was present in the task environment. The sponsor's official setup guide verifies `.com` API hosting; similarly named `.io` services must not receive this project's keys. No live provider request was sent.
+- Plain PDF text loses checkbox selection information. The extraction prompt requires null uncertain ranges, and the human checklist explicitly checks visual ranges and ownership context. Text support is not an accuracy/completeness metric.
+- Amendments can contain only changed schedules. Preserve originals and all amendments and review them together; do not sum all staged rows or infer that a partial amendment replaces the entire original.
+
+## Evidence
+
+- Run from `py/ingest`: `uv run python -m pytest form700/tests -q` (14 tests). In this isolated worktree validation used the repository's already installed Python environment, with no dependency installation.
+- FPPC source: https://form700search.fppc.ca.gov/ ; `py/ingest/form700/tests/fixtures/portal-observation.json` records the 2026-11-15 visible search filters/results. Ten intake rows: `py/ingest/form700/REVIEW_TEN.md`.
+- Real fixture: https://cityclerk.lacity.org/onlinedocs/2026/26-1200-s13_misc_3-24-26.pdf ; Council File 26-1200-S13, SAN 011300006-STH-0006, John Perez, filed 2026-03-24. Schedule A-2 on PDF page 3, income-source attachment on page 4 and Schedule C on page 5. Mocked model output contains only facts from this PDF and is labeled as a test.
+- Sponsor API verification: https://www.tokenrouter.com/docs/zcode-setup/ ; sponsor feature guide https://tokenrouter.palebluedot.top/docs/tokenrouter-feature-guide/ and models https://tokenrouter.palebluedot.top/models/ .
+- Human next steps and exact commands: `py/ingest/form700/README.md`. Supply a complete official legislator roster and portal metadata/PDF index, run `FORM700=true` acquisition, securely set the sponsor key and choose an available OpenAI-format model, extract, and compare ten actual filings against their visual PDFs before any separately authorized load.

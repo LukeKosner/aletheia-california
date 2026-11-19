@@ -1,0 +1,29 @@
+---
+date: 2026-11-18
+author: Claude
+reviewer: Luke Kosner
+task: Clearer footer, no sign-in in local dev, a tighter home page, a later and quieter interview offer, and more visible insights
+---
+
+## Shipped
+
+- **Footer in two groups:** Legislators, Measures and Issues on the left (normal text). Method, Privacy and Terms on the right (small, muted). A top border, and Sign out sits behind a divider that hides when there is no button.
+- **No sign-in in local dev:** `localDevSignInSkipped()` (in `app/sign-in/session.ts`) is true only when `NODE_ENV` is `development`, which only `next dev` sets. The proxy, the investigations API check, card access and the Sign out button all use it. Production builds and tests keep the gate, and `PUBLIC_SITE` stays off.
+- **Tighter home page:** smaller headline (`sm:text-5xl`), less space between blocks, and smaller cards. The whole page, footer included, fits in an 800×600 window.
+- **Later, quieter interview offer:** now a one-line pill ("Share your views, get $5 →" plus ×) instead of a card. It appears after a minute on the site, counted across pages in this tab, and never on the home page, which already has the interview button. It sits above the footer so the footer links stay visible.
+- **Insights easier to find:** the header link is now "Insights" (to `/interview/insights`) instead of "Interview". The home page shows a one-line "What voters told us" strip with the top three issues and the interview count; it renders nothing when there are no interviews or the interview database is unreachable. The insights page opens with three numbers (top issue with its share, interviews, counties), and these follow the county and party filters.
+- `tally` and `percent` moved to `lib/interview/insights.ts` with tests.
+
+## Metric
+
+- `bun test`: 270 pass, 1 fail. The failure, `schema > defines every expected table`, also fails on the base branch `claude/voter-gpt-interview-569f53`: `interview.study` is missing from the test's expected list. Typecheck passes. Lint has 0 errors. `check:colors` passes.
+
+## Broke or learned
+
+- This branch is built on `claude/voter-gpt-interview-569f53` (not pushed), which includes the simple-UI and live-runtime branches. It has to merge after them.
+- Checked in the local preview with only `INTERVIEW_PREVIEW=1` set (no interview database): the home page loads without sign-in, the footer groups show, the offer appears only after a backdated first visit, and dismissing it persists. With the dev interview database (3 completed interviews), the home strip and the insights numbers render: the top issue is "Housing and rent" in 3 of 3 interviews, across 3 counties.
+- Home still scrolls at phone width (375×812), because the three cards stack.
+
+## Evidence
+
+- No new data. Test labels come from `ISSUES` in `apps/web/src/lib/interview/taxonomy.ts`.

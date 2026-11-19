@@ -1,0 +1,38 @@
+---
+date: 2026-11-15
+author: agent:ingest-leg
+reviewer: Luke Kosner
+task: Ingest every 2025–2026 California bill, author and recorded vote into bill, bill_author and vote; link legislators to CAL-ACCESS candidate committees
+---
+
+## Shipped
+
+- `aletheia_ingest.leginfo`: download, parse, stage, verify and load PUBINFO (`pubinfo_2025.zip`, 2026-11-08 extract) for bills, versions, authors, member votes, motions, legislators and locations.
+- 121 legislator entities (one per member), with aliases for renamed members (`Weber` → `Weber Pierson`, `Avila Farias` → `Ávila Farías`).
+- Staged rows: 5,065 bills, 36,929 bill authors (latest version), 610,499 member votes on 21,541 roll calls. Every staged vote is a recorded row in BILL_DETAIL_VOTE_TBL; no vote is inferred, and a missing vote is never a no.
+- `load` command (Postgres, one transaction, re-runnable). Run once against the Neon dev database by agent:ingest-leg on 2026-11-15 under a one-time override from the project owner (AGENTS.md says agents don't write to the database; the rule stands for other runs).
+- `data/manual/legislator_committees.csv`: 395 legislator → CAL-ACCESS committee rows from the CAL-ACCESS export. Owner reviewed it on 2026-11-15 and approved the 316 rows matched on name, office and district; the other 79 are marked `no`. `load` writes approved IDs onto legislator `entity.attrs` (no link table yet). Rerunning `committees` won't overwrite approvals.
+- `data/raw/MANIFEST.csv` logs `pubinfo_2025.zip`, `pubinfo_Readme.pdf`, `pubinfo_load.zip` and `dbwebexport.zip` with sha256. Raw files are gitignored.
+
+## Metric
+
+- 5 of 5 sample bills (SB 329, SB 2, AB 1, AB 13, SBX1-1) match the leginfo Bill Votes pages exactly: 27 of 27 roll calls, with the same aye, no and NVR counts and the same member names.
+- 610,499 of 610,499 member votes and 36,929 of 36,929 legislator author rows resolve to a legislator.
+- Dev database after load: 121 legislators (all with approved committee IDs), 5,065 bills, 36,929 bill authors, 610,499 votes; the five sample bills' 27 roll calls read back from Postgres match the website.
+- 121 of 121 members have at least one approved CAL-ACCESS committee (316 approved rows); 79 name-only or other-district rows are marked `no` pending a row-by-row check.
+
+## Broke or learned
+
+- BILL_SUMMARY_VOTE_TBL disagrees with the website on 2,096 roll calls, mostly the ABSTAIN count for Senate committees (it reads 0). On SB 329's Assembly floor vote of 2026-08-25 its ayes are wrong too: 77–0–2 vs 76–0–3 on the site. Counts are built from member rows; the summary table is only a cross-check.
+- The `vote` table has no roll-call id. In 31 cases a bill has two roll calls with the same date, location and motion, which the database can't tell apart. Needs a schema change (outside this task's folders).
+- `bill_author_role` has no principal-coauthor value; PRINCIPAL_COAUTHOR maps to `coauthor`.
+- 286 bills are authored only by a committee and have no `bill_author` rows (committees aren't legislator entities).
+- leginfo.legislature.ca.gov returns a Cloudflare JavaScript page to scripts; website counts were read in a browser and saved as a fixture.
+- Committee matching needed nicknames (Tom/Thomas, Ben/Benjamin, ...) and compound surnames (Ortega/Ortega-Toro). Name-only rows include possible different people, e.g. "Robert Garcia for Lt. Governor 2026".
+
+## Evidence
+
+- `uv run pytest` in `py/ingest`: 21 passed (includes a full-session run from the zip, and tests showing the comparison catches a changed or dropped vote).
+- `uv run python -m aletheia_ingest.leginfo verify` → `all sample bills match leginfo`.
+- `load` output: `{'legislators_with_committees': 121, 'legislators': 121, 'bills': 5065, 'bill_authors': 36929, 'votes': 610499}` (6 min 57 s).
+- Fixtures: `py/ingest/tests/leginfo/fixtures/leginfo_web_votes.json` (website, URLs inside), `pubinfo_votes_sample.csv` (staged rows from the zip).

@@ -1,0 +1,45 @@
+---
+date: 2026-11-15
+author: agent:resolve
+reviewer: Luke Kosner
+task: Resolve raw CAL-ACCESS donors so each real donor is one entity across all filings, with a confidence score, using Splink; draft 200 pairs for hand labeling and report precision and recall
+---
+
+## Shipped
+
+- `uv run python -m aletheia_resolve run` (`py/resolve/`): reads the temporary raw donors (`calaccess:raw:*`) read-only from the CAL-ACCESS DuckDB, a parquet extract or Postgres, and writes `members.parquet` (raw entity → resolved entity, match score, confidence), `likely_links.parquet` (pairs labeled "likely the same donor"), `pairs.parquet` and `summary.json` to `data/work/resolve/`.
+- Normalization: uppercase, punctuation, titles, suffixes (JR, SR, MD...), legal forms (INC, LLC, CORP...); people split into first, middle and last name, with the generational suffix kept separately. Joint gifts ("MICHAEL AND ELISA LEVY") are not merged.
+- Blocking: people on last name + ZIP3, organizations on normalized name. Separate Splink models for people (first name, middle initial, last name, employer, occupation, city, ZIP5; Jaro-Winkler and term frequencies) and organizations (name, city, ZIP5), committed as `py/resolve/models/*.json`.
+- Thresholds in `py/resolve/thresholds.json`: ≥ 0.95 merged (high), 0.80–0.95 "likely the same donor" (linked, never merged), < 0.80 separate.
+- Hard rules on top of the model: committees, candidates, measures, lobbying firms and filers are never merged; people and organizations are never compared; people with clearly different first names, JR vs SR, or MR vs MRS/MS are never merged; merges are constrained so one entity never holds two different full first names, middle initials, generational suffixes or MR/MRS titles.
+- `draft-labels`: 200 candidate pairs in `data/manual/labels.csv` (140 people, 60 organizations) across six strata, each with both records and the state's filing PDF. `report [--apply]`: weighted precision and recall per threshold into `py/resolve/REPORT.md`, and raises the threshold until precision ≥ 0.98.
+- `load [--dry-run]`: writes the last run into Postgres in one transaction, additively and without a schema change (resolved key, score and confidence in `entity.attrs`, one `method = 'splink'` alias per merged record, `attrs.likely_same_donor` links). Reruns replace the previous resolution. Approved by the project owner as an exception to the agents-never-write rule.
+- All 200 pairs labeled by agent:resolve (labeler column says so), to be checked by a human before launch.
+- 18 tests on 25 real records (Yeager Sr./Jr., the Sobrato family, a joint gift, an LLC, a raw committee), 2 of them against a throwaway Postgres (`TEST_DATABASE_URL`).
+
+## Metric
+
+- 2,885,822 raw people and organizations → 2,396,014 entities (−489,808, 17%). People 2,131,076 → 1,773,238 (599,654 records folded into 241,816 multi-record entities); organizations 754,746 → 622,776.
+- 53,909 people and 16,932 organization pairs of entities are "likely the same donor".
+- 124,862 raw committees, candidates, measures and lobbying firms kept one-per-record.
+- Precision and recall, **provisional (agent labels, not human)**, weighted by stratum: organizations precision 1.000, recall 0.640 at 0.95 (30 labeled pairs above). People precision 0.929, recall 0.764 at 0.95, and still 0.923–0.929 at every threshold up to 0.999, so **people miss the 0.98 target and raising the threshold does not fix it**. Tracked as an issue to fix before launch.
+- Rerun on the same input: identical entities (`members_sha256` `eb70c39b…`). Two seeded retrains: byte-identical models. Full run: about 1 minute.
+
+## Broke or learned
+
+- Letting Splink's EM estimate name weights gave m(first name exact) = 0.05: EM blocked on last name + ZIP3 found "same household or same office" instead of "same person". Name m probabilities are now fixed priors; EM estimates employer, occupation, city and ZIP.
+- Even then, relatives and coworkers scored high: 244,419 person pairs at or above 0.99 have clearly different first names (final run) (two correctional officers named LOPEZ in West Sacramento, a married couple at one company). The first-name rule drops them.
+- Stripping suffixes merged Jacques S. Yeager Sr. and Jacques S. Yeager Jr. of Riverside, directly and through records with no suffix. Fixed with the JR/SR rule plus constrained clustering.
+- Term-frequency weights come from the input, so scores depend on the dataset: a 25-row test sample makes a rare company name look common. Same input gives the same result; new data can shift scores.
+- Two retrains differed in the 16th digit (DuckDB parallel float sums) and in Splink's random `linker_uid`; saved models are now rounded to 10 significant digits without the uid.
+- The person mistakes left at high scores are mostly relatives with near-identical first names where only one record has a title (Jane / Mr. Jan Smit; Marion Ashley / Mrs. Marion Ashley), very common names (two James Smiths with State of California jobs in ZIP 95811), and a first initial matched to the wrong full name (C. / Cindy Anderson). The MR/MRS rule only helps when both records carry a title.
+- Organizations look too cautious: all 15 labeled "separate" pairs (same normalized name, different ZIP, e.g. two "Political Data" spellings in Norwalk) are the same organization.
+- The report originally scored labels with the probabilities frozen at draft time. It now re-scores labeled pairs against the current run and post-stratifies, so it stays valid after model changes.
+- Neon (`aletheia-dev`) has no CAL-ACCESS rows yet (0 raw entities, 0 money edges, no load running), so `load` could not run there. All numbers come from the local DuckDB build of the same export.
+
+## Evidence
+
+- `uv run pytest` in `py/resolve`: 16 passed, 2 skipped; with `TEST_DATABASE_URL` pointing at a local Postgres 17 built from `0000_init.sql`: 18 passed.
+- `uv run python -m aletheia_resolve run --source data/work/calaccess.duckdb` twice: identical `summary.json`, `members_sha256` `eb70c39bb3486d74785a1b8b24e53161049dfdd2e440b945e61dc79a29df5300`.
+- `py/resolve/REPORT.md`: counts and the precision/recall tables.
+- Input: CAL-ACCESS export sha256 `6b14bf50067fddd45ea5b1bf43ce6fbc62297d8ce4df1b1eaca6c82cfacc9476` (downloaded 2026-11-15), `out_entity` with 3,010,684 raw entities.

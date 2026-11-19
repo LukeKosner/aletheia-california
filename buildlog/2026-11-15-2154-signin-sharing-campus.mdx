@@ -1,0 +1,35 @@
+---
+date: 2026-11-15
+author: Codex
+reviewer: Luke Kosner
+task: P14 private sign-in, sharing drafts, and campus activity
+---
+
+## Shipped
+
+- Added approved Better Auth and Resend dependencies, private allowlisted magic-link sign-in, a fresh verified-email server identity resolver, optional campus selection, and UUID auth tables generated through Drizzle. Kept the existing team-password preview available and all public/game flags off.
+- Added compose-only X, LinkedIn, Bluesky, and Threads drafts below 280 characters. Sharing and card-view hooks stay closed until a real approved receipt/alias resolver is available; no preview is presented as verified or publishable.
+- Added narrow server event hooks and read-only campus aggregate tools. Verified events require final P12 output matching the exact persisted supported claims. Pending, partial, failed, and recorded preview responses cannot count. The game refreshes each minute when enabled and visible, and reports unavailable on read failure.
+- Documented dedicated role grants, sender setup, separate signup/admin allowlists, P9/P12 persistence wiring, and P13/P15 receipt/publication gates.
+
+## Metric
+
+- 153 tests passed; 39 database integration tests skipped; 0 test failures.
+- Type checking, theme-color check, and lint passed; lint reports 5 existing warnings outside this change.
+- Production build passed with the supported webpack compiler. Default Turbopack build hit a local process/port restriction; it did not establish a source failure after the route config fix.
+- 0 live email sends, database connections, applied migrations, public deployments, or social posts during this task.
+
+## Broke or learned
+
+- Next.js Cache Components rejects an explicit route runtime declaration; removed it and verified the production build.
+- The isolated Bun installation needed its existing locked packages installed with the hoisted layout for Next.js to resolve its runtime helpers. This added no dependencies beyond the two approved packages.
+- P12 currently returns verification in memory without a persistence host. P13 currently has a recorded preview without approval/alias storage. These remain explicit integration blockers. The sharing resolver returns no receipt until the real trusted read-only boundary exists.
+- Resend sender verification, team addresses, credentials, actual magic-link redemption, and separate admin addresses remain operator setup. No addresses or completed verification were assumed.
+
+## Evidence
+
+- Validation: `bun test`, `bun run typecheck`, `bun run lint`, `bun run check:colors`, and `bun run --cwd apps/web build --webpack`.
+- Local browser check: private sign-in rendered with email unavailable, the disabled auth endpoint returned its closed-state error, and `/account` redirected to `/sign-in?next=%2Faccount`.
+- Schema: `bun run db:generate` used a nonconnecting localhost placeholder and produced `0002_mysterious_sir_ram.sql`; nothing was applied.
+- Source-backed share test text: [CAL-ACCESS filing 3214397, F497P1 line 1](https://cal-access.sos.ca.gov/PDFGen/pdfgen.prg?filingid=3214397&amendid=0). This is a composition fixture, not a real verification run.
+- Provider contracts: [Better Auth magic links](https://better-auth.com/docs/plugins/magic-link), [Better Auth database schema](https://better-auth.com/docs/concepts/database), and [Resend Node.js setup](https://resend.com/docs/send-with-nodejs).

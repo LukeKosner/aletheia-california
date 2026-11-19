@@ -1,0 +1,36 @@
+---
+date: 2026-11-15
+author: agent:p15
+reviewer: Luke Kosner
+task: P15 private feedback and correction review
+---
+
+## Shipped
+
+- Every investigation sentence has an “Is this wrong?” disclosure with wrong number, wrong person or organization, missing context, and other categories plus written detail. Investigations end with useful yes/no and a required explanation. Recorded examples explicitly have no saved record and cannot fabricate a stored submission.
+- `/corrections?card=<saved UUID>` submits a bounded, validated correction request and displays a receipt only after storage succeeds. Both configured administrators receive a private log notification; the response explicitly says email delivery is not connected. No email was sent.
+- `/admin` and `/admin/corrections` require P14's fresh verified Better Auth server identity and exactly two configured administrator emails. The identity adapter now delegates directly to `currentVerifiedIdentity()`; a team password or supplied email header cannot grant administration. Admin data reads and command routes repeat authorization at their own boundaries. Incomplete auth configuration remains closed.
+- Server-owned commands persist feedback/corrections, reject with a written public reason, or fix a specific linked claim with revised text and validated complete supporting evidence identifiers. Fix clears stale verifier fields and withdraws every card plus the report in the same transaction. Fixed never means verified or republished.
+- The kill switch atomically withdraws every associated card and report with a written audit reason. Durable event tombstones prevent an in-flight P9 status update from restoring withdrawn content. The saved report and map keep their links and show a notice; unavailable lookup also suppresses content. Reloaded reports explicitly explain the server's HTTP 410 withdrawal response. Recorded examples are clearly exempt because no stored report exists.
+- Product-only read adapters live in `packages/tools`; they use a separate read-only connection and are never registered as MCP agent tools. Public changelog output excludes private request text and administrator identity. Narrow writer credentials cannot fall back to the owner or existing agent/claim roles.
+
+## Metric
+
+- Integrated `bun test`: 186 passed, 39 skipped, zero failures. Fourteen P15 tests cover identity allowlisting and direct binding to the verified session resolver, private session/origin/body boundaries, denied mutation routes, record/evidence validation, fix/reject/withdrawal requirements, and malformed public resolution content. The suite includes P9 withdrawal race and P10 saved-link recovery tests. Database tests were skipped; no database operation was executed.
+- Frozen lockfile install, workspace typecheck, lint (zero errors; five existing warnings), raw-color checks, buildlog checks, and whitespace checks pass.
+- `next build --webpack` passes compilation, type checking, static generation, and route generation for the new admin and feedback endpoints. Default Turbopack build is blocked by this environment’s CSS-worker local port restriction after font fetching succeeds.
+- Browser checks on the private local build confirmed sentence categories, useful yes/no and why controls, correction receipt/email notices, and administrator denial with only a valid team cookie. No report was submitted or database write attempted. Webpack does not run this repository’s Turbopack-only Tailwind loader, so layout/style QA remains pending a working Turbopack build; browser evidence here covers behavior and accessibility text.
+
+## Broke or learned
+
+- The merged P9/P10/P14 foundations are integrated, including P10 saved-link recovery, both game and correction tool exports, and the verified server identity binding. Both real admin addresses, verified email setup, and reviewed least-privilege role provisioning remain required. Admin review fails closed until those operator settings are ready.
+- The new `CORRECTIONS_READER_DATABASE_URL` and `CORRECTIONS_WRITER_DATABASE_URL` must use separately provisioned `corrections_reader` / `corrections_writer` roles. No schema, grants, role provisioning, direct database access, dependency, merge, deployment, or feature-flag change occurred.
+- P9's merged server answer/output routes enforce unpublished status and P15 tombstones before remote recovery and content release. Conditional lifecycle updates cannot overwrite withdrawal, and failed guard queries release no answer. Withdrawn GET returns HTTP 410; in-flight stream completion suppresses the result. The human-only runtime setup adds `SELECT (name, props)` on `event`. Updating a claim does not rewrite an already stored remote answer; revised output must be rebuilt and reverified before any future sharing.
+- P13’s receipt, shortlink, metadata, image, and export routes must independently enforce `getPublicationState()` and render the unpublished notice. `getReportAvailability()` permits private reports without cards and must never be used as public sharing approval. No republish workflow exists; retiring withdrawal tombstones needs a reviewed future policy.
+- Successful persistence, transaction rollback/concurrency, actual admin review, and actual email delivery could not be exercised without provisioned roles and verified auth. The implementation does not represent these as live.
+
+## Evidence
+
+- Test-only public evidence is the existing CAL-ACCESS fixture: filing 3214397, F497P1 line 1, edge `e24a8221-3de7-3547-b3cc-42f0da6c5953`, reported contribution $3,910,600.00. Source: https://cal-access.sos.ca.gov/PDFGen/pdfgen.prg?filingid=3214397&amendid=0 and `packages/tools/test/fixtures/calaccess_slice.json` (bulk export SHA-256 `6b14bf50067fddd45ea5b1bf43ce6fbc62297d8ce4df1b1eaca6c82cfacc9476`). UUIDs used by parser tests establish syntax only and never assert a saved card or correction.
+- Integration and privilege checklist: `apps/web/src/components/feedback/INTEGRATION.md`.
+- Validation: `bun test`, `bun run lint`, `bun run typecheck`, `bun run check:colors`, `bun run check:buildlog`, `git diff --check`, and `./node_modules/.bin/next build --webpack` from `apps/web`.

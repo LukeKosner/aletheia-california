@@ -1,0 +1,74 @@
+{
+  "jurisdiction": "San Francisco",
+  "source": "datasf:sfo",
+  "portal": "https://data.sf.gov/d/pitq-e56w",
+  "check": "Per Form 460 filing, the sum of itemized non-memo Schedule A and Schedule E rows in Transactions (pitq-e56w) against line 1 of Schedule A and Schedule E in SF Ethics' Summary Totals (9ggq-m8hp).",
+  "passed": true,
+  "ran_at": "2026-11-16T00:26:10+00:00",
+  "rows": {
+    "cal_rows": 728120,
+    "filing": 13323,
+    "entity": 225626,
+    "entity_alias": 258983,
+    "money_edge": 717991,
+    "skipped": {
+      "memo_row": 1086,
+      "no_amount": 1,
+      "no_counterparty_name": 2159,
+      "zero_amount": 6883
+    },
+    "edges_by_kind": {
+      "contribution": 523278,
+      "expenditure": 179981,
+      "ie_oppose": 2034,
+      "ie_support": 11692,
+      "loan": 1006
+    }
+  },
+  "totals": {
+    "by_schedule": [
+      {
+        "schedule": "A",
+        "filings": 15776,
+        "filings_nonzero": 9261,
+        "matched": 15711,
+        "matched_nonzero": 9196,
+        "ours_total": 525230781.32,
+        "portal_total": 524068933.57,
+        "match_rate_nonzero": 0.993,
+        "aggregate_diff_pct": 0.2217
+      },
+      {
+        "schedule": "E",
+        "filings": 15776,
+        "filings_nonzero": 11856,
+        "matched": 15690,
+        "matched_nonzero": 11770,
+        "ours_total": 592256617.76,
+        "portal_total": 592742877.63,
+        "match_rate_nonzero": 0.9927,
+        "aggregate_diff_pct": -0.082
+      }
+    ]
+  },
+  "raw": {
+    "filings": {
+      "url": "https://data.sf.gov/resource/qizs-bwft.csv",
+      "rows": 32862,
+      "sha256": "78ae5ad437d66d79d3a50b5eadc79a99668c09e6498258d6a2860834d455c773",
+      "fetched_at": "2026-11-16T00:18:56+00:00"
+    },
+    "transactions": {
+      "url": "https://data.sf.gov/resource/pitq-e56w.csv",
+      "rows": 728120,
+      "sha256": "7c9159ee2d7ac4353381b5c5fc408dfcdafa976ac927403f8db59484251769c2",
+      "fetched_at": "2026-11-16T00:21:17+00:00"
+    },
+    "summary_totals": {
+      "url": "https://data.sf.gov/resource/9ggq-m8hp.csv",
+      "rows": 15776,
+      "sha256": "04d9cfbc6ddb0785d7481641c72b33a0f3c99595f50520a9259476f8cc2c9e69",
+      "fetched_at": "2026-11-16T00:21:29+00:00"
+    }
+  }
+}

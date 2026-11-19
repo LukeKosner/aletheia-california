@@ -1,0 +1,22 @@
+---
+date: 2026-11-19
+author: Claude
+reviewer:
+task: Simple README for the GitHub repo with a private-use warning, for the event submission
+---
+
+## Shipped
+
+- `README.md` now opens with a private-use warning, then says what Aletheia does, where its data comes from, how the repo is laid out and how to run it locally.
+
+## Metric
+
+- Docs only. No code changed.
+
+## Broke or learned
+
+- The repo is private on GitHub. Making it public would also publish full commit history, including contributor commit emails and HarnessRouter harness IDs in `agents/harnessrouter.json` (IDs, not keys). A secret scan of history found only placeholder connection strings and test keys.
+
+## Evidence
+
+- `git log --all -p` scanned for API key, token and connection-string patterns: no live secrets found.

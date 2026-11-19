@@ -1,0 +1,57 @@
+{
+  "investigation_id": "recorded-calaccess-3214397",
+  "question": "What contribution to CA Homes Committee appears in filing 3214397?",
+  "recorded": true,
+  "answer": {
+    "summary": "A recorded public filing example.",
+    "sections": [
+      {
+        "heading": "What the filing reports",
+        "sentences": [
+          {
+            "text": "HOMEOWNERSHIP FOR FAMILIES AND TAX SAVINGS FOR SENIORS, SPONSORED BY THE CALIFORNIA ASSOCIATION OF REALTORS, MAJOR FUNDING BY THE CALIFORNIA ASSOCIATION OF REALTORS ISSUES MOBILIZATION PAC reported a $3,910,600 contribution to CA HOMES COMMITTEE on 2026-10-20.",
+            "claim_id": null,
+            "source_ids": [
+              "3214397"
+            ]
+          }
+        ]
+      }
+    ],
+    "card": null
+  },
+  "sources": [
+    {
+      "id": "3214397",
+      "title": "CAL-ACCESS filing 3214397",
+      "url": "https://cal-access.sos.ca.gov/PDFGen/pdfgen.prg?filingid=3214397&amendid=0",
+      "detail": "F497P1, line 1; contribution dated 2026-10-20."
+    }
+  ],
+  "verification": {
+    "status": "not_run"
+  },
+  "graph": {
+    "nodes": [
+      {
+        "id": "3495fdfc-a25f-3d46-ac24-277ac679445c",
+        "name": "HOMEOWNERSHIP FOR FAMILIES AND TAX SAVINGS FOR SENIORS, SPONSORED BY THE CALIFORNIA ASSOCIATION OF REALTORS, MAJOR FUNDING BY THE CALIFORNIA ASSOCIATION OF REALTORS ISSUES MOBILIZATION PAC",
+        "side": "donor"
+      },
+      {
+        "id": "c40cda96-ef13-38b1-935e-c9afca609820",
+        "name": "CA HOMES COMMITTEE",
+        "side": "recipient"
+      }
+    ],
+    "edges": [
+      {
+        "id": "e24a8221-3de7-3547-b3cc-42f0da6c5953",
+        "source": "3495fdfc-a25f-3d46-ac24-277ac679445c",
+        "target": "c40cda96-ef13-38b1-935e-c9afca609820",
+        "amount": "3910600.00",
+        "source_id": "3214397"
+      }
+    ]
+  }
+}

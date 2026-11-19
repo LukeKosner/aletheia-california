@@ -1,0 +1,30 @@
+---
+date: 2026-11-19
+author: Claude
+reviewer:
+task: Theme. Civic colors and Public Sans as the default, a blue "Aletheiα" wordmark, and the alpha becoming the logo on scroll
+---
+
+## Shipped
+
+- **Civic theme as the default:** warm white background, navy text and a deep federal blue accent (`--stamp`), with matching dark-mode values. Only color tokens in `globals.css` changed. Spacing and layout are untouched.
+- **Font:** Public Sans (the US Web Design System typeface) replaces Geist for all text. Geist Mono stays for monospace.
+- **Wordmark:** the header reads "Aletheiα", all in `--stamp` blue. Public Sans has no Greek letters, so the α comes from Inter (Greek subset only), set at 0.95em so its body matches the height of Public Sans's "e". The link's accessible name stays "Aletheia".
+- **Scroll animation:** over the first 140 px of scroll, "Alethei" fades and folds away and the α scales to 1.35×, about the cap height of the "A", leaving the α as the logo. It uses CSS scroll-driven animations with no JavaScript. Browsers without `animation-timeline`, and anyone with reduced motion on, see the full wordmark at all times.
+- Four test looks (Civic, Press, Ledger, Aegean) and a dev-only picker were tried during this work and then removed. Only Civic remains.
+
+## Metric
+
+- Measured in the browser at 18 px: the α body is 9.65 px and the "e" body is 9.67 px. The "A" cap height is 13.0 px, which is where the 1.35× scale comes from.
+- After the fold, "Alethei" is 0 px wide and the α's transform is `matrix(1.35, 0, 0, 1.35, 0, 0)`. Checked at scroll positions 0, 50, 100 and 300 px, in light and dark mode.
+- Typecheck passes. Lint is clean on the changed files. `check:colors` passes.
+
+## Broke or learned
+
+- Google's hosted Inter drops the `cv11` single-storey "a", so a real Greek α was used instead.
+- The local Turbopack dev server sometimes kept serving stale `globals.css` after an edit. Editing the file again picked up the change.
+- Firefox does not support scroll timelines by default, so it shows the static wordmark.
+
+## Evidence
+
+- No data changed. Fonts load through `next/font/google`, which is part of Next.js, so no new dependency was added.

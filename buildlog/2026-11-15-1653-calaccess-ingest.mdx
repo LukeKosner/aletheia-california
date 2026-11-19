@@ -1,0 +1,44 @@
+---
+date: 2026-11-15
+author: agent:ingest
+reviewer: Luke Kosner
+task: Load every California state contribution, transfer, expenditure, independent expenditure and lobbying record from CAL-ACCESS into filing, money_edge and lobby_activity, matching the state's own totals
+---
+
+## Shipped
+
+- `uv run python -m ingest.calaccess`: one command that downloads, stages, transforms and loads CAL-ACCESS into Postgres (`py/ingest/src/ingest/calaccess/`). Full history by default; `--since YYYY-MM-DD` limits the window, and `--no-db` stops before Postgres.
+- Download: `dbwebexport.zip` saved unchanged to `data/raw/calaccess/2026-11-15/`, with URL, time, SHA-256, size, Last-Modified and ETag in `data/raw/MANIFEST.csv`. Reruns skip the download when the state's ETag hasn't changed.
+- Staging: 18 tables streamed from the zip into DuckDB as text. The export is never unzipped to disk. Rows split by embedded line breaks are rejoined. Every unplaceable row goes to `_rejects` with its raw text and per-table counts go to `_load_log`; the run stops if any physical line is unaccounted for.
+- Transform: latest amendment only. One entity per filer keyed `calaccess:filer:<FILER_ID>` (legacy ids mapped through `FILER_XREF_CD`, never by name). One temporary entity plus `entity_alias` per distinct raw donor/payee/lender/client/IE target. Filing rows carry the public PDF URL. Money edges carry schedule and line. Lobbying rows carry bill numbers extracted from activity text and text memos. `out_exclusions` counts every itemized row that did not become an edge, with the reason.
+- Load: one Postgres transaction with deterministic ids and upserts. Older amendments' filings and edges are deleted when a newer amendment arrives.
+- Tests: 6 unit tests on real export lines (no data needed, run in CI), and the Power Search totals test (skips without data or a database).
+
+## Metric
+
+- Staged 51.8M rows across 18 tables; 140 rejected (0.0003%, all logged): LEMP 72, CVR_LOBBY 33, LPAY 18, LOAN 12, LEXP 3, CVR_CAMPAIGN 2. RCPT_CD 20,567,251 rows and EXPN_CD 16,176,888 rows, 0 rejected.
+- Full history: 28,643,751 money_edge rows, 3,099,841 entities, 982,282 filings (latest amendments), 1,028,887 lobby_activity rows.
+- 2025–2026 contributions vs Power Search, checked 2026-11-15:
+  - Mahan for Governor 2026 (1486858): ours $15,948,945.92 vs $15,996,265.19, −0.30%
+  - Steyer for Governor 2026 (1485077): ours $222,744,045.20 vs $222,776,724.67, −0.015%
+  - No on 39 (1493991): ours $21,342,316.24 vs $21,342,316.24, exact
+- Rerun on the same export: 0 rows inserted, updated or deleted in every table.
+
+## Broke or learned
+
+- Power Search's committee total = Form 460 Schedule A + Schedule C + Form 497 late contributions dated after the committee's last 460 period + the 460's unitemized lump sums. The remaining gaps are exactly those unitemized sums ($47,120.27 Mahan, $32,679.47 Steyer); they live on the 460 summary page, not in itemized rows.
+- 497 late contributions are usually itemized again on the next 460. Both sets are in money_edge (schedules `F497P1` and `A`), so sums across schedules double count. The totals test shows the filter that avoids it.
+- Disk: the export is 10.6 GB unzipped and staging plus transform peaks around 10 GB. This shared Mac ran out of disk mid-run; streaming from the zip and deduping raw parties as they are inserted brought the footprint down.
+- A full-history load is roughly 12–16 GB in Postgres. That is more than the Neon free plan holds, so the dev database needs the Launch plan (estimated $2.50–4 for a week) before a full load. Not run against Neon: agents don't write to the project database.
+- DuckDB 2.0 rejects `x -> expr` lambdas (use `lambda x: expr`). A macro argument named like a column inside the macro's subquery is silently captured by that column, so the filer-xref lookup columns are prefixed `xr_`.
+- `MEMO_CODE` is blank on most rows, so `memo_code = 'X'` is NULL, not false. Without `coalesce` it filtered out 99.99% of edges on the first run.
+- Old lobbying filer ids (`L25430`, `E24542`) map to current ids through FILER_XREF_CD (3,618 of 3,630 found).
+- TEXT_MEMO_CD splits long text across lines and tabs; it is parsed with "last column is free text" rules (5,802 memos rejoined, 0 rejected).
+- Filing URLs (`pdfgen.prg?filingid=…&amendid=…`) could not be opened here: the state's bot check serves an empty page to automated clients. Unverified in this session.
+
+## Evidence
+
+- `uv run pytest` in `py/ingest`: 10 passed, 3 skipped (Postgres backend skipped without `TEST_DATABASE_URL`). With a local Postgres 17 built from `packages/db/drizzle/0000_init.sql` and `TEST_DATABASE_URL` set: 13 passed.
+- Local throwaway Postgres, `--since 2025-01-01`: first run loaded 508,969 entities, 492,339 aliases, 94,591 filings, 6,780,324 money edges and 91,381 lobby rows in 6 minutes. The second run reported 0 upserted and 0 deleted in every table. 0 duplicate edges (by filing, schedule, line, parties, amount, date), 0 duplicate filing ids, 0 duplicate aliases per entity.
+- Power Search: Advanced Search, "Just these committees" by CAL-ACCESS ID, dates 01/01/2025–12/31/2026; totals and row breakdowns from the page's CSV export.
+- Export: sha256 `6b14bf50067fddd45ea5b1bf43ce6fbc62297d8ce4df1b1eaca6c82cfacc9476`, 1,609,879,769 bytes, Last-Modified Sun, 15 Nov 2026 09:54:02 GMT.

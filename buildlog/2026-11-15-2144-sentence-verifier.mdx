@@ -1,0 +1,36 @@
+---
+date: 2026-11-15
+author: agent:p12-sol
+reviewer: Luke Kosner
+task: P12 fail-closed sentence verification and same-session repair contract
+---
+
+## Shipped
+
+- Added a server-only verifier package with the P9 pending result as input and a separate verified/partial/failed output. Checks run in order: exact recorded-claim and edge/filing binding, numeric recomputation, identity qualification, independent model verdict, all-member roll-call context, and neutral language. Only supported sentences survive in the answer, summary and card references.
+- Generated SELECTs use only the existing packages/tools MCP query and vote_base_rate tools. Amounts remain exact decimal strings and are recomputed by SQL plus bigint cross-checks; every visible numeric span needs a bounded operation. No arbitrary model SQL, database client, credential lookup or write path is added. Likely identity matches require explicit qualification and cannot enter donor sum totals.
+- Added a strict intended-sponsor TokenRouter adapter at api.tokenrouter.com, with reviewed host/catalog/routing flags, explicit models/families, different writer/verifier families, no redirects/fallback, and exact returned-model confirmation. No default verifier model or claim of live account availability.
+- Closed the premerge resolution bypass: hydrate each cited raw member's direct resolved root through read tools, validate UUID/key/self-root metadata, and include actual roots in likely-link checks and independent judge context. Missing roots, malformed pointers, chains and cycles fail closed with at most one extra bounded hydration pass.
+- Added a host-owned HarnessRouter continuation adapter. Each failure returns as JSON data to the existing session, response IDs chain through previous_response_id, and the revised claim must be reloaded from the investigation-owned server store. A sentence gets at most two repairs before removal.
+- Added exactly 30 sourced, explicitly false/disallowed negative examples beside their public-record originals. Scope is packages/verify plus this entry and approved generated Bun workspace metadata. Development tools reuse existing locked TypeScript/Bun-type packages, with no new library or version.
+
+## Metric
+
+- P12 offline tests: 57 passed, zero failed. The 30 negative examples reject ten incorrect amounts, six incorrect names, six all-member denominators, and all eight banned phrases at the intended check.
+- Full offline Bun suite after integration with main: 229 passed, 39 database-dependent skips, zero failed. TOOLS_TEST_DATABASE_URL was unset for this run, so no database setup or test operation occurred.
+- Frozen-lockfile install, workspace typecheck and color check pass after merging main; the lockfile preserves approved auth/email dependencies and adds only verifier workspace metadata against main. Lint has zero errors and the five pre-existing component warnings. Build log and whitespace checks pass.
+
+## Broke or learned
+
+- Resolver semantics were checked against py/resolve/src/aletheia_resolve/load.py: money edges retain raw member IDs, every clustered member and root carries a direct root pointer, and likely links exist on roots. Resolution regression metadata is explicitly synthetic over existing sourced fixture entities; it asserts no real relationship.
+- P9's endpoint remains pending: this package is not wired into web execution or persistence. A verification result is not a browser authorization credential. P13/P14 must require a host-owned persisted verifier outcome, exact supported sentences, and the publication approval gate; status completed alone says nothing about verification.
+- Actual HarnessRouter continuation needs response.metadata.session_id plus the latest response ID and owned harness mapping. P9 currently stores response ID only, and its writer output lacks numeric plans. The host must supply those mappings/plans, confirmed transport, and owned claim reload before live acceptance.
+- HarnessRouter's detailed continuation route and general quickstart have different endpoint forms. No key was sent to a guessed route. The deployed discovery contract, intended TokenRouter account catalog/routing and different-family model must be confirmed before enabling. Aggregate cost/tokens stay null because combined verification/repair billing is unreconciled.
+- Live SQL recomputation, provider verdicts, HarnessRouter continuations, end-to-end investigations and deployments were not run. No database, credentials, runtime configuration or public flags were changed. The ongoing CAL-ACCESS load was left untouched.
+
+## Evidence
+
+- Code and integration/release blockers: packages/verify/README.md, src/types.ts, src/verify.ts, src/checks.ts, src/continuation.ts and src/tokenrouter.ts.
+- Fixture originals/negative labels/source URLs: packages/verify/fixtures.json; reproducible offline generator: packages/verify/test/make-fixtures.py. Financial records copy packages/tools/test/fixtures/calaccess_slice.json, CAL-ACCESS export SHA-256 6b14bf50067fddd45ea5b1bf43ce6fbc62297d8ce4df1b1eaca6c82cfacc9476. Every financial example carries its actual filing PDF URL, schedule and line. Legislative names/counts copy py/ingest/tests/leginfo/fixtures/leginfo_web_votes.json and its official per-bill URL; no absent DB UUID or finance-to-legislator relationship is invented.
+- Sponsor endpoint/format: https://www.tokenrouter.com/docs/zcode-setup/. Runtime continuation and identity: https://harnessrouter.ai/docs/continue-a-session and https://harnessrouter.ai/docs/session-and-response; general endpoint: https://harnessrouter.ai/docs.
+- Commands: bun test packages/verify/test; env -u TOOLS_TEST_DATABASE_URL bun test; bun run typecheck; bun run lint; bun run check:colors; BUILDLOG_BASE_REF=origin/main bun run check:buildlog; git diff --check. All provider and data-tool adapters in the new tests are offline stubs, not live evidence.

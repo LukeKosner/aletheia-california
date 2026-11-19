@@ -1,0 +1,24 @@
+[project]
+name = "aletheia-resolve"
+version = "0.1.0"
+description = "Entity resolution for filers, donors, lobbyists and officials using Splink."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "duckdb>=2.0.0",
+    "polars>=2.1.0",
+    "psycopg[binary]>=3.3.9",
+    "splink>=5.0.0",
+]
+
+[build-system]
+requires = ["uv_build>=0.9.18,<0.10.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.2.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

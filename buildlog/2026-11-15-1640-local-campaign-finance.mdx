@@ -1,0 +1,41 @@
+---
+date: 2026-11-15
+author: agent:ingest-local
+reviewer: Luke Kosner
+task: Load local campaign money for San Francisco, Oakland, San Jose, Los Angeles city and Santa Clara County into the same tables as state data, behind LOCAL_FILERS
+---
+
+## Shipped
+
+- `py/ingest/local`: one parser for the shared Form 460 schedules (`cal_format.py`). It turns a canonical CAL record into rows shaped like `filing`, `entity`, `entity_alias` and `money_edge`. Three small adapters only rename each portal's columns: `sf.py`, `oakland.py`, `la.py`.
+- Loaded **San Francisco** (`datasf:sfo`, DataSF `pitq-e56w`), **Oakland** (`oaklandca:coak`, data.oaklandca.gov copies of its NetFile filings) and **Los Angeles city** (`lacity:lac`, data.lacity.org). Every filing is tagged with `filing.source`.
+- **San Jose** and **Santa Clara County** skipped, with reasons in `data/sources.md`. San Jose: no NetFile portal and no open data export. Santa Clara County: NetFile, but the portal is behind a Cloudflare bot check and NetFile's old export API no longer works.
+- CLI `python -m local run|load-pg`. It refuses to run unless `LOCAL_FILERS` is on. `load-pg` is idempotent (uuid5 ids, `on conflict do nothing`) and is for humans only.
+- Committees with an FPPC id are keyed `calaccess:filer:<id>` (the FPPC id is the CAL-ACCESS filer id, and the state ingest uses the same key), so local and state rows for the same committee share one entity.
+- Totals check reports committed in `data/checks/`.
+- `py/ingest/pyproject.toml`: added `local/tests` to pytest `testpaths` and `pythonpath = ["."]` so CI runs the new tests. This is the only change outside `py/ingest/local` and `data/`.
+
+## Metric
+
+- 3 of 5 jurisdictions load, and all 3 pass a totals check against their own portal. The pass rule: for Schedules A and E, at least 98% of filings with money match to the cent, and the aggregate is within 0.5%.
+  - SF: 99.30% (A) and 99.27% (E) of filings match SF Ethics' Summary Totals line 1. Aggregate diff +0.22% (A), −0.08% (E).
+  - Oakland: 99.80% (A) and 99.77% (E) match the City's Form 460 Summary Totals. Aggregate diff +0.04% and +0.01%.
+  - LA: 100% of 4,381 (A) and 10,741 (E) statements match data.lacity.org's server-side sums. LA publishes no filed summaries, so this proves the load is complete and exact, not that filers' summaries agree.
+- 1,395,974 money edges (SF 717,991, Oakland 101,921, LA 576,062), 498,342 entities and 35,099 filings. All of them loaded into a throwaway local Postgres built from `0000_init.sql`; a second load added 0 rows. 440 FPPC-id committees appear in more than one jurisdiction.
+
+## Broke or learned
+
+- NetFile's public portal now needs a Cloudflare Turnstile check, and its Connect2 export routes (`/public/campaign/export/cal201/transaction/year`) return 404, or reject every parameter on the POST routes. Oakland's open data portal still publishes the NetFile data, so we use that.
+- Oakland's open data copy repeats some transactions verbatim. Before de-duplicating, those filings came out at exactly 2× their reported totals.
+- First LA run: Schedule A summed to $0. The shared parser left `memo` null when a portal has no memo column, so every LA row was filtered out of totals. Missing `memo` now defaults to false, with a regression test.
+- LA's free-text `memo` column sometimes contains a street address, so it is never requested. Oakland's address columns are never requested either; the CAL record has no address field.
+- 14 LA contribution rows have neither a committee id nor a committee name. They are skipped as `no_filer`.
+- `data.sfgov.org` now redirects to `data.sf.gov`.
+- The remaining SF and Oakland mismatches are filer-side: summaries reported as 0 next to itemized rows, or duplicate same-day filings. The worst ones are listed in each check report.
+
+## Evidence
+
+- `data/checks/sf.md`, `data/checks/oakland.md`, `data/checks/la.md`: per-schedule match rates, largest mismatches, and raw export URLs with row counts and sha256 hashes.
+- `cd py/ingest && uv run pytest`: 15 passed (14 new, with fixtures copied from real filings and cited in the test file).
+- `LOCAL_FILERS=on uv run python -m local run` prints `[sf] PASS`, `[oakland] PASS`, `[la] PASS`.
+- With `LOCAL_FILERS` unset, `python -m local run` exits 2 and fetches nothing.

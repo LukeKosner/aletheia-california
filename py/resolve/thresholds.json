@@ -1,0 +1,12 @@
+{
+  "kinds": {
+    "person": {
+      "high": 0.95,
+      "likely": 0.8
+    },
+    "org": {
+      "high": 0.95,
+      "likely": 0.8
+    }
+  }
+}

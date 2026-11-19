@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Greek alpha in the stamp blue token from globals.css, light and dark values. -->
+  <style>
+    path { stroke: oklch(0.45 0.15 262); }
+    @media (prefers-color-scheme: dark) { path { stroke: oklch(0.75 0.12 258); } }
+  </style>
+  <g fill="none" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M21 13 C19 7.5 6.5 7.5 6 16.5 C5.6 24.5 17.5 25 21.2 17.5"/>
+    <path d="M24.5 8 C21.8 15 20.8 22.5 27 24.5"/>
+  </g>
+</svg>

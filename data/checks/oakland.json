@@ -1,0 +1,97 @@
+{
+  "jurisdiction": "Oakland",
+  "source": "oaklandca:coak",
+  "portal": "https://data.oaklandca.gov/browse?q=campaign%20finance",
+  "check": "Per Form 460 filing, the sum of itemized non-memo rows in the Schedule A (3xq4-ermg) and Schedule E (bvfu-nq99) datasets against line 1 of Schedule A and Schedule E in the City's Form 460 Summary Totals (rsxe-vvuw).",
+  "passed": true,
+  "ran_at": "2026-11-16T00:26:12+00:00",
+  "rows": {
+    "cal_rows": 103392,
+    "filing": 2014,
+    "entity": 33752,
+    "entity_alias": 35623,
+    "money_edge": 101921,
+    "skipped": {
+      "memo_row": 89,
+      "no_counterparty_name": 258,
+      "zero_amount": 1124
+    },
+    "edges_by_kind": {
+      "contribution": 73392,
+      "expenditure": 26585,
+      "ie_oppose": 188,
+      "ie_support": 1451,
+      "loan": 305
+    }
+  },
+  "totals": {
+    "by_schedule": [
+      {
+        "schedule": "A",
+        "filings": 2135,
+        "filings_nonzero": 1464,
+        "matched": 2132,
+        "matched_nonzero": 1461,
+        "ours_total": 52072654.79,
+        "portal_total": 52050538.5,
+        "match_rate_nonzero": 0.998,
+        "aggregate_diff_pct": 0.0425
+      },
+      {
+        "schedule": "E",
+        "filings": 2184,
+        "filings_nonzero": 1770,
+        "matched": 2180,
+        "matched_nonzero": 1766,
+        "ours_total": 58026879.1,
+        "portal_total": 58019620.35,
+        "match_rate_nonzero": 0.9977,
+        "aggregate_diff_pct": 0.0125
+      }
+    ]
+  },
+  "raw": {
+    "schedule_a": {
+      "url": "https://data.oaklandca.gov/resource/3xq4-ermg.csv",
+      "rows": 73043,
+      "sha256": "662e9f722ba321654468b395a428b1fda684f93196942944079f097f829c854e",
+      "fetched_at": "2026-11-16T00:17:17+00:00"
+    },
+    "schedule_b1": {
+      "url": "https://data.oaklandca.gov/resource/qaa7-q29f.csv",
+      "rows": 1335,
+      "sha256": "f8ed3373fe4fa2c60599860fff3df27821dfcf9191ed6a38fc65d850f93855c1",
+      "fetched_at": "2026-11-16T00:17:28+00:00"
+    },
+    "schedule_c": {
+      "url": "https://data.oaklandca.gov/resource/ba44-jqtm.csv",
+      "rows": 911,
+      "sha256": "6f5598ae43c65903c73ed7ec03df71b94a9da8479b7ee44994446e4471476de7",
+      "fetched_at": "2026-11-16T00:17:29+00:00"
+    },
+    "schedule_d": {
+      "url": "https://data.oaklandca.gov/resource/x5eg-xkea.csv",
+      "rows": 2723,
+      "sha256": "a831b2234aebf51fd1c62e86a5f1c48d15993380f49753c32ce9e37de3b78d73",
+      "fetched_at": "2026-11-16T00:17:30+00:00"
+    },
+    "schedule_e": {
+      "url": "https://data.oaklandca.gov/resource/bvfu-nq99.csv",
+      "rows": 28292,
+      "sha256": "59b87e616da8ba836f8283081020f16d7f54b79050beacffed76d55443d3e41d",
+      "fetched_at": "2026-11-16T00:17:32+00:00"
+    },
+    "schedule_h": {
+      "url": "https://data.oaklandca.gov/resource/qunm-zyau.csv",
+      "rows": 11,
+      "sha256": "74d68d4bbd2758a3c8fa4629629ed5a9ca44335f1c92de73b96a552dcecb1e03",
+      "fetched_at": "2026-11-16T00:17:33+00:00"
+    },
+    "summary_totals": {
+      "url": "https://data.oaklandca.gov/resource/rsxe-vvuw.csv",
+      "rows": 4450,
+      "sha256": "445ac1397e3aa5f1fa7de28dd2ed3340e1c8e317af8371971f9221922c3cc428",
+      "fetched_at": "2026-11-16T00:17:42+00:00"
+    }
+  }
+}

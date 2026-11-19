@@ -1,0 +1,34 @@
+---
+date: 2026-11-15
+author: agent:ingest-load-fix
+reviewer: Luke Kosner
+task: Make full-history CAL-ACCESS cleanup use joins instead of repeated membership scans
+---
+
+## Shipped
+
+- Split money and lobbying cleanup into two explicit joins: delete records attached to superseded filings, then remove omitted records from current filings using an anti-join.
+- Keep full-export versus partial-window behavior, one transaction, and the existing aggregate deletion counters. Other filing sources remain outside both cleanup maps.
+- Add a unique temporary index on `filingmap.id`. No permanent schema change or dependency.
+- Add localhost-only Postgres regression tests using a cited real export slice: filings 3069092, 3147001 and 624015, with 29 money records and 34 lobbying records.
+
+## Metric
+
+- Ingestion suite: 42 passed, 7 skipped in the isolated checkout, including two new live local-Postgres regression tests.
+- A local query-plan reproduction with all 982,282 real filing IDs produces a repeated `Materialize` subplan for the old query. The corrected query uses an anti-join and indexed filing lookup without a membership subplan.
+- Regression checks cover removed itemized rows, partial-window retention, full-export removal, and an unchanged rerun with zero upserts/deletions.
+
+## Broke or learned
+
+- The user authorized a full-history Neon load after upgrading the shared integration to Launch. Neon reported an effective 16 TB cap.
+- The original loader staged all records and inserted 28,643,751 money records, but cleanup did not finish before cancellation. That entire attempt remained uncommitted and rolled back; a check afterward confirmed no committed CAL-ACCESS filings.
+- With default `work_mem=4MB` and `hash_mem_multiplier=2`, the full filing map exceeds the hash-membership budget. An `IN` beneath `OR` can become a repeatedly scanned materialized subplan. Small-window tests had not exercised that plan cliff.
+- A corrected full-history load is being retried separately. This entry does not claim that production load or its totals checks have completed.
+
+## Evidence
+
+- `py/ingest/tests/test_calaccess_load.py`: tests create and destroy separate localhost-only databases from the existing generated migration; they refuse remote database URLs.
+- `py/ingest/tests/fixtures/calaccess_load_slice.json`: source URL, filing IDs, and SHA-256 of the November 15 export (`6b14bf50067fddd45ea5b1bf43ce6fbc62297d8ce4df1b1eaca6c82cfacc9476`).
+- Real source: https://campaignfinance.cdn.sos.ca.gov/dbwebexport.zip; individual public PDF URLs are retained in each filing fixture.
+- PostgreSQL memory settings: https://www.postgresql.org/docs/current/runtime-config-resource.html.
+- Local full-size `EXPLAIN` reproduction: old plan contains `Materialize ... rows=982282`; corrected plan contains `Hash Anti Join` and no `SubPlan`.

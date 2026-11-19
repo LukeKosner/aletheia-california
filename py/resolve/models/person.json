@@ -1,0 +1,292 @@
+{
+  "link_type": "dedupe_only",
+  "probability_two_random_records_match": 2.317982905e-07,
+  "retain_matching_columns": false,
+  "retain_intermediate_calculation_columns": false,
+  "additional_columns_to_retain": [],
+  "sql_dialect": "duckdb",
+  "em_convergence": 0.0001,
+  "max_iterations": 25,
+  "match_weight_column_prefix": "mw_",
+  "term_frequency_adjustment_column_prefix": "tf_",
+  "comparison_vector_value_column_prefix": "gamma_",
+  "unique_id_column_name": "canonical_key",
+  "source_dataset_column_name": "source_dataset",
+  "blocking_rules_to_generate_predictions": [
+    {
+      "blocking_rule": "(l.\"last_name\" = r.\"last_name\") AND (l.\"zip3\" = r.\"zip3\")",
+      "sql_dialect": "duckdb"
+    }
+  ],
+  "comparisons": [
+    {
+      "output_column_name": "first_name",
+      "comparison_levels": [
+        {
+          "sql_condition": "\"first_name_l\" IS NULL OR \"first_name_r\" IS NULL",
+          "label_for_charts": "first_name is NULL",
+          "fix_m_probability": false,
+          "fix_u_probability": false,
+          "is_null_level": true
+        },
+        {
+          "sql_condition": "\"first_name_l\" = \"first_name_r\"",
+          "label_for_charts": "Exact match on first_name",
+          "m_probability": 0.85,
+          "u_probability": 0.003118259072,
+          "fix_m_probability": true,
+          "fix_u_probability": false,
+          "tf_adjustment_column": "first_name",
+          "tf_adjustment_weight": 1.0
+        },
+        {
+          "sql_condition": "jaro_winkler_similarity(\"first_name_l\", \"first_name_r\") >= 0.92",
+          "label_for_charts": "Jaro-Winkler distance of first_name >= 0.92",
+          "m_probability": 0.05,
+          "u_probability": 0.000465531599,
+          "fix_m_probability": true,
+          "fix_u_probability": false
+        },
+        {
+          "sql_condition": "jaro_winkler_similarity(\"first_name_l\", \"first_name_r\") >= 0.8",
+          "label_for_charts": "Jaro-Winkler distance of first_name >= 0.8",
+          "m_probability": 0.03,
+          "u_probability": 0.00511081458,
+          "fix_m_probability": true,
+          "fix_u_probability": false
+        },
+        {
+          "sql_condition": "(length(first_name_l) = 1 OR length(first_name_r) = 1) AND left(first_name_l, 1) = left(first_name_r, 1)",
+          "label_for_charts": "Initial matches",
+          "m_probability": 0.04,
+          "u_probability": 0.00196044988,
+          "fix_m_probability": true,
+          "fix_u_probability": false
+        },
+        {
+          "sql_condition": "ELSE",
+          "label_for_charts": "All other comparisons",
+          "m_probability": 0.03,
+          "u_probability": 0.9893449449,
+          "fix_m_probability": true,
+          "fix_u_probability": false
+        }
+      ],
+      "comparison_description": "CustomComparison"
+    },
+    {
+      "output_column_name": "middle_name",
+      "comparison_levels": [
+        {
+          "sql_condition": "\"middle_name_l\" IS NULL OR \"middle_name_r\" IS NULL",
+          "label_for_charts": "middle_name is NULL",
+          "fix_m_probability": false,
+          "fix_u_probability": false,
+          "is_null_level": true
+        },
+        {
+          "sql_condition": "left(middle_name_l, 1) = left(middle_name_r, 1)",
+          "label_for_charts": "Initial matches",
+          "m_probability": 0.8697172109,
+          "u_probability": 0.05639165911,
+          "fix_m_probability": false,
+          "fix_u_probability": false
+        },
+        {
+          "sql_condition": "ELSE",
+          "label_for_charts": "All other comparisons",
+          "m_probability": 0.1302827891,
+          "u_probability": 0.9436083409,
+          "fix_m_probability": false,
+          "fix_u_probability": false
+        }
+      ],
+      "comparison_description": "CustomComparison"
+    },
+    {
+      "output_column_name": "last_name",
+      "comparison_levels": [
+        {
+          "sql_condition": "\"last_name_l\" IS NULL OR \"last_name_r\" IS NULL",
+          "label_for_charts": "last_name is NULL",
+          "fix_m_probability": false,
+          "fix_u_probability": false,
+          "is_null_level": true
+        },
+        {
+          "sql_condition": "\"last_name_l\" = \"last_name_r\"",
+          "label_for_charts": "Exact match on last_name",
+          "m_probability": 0.92,
+          "u_probability": 0.0003843128665,
+          "fix_m_probability": true,
+          "fix_u_probability": false,
+          "tf_adjustment_column": "last_name",
+          "tf_adjustment_weight": 1.0
+        },
+        {
+          "sql_condition": "jaro_winkler_similarity(\"last_name_l\", \"last_name_r\") >= 0.92",
+          "label_for_charts": "Jaro-Winkler distance of last_name >= 0.92",
+          "m_probability": 0.05,
+          "u_probability": 0.0004062167086,
+          "fix_m_probability": true,
+          "fix_u_probability": false
+        },
+        {
+          "sql_condition": "ELSE",
+          "label_for_charts": "All other comparisons",
+          "m_probability": 0.03,
+          "u_probability": 0.9992094704,
+          "fix_m_probability": true,
+          "fix_u_probability": false
+        }
+      ],
+      "comparison_description": "CustomComparison"
+    },
+    {
+      "output_column_name": "employer_norm",
+      "comparison_levels": [
+        {
+          "sql_condition": "\"employer_norm_l\" IS NULL OR \"employer_norm_r\" IS NULL",
+          "label_for_charts": "employer_norm is NULL",
+          "fix_m_probability": false,
+          "fix_u_probability": false,
+          "is_null_level": true
+        },
+        {
+          "sql_condition": "\"employer_norm_l\" = \"employer_norm_r\"",
+          "label_for_charts": "Exact match on employer_norm",
+          "m_probability": 0.3713847702,
+          "u_probability": 0.01232754842,
+          "fix_m_probability": false,
+          "fix_u_probability": false,
+          "tf_adjustment_column": "employer_norm",
+          "tf_adjustment_weight": 1.0
+        },
+        {
+          "sql_condition": "jaro_winkler_similarity(\"employer_norm_l\", \"employer_norm_r\") >= 0.88",
+          "label_for_charts": "Jaro-Winkler distance of employer_norm >= 0.88",
+          "m_probability": 0.1628095564,
+          "u_probability": 0.0009288999078,
+          "fix_m_probability": false,
+          "fix_u_probability": false
+        },
+        {
+          "sql_condition": "ELSE",
+          "label_for_charts": "All other comparisons",
+          "m_probability": 0.4658056734,
+          "u_probability": 0.9867435517,
+          "fix_m_probability": false,
+          "fix_u_probability": false
+        }
+      ],
+      "comparison_description": "CustomComparison"
+    },
+    {
+      "output_column_name": "occupation_norm",
+      "comparison_levels": [
+        {
+          "sql_condition": "\"occupation_norm_l\" IS NULL OR \"occupation_norm_r\" IS NULL",
+          "label_for_charts": "occupation_norm is NULL",
+          "fix_m_probability": false,
+          "fix_u_probability": false,
+          "is_null_level": true
+        },
+        {
+          "sql_condition": "\"occupation_norm_l\" = \"occupation_norm_r\"",
+          "label_for_charts": "Exact match on occupation_norm",
+          "m_probability": 0.5073889238,
+          "u_probability": 0.0418625981,
+          "fix_m_probability": false,
+          "fix_u_probability": false,
+          "tf_adjustment_column": "occupation_norm",
+          "tf_adjustment_weight": 1.0
+        },
+        {
+          "sql_condition": "jaro_winkler_similarity(\"occupation_norm_l\", \"occupation_norm_r\") >= 0.88",
+          "label_for_charts": "Jaro-Winkler distance of occupation_norm >= 0.88",
+          "m_probability": 0.04051349423,
+          "u_probability": 0.001385281797,
+          "fix_m_probability": false,
+          "fix_u_probability": false
+        },
+        {
+          "sql_condition": "ELSE",
+          "label_for_charts": "All other comparisons",
+          "m_probability": 0.452097582,
+          "u_probability": 0.9567521201,
+          "fix_m_probability": false,
+          "fix_u_probability": false
+        }
+      ],
+      "comparison_description": "CustomComparison"
+    },
+    {
+      "output_column_name": "city_norm",
+      "comparison_levels": [
+        {
+          "sql_condition": "\"city_norm_l\" IS NULL OR \"city_norm_r\" IS NULL",
+          "label_for_charts": "city_norm is NULL",
+          "fix_m_probability": false,
+          "fix_u_probability": false,
+          "is_null_level": true
+        },
+        {
+          "sql_condition": "\"city_norm_l\" = \"city_norm_r\"",
+          "label_for_charts": "Exact match on city_norm",
+          "m_probability": 0.7859959541,
+          "u_probability": 0.01155971084,
+          "fix_m_probability": false,
+          "fix_u_probability": false,
+          "tf_adjustment_column": "city_norm",
+          "tf_adjustment_weight": 1.0
+        },
+        {
+          "sql_condition": "jaro_winkler_similarity(\"city_norm_l\", \"city_norm_r\") >= 0.9",
+          "label_for_charts": "Jaro-Winkler distance of city_norm >= 0.9",
+          "m_probability": 0.04108412036,
+          "u_probability": 0.0006180914775,
+          "fix_m_probability": false,
+          "fix_u_probability": false
+        },
+        {
+          "sql_condition": "ELSE",
+          "label_for_charts": "All other comparisons",
+          "m_probability": 0.1729199256,
+          "u_probability": 0.9878221977,
+          "fix_m_probability": false,
+          "fix_u_probability": false
+        }
+      ],
+      "comparison_description": "CustomComparison"
+    },
+    {
+      "output_column_name": "zip5",
+      "comparison_levels": [
+        {
+          "sql_condition": "\"zip5_l\" IS NULL OR \"zip5_r\" IS NULL",
+          "label_for_charts": "zip5 is NULL",
+          "fix_m_probability": false,
+          "fix_u_probability": false,
+          "is_null_level": true
+        },
+        {
+          "sql_condition": "\"zip5_l\" = \"zip5_r\"",
+          "label_for_charts": "Exact match on zip5",
+          "m_probability": 0.5881152095,
+          "u_probability": 0.001514429314,
+          "fix_m_probability": false,
+          "fix_u_probability": false
+        },
+        {
+          "sql_condition": "ELSE",
+          "label_for_charts": "All other comparisons",
+          "m_probability": 0.4118847905,
+          "u_probability": 0.9984855707,
+          "fix_m_probability": false,
+          "fix_u_probability": false
+        }
+      ],
+      "comparison_description": "ExactMatch"
+    }
+  ]
+}

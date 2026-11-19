@@ -1,0 +1,1939 @@
+{
+  "source": {
+    "url": "https://campaignfinance.cdn.sos.ca.gov/dbwebexport.zip",
+    "sha256": "6b14bf50067fddd45ea5b1bf43ce6fbc62297d8ce4df1b1eaca6c82cfacc9476",
+    "filing_ids": [
+      "3069092",
+      "3147001",
+      "624015"
+    ]
+  },
+  "tables": {
+    "out_filing": {
+      "schema": [
+        [
+          "id",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "source",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "filing_id",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "amendment_no",
+          "INTEGER",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "form",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "filed_at",
+          "TIMESTAMP",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "period_start",
+          "DATE",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "period_end",
+          "DATE",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "url",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "raw_sha256",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "filer_id",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ]
+      ],
+      "rows": [
+        {
+          "id": "0db46d93-6247-3378-8989-b08389d904de",
+          "source": "calaccess",
+          "filing_id": "3069092",
+          "amendment_no": 0,
+          "form": "F460",
+          "filed_at": "2025-07-31 10:56:46",
+          "period_start": "2025-01-01",
+          "period_end": "2025-06-30",
+          "url": "https://cal-access.sos.ca.gov/PDFGen/pdfgen.prg?filingid=3069092&amendid=0",
+          "raw_sha256": "6b14bf50067fddd45ea5b1bf43ce6fbc62297d8ce4df1b1eaca6c82cfacc9476",
+          "filer_id": "1400190"
+        },
+        {
+          "id": "777727aa-d3e0-3f91-a363-8507274950ed",
+          "source": "calaccess",
+          "filing_id": "624015",
+          "amendment_no": 0,
+          "form": "F625",
+          "filed_at": "2000-04-29 19:40:34",
+          "period_start": "2000-01-01",
+          "period_end": "2000-03-31",
+          "url": "https://cal-access.sos.ca.gov/PDFGen/pdfgen.prg?filingid=624015&amendid=0",
+          "raw_sha256": "6b14bf50067fddd45ea5b1bf43ce6fbc62297d8ce4df1b1eaca6c82cfacc9476",
+          "filer_id": "1147635"
+        },
+        {
+          "id": "273578bd-0113-3083-ac76-13053da291ad",
+          "source": "calaccess",
+          "filing_id": "3147001",
+          "amendment_no": 0,
+          "form": "F460",
+          "filed_at": "2026-04-30 15:58:14",
+          "period_start": "2026-01-01",
+          "period_end": "2026-03-31",
+          "url": "https://cal-access.sos.ca.gov/PDFGen/pdfgen.prg?filingid=3147001&amendid=0",
+          "raw_sha256": "6b14bf50067fddd45ea5b1bf43ce6fbc62297d8ce4df1b1eaca6c82cfacc9476",
+          "filer_id": "1400190"
+        }
+      ]
+    },
+    "out_money_edge": {
+      "schema": [
+        [
+          "id",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "from_key",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "to_key",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "amount",
+          "DECIMAL(14,2)",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "date",
+          "DATE",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "kind",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "filing_id",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "amend_id",
+          "INTEGER",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "schedule",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "line_item",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "src_table",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ]
+      ],
+      "rows": [
+        {
+          "id": "40378a08-3d34-3ae2-9e9d-57ffdc435983",
+          "from_key": "calaccess:filer:782560",
+          "to_key": "calaccess:filer:1400190",
+          "amount": "500000.00",
+          "date": "2026-03-02",
+          "kind": "contribution",
+          "filing_id": "3147001",
+          "amend_id": 0,
+          "schedule": "A",
+          "line_item": "3",
+          "src_table": "RCPT_CD"
+        },
+        {
+          "id": "9cd11a81-fc46-3e4c-a378-f1073d974da5",
+          "from_key": "calaccess:filer:782560",
+          "to_key": "calaccess:filer:1400190",
+          "amount": "1000000.00",
+          "date": "2026-01-23",
+          "kind": "contribution",
+          "filing_id": "3147001",
+          "amend_id": 0,
+          "schedule": "A",
+          "line_item": "1",
+          "src_table": "RCPT_CD"
+        },
+        {
+          "id": "cf6474b1-a221-387e-a521-bf039131b187",
+          "from_key": "calaccess:filer:782560",
+          "to_key": "calaccess:filer:1400190",
+          "amount": "500000.00",
+          "date": "2026-02-02",
+          "kind": "contribution",
+          "filing_id": "3147001",
+          "amend_id": 0,
+          "schedule": "A",
+          "line_item": "2",
+          "src_table": "RCPT_CD"
+        },
+        {
+          "id": "80bd6789-65cf-3843-a133-f30d6d58289f",
+          "from_key": "calaccess:raw:d5b0f18a00eb352d53ae84a75235a85e",
+          "to_key": "calaccess:filer:1400190",
+          "amount": "2000000.00",
+          "date": "2026-03-04",
+          "kind": "contribution",
+          "filing_id": "3147001",
+          "amend_id": 0,
+          "schedule": "A",
+          "line_item": "4",
+          "src_table": "RCPT_CD"
+        },
+        {
+          "id": "c30b0250-9479-3942-8131-a6a92d3bcfdc",
+          "from_key": "calaccess:filer:1400190",
+          "to_key": "calaccess:raw:d70ab71086bef664bdb53f2fd9ce8b0c",
+          "amount": "100000.00",
+          "date": "2025-03-04",
+          "kind": "expenditure",
+          "filing_id": "3069092",
+          "amend_id": 0,
+          "schedule": "E",
+          "line_item": "10",
+          "src_table": "EXPN_CD"
+        },
+        {
+          "id": "4a5107af-71d4-3278-b350-8d843e3d95c0",
+          "from_key": "calaccess:filer:1400190",
+          "to_key": "calaccess:raw:be9b30196cdc4cbca624625369b7fdef",
+          "amount": "20000.00",
+          "date": "2025-01-02",
+          "kind": "expenditure",
+          "filing_id": "3069092",
+          "amend_id": 0,
+          "schedule": "E",
+          "line_item": "1",
+          "src_table": "EXPN_CD"
+        },
+        {
+          "id": "43ca17f4-7002-39b1-a36c-9174e736b8e4",
+          "from_key": "calaccess:filer:1400190",
+          "to_key": "calaccess:raw:b8004bdfbbbeef449f6670cc12852266",
+          "amount": "2171.70",
+          "date": "2025-01-09",
+          "kind": "expenditure",
+          "filing_id": "3069092",
+          "amend_id": 0,
+          "schedule": "E",
+          "line_item": "12",
+          "src_table": "EXPN_CD"
+        },
+        {
+          "id": "50d9649e-cbcd-363c-a92b-0e6e1ee950e5",
+          "from_key": "calaccess:filer:1400190",
+          "to_key": "calaccess:raw:b8004bdfbbbeef449f6670cc12852266",
+          "amount": "4277.50",
+          "date": "2025-03-14",
+          "kind": "expenditure",
+          "filing_id": "3069092",
+          "amend_id": 0,
+          "schedule": "E",
+          "line_item": "14",
+          "src_table": "EXPN_CD"
+        },
+        {
+          "id": "b82c3447-31d4-3827-93ad-147999974234",
+          "from_key": "calaccess:filer:1400190",
+          "to_key": "calaccess:raw:be9b30196cdc4cbca624625369b7fdef",
+          "amount": "15000.00",
+          "date": "2025-01-02",
+          "kind": "expenditure",
+          "filing_id": "3069092",
+          "amend_id": 0,
+          "schedule": "E",
+          "line_item": "3",
+          "src_table": "EXPN_CD"
+        },
+        {
+          "id": "c56023b0-8324-39b4-ac84-bf684e5d1294",
+          "from_key": "calaccess:filer:1400190",
+          "to_key": "calaccess:raw:b8004bdfbbbeef449f6670cc12852266",
+          "amount": "9209.92",
+          "date": "2025-04-08",
+          "kind": "expenditure",
+          "filing_id": "3069092",
+          "amend_id": 0,
+          "schedule": "E",
+          "line_item": "15",
+          "src_table": "EXPN_CD"
+        },
+        {
+          "id": "57d629d7-6631-3fa2-9d3f-4fd2d463a58a",
+          "from_key": "calaccess:filer:1400190",
+          "to_key": "calaccess:raw:c7ac799f1492a719bfccd6ae06669c7e",
+          "amount": "950000.00",
+          "date": "2026-01-08",
+          "kind": "contribution",
+          "filing_id": "3147001",
+          "amend_id": 0,
+          "schedule": "D",
+          "line_item": "1",
+          "src_table": "EXPN_CD"
+        },
+        {
+          "id": "07e4042e-adce-3823-b5eb-9ebf52bb31dd",
+          "from_key": "calaccess:filer:1400190",
+          "to_key": "calaccess:raw:b8004bdfbbbeef449f6670cc12852266",
+          "amount": "9093.24",
+          "date": "2026-01-09",
+          "kind": "expenditure",
+          "filing_id": "3147001",
+          "amend_id": 0,
+          "schedule": "E",
+          "line_item": "6",
+          "src_table": "EXPN_CD"
+        },
+        {
+          "id": "74bd6533-ef76-31e1-9bc2-ad96d533f41a",
+          "from_key": "calaccess:filer:1400190",
+          "to_key": "calaccess:raw:b8004bdfbbbeef449f6670cc12852266",
+          "amount": "3609.92",
+          "date": "2026-01-09",
+          "kind": "expenditure",
+          "filing_id": "3147001",
+          "amend_id": 0,
+          "schedule": "E",
+          "line_item": "5",
+          "src_table": "EXPN_CD"
+        },
+        {
+          "id": "fc8feddc-e048-3d2e-bac5-ba9448a9663a",
+          "from_key": "calaccess:filer:1400190",
+          "to_key": "calaccess:raw:be9b30196cdc4cbca624625369b7fdef",
+          "amount": "20595.51",
+          "date": "2025-01-02",
+          "kind": "expenditure",
+          "filing_id": "3069092",
+          "amend_id": 0,
+          "schedule": "E",
+          "line_item": "7",
+          "src_table": "EXPN_CD"
+        },
+        {
+          "id": "2e89fcbb-c3ba-3ab5-bba4-653ae5f13bbb",
+          "from_key": "calaccess:filer:1400190",
+          "to_key": "calaccess:raw:d70ab71086bef664bdb53f2fd9ce8b0c",
+          "amount": "8928.57",
+          "date": "2025-03-04",
+          "kind": "expenditure",
+          "filing_id": "3069092",
+          "amend_id": 0,
+          "schedule": "E",
+          "line_item": "11",
+          "src_table": "EXPN_CD"
+        },
+        {
+          "id": "ee9068aa-9c1a-316b-9bbf-84f3d8b40388",
+          "from_key": "calaccess:filer:1400190",
+          "to_key": "calaccess:filer:1481256",
+          "amount": "1175000.00",
+          "date": "2026-03-13",
+          "kind": "contribution",
+          "filing_id": "3147001",
+          "amend_id": 0,
+          "schedule": "E",
+          "line_item": "4",
+          "src_table": "EXPN_CD"
+        },
+        {
+          "id": "74a4913a-1a27-3501-9f73-9d63c6b5c5e3",
+          "from_key": "calaccess:filer:1400190",
+          "to_key": "calaccess:filer:1481256",
+          "amount": "950000.00",
+          "date": "2026-01-08",
+          "kind": "contribution",
+          "filing_id": "3147001",
+          "amend_id": 0,
+          "schedule": "E",
+          "line_item": "3",
+          "src_table": "EXPN_CD"
+        },
+        {
+          "id": "9f9e03b4-db5e-3a45-8687-b9256c33a151",
+          "from_key": "calaccess:filer:1400190",
+          "to_key": "calaccess:raw:be9b30196cdc4cbca624625369b7fdef",
+          "amount": "20000.00",
+          "date": "2025-01-02",
+          "kind": "expenditure",
+          "filing_id": "3069092",
+          "amend_id": 0,
+          "schedule": "E",
+          "line_item": "2",
+          "src_table": "EXPN_CD"
+        },
+        {
+          "id": "bbab1fcd-9175-306d-92b7-324a1ab7d1c2",
+          "from_key": "calaccess:filer:1400190",
+          "to_key": "calaccess:raw:be9b30196cdc4cbca624625369b7fdef",
+          "amount": "9157.47",
+          "date": "2025-01-02",
+          "kind": "expenditure",
+          "filing_id": "3069092",
+          "amend_id": 0,
+          "schedule": "E",
+          "line_item": "6",
+          "src_table": "EXPN_CD"
+        },
+        {
+          "id": "6bd847a5-6115-38a0-b987-a6cf4db6365f",
+          "from_key": "calaccess:filer:1400190",
+          "to_key": "calaccess:raw:be9b30196cdc4cbca624625369b7fdef",
+          "amount": "20000.00",
+          "date": "2025-01-02",
+          "kind": "expenditure",
+          "filing_id": "3069092",
+          "amend_id": 0,
+          "schedule": "E",
+          "line_item": "4",
+          "src_table": "EXPN_CD"
+        },
+        {
+          "id": "7b4733ca-b343-3e34-a205-316a119c80f1",
+          "from_key": "calaccess:filer:1400190",
+          "to_key": "calaccess:raw:d70ab71086bef664bdb53f2fd9ce8b0c",
+          "amount": "12500.00",
+          "date": "2025-01-07",
+          "kind": "expenditure",
+          "filing_id": "3069092",
+          "amend_id": 0,
+          "schedule": "E",
+          "line_item": "8",
+          "src_table": "EXPN_CD"
+        },
+        {
+          "id": "1823a078-89fc-3ddd-9617-6c489c3736e4",
+          "from_key": "calaccess:filer:1400190",
+          "to_key": "calaccess:raw:c7ac799f1492a719bfccd6ae06669c7e",
+          "amount": "1175000.00",
+          "date": "2026-03-13",
+          "kind": "contribution",
+          "filing_id": "3147001",
+          "amend_id": 0,
+          "schedule": "D",
+          "line_item": "2",
+          "src_table": "EXPN_CD"
+        },
+        {
+          "id": "d8f03fae-7bea-3926-ac10-214511afe892",
+          "from_key": "calaccess:filer:1400190",
+          "to_key": "calaccess:raw:b8004bdfbbbeef449f6670cc12852266",
+          "amount": "7220.95",
+          "date": "2025-02-18",
+          "kind": "expenditure",
+          "filing_id": "3069092",
+          "amend_id": 0,
+          "schedule": "E",
+          "line_item": "13",
+          "src_table": "EXPN_CD"
+        },
+        {
+          "id": "f9751dc1-088c-30d6-baad-a5054a11926a",
+          "from_key": "calaccess:filer:1400190",
+          "to_key": "calaccess:raw:be9b30196cdc4cbca624625369b7fdef",
+          "amount": "20000.00",
+          "date": "2025-01-02",
+          "kind": "expenditure",
+          "filing_id": "3069092",
+          "amend_id": 0,
+          "schedule": "E",
+          "line_item": "5",
+          "src_table": "EXPN_CD"
+        },
+        {
+          "id": "f2f599c4-3fa8-39a6-8046-013ba52063a9",
+          "from_key": "calaccess:filer:1400190",
+          "to_key": "calaccess:raw:d70ab71086bef664bdb53f2fd9ce8b0c",
+          "amount": "12500.00",
+          "date": "2025-03-04",
+          "kind": "expenditure",
+          "filing_id": "3069092",
+          "amend_id": 0,
+          "schedule": "E",
+          "line_item": "9",
+          "src_table": "EXPN_CD"
+        },
+        {
+          "id": "457d304b-60ec-311b-9f1d-1d2efdd7a7e5",
+          "from_key": "calaccess:raw:719773a36cde7d3ae84020794fa2525d",
+          "to_key": "calaccess:filer:1400190",
+          "amount": "0.00",
+          "date": "2024-04-11",
+          "kind": "loan",
+          "filing_id": "3069092",
+          "amend_id": 0,
+          "schedule": "B1",
+          "line_item": "1",
+          "src_table": "LOAN_CD"
+        },
+        {
+          "id": "2bc80d35-04dd-3b51-8446-71c586baa02c",
+          "from_key": "calaccess:filer:782560",
+          "to_key": "calaccess:filer:1400190",
+          "amount": "0.00",
+          "date": "2024-03-27",
+          "kind": "loan",
+          "filing_id": "3069092",
+          "amend_id": 0,
+          "schedule": "B1",
+          "line_item": "2",
+          "src_table": "LOAN_CD"
+        },
+        {
+          "id": "86d7e948-7b00-3981-975f-c49a4fcc26fb",
+          "from_key": "calaccess:filer:782560",
+          "to_key": "calaccess:filer:1400190",
+          "amount": "0.00",
+          "date": "2024-03-27",
+          "kind": "loan",
+          "filing_id": "3147001",
+          "amend_id": 0,
+          "schedule": "B1",
+          "line_item": "2",
+          "src_table": "LOAN_CD"
+        },
+        {
+          "id": "8c58b8e7-34ad-37d6-b63b-b9cc3fbfd1e5",
+          "from_key": "calaccess:raw:719773a36cde7d3ae84020794fa2525d",
+          "to_key": "calaccess:filer:1400190",
+          "amount": "0.00",
+          "date": "2024-04-11",
+          "kind": "loan",
+          "filing_id": "3147001",
+          "amend_id": 0,
+          "schedule": "B1",
+          "line_item": "1",
+          "src_table": "LOAN_CD"
+        }
+      ]
+    },
+    "out_lobby_activity": {
+      "schema": [
+        [
+          "id",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "employer_key",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "firm_key",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "period_start",
+          "DATE",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "period_end",
+          "DATE",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "amount",
+          "DECIMAL(14,2)",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "filing_id",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "amend_id",
+          "INTEGER",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "src",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "bills",
+          "VARCHAR[]",
+          "YES",
+          null,
+          null,
+          null
+        ]
+      ],
+      "rows": [
+        {
+          "id": "0c96f930-8417-3688-b304-07d015b713b3",
+          "employer_key": "calaccess:raw:ef5862967e986bcaa0424bfff8869e0e",
+          "firm_key": "calaccess:filer:1147635",
+          "period_start": "2000-01-01",
+          "period_end": "2000-03-31",
+          "amount": "0.00",
+          "filing_id": "624015",
+          "amend_id": 0,
+          "src": "LPAY_CD:F625P2",
+          "bills": []
+        },
+        {
+          "id": "9e4fd362-1604-355d-8661-edda9ddad55e",
+          "employer_key": "calaccess:raw:96767394957df435e47351e9242fa9fa",
+          "firm_key": "calaccess:filer:1147635",
+          "period_start": "2000-01-01",
+          "period_end": "2000-03-31",
+          "amount": "25500.00",
+          "filing_id": "624015",
+          "amend_id": 0,
+          "src": "LPAY_CD:F625P2",
+          "bills": [
+            "AB 1842"
+          ]
+        },
+        {
+          "id": "3b05b866-7406-34fe-8d19-61b491dbba83",
+          "employer_key": "calaccess:raw:dddafb572af7022c57a4f0ccdb8d2de2",
+          "firm_key": "calaccess:filer:1147635",
+          "period_start": "2000-01-01",
+          "period_end": "2000-03-31",
+          "amount": "0.00",
+          "filing_id": "624015",
+          "amend_id": 0,
+          "src": "LPAY_CD:F625P2",
+          "bills": []
+        },
+        {
+          "id": "787bf6e3-3113-3b15-a50b-f48d18ec0323",
+          "employer_key": "calaccess:raw:6fcb6c65f29db42cd675f983cde9c0b1",
+          "firm_key": "calaccess:filer:1147635",
+          "period_start": "2000-01-01",
+          "period_end": "2000-03-31",
+          "amount": "0.00",
+          "filing_id": "624015",
+          "amend_id": 0,
+          "src": "LPAY_CD:F625P2",
+          "bills": []
+        },
+        {
+          "id": "46311bb1-13da-39e5-98bd-9e8baac8cc34",
+          "employer_key": "calaccess:raw:76e54b89ab8dfcb0ac074096e943cd9d",
+          "firm_key": "calaccess:filer:1147635",
+          "period_start": "2000-01-01",
+          "period_end": "2000-03-31",
+          "amount": "15000.00",
+          "filing_id": "624015",
+          "amend_id": 0,
+          "src": "LPAY_CD:F625P2",
+          "bills": [
+            "AB 1751"
+          ]
+        },
+        {
+          "id": "ed7709eb-ea5e-34da-82a0-4f6102f02e56",
+          "employer_key": "calaccess:raw:4b5e942dbfaab485f31953e86119b3bd",
+          "firm_key": "calaccess:filer:1147635",
+          "period_start": "2000-01-01",
+          "period_end": "2000-03-31",
+          "amount": "18254.00",
+          "filing_id": "624015",
+          "amend_id": 0,
+          "src": "LPAY_CD:F625P2",
+          "bills": [
+            "AB 1751",
+            "SB 2007"
+          ]
+        },
+        {
+          "id": "30d26776-a398-36d9-9676-cc0e082af848",
+          "employer_key": "calaccess:raw:f444afa64a34835f6cd24beb4c3b199c",
+          "firm_key": "calaccess:filer:1147635",
+          "period_start": "2000-01-01",
+          "period_end": "2000-03-31",
+          "amount": "7907.00",
+          "filing_id": "624015",
+          "amend_id": 0,
+          "src": "LPAY_CD:F625P2",
+          "bills": [
+            "SB 14"
+          ]
+        },
+        {
+          "id": "67f2e90a-119c-30dd-a019-d8e48ce50c1d",
+          "employer_key": "calaccess:raw:387a41ef356db44b91856f631290d3b3",
+          "firm_key": "calaccess:filer:1147635",
+          "period_start": "2000-01-01",
+          "period_end": "2000-03-31",
+          "amount": "4500.00",
+          "filing_id": "624015",
+          "amend_id": 0,
+          "src": "LPAY_CD:F625P2",
+          "bills": []
+        },
+        {
+          "id": "11199a2e-78e0-3cae-8b34-8c0383fe676c",
+          "employer_key": "calaccess:raw:7a01f34f50dfd5fba950fb096bcbdb19",
+          "firm_key": "calaccess:filer:1147635",
+          "period_start": "2000-01-01",
+          "period_end": "2000-03-31",
+          "amount": "0.00",
+          "filing_id": "624015",
+          "amend_id": 0,
+          "src": "LPAY_CD:F625P2",
+          "bills": []
+        },
+        {
+          "id": "29437fdb-6ffc-38b6-95de-f778c414d3aa",
+          "employer_key": "calaccess:raw:ab331942163afbeb7531003f5b18e7de",
+          "firm_key": "calaccess:filer:1147635",
+          "period_start": "2000-01-01",
+          "period_end": "2000-03-31",
+          "amount": "5400.00",
+          "filing_id": "624015",
+          "amend_id": 0,
+          "src": "LPAY_CD:F625P2",
+          "bills": []
+        },
+        {
+          "id": "f4fd3a63-9db6-346c-9798-fe12a8697763",
+          "employer_key": "calaccess:raw:f0a0973a250dc40d60e5274528a5d760",
+          "firm_key": "calaccess:filer:1147635",
+          "period_start": "2000-01-01",
+          "period_end": "2000-03-31",
+          "amount": "24000.00",
+          "filing_id": "624015",
+          "amend_id": 0,
+          "src": "LPAY_CD:F625P2",
+          "bills": [
+            "AB 435",
+            "SB 996"
+          ]
+        },
+        {
+          "id": "6592e178-c168-3df2-a90d-059063dc4f70",
+          "employer_key": "calaccess:raw:75067ffb8a9967407794537fd91d76c6",
+          "firm_key": "calaccess:filer:1147635",
+          "period_start": "2000-01-01",
+          "period_end": "2000-03-31",
+          "amount": "15000.00",
+          "filing_id": "624015",
+          "amend_id": 0,
+          "src": "LPAY_CD:F625P2",
+          "bills": [
+            "AB 2070",
+            "SB 1503"
+          ]
+        },
+        {
+          "id": "73d45005-5cae-3f2c-a30b-ad127c07588d",
+          "employer_key": "calaccess:raw:42797a201fc14a090ddbc87ebb050126",
+          "firm_key": "calaccess:filer:1147635",
+          "period_start": "2000-01-01",
+          "period_end": "2000-03-31",
+          "amount": "3600.00",
+          "filing_id": "624015",
+          "amend_id": 0,
+          "src": "LPAY_CD:F625P2",
+          "bills": []
+        },
+        {
+          "id": "0e5bae1d-eca1-392f-a9dd-b0bf9141f941",
+          "employer_key": "calaccess:raw:5f879f6c56b4d2e2f0e9a01560ab8933",
+          "firm_key": "calaccess:filer:1147635",
+          "period_start": "2000-01-01",
+          "period_end": "2000-03-31",
+          "amount": "15064.65",
+          "filing_id": "624015",
+          "amend_id": 0,
+          "src": "LPAY_CD:F625P2",
+          "bills": []
+        },
+        {
+          "id": "8678f1ec-c6ef-3512-b4f1-17b2eed9d8a2",
+          "employer_key": "calaccess:raw:d9fba8572541a37597bf6c74482759ab",
+          "firm_key": "calaccess:filer:1147635",
+          "period_start": "2000-01-01",
+          "period_end": "2000-03-31",
+          "amount": "3000.00",
+          "filing_id": "624015",
+          "amend_id": 0,
+          "src": "LPAY_CD:F625P2",
+          "bills": []
+        },
+        {
+          "id": "a35232f2-16e0-3c03-bed7-2df72822b206",
+          "employer_key": "calaccess:raw:51a58c14e178d2ea17cf098c9b83658d",
+          "firm_key": "calaccess:filer:1147635",
+          "period_start": "2000-01-01",
+          "period_end": "2000-03-31",
+          "amount": "34366.62",
+          "filing_id": "624015",
+          "amend_id": 0,
+          "src": "LPAY_CD:F625P2",
+          "bills": [
+            "AB 1958",
+            "SB 1194"
+          ]
+        },
+        {
+          "id": "92b5af2a-7e21-3e64-86fd-8ef755290e18",
+          "employer_key": "calaccess:raw:3cb0d26b2cafbddcc664bd392e0eb966",
+          "firm_key": "calaccess:filer:1147635",
+          "period_start": "2000-01-01",
+          "period_end": "2000-03-31",
+          "amount": "30000.00",
+          "filing_id": "624015",
+          "amend_id": 0,
+          "src": "LPAY_CD:F625P2",
+          "bills": [
+            "SB 1594"
+          ]
+        },
+        {
+          "id": "948f0526-e1a2-32ae-9836-c336622275f4",
+          "employer_key": "calaccess:raw:7ad9b0d7fd9e708be51dd33bebd63432",
+          "firm_key": "calaccess:filer:1147635",
+          "period_start": "2000-01-01",
+          "period_end": "2000-03-31",
+          "amount": "0.00",
+          "filing_id": "624015",
+          "amend_id": 0,
+          "src": "LPAY_CD:F625P2",
+          "bills": []
+        },
+        {
+          "id": "1b4891e3-4e3c-318a-ac3d-ad11028393c2",
+          "employer_key": "calaccess:raw:1fa535dea67db49a36632849ace174f6",
+          "firm_key": "calaccess:filer:1147635",
+          "period_start": "2000-01-01",
+          "period_end": "2000-03-31",
+          "amount": "10500.00",
+          "filing_id": "624015",
+          "amend_id": 0,
+          "src": "LPAY_CD:F625P2",
+          "bills": []
+        },
+        {
+          "id": "6547d881-3450-3eef-8216-6ba5b90689d7",
+          "employer_key": "calaccess:raw:7e3f5d29922b2326161f96934c30514f",
+          "firm_key": "calaccess:filer:1147635",
+          "period_start": "2000-01-01",
+          "period_end": "2000-03-31",
+          "amount": "20000.00",
+          "filing_id": "624015",
+          "amend_id": 0,
+          "src": "LPAY_CD:F625P2",
+          "bills": [
+            "AB 2204",
+            "SB 1547"
+          ]
+        },
+        {
+          "id": "5f3ddaa1-26bc-3e22-9946-10a5bcc92b8b",
+          "employer_key": "calaccess:raw:0330048afef8f8c43c556e0e1453cf59",
+          "firm_key": "calaccess:filer:1147635",
+          "period_start": "2000-01-01",
+          "period_end": "2000-03-31",
+          "amount": "25455.73",
+          "filing_id": "624015",
+          "amend_id": 0,
+          "src": "LPAY_CD:F625P2",
+          "bills": [
+            "AB 1751",
+            "SB 2007"
+          ]
+        },
+        {
+          "id": "4de9d8bf-c82c-367f-aa65-8bb54a1932ae",
+          "employer_key": "calaccess:raw:d49c3031a87f9d15ca6c18911a77922f",
+          "firm_key": "calaccess:filer:1147635",
+          "period_start": "2000-01-01",
+          "period_end": "2000-03-31",
+          "amount": "0.00",
+          "filing_id": "624015",
+          "amend_id": 0,
+          "src": "LPAY_CD:F625P2",
+          "bills": []
+        },
+        {
+          "id": "41d64fa5-603a-3f3a-8b9a-732d78907c47",
+          "employer_key": "calaccess:raw:d27bd6bfb299dd91e95d00ae9809cb7b",
+          "firm_key": "calaccess:filer:1147635",
+          "period_start": "2000-01-01",
+          "period_end": "2000-03-31",
+          "amount": "0.00",
+          "filing_id": "624015",
+          "amend_id": 0,
+          "src": "LPAY_CD:F625P2",
+          "bills": [
+            "AB 1953"
+          ]
+        },
+        {
+          "id": "b186b3d7-49e8-38c3-a9cc-018dee651290",
+          "employer_key": "calaccess:raw:85151ef7b60a1bd473b248533fbfab7c",
+          "firm_key": "calaccess:filer:1147635",
+          "period_start": "2000-01-01",
+          "period_end": "2000-03-31",
+          "amount": "0.00",
+          "filing_id": "624015",
+          "amend_id": 0,
+          "src": "LPAY_CD:F625P2",
+          "bills": []
+        },
+        {
+          "id": "b36dbd79-3c95-373e-9f88-e5a70f664f67",
+          "employer_key": "calaccess:raw:c794eceac3ae14057131486b48162bc7",
+          "firm_key": "calaccess:filer:1147635",
+          "period_start": "2000-01-01",
+          "period_end": "2000-03-31",
+          "amount": "7500.00",
+          "filing_id": "624015",
+          "amend_id": 0,
+          "src": "LPAY_CD:F625P2",
+          "bills": [
+            "AB 2451",
+            "SB 1965"
+          ]
+        },
+        {
+          "id": "4e0157a4-e47f-3f28-8fe1-188cf8b9c84f",
+          "employer_key": "calaccess:raw:adf7dda652ebeb8695efa2bf0b69db74",
+          "firm_key": "calaccess:filer:1147635",
+          "period_start": "2000-01-01",
+          "period_end": "2000-03-31",
+          "amount": "2000.00",
+          "filing_id": "624015",
+          "amend_id": 0,
+          "src": "LPAY_CD:F625P2",
+          "bills": [
+            "SB 129"
+          ]
+        },
+        {
+          "id": "72c7647a-c304-3119-8d3f-3501fdb620b6",
+          "employer_key": "calaccess:raw:1aa73f943efb437402f76c03b6714edf",
+          "firm_key": "calaccess:filer:1147635",
+          "period_start": "2000-01-01",
+          "period_end": "2000-03-31",
+          "amount": "0.00",
+          "filing_id": "624015",
+          "amend_id": 0,
+          "src": "LPAY_CD:F625P2",
+          "bills": []
+        },
+        {
+          "id": "8b8d52e4-8a91-34e8-85a4-023934b35088",
+          "employer_key": "calaccess:raw:3e61eb1cfdf83f96affefb10704ed20e",
+          "firm_key": "calaccess:filer:1147635",
+          "period_start": "2000-01-01",
+          "period_end": "2000-03-31",
+          "amount": "2000.00",
+          "filing_id": "624015",
+          "amend_id": 0,
+          "src": "LPAY_CD:F625P2",
+          "bills": [
+            "SB 129"
+          ]
+        },
+        {
+          "id": "50beab0c-a59c-3d40-b15c-ebf5167f1bb4",
+          "employer_key": "calaccess:raw:601ddf24ae2bd9f202b636120061d667",
+          "firm_key": "calaccess:filer:1147635",
+          "period_start": "2000-01-01",
+          "period_end": "2000-03-31",
+          "amount": "15000.00",
+          "filing_id": "624015",
+          "amend_id": 0,
+          "src": "LPAY_CD:F625P2",
+          "bills": [
+            "SB 929"
+          ]
+        },
+        {
+          "id": "ca35980d-e163-30b3-b484-e88611cf1bc0",
+          "employer_key": "calaccess:raw:df1d0124b9af3bb8d3d367f9468e4c24",
+          "firm_key": "calaccess:filer:1147635",
+          "period_start": "2000-01-01",
+          "period_end": "2000-03-31",
+          "amount": "0.00",
+          "filing_id": "624015",
+          "amend_id": 0,
+          "src": "LPAY_CD:F625P2",
+          "bills": []
+        },
+        {
+          "id": "5110a0f1-695a-3a89-a79c-759d968470f7",
+          "employer_key": "calaccess:raw:c2f29f67644cc48daee22fba2a7bec75",
+          "firm_key": "calaccess:filer:1147635",
+          "period_start": "2000-01-01",
+          "period_end": "2000-03-31",
+          "amount": "7202.60",
+          "filing_id": "624015",
+          "amend_id": 0,
+          "src": "LPAY_CD:F625P2",
+          "bills": [
+            "AB 2727",
+            "AB 50"
+          ]
+        },
+        {
+          "id": "86cf6825-3a48-3feb-b250-88c505699d51",
+          "employer_key": "calaccess:raw:4fad24daa4baf9fe517ff06d11acbcc1",
+          "firm_key": "calaccess:filer:1147635",
+          "period_start": "2000-01-01",
+          "period_end": "2000-03-31",
+          "amount": "2000.00",
+          "filing_id": "624015",
+          "amend_id": 0,
+          "src": "LPAY_CD:F625P2",
+          "bills": [
+            "SB 129"
+          ]
+        },
+        {
+          "id": "7a6d72d6-9fd4-3a2e-a009-6a6d3faf3b32",
+          "employer_key": "calaccess:raw:6cf6ba7d91592bc9e184ae7d7de97071",
+          "firm_key": "calaccess:filer:1147635",
+          "period_start": "2000-01-01",
+          "period_end": "2000-03-31",
+          "amount": "10000.00",
+          "filing_id": "624015",
+          "amend_id": 0,
+          "src": "LPAY_CD:F625P2",
+          "bills": [
+            "AB 2101",
+            "SCA 10"
+          ]
+        },
+        {
+          "id": "bed9fc1e-6a44-3d61-ae83-5ea0a48789cd",
+          "employer_key": "calaccess:raw:f9cd697405832fcc44f81c4beb7afa04",
+          "firm_key": "calaccess:filer:1147635",
+          "period_start": "2000-01-01",
+          "period_end": "2000-03-31",
+          "amount": "25320.66",
+          "filing_id": "624015",
+          "amend_id": 0,
+          "src": "LPAY_CD:F625P2",
+          "bills": [
+            "AB 2664",
+            "SB 2044"
+          ]
+        }
+      ]
+    },
+    "out_entity": {
+      "schema": [
+        [
+          "id",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "kind",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "name",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "canonical_key",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "attrs",
+          "JSON",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "row_ref",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ]
+      ],
+      "rows": [
+        {
+          "id": "1e18dfa4-bf49-3570-b4ea-3c84835f77fc",
+          "kind": "org",
+          "name": "REED & DAVIDSON, LLP",
+          "canonical_key": "calaccess:raw:b8004bdfbbbeef449f6670cc12852266",
+          "attrs": "{\"entity_cd\":\"OTH\",\"city\":\"LOS ANGELES\",\"state\":\"CA\",\"zip\":\"90071\",\"source\":\"calaccess\",\"temporary\":true}",
+          "row_ref": "EXPN_CD:1013977:0:E:1"
+        },
+        {
+          "id": "a21e584b-1904-38c8-b94f-5610e5d64def",
+          "kind": "org",
+          "name": "HOUSING CALIFORNIA",
+          "canonical_key": "calaccess:raw:ab331942163afbeb7531003f5b18e7de",
+          "attrs": "{\"entity_cd\":\"LEM\",\"city\":\"SACRAMENTO\",\"state\":\"CA\",\"zip\":\"95814\",\"source\":\"calaccess\",\"temporary\":true}",
+          "row_ref": "LPAY_CD:2810180:1:F625P2:10"
+        },
+        {
+          "id": "02cde4fd-abed-3103-809a-09cbd432bc3f",
+          "kind": "org",
+          "name": "NATIONAL RESEARCH CENTER FOR COLLEGE & UNIVERSITY ADMISSIONS",
+          "canonical_key": "calaccess:raw:adf7dda652ebeb8695efa2bf0b69db74",
+          "attrs": "{\"entity_cd\":\"LEM\",\"city\":\"Lee's Summit\",\"state\":\"MO\",\"zip\":\"64081\",\"source\":\"calaccess\",\"temporary\":true}",
+          "row_ref": "LPAY_CD:1013482:1:F625P2:22"
+        },
+        {
+          "id": "741eb44a-b98f-31dd-91e5-08a003a12bde",
+          "kind": "org",
+          "name": "AMERICAN INTERNATIONAL GROUP",
+          "canonical_key": "calaccess:raw:f0a0973a250dc40d60e5274528a5d760",
+          "attrs": "{\"entity_cd\":\"LEM\",\"city\":\"New York\",\"state\":\"NY\",\"zip\":\"10270\",\"source\":\"calaccess\",\"temporary\":true}",
+          "row_ref": "LPAY_CD:1013482:1:F625P2:4"
+        },
+        {
+          "id": "9d76a94d-0679-32b4-9f78-d386202e06a3",
+          "kind": "org",
+          "name": "SAN GORGONIO PASS WATER AGENCY",
+          "canonical_key": "calaccess:raw:f444afa64a34835f6cd24beb4c3b199c",
+          "attrs": "{\"entity_cd\":\"LEM\",\"city\":\"BEAUMONT\",\"state\":\"CA\",\"zip\":\"92223\",\"source\":\"calaccess\",\"temporary\":true}",
+          "row_ref": "LPAY_CD:1996352:0:F625P2:1"
+        },
+        {
+          "id": "cf72a90c-815b-3a67-83cd-02d62e2da3a9",
+          "kind": "org",
+          "name": "SAN DIEGO CITY OF",
+          "canonical_key": "calaccess:raw:f9cd697405832fcc44f81c4beb7afa04",
+          "attrs": "{\"entity_cd\":\"LEM\",\"city\":\"San Diego\",\"state\":\"CA\",\"zip\":\"92101\",\"source\":\"calaccess\",\"temporary\":true}",
+          "row_ref": "LPAY_CD:624015:0:F625P2:7"
+        },
+        {
+          "id": "c80d6c43-ae71-378b-a836-cb35807a4418",
+          "kind": "org",
+          "name": "Elevate Public Affairs",
+          "canonical_key": "calaccess:raw:be9b30196cdc4cbca624625369b7fdef",
+          "attrs": "{\"entity_cd\":\"OTH\",\"city\":\"Los Angeles\",\"state\":\"CA\",\"zip\":\"90025\",\"source\":\"calaccess\",\"temporary\":true}",
+          "row_ref": "EXPN_CD:2337937:0:E:5"
+        },
+        {
+          "id": "fd3b72bf-0b5f-3a56-b548-806962186ae4",
+          "kind": "org",
+          "name": "CALIFORNIA BOTTLE WATER ASSOCIATION",
+          "canonical_key": "calaccess:raw:c2f29f67644cc48daee22fba2a7bec75",
+          "attrs": "{\"entity_cd\":\"LEM\",\"city\":\"Houston\",\"state\":\"TX\",\"zip\":\"77027\",\"source\":\"calaccess\",\"temporary\":true}",
+          "row_ref": "LPAY_CD:624015:0:F625P2:28"
+        },
+        {
+          "id": "06c472df-49b3-3848-8652-30a13c59a822",
+          "kind": "org",
+          "name": "HEALTH INSURANCE ASSOCIATION OF AMERICA",
+          "canonical_key": "calaccess:raw:0330048afef8f8c43c556e0e1453cf59",
+          "attrs": "{\"entity_cd\":\"LEM\",\"city\":\"Washington\",\"state\":\"DC\",\"zip\":\"20004\",\"source\":\"calaccess\",\"temporary\":true}",
+          "row_ref": "LPAY_CD:1013482:1:F625P2:19"
+        },
+        {
+          "id": "4ac611ed-f88d-300a-ae12-22a3fa49a90e",
+          "kind": "org",
+          "name": "ASSOCIATION OF CALIFORNIA LIFE & HEALTH INSURANCE COMPANIES",
+          "canonical_key": "calaccess:raw:dddafb572af7022c57a4f0ccdb8d2de2",
+          "attrs": "{\"entity_cd\":\"LEM\",\"city\":\"Sacramento\",\"state\":\"CA\",\"zip\":\"95814\",\"source\":\"calaccess\",\"temporary\":true}",
+          "row_ref": "LPAY_CD:1013482:1:F625P2:40"
+        },
+        {
+          "id": "fd15b70b-0c10-3062-ba63-02434ffdce61",
+          "kind": "org",
+          "name": "METROPOLITAN WEST SECURITIES INC.",
+          "canonical_key": "calaccess:raw:df1d0124b9af3bb8d3d367f9468e4c24",
+          "attrs": "{\"entity_cd\":\"LEM\",\"city\":\"Sacramento\",\"state\":\"CA\",\"zip\":\"95814\",\"source\":\"calaccess\",\"temporary\":true}",
+          "row_ref": "LPAY_CD:624015:0:F625P2:29"
+        },
+        {
+          "id": "48c090c7-efe0-3fd4-a66b-231cb9873cac",
+          "kind": "org",
+          "name": "SLOAT HIGGINS AND ASSOCIATES",
+          "canonical_key": "calaccess:filer:1147635",
+          "attrs": "{\"source\":\"calaccess\",\"filer_id\":\"1147635\",\"filer_type\":\"FIRM\",\"status\":\"ACTIVE\"}",
+          "row_ref": null
+        },
+        {
+          "id": "3495fdfc-a25f-3d46-ac24-277ac679445c",
+          "kind": "committee",
+          "name": "HOMEOWNERSHIP FOR FAMILIES AND TAX SAVINGS FOR SENIORS, SPONSORED BY THE CALIFORNIA ASSOCIATION OF REALTORS, MAJOR FUNDING BY THE CALIFORNIA ASSOCIATION OF REALTORS ISSUES MOBILIZATION PAC",
+          "canonical_key": "calaccess:filer:1400190",
+          "attrs": "{\"source\":\"calaccess\",\"filer_id\":\"1400190\",\"filer_type\":\"RECIPIENT COMMITTEE\",\"status\":\"ACTIVE\"}",
+          "row_ref": null
+        },
+        {
+          "id": "c40cda96-ef13-38b1-935e-c9afca609820",
+          "kind": "committee",
+          "name": "CA HOMES COMMITTEE",
+          "canonical_key": "calaccess:filer:1481256",
+          "attrs": "{\"source\":\"calaccess\",\"filer_id\":\"1481256\",\"filer_type\":\"RECIPIENT COMMITTEE\",\"status\":\"ACTIVE\"}",
+          "row_ref": null
+        },
+        {
+          "id": "a28e8319-67b9-391a-a707-218c2dd05e0c",
+          "kind": "committee",
+          "name": "CALIFORNIA ASSOCIATION OF REALTORS ISSUES MOBILIZATION PAC",
+          "canonical_key": "calaccess:filer:782560",
+          "attrs": "{\"source\":\"calaccess\",\"filer_id\":\"782560\",\"filer_type\":null,\"status\":null}",
+          "row_ref": null
+        },
+        {
+          "id": "9072218b-2b1d-3eed-ac5a-cd6c7a86c0ff",
+          "kind": "org",
+          "name": "NEW UNITED MOTOR MANUFACTURING INC.",
+          "canonical_key": "calaccess:raw:c794eceac3ae14057131486b48162bc7",
+          "attrs": "{\"entity_cd\":\"LEM\",\"city\":\"Fremont\",\"state\":\"CA\",\"zip\":\"94538\",\"source\":\"calaccess\",\"temporary\":true}",
+          "row_ref": "LPAY_CD:624015:0:F625P2:17"
+        },
+        {
+          "id": "a5dbc815-4ac2-32ad-9583-c3591a547175",
+          "kind": "committee",
+          "name": "CA Homes Committee",
+          "canonical_key": "calaccess:raw:c7ac799f1492a719bfccd6ae06669c7e",
+          "attrs": "{\"entity_cd\":\"COM\",\"city\":\"Sacramento\",\"state\":\"CA\",\"zip\":\"95815\",\"source\":\"calaccess\",\"temporary\":true}",
+          "row_ref": "EXPN_CD:3059784:0:D:3"
+        },
+        {
+          "id": "dab7eac5-5d4b-35d5-9456-fc3080abeea1",
+          "kind": "org",
+          "name": "CORRECTIONS CORPORATION OF AMERICA",
+          "canonical_key": "calaccess:raw:6cf6ba7d91592bc9e184ae7d7de97071",
+          "attrs": "{\"entity_cd\":\"LEM\",\"city\":\"Sacramento\",\"state\":\"CA\",\"zip\":\"95814\",\"source\":\"calaccess\",\"temporary\":true}",
+          "row_ref": "LPAY_CD:624015:0:F625P2:9"
+        },
+        {
+          "id": "88a6fc89-8063-3edd-a104-f18e25b56dc2",
+          "kind": "org",
+          "name": "NEWPORT BEACH CITY OF",
+          "canonical_key": "calaccess:raw:6fcb6c65f29db42cd675f983cde9c0b1",
+          "attrs": "{\"entity_cd\":\"LEM\",\"city\":\"Newport Beach\",\"state\":\"CA\",\"zip\":\"92658\",\"source\":\"calaccess\",\"temporary\":true}",
+          "row_ref": "LPAY_CD:622959:1:F625P2:2"
+        },
+        {
+          "id": "b96a07f0-6637-3fda-9608-7090845daa7a",
+          "kind": "org",
+          "name": "CALIFORNIA ASSOCIATION OF REALTORS",
+          "canonical_key": "calaccess:raw:719773a36cde7d3ae84020794fa2525d",
+          "attrs": "{\"entity_cd\":\"OTH\",\"city\":\"LOS ANGELES\",\"state\":\"CA\",\"zip\":\"90020\",\"source\":\"calaccess\",\"temporary\":true}",
+          "row_ref": "EXPN_CD:1031215:2:E:38"
+        },
+        {
+          "id": "b730f067-728d-3923-8d5d-1bd3f975a0c3",
+          "kind": "org",
+          "name": "California Coalition of Travel Organizations",
+          "canonical_key": "calaccess:raw:42797a201fc14a090ddbc87ebb050126",
+          "attrs": "{\"entity_cd\":\"LEM\",\"city\":\"Sacramento\",\"state\":\"CA\",\"zip\":\"95814\",\"source\":\"calaccess\",\"temporary\":true}",
+          "row_ref": "LPAY_CD:1011491:0:F625P2:1"
+        },
+        {
+          "id": "b9f71414-ee3b-3cc9-ab02-28e7a5f90651",
+          "kind": "org",
+          "name": "SKIRBALL CULTURAL CENTER",
+          "canonical_key": "calaccess:raw:1fa535dea67db49a36632849ace174f6",
+          "attrs": "{\"entity_cd\":\"LEM\",\"city\":\"Los Angeles\",\"state\":\"CA\",\"zip\":\"90049\",\"source\":\"calaccess\",\"temporary\":true}",
+          "row_ref": "LPAY_CD:1013482:1:F625P2:28"
+        },
+        {
+          "id": "d03ae771-e539-38c1-a2eb-027ea037269b",
+          "kind": "org",
+          "name": "BLUE CROSS OF CALIFORNIA (A SUBSIDIARY OF WELLPOINT HEALTH NETWORKS INC.)",
+          "canonical_key": "calaccess:raw:4b5e942dbfaab485f31953e86119b3bd",
+          "attrs": "{\"entity_cd\":\"LEM\",\"city\":\"Thousand Oaks\",\"state\":\"CA\",\"zip\":\"91362\",\"source\":\"calaccess\",\"temporary\":true}",
+          "row_ref": "LPAY_CD:624015:0:F625P2:3"
+        },
+        {
+          "id": "cca618d3-348c-3dd0-84e9-7847e85e554b",
+          "kind": "org",
+          "name": "AMERICAN STUDENT LIST COMPANY INC.",
+          "canonical_key": "calaccess:raw:4fad24daa4baf9fe517ff06d11acbcc1",
+          "attrs": "{\"entity_cd\":\"LEM\",\"city\":\"Mineola\",\"state\":\"NY\",\"zip\":\"11501\",\"source\":\"calaccess\",\"temporary\":true}",
+          "row_ref": "LPAY_CD:624015:0:F625P2:14"
+        },
+        {
+          "id": "fb9925bb-555f-312b-8680-aaa3fe8b49d6",
+          "kind": "org",
+          "name": "PACIFIC GAS AND ELECTRIC COMPANY",
+          "canonical_key": "calaccess:raw:51a58c14e178d2ea17cf098c9b83658d",
+          "attrs": "{\"entity_cd\":\"LEM\",\"city\":\"SAN FRANCISCO\",\"state\":\"CA\",\"zip\":\"94105\",\"source\":\"calaccess\",\"temporary\":true}",
+          "row_ref": "LPAY_CD:1012428:0:F625P2:52"
+        },
+        {
+          "id": "d6fdfaff-aa33-3886-a407-1720dc5951f9",
+          "kind": "org",
+          "name": "CALIFORNIA STATE UNIVERSITY",
+          "canonical_key": "calaccess:raw:7e3f5d29922b2326161f96934c30514f",
+          "attrs": "{\"entity_cd\":\"LEM\",\"city\":\"Long Beach\",\"state\":\"CA\",\"zip\":\"90802-4275\",\"source\":\"calaccess\",\"temporary\":true}",
+          "row_ref": "LPAY_CD:1013482:1:F625P2:43"
+        },
+        {
+          "id": "21749f0c-5f27-3868-909f-b7eeda81f834",
+          "kind": "org",
+          "name": "ANDERSEN CONSULTING LLP",
+          "canonical_key": "calaccess:raw:85151ef7b60a1bd473b248533fbfab7c",
+          "attrs": "{\"entity_cd\":\"LEM\",\"city\":\"Sacramento\",\"state\":\"CA\",\"zip\":\"95814\",\"source\":\"calaccess\",\"temporary\":true}",
+          "row_ref": "LPAY_CD:624015:0:F625P2:8"
+        },
+        {
+          "id": "d558a5d4-c276-3f2c-87c1-c749e0634d6f",
+          "kind": "org",
+          "name": "VAL VERDE UNIFIED SCHOOL DISTRICT",
+          "canonical_key": "calaccess:raw:5f879f6c56b4d2e2f0e9a01560ab8933",
+          "attrs": "{\"entity_cd\":\"LEM\",\"city\":\"Perris\",\"state\":\"CA\",\"zip\":\"92571-3103\",\"source\":\"calaccess\",\"temporary\":true}",
+          "row_ref": "LPAY_CD:1013482:1:F625P2:29"
+        },
+        {
+          "id": "ba42632f-b3f1-3ba9-91dc-a0c3be51de33",
+          "kind": "org",
+          "name": "CALIFORNIA OPTOMETRIC ASSOCIATION",
+          "canonical_key": "calaccess:raw:601ddf24ae2bd9f202b636120061d667",
+          "attrs": "{\"entity_cd\":\"LEM\",\"city\":\"SACRAMENTO\",\"state\":\"CA\",\"zip\":\"95814\",\"source\":\"calaccess\",\"temporary\":true}",
+          "row_ref": "LPAY_CD:1014119:1:F625P2:9"
+        },
+        {
+          "id": "26cbdb25-83e9-3809-a3c7-c8e5c0d6723e",
+          "kind": "org",
+          "name": "JOHN WAYNE CANCER INSTITUTE",
+          "canonical_key": "calaccess:raw:d27bd6bfb299dd91e95d00ae9809cb7b",
+          "attrs": "{\"entity_cd\":\"LEM\",\"city\":\"Santa Monica\",\"state\":\"CA\",\"zip\":\"90404\",\"source\":\"calaccess\",\"temporary\":true}",
+          "row_ref": "LPAY_CD:624015:0:F625P2:11"
+        },
+        {
+          "id": "ea05356a-252a-3dac-971e-07a8b608a725",
+          "kind": "org",
+          "name": "INTERVAL RESORTS I LLC",
+          "canonical_key": "calaccess:raw:d49c3031a87f9d15ca6c18911a77922f",
+          "attrs": "{\"entity_cd\":\"LEM\",\"city\":\"Napa\",\"state\":\"CA\",\"zip\":\"94558\",\"source\":\"calaccess\",\"temporary\":true}",
+          "row_ref": "LPAY_CD:624015:0:F625P2:21"
+        },
+        {
+          "id": "77484ce6-eb86-31cb-a07a-031d07204b7c",
+          "kind": "org",
+          "name": "NATIONAL ASSOCIATION OF REALTORS",
+          "canonical_key": "calaccess:raw:d5b0f18a00eb352d53ae84a75235a85e",
+          "attrs": "{\"entity_cd\":\"OTH\",\"city\":\"CHICAGO\",\"state\":\"IL\",\"zip\":\"60611\",\"source\":\"calaccess\",\"temporary\":true}",
+          "row_ref": "EXPN_CD:1578773:1:G:32"
+        },
+        {
+          "id": "c3340d32-f965-32ad-bc38-5de7619be2bf",
+          "kind": "org",
+          "name": "JPM&M, INC.",
+          "canonical_key": "calaccess:raw:d70ab71086bef664bdb53f2fd9ce8b0c",
+          "attrs": "{\"entity_cd\":\"OTH\",\"city\":\"SACRAMENTO\",\"state\":\"CA\",\"zip\":\"95814\",\"source\":\"calaccess\",\"temporary\":true}",
+          "row_ref": "EXPN_CD:1320242:0:E:3"
+        },
+        {
+          "id": "92ae388d-0efc-3a12-a9b0-f6224a8d1989",
+          "kind": "org",
+          "name": "Rumsey Indian Rancheria",
+          "canonical_key": "calaccess:raw:d9fba8572541a37597bf6c74482759ab",
+          "attrs": "{\"entity_cd\":\"LEM\",\"city\":\"Sacramento\",\"state\":\"CA\",\"zip\":\"95814\",\"source\":\"calaccess\",\"temporary\":true}",
+          "row_ref": "LPAY_CD:1011992:0:F625P2:20"
+        },
+        {
+          "id": "e85c37c7-c83b-3109-a5f4-2caddb529cec",
+          "kind": "org",
+          "name": "RURAL COMMUNITIES ASSISTANCE CORPORATION",
+          "canonical_key": "calaccess:raw:ef5862967e986bcaa0424bfff8869e0e",
+          "attrs": "{\"entity_cd\":\"LEM\",\"city\":\"WEST SACRAMENTO\",\"state\":\"CA\",\"zip\":\"95691\",\"source\":\"calaccess\",\"temporary\":true}",
+          "row_ref": "LPAY_CD:624015:0:F625P2:22"
+        },
+        {
+          "id": "365077a3-c278-39b3-a582-52219e5f914e",
+          "kind": "org",
+          "name": "California Business Roundtable",
+          "canonical_key": "calaccess:raw:75067ffb8a9967407794537fd91d76c6",
+          "attrs": "{\"entity_cd\":\"LEM\",\"city\":\"Sacramento\",\"state\":\"CA\",\"zip\":\"95814\",\"source\":\"calaccess\",\"temporary\":true}",
+          "row_ref": "LPAY_CD:1012782:0:F625P2:5"
+        },
+        {
+          "id": "31dd3cad-ec4a-31ef-9e7b-74d98723e9a6",
+          "kind": "org",
+          "name": "CALIFORNIANS ALLIED FOR PATIENT PROTECTION",
+          "canonical_key": "calaccess:raw:76e54b89ab8dfcb0ac074096e943cd9d",
+          "attrs": "{\"entity_cd\":\"LEM\",\"city\":\"SACRAMENTO\",\"state\":\"CA\",\"zip\":\"95814\",\"source\":\"calaccess\",\"temporary\":true}",
+          "row_ref": "LPAY_CD:1012197:0:F625P2:1"
+        },
+        {
+          "id": "8138e200-95a8-3b61-829a-63d2dc1f2d70",
+          "kind": "org",
+          "name": "LOCAL INITIATIVES SUPPORT CORPORATION",
+          "canonical_key": "calaccess:raw:7a01f34f50dfd5fba950fb096bcbdb19",
+          "attrs": "{\"entity_cd\":\"LEM\",\"city\":\"Los Angeles\",\"state\":\"CA\",\"zip\":\"90017\",\"source\":\"calaccess\",\"temporary\":true}",
+          "row_ref": "LPAY_CD:624015:0:F625P2:30"
+        },
+        {
+          "id": "54d7aa75-cf64-35e4-aa22-8192f07a7b9d",
+          "kind": "org",
+          "name": "ENTERPRISE FOUNDATION THE",
+          "canonical_key": "calaccess:raw:7ad9b0d7fd9e708be51dd33bebd63432",
+          "attrs": "{\"entity_cd\":\"LEM\",\"city\":\"Los Angeles\",\"state\":\"CA\",\"zip\":\"90015\",\"source\":\"calaccess\",\"temporary\":true}",
+          "row_ref": "LPAY_CD:624015:0:F625P2:33"
+        },
+        {
+          "id": "7bf1c4b1-1af7-37d4-80f2-7fa9304db781",
+          "kind": "org",
+          "name": "PACIFIC TELESIS GROUP AND ITS SUBSIDIARIES",
+          "canonical_key": "calaccess:raw:96767394957df435e47351e9242fa9fa",
+          "attrs": "{\"entity_cd\":\"LEM\",\"city\":\"San Francisco\",\"state\":\"CA\",\"zip\":\"94105\",\"source\":\"calaccess\",\"temporary\":true}",
+          "row_ref": "LPAY_CD:624015:0:F625P2:18"
+        },
+        {
+          "id": "42894ce5-8692-3a67-9564-fe05dece468c",
+          "kind": "org",
+          "name": "ASSOCIATION OF MEDICAL DEVICE REPROCESSORS",
+          "canonical_key": "calaccess:raw:387a41ef356db44b91856f631290d3b3",
+          "attrs": "{\"entity_cd\":\"LEM\",\"city\":\"Washington\",\"state\":\"DC\",\"zip\":\"20036\",\"source\":\"calaccess\",\"temporary\":true}",
+          "row_ref": "LPAY_CD:624015:0:F625P2:31"
+        },
+        {
+          "id": "f2e45a5a-123b-381b-a78f-88fa1d5faac8",
+          "kind": "org",
+          "name": "METROPOLITAN WATER DISTRICT OF SOUTHERN CALIFORNIA THE",
+          "canonical_key": "calaccess:raw:3cb0d26b2cafbddcc664bd392e0eb966",
+          "attrs": "{\"entity_cd\":\"LEM\",\"city\":\"Los Angeles\",\"state\":\"CA\",\"zip\":\"90012\",\"source\":\"calaccess\",\"temporary\":true}",
+          "row_ref": "LPAY_CD:624015:0:F625P2:13"
+        },
+        {
+          "id": "34d4da8f-863d-32e7-9da7-0123dbed4b27",
+          "kind": "org",
+          "name": "EDUCATIONAL COMMUNICATIONS INC.",
+          "canonical_key": "calaccess:raw:3e61eb1cfdf83f96affefb10704ed20e",
+          "attrs": "{\"entity_cd\":\"LEM\",\"city\":\"Lake Forest\",\"state\":\"IL\",\"zip\":\"60045\",\"source\":\"calaccess\",\"temporary\":true}",
+          "row_ref": "LPAY_CD:1013482:1:F625P2:17"
+        },
+        {
+          "id": "fcbcd226-5ddd-3e8a-926c-a134f39b7280",
+          "kind": "lobby_firm",
+          "name": "Platinum Advisors LLC",
+          "canonical_key": "calaccess:raw:1aa73f943efb437402f76c03b6714edf",
+          "attrs": "{\"entity_cd\":\"FRM\",\"city\":\"Sacramento\",\"state\":\"CA\",\"zip\":\"95814\",\"source\":\"calaccess\",\"temporary\":true}",
+          "row_ref": "LPAY_CD:1009661:0:F635P3B:1"
+        }
+      ]
+    },
+    "out_entity_alias": {
+      "schema": [
+        [
+          "id",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "entity_key",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "raw_name",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "source",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "source_row_id",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "method",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ]
+      ],
+      "rows": [
+        {
+          "id": "9a77815e-f146-3da2-817f-0037990d0c4d",
+          "entity_key": "calaccess:raw:be9b30196cdc4cbca624625369b7fdef",
+          "raw_name": "Elevate Public Affairs",
+          "source": "calaccess",
+          "source_row_id": "EXPN_CD:2337937:0:E:5",
+          "method": "raw"
+        },
+        {
+          "id": "a66d9c81-f706-3ee3-9ff9-19a6a195b230",
+          "entity_key": "calaccess:raw:c2f29f67644cc48daee22fba2a7bec75",
+          "raw_name": "CALIFORNIA BOTTLE WATER ASSOCIATION",
+          "source": "calaccess",
+          "source_row_id": "LPAY_CD:624015:0:F625P2:28",
+          "method": "raw"
+        },
+        {
+          "id": "9d820f05-5bee-383d-af49-756f8483946e",
+          "entity_key": "calaccess:raw:b8004bdfbbbeef449f6670cc12852266",
+          "raw_name": "REED & DAVIDSON, LLP",
+          "source": "calaccess",
+          "source_row_id": "EXPN_CD:1013977:0:E:1",
+          "method": "raw"
+        },
+        {
+          "id": "0c8c2c3d-a739-3f68-9603-d67e1df54090",
+          "entity_key": "calaccess:raw:1fa535dea67db49a36632849ace174f6",
+          "raw_name": "SKIRBALL CULTURAL CENTER",
+          "source": "calaccess",
+          "source_row_id": "LPAY_CD:1013482:1:F625P2:28",
+          "method": "raw"
+        },
+        {
+          "id": "aeaf237c-1499-36cc-aed1-5bcfd6321263",
+          "entity_key": "calaccess:raw:387a41ef356db44b91856f631290d3b3",
+          "raw_name": "ASSOCIATION OF MEDICAL DEVICE REPROCESSORS",
+          "source": "calaccess",
+          "source_row_id": "LPAY_CD:624015:0:F625P2:31",
+          "method": "raw"
+        },
+        {
+          "id": "8381e9d1-ed8e-32f5-8762-fbe4238d1ca4",
+          "entity_key": "calaccess:raw:3cb0d26b2cafbddcc664bd392e0eb966",
+          "raw_name": "METROPOLITAN WATER DISTRICT OF SOUTHERN CALIFORNIA THE",
+          "source": "calaccess",
+          "source_row_id": "LPAY_CD:624015:0:F625P2:13",
+          "method": "raw"
+        },
+        {
+          "id": "5614a75b-13c6-3265-94b0-2a73c00b08be",
+          "entity_key": "calaccess:raw:3e61eb1cfdf83f96affefb10704ed20e",
+          "raw_name": "EDUCATIONAL COMMUNICATIONS INC.",
+          "source": "calaccess",
+          "source_row_id": "LPAY_CD:1013482:1:F625P2:17",
+          "method": "raw"
+        },
+        {
+          "id": "48cc1293-0871-396d-b07c-04c9a4acd7db",
+          "entity_key": "calaccess:raw:c794eceac3ae14057131486b48162bc7",
+          "raw_name": "NEW UNITED MOTOR MANUFACTURING INC.",
+          "source": "calaccess",
+          "source_row_id": "LPAY_CD:624015:0:F625P2:17",
+          "method": "raw"
+        },
+        {
+          "id": "e4a96fc1-7c4d-3dbe-8b16-b3c39071807f",
+          "entity_key": "calaccess:raw:c7ac799f1492a719bfccd6ae06669c7e",
+          "raw_name": "CA Homes Committee",
+          "source": "calaccess",
+          "source_row_id": "EXPN_CD:3059784:0:D:3",
+          "method": "raw"
+        },
+        {
+          "id": "0cc1ae0e-79e9-3337-88d1-c59c06dd12d9",
+          "entity_key": "calaccess:raw:6cf6ba7d91592bc9e184ae7d7de97071",
+          "raw_name": "CORRECTIONS CORPORATION OF AMERICA",
+          "source": "calaccess",
+          "source_row_id": "LPAY_CD:624015:0:F625P2:9",
+          "method": "raw"
+        },
+        {
+          "id": "1051b51e-9f0a-3adf-b952-2e0b43427d45",
+          "entity_key": "calaccess:raw:6fcb6c65f29db42cd675f983cde9c0b1",
+          "raw_name": "NEWPORT BEACH CITY OF",
+          "source": "calaccess",
+          "source_row_id": "LPAY_CD:622959:1:F625P2:2",
+          "method": "raw"
+        },
+        {
+          "id": "a0ae4220-423e-343c-9552-53a5e9b30fa8",
+          "entity_key": "calaccess:raw:719773a36cde7d3ae84020794fa2525d",
+          "raw_name": "CALIFORNIA ASSOCIATION OF REALTORS",
+          "source": "calaccess",
+          "source_row_id": "EXPN_CD:1031215:2:E:38",
+          "method": "raw"
+        },
+        {
+          "id": "b7b380ec-8517-34c4-a0f3-4cc0b5a096b2",
+          "entity_key": "calaccess:raw:4b5e942dbfaab485f31953e86119b3bd",
+          "raw_name": "BLUE CROSS OF CALIFORNIA (A SUBSIDIARY OF WELLPOINT HEALTH NETWORKS INC.)",
+          "source": "calaccess",
+          "source_row_id": "LPAY_CD:624015:0:F625P2:3",
+          "method": "raw"
+        },
+        {
+          "id": "38485b68-fade-3020-abe4-218f1563b151",
+          "entity_key": "calaccess:raw:4fad24daa4baf9fe517ff06d11acbcc1",
+          "raw_name": "AMERICAN STUDENT LIST COMPANY INC.",
+          "source": "calaccess",
+          "source_row_id": "LPAY_CD:624015:0:F625P2:14",
+          "method": "raw"
+        },
+        {
+          "id": "2ad0a123-5003-3954-9547-82b74f5907ee",
+          "entity_key": "calaccess:raw:51a58c14e178d2ea17cf098c9b83658d",
+          "raw_name": "PACIFIC GAS AND ELECTRIC COMPANY",
+          "source": "calaccess",
+          "source_row_id": "LPAY_CD:1012428:0:F625P2:52",
+          "method": "raw"
+        },
+        {
+          "id": "8ee00dcf-f86b-35e6-af3c-1d242f987800",
+          "entity_key": "calaccess:raw:5f879f6c56b4d2e2f0e9a01560ab8933",
+          "raw_name": "VAL VERDE UNIFIED SCHOOL DISTRICT",
+          "source": "calaccess",
+          "source_row_id": "LPAY_CD:1013482:1:F625P2:29",
+          "method": "raw"
+        },
+        {
+          "id": "b2dce55e-12fb-36a4-854f-40992cb861a9",
+          "entity_key": "calaccess:raw:601ddf24ae2bd9f202b636120061d667",
+          "raw_name": "CALIFORNIA OPTOMETRIC ASSOCIATION",
+          "source": "calaccess",
+          "source_row_id": "LPAY_CD:1014119:1:F625P2:9",
+          "method": "raw"
+        },
+        {
+          "id": "bb2ebc8f-beb2-3987-92dd-91704454310f",
+          "entity_key": "calaccess:raw:ef5862967e986bcaa0424bfff8869e0e",
+          "raw_name": "RURAL COMMUNITIES ASSISTANCE CORPORATION",
+          "source": "calaccess",
+          "source_row_id": "LPAY_CD:624015:0:F625P2:22",
+          "method": "raw"
+        },
+        {
+          "id": "9ba1b129-537f-302c-9409-8c83d047ed57",
+          "entity_key": "calaccess:raw:f0a0973a250dc40d60e5274528a5d760",
+          "raw_name": "AMERICAN INTERNATIONAL GROUP",
+          "source": "calaccess",
+          "source_row_id": "LPAY_CD:1013482:1:F625P2:4",
+          "method": "raw"
+        },
+        {
+          "id": "3e8c8de1-4c35-3fb2-99d8-bc720fe5015d",
+          "entity_key": "calaccess:raw:f444afa64a34835f6cd24beb4c3b199c",
+          "raw_name": "SAN GORGONIO PASS WATER AGENCY",
+          "source": "calaccess",
+          "source_row_id": "LPAY_CD:1996352:0:F625P2:1",
+          "method": "raw"
+        },
+        {
+          "id": "448a64ba-8e67-3849-9ec7-bf214bade0f1",
+          "entity_key": "calaccess:raw:f9cd697405832fcc44f81c4beb7afa04",
+          "raw_name": "SAN DIEGO CITY OF",
+          "source": "calaccess",
+          "source_row_id": "LPAY_CD:624015:0:F625P2:7",
+          "method": "raw"
+        },
+        {
+          "id": "7ae30783-c34f-3c19-920c-0a704ac0838b",
+          "entity_key": "calaccess:raw:dddafb572af7022c57a4f0ccdb8d2de2",
+          "raw_name": "ASSOCIATION OF CALIFORNIA LIFE & HEALTH INSURANCE COMPANIES",
+          "source": "calaccess",
+          "source_row_id": "LPAY_CD:1013482:1:F625P2:40",
+          "method": "raw"
+        },
+        {
+          "id": "688cfdd3-1ff3-3c8a-ac18-17f859c6c9d5",
+          "entity_key": "calaccess:raw:df1d0124b9af3bb8d3d367f9468e4c24",
+          "raw_name": "METROPOLITAN WEST SECURITIES INC.",
+          "source": "calaccess",
+          "source_row_id": "LPAY_CD:624015:0:F625P2:29",
+          "method": "raw"
+        },
+        {
+          "id": "da0c5b9c-c58c-340e-9a7a-59ae2d639cea",
+          "entity_key": "calaccess:raw:96767394957df435e47351e9242fa9fa",
+          "raw_name": "PACIFIC TELESIS GROUP AND ITS SUBSIDIARIES",
+          "source": "calaccess",
+          "source_row_id": "LPAY_CD:624015:0:F625P2:18",
+          "method": "raw"
+        },
+        {
+          "id": "a7bf009a-3864-3c1c-87eb-c543be9db154",
+          "entity_key": "calaccess:raw:0330048afef8f8c43c556e0e1453cf59",
+          "raw_name": "HEALTH INSURANCE ASSOCIATION OF AMERICA",
+          "source": "calaccess",
+          "source_row_id": "LPAY_CD:1013482:1:F625P2:19",
+          "method": "raw"
+        },
+        {
+          "id": "d5c7d164-e20e-315f-a342-40f4876e75bf",
+          "entity_key": "calaccess:raw:75067ffb8a9967407794537fd91d76c6",
+          "raw_name": "California Business Roundtable",
+          "source": "calaccess",
+          "source_row_id": "LPAY_CD:1012782:0:F625P2:5",
+          "method": "raw"
+        },
+        {
+          "id": "52f9c545-8fc6-3051-a52e-38ed8c7a2b3a",
+          "entity_key": "calaccess:raw:76e54b89ab8dfcb0ac074096e943cd9d",
+          "raw_name": "CALIFORNIANS ALLIED FOR PATIENT PROTECTION",
+          "source": "calaccess",
+          "source_row_id": "LPAY_CD:1012197:0:F625P2:1",
+          "method": "raw"
+        },
+        {
+          "id": "2c658d16-ae79-38d5-807e-0868030d5c20",
+          "entity_key": "calaccess:raw:7a01f34f50dfd5fba950fb096bcbdb19",
+          "raw_name": "LOCAL INITIATIVES SUPPORT CORPORATION",
+          "source": "calaccess",
+          "source_row_id": "LPAY_CD:624015:0:F625P2:30",
+          "method": "raw"
+        },
+        {
+          "id": "bc958a51-cdbd-30e1-bfb4-561de94fefdd",
+          "entity_key": "calaccess:raw:7ad9b0d7fd9e708be51dd33bebd63432",
+          "raw_name": "ENTERPRISE FOUNDATION THE",
+          "source": "calaccess",
+          "source_row_id": "LPAY_CD:624015:0:F625P2:33",
+          "method": "raw"
+        },
+        {
+          "id": "e546a5b5-2400-31e7-ba6a-228ddb4f53b9",
+          "entity_key": "calaccess:raw:42797a201fc14a090ddbc87ebb050126",
+          "raw_name": "California Coalition of Travel Organizations",
+          "source": "calaccess",
+          "source_row_id": "LPAY_CD:1011491:0:F625P2:1",
+          "method": "raw"
+        },
+        {
+          "id": "1de22ad3-67d5-3e97-aab7-3befe2932ee2",
+          "entity_key": "calaccess:raw:ab331942163afbeb7531003f5b18e7de",
+          "raw_name": "HOUSING CALIFORNIA",
+          "source": "calaccess",
+          "source_row_id": "LPAY_CD:2810180:1:F625P2:10",
+          "method": "raw"
+        },
+        {
+          "id": "95112259-56ed-3d2b-843a-a764ebcb70a1",
+          "entity_key": "calaccess:raw:adf7dda652ebeb8695efa2bf0b69db74",
+          "raw_name": "NATIONAL RESEARCH CENTER FOR COLLEGE & UNIVERSITY ADMISSIONS",
+          "source": "calaccess",
+          "source_row_id": "LPAY_CD:1013482:1:F625P2:22",
+          "method": "raw"
+        },
+        {
+          "id": "44ac3221-bb75-3f51-9a2e-886c748ad4c5",
+          "entity_key": "calaccess:raw:7e3f5d29922b2326161f96934c30514f",
+          "raw_name": "CALIFORNIA STATE UNIVERSITY",
+          "source": "calaccess",
+          "source_row_id": "LPAY_CD:1013482:1:F625P2:43",
+          "method": "raw"
+        },
+        {
+          "id": "d537c70b-1e9a-3402-9c7b-c226e159543a",
+          "entity_key": "calaccess:raw:85151ef7b60a1bd473b248533fbfab7c",
+          "raw_name": "ANDERSEN CONSULTING LLP",
+          "source": "calaccess",
+          "source_row_id": "LPAY_CD:624015:0:F625P2:8",
+          "method": "raw"
+        },
+        {
+          "id": "be5d0452-504b-3d31-a3bb-306253cd3906",
+          "entity_key": "calaccess:raw:1aa73f943efb437402f76c03b6714edf",
+          "raw_name": "Platinum Advisors LLC",
+          "source": "calaccess",
+          "source_row_id": "LPAY_CD:1009661:0:F635P3B:1",
+          "method": "raw"
+        },
+        {
+          "id": "f158c95a-d4f0-3f51-ae6b-60bdcb6ae417",
+          "entity_key": "calaccess:raw:d27bd6bfb299dd91e95d00ae9809cb7b",
+          "raw_name": "JOHN WAYNE CANCER INSTITUTE",
+          "source": "calaccess",
+          "source_row_id": "LPAY_CD:624015:0:F625P2:11",
+          "method": "raw"
+        },
+        {
+          "id": "7921cbad-7012-3385-b989-01b32841af18",
+          "entity_key": "calaccess:raw:d49c3031a87f9d15ca6c18911a77922f",
+          "raw_name": "INTERVAL RESORTS I LLC",
+          "source": "calaccess",
+          "source_row_id": "LPAY_CD:624015:0:F625P2:21",
+          "method": "raw"
+        },
+        {
+          "id": "676e26d2-f242-38e7-8c55-e12ce2c84391",
+          "entity_key": "calaccess:raw:d5b0f18a00eb352d53ae84a75235a85e",
+          "raw_name": "NATIONAL ASSOCIATION OF REALTORS",
+          "source": "calaccess",
+          "source_row_id": "EXPN_CD:1578773:1:G:32",
+          "method": "raw"
+        },
+        {
+          "id": "1bc732c1-655f-3401-81b1-fd6429dd8fc0",
+          "entity_key": "calaccess:raw:d70ab71086bef664bdb53f2fd9ce8b0c",
+          "raw_name": "JPM&M, INC.",
+          "source": "calaccess",
+          "source_row_id": "EXPN_CD:1320242:0:E:3",
+          "method": "raw"
+        },
+        {
+          "id": "e7c110ef-6aee-3903-9647-38a47022ba39",
+          "entity_key": "calaccess:raw:d9fba8572541a37597bf6c74482759ab",
+          "raw_name": "Rumsey Indian Rancheria",
+          "source": "calaccess",
+          "source_row_id": "LPAY_CD:1011992:0:F625P2:20",
+          "method": "raw"
+        }
+      ]
+    }
+  }
+}

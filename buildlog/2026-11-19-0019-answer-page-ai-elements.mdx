@@ -1,0 +1,63 @@
+---
+date: 2026-11-19
+author: Claude
+reviewer:
+task: Rebuild the Ask answer page with AI Elements, make sources and the money map usable and fast, test the six sample questions, and fix what two review passes found
+---
+
+## Shipped
+
+- **Answer page on AI Elements:** the question box is `PromptInput` with `Suggestion` chips. Progress is `ChainOfThought` steps with `Shimmer`, worded for any question ("Researching", "Checking every citation"). Each sentence gets one quiet citation pill ("8 filings", "sos.ca.gov") that opens an `InlineCitation` hover card. A follow-up "Ask another question" box sits under the answer.
+- **Sources you can read:** filings are labeled in plain English: form type, filer, period, filing date and CAL‑ACCESS, for example "Lobbying firm report · KP Public Affairs · Jan–Mar 2025". The server sends these labels in its first response. The list is collapsed under "Based on N public filings". Filings with the same type and filer collapse into one line of date chips. The legend, the numbered list and the "[no source]" tags are gone. Internal keys such as `calaccess:filer:…` are stripped from answer text.
+- **Lobbying filings name their firm:** `getFiling` in `packages/tools` now returns the employer and firm on each lobbying line (`lobby_parties`) and the lobbying period.
+- **Money map on the answer page:** it is drawn from data already loaded, with one line per giver-and-receiver pair and amounts grouped by pair. Raw filing UUIDs are gone. Page scroll is no longer captured by the map. `/i/[id]/map` still works for shared links.
+- **Fewer duplicate runs:** the answer page sends each question once. Before, React's development double-mount started two paid investigations per question.
+- **Fast reopen:** a finished agent run and each public filing are cached with `"use cache"` (`app/api/investigations/cached.ts`). Unpublishing is still checked on every request.
+- **Agent instructions** (`agents/instructions/ask.md`, live after the next harness sync):
+  - "Who funds a measure" covers committee contributors, not only independent expenditures.
+  - Process questions use the official explainer.
+  - `insight` is never used for an unsourced gap.
+  - No internal ids in sentence text.
+  - Government studies never ask party or voting plan.
+- **Interviews and studies:**
+  - Payouts and their actions are staff-only.
+  - Study results and study answers are visible only to the browser that created the study, and staff. Transcripts are visible only to the voter and staff.
+  - Consent says where data goes: the general interview is published without names; a study is shared with its sponsor and not published.
+  - The builder rejects banned and identifying wording with a message instead of writing "[removed]".
+  - Study quotas count finished or recent interviews. A reward is recorded only after a real conversation (4 voter turns).
+  - A closed study link says so. The business example is a real business question.
+  - Ask's study drafts open the builder fully prefilled (title, goal, questions, profile fields, custom field, size), with organization left for the sponsor. The draft's describing sentences no longer carry an "Interviews" pill. The builder says the sponsor shares the link, rather than implying that Aletheia recruits people.
+- **Study follow-on after the voter interview:** when a general interview is saved, the voter's thank-you page may offer one open study: "One more, if you'd like". The card names the sponsor and its kind, says it is a separate interview of about ten minutes for another $5, and says answers go only to the sponsor and are not published. Taking it starts a new interview tied to that study, with its own consent and its own reward. Its answers stay out of public insights. County, age, party, voting plan and email carry over only to the voter's own browser (owner cookie); consent never does. Each email can take a study once. Only business studies are offered (`FOLLOW_ON_KINDS`); government studies wait until government sponsors are verified. The oldest open study with interviews still needed goes first.
+- **Demo data:** `scripts/reset_interview_data.py --yes --all` now also clears every study (business and government) plus the payment and payout records; Stripe's own test history is untouched. `scripts/seed_sample_interviews.py` now adds 30 sample voter interviews (27 counties, with sources, a quote and a message to leaders) and 3 sample studies with 10 answers between them (a city planning department, a coffee roaster and a solar installer). Every row is invented, labeled "Sample", and uses `sample@example.invalid`, so no reward can be sent. At the owner's request the dev database was cleared (15 interviews, 4 studies, 7 test-payment records) and reseeded.
+- **App-wide:**
+  - The interview sign-in bypass applies only in local dev.
+  - The local publication check matches the other local-dev routes.
+  - "Issues" is renamed "Search", and back links say "Insights".
+  - Corrections is linked in the footer and from Privacy. Privacy covers interviews.
+  - The test-mode banner shows only with `INTERVIEW_PREVIEW`.
+  - The /log charts fall back to `AGENT_RO_DATABASE_URL`.
+  - The admin cards page checks admin access itself.
+  - Three unused components are removed.
+  - Arrow glyphs (←, →, row chevrons) are removed across the app.
+  - The home input is larger, with tighter top spacing.
+
+## Metric
+
+- The six home-page sample questions all return answers in the app (Prop 40, LA County voter issues, AB 1018 lobbying, San Diego renter study, California Realtors PAC, state budget process). A fresh AB 1018 run completed end to end after the rebuild, with one POST.
+- Reopening a saved answer: 7.6 s → 2.6 s for the answer, and 3.8 s → 0.02 s for filing evidence (Realtors and AB 1018 answers, second open).
+- `bun test apps/web`: 189 pass, 0 fail. `packages/tools`: 10 pass, 39 skip (they need a local Postgres fixture). `bun run typecheck` passes. Lint: 0 errors, 5 warnings, all in vendored `ai-elements`/`ui` files. `check:colors` passes.
+
+## Broke or learned
+
+- The first parallel run failed 4 of 6 questions: the model provider key returned `429 Too many requests` (confirmed from the stored HarnessRouter task errors). Six questions at once, doubled by the dev double-mount, made about a dozen runs together.
+- `/api/corrections/publication` required team sign-in in local dev while every other route skipped it, so finished answers showed "Publication status is unavailable".
+- The `getFiling` lobbying change is untested against a database here; it was checked in the browser on the AB 1018 answer.
+- Not changed, needs a decision: sponsor verification (anyone can name themselves a government sponsor; government studies are not offered as follow-ons until then), a real reward email and payout to voters, and the study price margins after the $5 reward.
+- The follow-on lookup and the once-per-email rule were run against the dev database (read-only): a new email is offered the oldest open business study and never a government one, and an existing study taker is blocked regardless of email capitalization. The voter's own offer card and prefilled form were not seen live, because they need a real voice interview finished in this browser.
+
+## Evidence
+
+- Prop 40: CAL-ACCESS Form 496 filings 3224798 and 3206946 (Republican Party of San Diego County, $3,165.07 and $1,932.50).
+- California Realtors PAC: CAL-ACCESS Form 460 filings including 3172629 ($2,000,000 to the California Real Estate Independent Expenditure Committee, dated 2026-05-19).
+- AB 1018: CAL-ACCESS Form 625 lobbying firm reports including 3040252 (Jan–Mar 2025).
+- Form names follow the FPPC form list: https://www.fppc.ca.gov/forms.html

@@ -1,0 +1,15 @@
+{
+  "method_version": "p9-v1",
+  "provider": "HarnessRouter",
+  "extraction": { "model": "claude-sonnet-5.5", "family": "anthropic", "runtime": "HarnessRouter", "base": "dsh", "max_step": 3 },
+  "writer": { "model": "claude-sonnet-5.5", "family": "anthropic", "runtime": "HarnessRouter", "base": "dsh" },
+  "task_limits": {
+    "records": { "max_step": 100, "timeout_seconds": 240, "max_cost_usd": 2 },
+    "ask": { "max_step": 30, "timeout_seconds": 180, "max_cost_usd": 2 }
+  },
+  "verifier": { "model": "gpt-5.6-sol", "family": "openai", "runtime": "HarnessRouter", "base": "pi" },
+  "sources": [
+    "HarnessRouter skill, references/agent-features-and-harnesses.md: for 'every reply must be one strict JSON object' use dsh + claude-sonnet-5.5 (https://github.com/HarnessRouter/plugins)",
+    "https://api.harnessrouter.ai/v1/bases (read 2026-11-16)"
+  ]
+}

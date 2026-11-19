@@ -1,0 +1,38 @@
+---
+date: 2026-11-15
+author: Claude
+reviewer: Luke Kosner
+task: Bring the private runtime live: database roles, HarnessRouter harnesses, private deployment, first real investigation
+---
+
+## Shipped
+
+- `scripts/provision_dev_db.py`, run once against the dev database with the owner's approval: creates the five agent views (migration 0001), the auth tables (migration 0002) and eight least-privilege login roles with the grants already specified in `packages/tools/sql/grants.sql`, `agents/README.md`, the auth README and the feedback integration notes. It writes the role connection strings to the gitignored `apps/web/.env.local` and prints no secret.
+- `agents/sync-harnesses.ts` creates or updates five HarnessRouter harnesses (scope check, measure, bill, footprint, interests) and records them in `agents/harnessrouter.json`. Standing instructions are stored in each harness, every built-in tool of the base is disabled, and the four investigation harnesses reach only the Aletheia MCP server through a stored secret reference.
+- Scope check moved from TokenRouter Chat Completions to its own harness (`agents/instructions/scope.md`, `HR_SCOPE_HARNESS_ID`). The investigation route no longer needs `TOKENROUTER_API_KEY`; HarnessRouter bills models through the TokenRouter key stored in its dashboard.
+- `agents/models.json`: scope check and writer run `claude-sonnet-5.5` on the `dsh` base, the pairing HarnessRouter's own guide gives for strict-JSON replies. Verifier is planned as `gpt-5.6-sol` (a different family) and is not wired yet.
+- Private deployment at `aletheia.lukekosner.com` (Vercel project root `apps/web`, DNS-only CNAME in Cloudflare). `PUBLIC_SITE` stays off; `.vercelignore` keeps raw data, Python and worktrees out of the upload.
+- `data/raw/MANIFEST.csv`: the row for the 2026-11-15 CAL-ACCESS export used by the full load.
+
+## Metric
+
+- First live investigation through the app's own `POST /api/investigations` (local server, deployed MCP endpoint, dev database): footprint question on CA HOMES COMMITTEE, 72 seconds, 187,601 tokens, 6 cited sentences, all with recorded claim rows. `verification_status` is `pending`: the verifier is not connected.
+- Dev database after the full load: 982,282 CAL-ACCESS filings, 28,639,806 money edges, 1,028,887 lobbying rows, 5,065 bills, 610,499 votes. Five views and eight roles now exist.
+- On the live domain: `/` redirects to `/sign-in`; `/api/mcp` answers 401 without a token and returns SB 329 roll calls with one; `/api/investigations` answers 401 without a team session.
+- `bun test`: 247 pass, 39 skipped (database tests), 0 fail. Typecheck passes in all four workspaces.
+
+## Broke or learned
+
+- A harness on the `claude-code` base with all nine tools disabled did not receive its stored `system_prompt`: asked directly, the model said it had no such instruction and answered the question instead of classifying it. The same prompt on `dsh` was followed. Cause not established.
+- `dsh` reports `enforcement: instruction` for five file tools (read, write, edit, glob, grep) and `hard` for the rest, including bash and web fetch. `agents/README.md` asked for hard enforcement of every tool; this is weaker for sandbox file access and should be reviewed before anything public.
+- `claude-haiku-4.5` returned a provider 400 through the TokenRouter integration, and `claude-haiku-5.5` is not offered by it.
+- The free HarnessRouter plan runs two tasks at a time (HTTP 429 `one_at_a_time` beyond that).
+- Neon's owner role is not a superuser, so `alter role ... nosuperuser noreplication nobypassrls` in `grants.sql` fails there. The script strips those three words; new roles already have those defaults.
+- Not done: only one of the twelve acceptance questions in `agents/acceptance.md` has run; the deployed site's investigation path was not exercised signed in; answers are still not stored in our database, and the session id is not saved.
+
+## Evidence
+
+- Investigation `97474d59-a679-4792-b62e-03c6d3b52f44`. Cited filings include CAL-ACCESS 3215330 amendment 1 (Form 460 Schedule A, $300,000 dated 2026-09-29, California Democratic Party, filer 741666): https://cal-access.sos.ca.gov/PDFGen/pdfgen.prg?filingid=3215330&amendid=1 ; and 3177604 (Form 460 Schedule C, $55,000 dated 2026-06-23): https://cal-access.sos.ca.gov/PDFGen/pdfgen.prg?filingid=3177604&amendid=0
+- HarnessRouter contract: skill references `api-reference.md`, `workspace-and-configuration.md`, `agent-features-and-harnesses.md` at https://github.com/HarnessRouter/plugins ; live `GET /v1/bases`, `/v1/integrations`, `/v1/uhp` (UHP 2026-09-28).
+- CAL-ACCESS export: https://campaignfinance.cdn.sos.ca.gov/dbwebexport.zip, SHA-256 `6b14bf50067fddd45ea5b1bf43ce6fbc62297d8ce4df1b1eaca6c82cfacc9476`.
+- Commands: `bun test`, `bun run typecheck`, `bun agents/sync-harnesses.ts`.

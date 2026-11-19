@@ -1,0 +1,35 @@
+---
+date: 2026-11-15
+author: agent:ui
+reviewer: Luke Kosner
+task: Theme tokens, fonts, site shell (header, footer, theme toggle), team sign-in gate while PUBLIC_SITE is off, and reduced-motion support
+---
+
+## Shipped
+
+- **Theme tokens** in `apps/web/src/app/globals.css`. The shadcn variables keep the values from the preset applied at setup (`b3eNjV3WdM`, Base UI, mauve). New tokens, each with light and dark values, derived from the same mauve scale: `--paper` (surface of a filing or card, one step off `--background`), `--ink` (text on paper), `--stamp` (the cited / verified mark: the preset's mauve hue with more chroma, so red stays reserved for `--destructive`) and `--stamp-foreground`. Exposed as `bg-paper`, `text-ink`, `bg-stamp`, `decoration-stamp` and so on. All values in oklch.
+- **Fonts** through `next/font/google`: Newsreader (headings, `font-heading` / `font-serif`), IBM Plex Sans (body, `font-sans`), IBM Plex Mono (`font-mono`). They replace Geist and Inter from setup.
+- **Shell** (`apps/web/src/components/shell/`): sticky header with the wordmark, Ask, Game and Log; footer with Method, Privacy, Terms, Corrections and a sign-out button; skip-to-content link; active links get `aria-current="page"` and a stamp-coloured underline.
+- **Theme toggle**: Light / Dark / System menu. The choice is stored in `localStorage` only; a small inline script in `<head>` applies it before first paint, so there is no flash of the wrong theme. "System" follows OS changes live.
+- **Team sign-in gate** (`apps/web/src/proxy.ts`, `apps/web/src/app/sign-in/`). Next.js 16 renamed `middleware.ts` to `proxy.ts`; same role. With `PUBLIC_SITE` off, every page redirects to `/sign-in?next=…`, and API calls and form posts get a 401. A correct `TEAM_PASSWORD` sets an httpOnly, SameSite=Lax cookie (Secure in production) holding an expiry and an HMAC-SHA256 signature made with Web Crypto from `TEAM_SESSION_SECRET` and the password; changing either signs everyone out. 30-day sessions. Missing or short config keeps the gate closed for everyone. Open paths: `/sign-in`, `/_next/*`, image and font files, and `/api/mcp` (it checks its own bearer token). `next` is limited to same-site relative paths. No new dependency.
+- **Placeholder pages** for `/ask`, `/game`, `/method`, `/privacy`, `/terms` and `/corrections`, so no shell link is dead.
+- **Reduced motion**: a global `prefers-reduced-motion: reduce` block stops CSS animations, transitions, smooth scrolling and view transitions, and `MotionConfig reducedMotion="user"` covers JS animations from the `motion` package.
+
+## Metric
+
+- 20 new bun tests; 129 pass in the repo run, 0 fail. They cover session token round trip, expiry, forged expiry, wrong secret or password, password check, open-path list, `next` sanitising, theme parsing and resolution, and that the head script parses.
+- `bun run lint` (0 errors; 5 warnings, all pre-existing in `components/ui` and `components/ai-elements`), `bun run typecheck` and `bun run check:colors` pass.
+- Checked in the dev server: unauthenticated `/` and `/log` redirect (307), `/api/other` and `POST /` return 401, `/api/mcp` and `/favicon.ico` pass through; a wrong password shows an error; the right password lands on `next`; sign-out returns to the gate. Shell checked in light and dark at 375 px and desktop width, with no horizontal overflow and no console errors.
+
+## Broke or learned
+
+- Next.js 16 deprecates `middleware.ts`; the file is `src/proxy.ts`, and it runs on the Node.js runtime by default.
+- `cacheComponents` is on, so the sign-in page reads `searchParams` inside a `<Suspense>` boundary.
+- The browser tools here cannot emulate `prefers-reduced-motion`. The rule was confirmed in the loaded stylesheets, not by watching a page with the setting on.
+- The sign-in has no rate limit. A shared password plus a long random secret is fine for a private preview; anything wider needs per-person accounts.
+- The session helpers live in `src/app/sign-in/session.ts` rather than `src/lib` to stay within this task's folders.
+
+## Evidence
+
+- Files: `apps/web/src/app/globals.css`, `apps/web/src/app/layout.tsx`, `apps/web/src/proxy.ts`, `apps/web/src/app/sign-in/*`, `apps/web/src/components/shell/*`, placeholder `page.tsx` files, `apps/web/.env.example`.
+- Tests: `apps/web/src/app/sign-in/session.test.ts`, `apps/web/src/components/shell/theme.test.ts`, `apps/web/src/components/shell/links.test.ts`.

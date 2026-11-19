@@ -1,0 +1,8 @@
+# Raw downloads and working databases are large; only the manifest is committed.
+# Re-download with the URLs in raw/MANIFEST.csv.
+raw/**
+!raw/
+!raw/MANIFEST.csv
+work/
+processed/
+staging/

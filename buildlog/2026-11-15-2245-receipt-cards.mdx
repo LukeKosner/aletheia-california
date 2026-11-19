@@ -1,0 +1,36 @@
+---
+date: 2026-11-15
+author: agent:p13
+reviewer: Luke Kosner
+task: P13 receipt cards and evidence receipts
+---
+
+## Shipped
+
+- Private `/api/card` image previews use `next/og` at 1200×630 and 1080×1350. They include the card type, bounded finding, receipt-derived labeled amount, as-of date, method version, short preview link, actual QR to `/r/[id]`, required disclosure, and prominent unverified team-preview labeling.
+- `/r/[id]` lists every displayed number, its real filing edge, source names, date, schedule, line and original filing link. It states the narrow scope of the recorded sum and that verifier, approval, correction history and publication state are unavailable.
+- `/c/[code]` accepts only the exact six-character recorded alias. Unknown codes return 404; no secret lookup or user-provided redirect is accepted. `/admin/cards` uses the installed AI Elements Queue and keeps approval/publish buttons disabled with explicit reasons.
+- All receipt routes independently validate the signed team cookie, regardless of broader site flags or asset-like path suffixes. Images and redirects use private/no-store headers. Public exports return 409; CARDS_PUBLIC remains off by default. No flag was changed.
+- The four card formats share a renderer and evidence contract. Only the source-backed organization footprint example is populated. No other example, matched pair, verifier verdict, stored card or approval is fabricated. Integer cents recompute categories from unique receipt edges; missing evidence, duplicate edges, unaggregated individuals, and excessive categories are rejected.
+
+## Metric
+
+- Production build, workspace typecheck, raw-color check and whitespace check pass. Lint has zero errors and the same five preexisting installed-component warnings.
+- `bun test`: 141 passed, 39 skipped database integration checks, zero failures. Four new checks cover source binding/recomputation, unsafe receipt rejection, format/finding bounds and QR capacity.
+- Both actual PNG sizes rendered and were visually inspected. macOS Vision independently decoded both QR codes to `http://localhost:3013/r/recorded-calaccess-3214397`.
+- Local HTTP checks: unsigned pages redirect and image requests return 401; signed receipt/review pages return 200; recorded alias returns 307; unknown alias 404; public export 409; invalid image layout 400; both signed previews 200 image/png with private/no-store.
+- Browser: signed in with an ephemeral local test session, opened the review queue and receipt, confirmed disabled review actions, unverified notice, exact amount and filing source link. No live filing ingestion or database call was made.
+
+## Broke or learned
+
+- P10 is the dependent base branch. This PR does not merge or deploy it. P12/P15 contracts are documented in the card integration boundary, but their unmerged packages are not imported into this independently reviewable branch.
+- Live cards remain blocked on read-only card/claim receipts, trusted verifier output, reviewer identity/role enforcement, version-bound human approval, persistent short aliases, and publication/correction kill-state reads. Current schema/tools cannot safely persist the full flow within this folder scope. The queue is explicitly a recorded preview, not a working approval service.
+- Next Cache Components rejects an explicit route runtime setting and requires Suspense around cookie-dependent pages; both were corrected and the final production build passed. Runtime QA also identified the session expiry clock being evaluated during prefetch; the session helper now explicitly waits for a request with `connection()` before reading the clock. A clean-cache production rebuild resolved an unrelated restricted CSS subprocess cache failure.
+- The image renderer cannot resolve CSS variables/oklch, so its palette reads existing theme tokens and converts them rather than introducing hard-coded colors. No dependency, migration, database write or public feature was added.
+
+## Evidence
+
+- Source: `packages/tools/test/fixtures/calaccess_slice.json`, CAL-ACCESS bulk export downloaded 2026-11-15, SHA-256 `6b14bf50067fddd45ea5b1bf43ce6fbc62297d8ce4df1b1eaca6c82cfacc9476`.
+- Filing https://cal-access.sos.ca.gov/PDFGen/pdfgen.prg?filingid=3214397&amendid=0, F497P1 line 1, contribution dated 2026-10-20, $3,910,600.00, edge `e24a8221-3de7-3547-b3cc-42f0da6c5953`.
+- QR algorithm reference: https://www.nayuki.io/page/qr-code-generator-library. The bounded encoder is implemented locally without an added library or external image service.
+- Checks: `bun test`, `bun run lint`, `bun run typecheck`, `bun run check:colors`, `bun run check:buildlog`, `bun run build`, `git diff --check`; local HTTP, actual PNG render and independent QR decode checks described above.

@@ -1,0 +1,1 @@
+ALTER TABLE "interview"."session" ADD COLUMN "reward_email" text;

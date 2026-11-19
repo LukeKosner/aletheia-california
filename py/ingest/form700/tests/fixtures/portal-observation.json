@@ -1,0 +1,93 @@
+{
+  "source_url": "https://form700search.fppc.ca.gov/",
+  "observed_at": "2026-11-15",
+  "search": {
+    "agency": "State Assembly",
+    "currently_held_positions": true,
+    "filing_type": "Annual"
+  },
+  "result_total": 498,
+  "status": "search_metadata_only_no_pdfs",
+  "filings": [
+    {
+      "official_name": "Mike Gipson",
+      "filed_at": "2026-10-13",
+      "year": 2025,
+      "statement_type": "Annual",
+      "amendment": true,
+      "source_filing_id": null
+    },
+    {
+      "official_name": "Joe Patterson",
+      "filed_at": "2026-08-26",
+      "year": 2025,
+      "statement_type": "Annual",
+      "amendment": true,
+      "source_filing_id": null
+    },
+    {
+      "official_name": "Patrick Ahrens",
+      "filed_at": "2026-08-03",
+      "year": 2025,
+      "statement_type": "Annual",
+      "amendment": true,
+      "source_filing_id": null
+    },
+    {
+      "official_name": "Stephanie Nguyen",
+      "filed_at": "2026-08-03",
+      "year": 2025,
+      "statement_type": "Annual",
+      "amendment": true,
+      "source_filing_id": null
+    },
+    {
+      "official_name": "David Alvarez",
+      "filed_at": "2026-07-30",
+      "year": 2025,
+      "statement_type": "Annual",
+      "amendment": true,
+      "source_filing_id": null
+    },
+    {
+      "official_name": "Jose Solache",
+      "filed_at": "2026-07-23",
+      "year": 2025,
+      "statement_type": "Annual",
+      "amendment": true,
+      "source_filing_id": null
+    },
+    {
+      "official_name": "Blanca Pacheco",
+      "filed_at": "2026-07-23",
+      "year": 2025,
+      "statement_type": "Annual",
+      "amendment": true,
+      "source_filing_id": null
+    },
+    {
+      "official_name": "Heath Flora",
+      "filed_at": "2026-03-24",
+      "year": 2025,
+      "statement_type": "Annual",
+      "amendment": true,
+      "source_filing_id": null
+    },
+    {
+      "official_name": "Christopher Ward",
+      "filed_at": "2026-03-19",
+      "year": 2025,
+      "statement_type": "Annual",
+      "amendment": true,
+      "source_filing_id": null
+    },
+    {
+      "official_name": "John Harabedian",
+      "filed_at": "2026-03-18",
+      "year": 2025,
+      "statement_type": "Annual",
+      "amendment": true,
+      "source_filing_id": null
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+---
+date: 2026-11-19
+author: Claude
+reviewer:
+task: Production deploy as an open test site. No team sign-in, clear test-only terms, a daily research cron, and the OpenAI key in production
+---
+
+## Shipped
+
+- **`OPEN_TESTING` flag** (default off, on in production). It skips team sign-in in the proxy, investigations (Ask), cards, corrections and feedback through one helper, `teamSignInSkipped()` in `app/sign-in/session.ts`. `/sign-in` redirects away, and Sign out is hidden. `PUBLIC_SITE` stays off.
+- **Admin-only actions stay closed:** payouts, top-ups and manual research runs still need a verified admin (`isStaff`), which only local dev skips. Transcripts and study results are still limited to the browser that created them.
+- **Test-only wording:** the banner reads "Test site. Answers may be wrong, payments use Stripe test money, and rewards are recorded, not sent." and links to Terms. The Terms page is rewritten for a test site (reset at any time, no real money, use a Stripe test card, rewards not sent, AI answers can be wrong, sample data labeled "Sample", not reviewed by a lawyer). The Privacy page opener no longer mentions a team sign-in cookie.
+- **Daily cron:** `apps/web/vercel.json` calls `/api/interview/cron` at 15:00 UTC with Vercel's `CRON_SECRET` bearer header.
+- **Production env:** `OPEN_TESTING=true`, a new random `CRON_SECRET` and `OPENAI_API_KEY` were added. Voice interviews returned "not available" in production before, because the key was missing.
+- **Favicon:** `app/icon.svg` is the Greek α drawn as two strokes in the `--stamp` blue, with the dark-mode value under `prefers-color-scheme`. It replaces the default Next.js `favicon.ico`.
+- Committed the civic theme separately (`8b0ec08`).
+
+## Metric
+
+- `bun test`: 300 pass, 1 fail (`schema > defines every expected table`, failing before this change). Typecheck passes. Lint has 0 errors. `check:colors` passes. The local production build passes.
+
+## Broke or learned
+
+- Production sign-in failed because production's `TEAM_PASSWORD` and `TEAM_SESSION_SECRET` had the same 11-character value (compared by hash only). The secret was under the 32-character minimum. The open test site makes this moot. If the gate returns, both values need resetting.
+- `vercel deploy` has to run from the repo root (`--cwd`), because the project's root directory is `apps/web`.
+- With the site open, anyone can start paid OpenAI voice sessions and Ask runs. There is no rate limit yet.
+- The cron runs once a day, which is the Vercel Hobby limit.
+
+## Evidence
+
+- No data changed.
